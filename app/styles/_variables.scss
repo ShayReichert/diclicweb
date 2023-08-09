@@ -1,0 +1,40 @@
+//////////////////////
+// Colors
+//////////////////////
+
+$black: #000;
+$white: #fff;
+$primary-color: #002242;
+$accent-color: #5bf9ad;
+$background-color: $white;
+
+$gray200: #f7f9fa;
+$gray500: #6d869e;
+$gray800: black;
+
+//////////////////////
+// Fonts
+//////////////////////
+
+$font-family-title: "Helvetica Neue", "Helvetica";
+$font-family-body: "Helvetica Neue", "Helvetica";
+$font-family-mono: "Helvetica Neue", "Helvetica";
+$font-size-body: 22px;
+$font-size-h1: 80px;
+$font-size-h2: 70px;
+$font-size-h3: 36px;
+
+//////////////////////
+// Sizes
+//////////////////////
+
+$max-width: 1100px;
+$border-radius: 15px;
+
+// Screen sizes
+$min_large_screen: 1500px;
+$desktop: 1500px;
+$laptop: 1280px;
+$large_tablet: 1024px;
+$tablet: 768px;
+$mobile: 480px;

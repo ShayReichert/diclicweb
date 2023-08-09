@@ -3,10 +3,19 @@ import styles from "./styles/home.module.scss";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.center}>
-        <Image className={styles.logo} src="/next.svg" alt="Next.js Logo" width={180} height={37} priority />
+    <main>
+      <div className={styles.logo}>
+        <Image src="/images/logo_blue.png" alt="Logo de DiclicWeb" width={297} height={208} priority />
       </div>
+
+      <section>
+        <h2>Mes Services</h2>
+        <div>
+          <p>Service 1</p>
+          <p>Service 2</p>
+          <p>Service 3</p>
+        </div>
+      </section>
     </main>
   );
 }
