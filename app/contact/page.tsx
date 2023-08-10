@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "./styles/home.module.scss";
-import { aceSans } from "./styles/fonts/font-face";
+import styles from "../styles/contact.module.scss";
+import { aceSans } from "../styles/fonts/font-face";
 
-export default function Home() {
+export default function Contact() {
   return (
     <main>
       <div className={styles.logo}>
@@ -10,7 +10,7 @@ export default function Home() {
       </div>
 
       <section>
-        <h1 className={aceSans.className}>Home h1</h1>
+        <h1 className={aceSans.className}>Contact</h1>
       </section>
       <section>
         <h2 className={aceSans.className}>Titre h2</h2>

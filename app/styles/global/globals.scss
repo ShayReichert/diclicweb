@@ -27,6 +27,10 @@ a {
 }
 
 section {
+  h1 {
+    @include fluid-font(60px, $font-size-h1);
+  }
+
   h2 {
     @include fluid-font(35px, $font-size-h2);
   }

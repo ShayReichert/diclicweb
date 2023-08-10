@@ -1,4 +1,4 @@
-import "./styles/globals.scss";
+import "./styles/global/globals.scss";
 import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
 
