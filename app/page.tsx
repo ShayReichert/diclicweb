@@ -5,7 +5,7 @@ import { aceSans } from "./styles/fonts/font-face";
 export default function Home() {
   return (
     <main>
-      <div className={styles.logo}>
+      <div>
         <Image src="/images/logo_blue.png" alt="Logo de DiclicWeb" width={297} height={208} priority />
       </div>
 

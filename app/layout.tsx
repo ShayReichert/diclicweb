@@ -1,6 +1,7 @@
 import "./styles/global/globals.scss";
 import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
+import NavBar from "./components/NavBar";
 
 const almarai = Almarai({ subsets: ["arabic"], weight: ["400", "700"] });
 
@@ -12,7 +13,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={almarai.className}>{children}</body>
+      <body className={almarai.className}>
+        <header>
+          <NavBar />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
