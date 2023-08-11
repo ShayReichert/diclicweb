@@ -1,0 +1,104 @@
+@import "../../styles/global/mixins";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: $max-width;
+  height: $menu-desktop-height;
+
+  @include before() {
+    position: fixed;
+    background-color: $primary-color;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    will-change: width, height;
+    transition: transform 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98), width 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+      height 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+
+    @include devices(large_tablet) {
+      @include size(0);
+      visibility: hidden;
+      opacity: 0;
+      transition: none;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 3rem;
+
+      //  TODO : Animation à changer : sliding underline entre les éléments
+      a:hover:before,
+      &.current a:before {
+        opacity: 1;
+        width: 100%;
+      }
+
+      a {
+        @include fluid-font(12px, 18px);
+        position: relative;
+        padding: 1rem 0;
+
+        @include before(0%, 2px) {
+          position: absolute;
+          display: block;
+          bottom: 0;
+          background-color: $white;
+          transition: all 0.35s ease;
+        }
+
+        @include devices(large_tablet) {
+          @include fluid-font(30px, 55px);
+        }
+      }
+    }
+  }
+
+  &.mobile-menu-open {
+    &:before {
+      width: 100vmax;
+      height: calc(100vh - #{$menu-desktop-height});
+      transform: translate3d(50vh, -50vh, 0) scale(5);
+      transition-duration: 1s;
+    }
+
+    .links {
+      @include size();
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      top: 8.6rem;
+      left: 0;
+      padding: 10% 0;
+      z-index: 1;
+
+      @include devices(large_tablet) {
+        @include size();
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.7s, opacity 0.5s linear 0.2s;
+      }
+
+      li {
+        padding: 1.5rem 0;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}

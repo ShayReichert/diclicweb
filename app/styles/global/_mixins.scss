@@ -1,9 +1,7 @@
 @import "./variables";
 @import "./functions";
 
-//////////////////////
-// Media Queries
-//////////////////////
+// ----- MEDIA QUERIES ----- //
 
 @mixin devices($breakpoint) {
   @if $breakpoint == min_large_screen {
@@ -43,12 +41,10 @@
   }
 }
 
-//////////////////////
-// Sizes
-//////////////////////
-// https://gist.github.com/mvsde/7c66cdde4308ed155f53f7002433254c
+// ----- SIZES ----- //
 
 @mixin fluid-font($min-font-size, $max-font-size, $min-vw: $mobile, $max-vw: $desktop) {
+  // Source : https://gist.github.com/mvsde/7c66cdde4308ed155f53f7002433254c
   $u1: unit($min-vw);
   $u2: unit($max-vw);
   $u3: unit($min-font-size);
@@ -68,5 +64,32 @@
         font-size: $max-font-size;
       }
     }
+  }
+}
+
+@mixin size($width: 100%, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// ----- PSEUDO ELEMENTS ----- //
+
+@mixin before($width: 1rem, $height: $width) {
+  &:before {
+    content: "";
+    width: $width;
+    height: $height;
+
+    @content;
+  }
+}
+
+@mixin after($width: 1rem, $height: $width) {
+  &:after {
+    content: "";
+    width: $width;
+    height: $height;
+
+    @content;
   }
 }

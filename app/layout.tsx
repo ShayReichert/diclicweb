@@ -1,7 +1,7 @@
 import "./styles/global/globals.scss";
 import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 
 const almarai = Almarai({ subsets: ["arabic"], weight: ["400", "700"] });
 

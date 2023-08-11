@@ -1,5 +1,7 @@
 @import "./mixins";
 
+// ----- GLOBAL ----- //
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -26,55 +28,14 @@ a {
   text-decoration: none;
 }
 
+// ----- HEADER ----- //
+
 header {
   background-color: $primary-color;
   color: $white;
-
-  .header-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 2rem;
-    max-width: $max-width;
-
-    .links {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      font-weight: 500;
-
-      li {
-        display: inline-block;
-        margin: 0 3rem;
-
-        //  TODO : Animation à changer : sliding underline entre les éléments
-        a:hover:before,
-        &.current a:before {
-          opacity: 1;
-          width: 100%;
-        }
-
-        a {
-          @include fluid-font(12px, 18px);
-          position: relative;
-          padding: 1rem 0;
-
-          &:before {
-            content: "";
-            position: absolute;
-            display: block;
-            bottom: 0;
-            height: 2px;
-            width: 0%;
-            background-color: $white;
-            transition: all 0.35s ease;
-          }
-        }
-      }
-    }
-  }
 }
+
+// ----- SECTIONS ----- //
 
 section {
   h1 {
