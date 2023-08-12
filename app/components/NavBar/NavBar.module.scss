@@ -17,8 +17,8 @@
     right: 0;
     z-index: -1;
     will-change: width, height;
-    transition: transform 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98), width 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-      height 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+    transition: transform 0.65s cubic-bezier(0.04, -0.1, 0.29, 0.98), width 0.65s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+      height 0.65s cubic-bezier(0.04, -0.1, 0.29, 0.98);
   }
 
   .links {

@@ -25,6 +25,11 @@ export default function NavBar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleClickMenuItem = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  // Improve accessibility
   const handleTransitionEnd = () => {
     if (isMobileMenuOpen) {
       if (menuRef.current) {
@@ -51,7 +56,7 @@ export default function NavBar() {
       >
         {menuItems.map((item) => (
           <li key={item.id} className={pathname === item.path ? styles["current"] : ""}>
-            <Link href={item.path} aria-current={pathname === item.path ? "page" : undefined}>
+            <Link href={item.path} aria-current={pathname === item.path ? "page" : undefined} onClick={handleClickMenuItem}>
               {item.label}
             </Link>
           </li>
