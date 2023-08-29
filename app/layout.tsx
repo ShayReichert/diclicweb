@@ -2,6 +2,7 @@ import "./styles/global/globals.scss";
 import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
 const almarai = Almarai({ subsets: ["arabic"], weight: ["400", "700"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <NavBar />
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );

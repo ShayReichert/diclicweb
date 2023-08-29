@@ -1,0 +1,97 @@
+@import "../../styles/global/mixins";
+
+.footer {
+  position: relative;
+  color: $white;
+  overflow: hidden;
+
+  .background-circle {
+    background-color: $primary-color;
+    width: 100vw;
+    height: 10rem;
+    clip-path: ellipse(60% 100% at 50% 0%);
+    transform: rotate(180deg);
+  }
+
+  .background-content {
+    background-color: $primary-color;
+    margin-top: -2px;
+    padding: 8rem 0 20rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    h2 {
+      @include fluid-font(35px, $font-size-h2);
+    }
+
+    p {
+      @include fluid-font(12px, $font-size-body);
+      margin-top: 1rem;
+    }
+
+    .button {
+      @include button();
+      margin-top: 5rem;
+    }
+  }
+
+  .subfooter {
+    @include before(275px, 0px);
+    display: flex;
+    background-color: $primary-color;
+    justify-content: space-between;
+    padding: 1rem 7%;
+
+    .socials {
+      ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        li:not(:last-child) {
+          margin-right: 2rem;
+        }
+
+        img {
+          transition: transform 0.2s ease-in-out;
+        }
+
+        a:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .legals {
+      ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-transform: uppercase;
+        font-size: 10px;
+
+        li:not(:last-child) {
+          margin-right: 2rem;
+        }
+
+        a {
+          opacity: 0.7;
+          transition: opacity 0.2s ease-in-out;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-logo {
+    position: absolute;
+    bottom: -15rem;
+    left: -25rem;
+  }
+}
