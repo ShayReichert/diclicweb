@@ -14,7 +14,7 @@ html:has(.mobile-menu-open) {
   height: $menu-desktop-height;
 
   // Background menu mobile
-  @include before() {
+  @include before(0, 0) {
     position: fixed;
     background-color: $primary-color;
     border-radius: 50%;
@@ -30,6 +30,7 @@ html:has(.mobile-menu-open) {
     position: relative;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
     transition: opacity 0.2s ease;
@@ -86,7 +87,6 @@ html:has(.mobile-menu-open) {
       height: 1px;
       background-color: $white;
       border-radius: $border-radius;
-      // transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: all 0.3s cubic-bezier(0.68, -0.2, 0.265, 1.2);
     }
   }
