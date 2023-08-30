@@ -66,6 +66,11 @@ html:has(.mobile-menu-open) {
         opacity: 0.7;
         position: relative;
         padding: 1rem 0;
+        transition: opacity 0.35s ease;
+
+        &:hover {
+          opacity: 1;
+        }
 
         @include devices(large_tablet) {
           @include fluid-font(30px, 55px);

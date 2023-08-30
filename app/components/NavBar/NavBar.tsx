@@ -13,7 +13,7 @@ export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuRef = useRef<HTMLUListElement | null>(null);
   const [movingBarPosition, setMovingBarPosition] = useState({ width: 0, left: 0 });
-  const [isBarPendingUpdate, setIsBarPendingUpdate] = useState(false);
+  const [currentPath, setCurrentPath] = useState(pathname);
 
   const menuItems = [
     { id: "services", label: "Offres et Services", path: "/offres-et-services" },
@@ -24,24 +24,46 @@ export default function NavBar() {
   ];
 
   useEffect(() => {
-    // Clean state when an update of the moving bar is completed
-    if (!isBarPendingUpdate) {
-      const currentMenuItem = menuRef.current?.querySelector(`.${styles["current"]}`) as HTMLElement;
-      if (currentMenuItem) {
-        setMovingBarPosition({
-          width: currentMenuItem.offsetWidth,
-          left: currentMenuItem.offsetLeft,
-        });
-      }
+    updateMovingBarPosition();
+
+    if (pathname === "/") {
+      removeMovingBar();
+      setIsMobileMenuOpen(false);
     }
-  }, [isBarPendingUpdate]);
+  }, [currentPath, pathname]);
+
+  const removeMovingBar = () => {
+    menuRef.current?.querySelectorAll(`.${styles["current"]}`).forEach((item) => {
+      item.classList.remove(styles["current"]);
+    });
+    setMovingBarPosition({ width: 0, left: 0 });
+  };
+
+  const updateMovingBarPosition = () => {
+    const currentMenuItem = menuRef.current?.querySelector(`.${styles["current"]}`) as HTMLElement;
+    if (currentMenuItem) {
+      setMovingBarPosition({
+        width: currentMenuItem.offsetWidth,
+        left: currentMenuItem.offsetLeft,
+      });
+    }
+  };
+
+  const handleClickMenuItem = (path: string) => {
+    menuRef.current?.querySelectorAll(`.${styles["current"]}`).forEach((item) => {
+      item.classList.remove(styles["current"]);
+    });
+
+    const currentMenuItem = menuRef.current?.querySelector(`[href="${path}"]`);
+    if (currentMenuItem) {
+      currentMenuItem.classList.add(styles["current"]);
+    }
+    setCurrentPath(path);
+    setIsMobileMenuOpen(false);
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const handleClickMenuItem = () => {
-    setIsMobileMenuOpen(false);
   };
 
   // Accessibility : menu mobile focus
@@ -66,30 +88,6 @@ export default function NavBar() {
     }
   };
 
-  const handleBarMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    const link = e.currentTarget;
-    const width = link.offsetWidth;
-    const left = link.offsetLeft;
-    setMovingBarPosition({ width, left });
-  };
-
-  const handleBarMouseLeave = () => {
-    setIsBarPendingUpdate(true);
-    setTimeout(() => {
-      const currentMenuItem = menuItems.find((item) => pathname === item.path);
-      const movingBar = menuRef.current?.querySelector(`.${styles["moving-bar"]}`) as HTMLElement;
-
-      if (currentMenuItem && movingBar) {
-        const menuItemElement = menuRef.current?.querySelector(`.${styles["current"]}`) as HTMLElement;
-        const width = menuItemElement.offsetWidth;
-        const left = menuItemElement.offsetLeft;
-        movingBar.style.width = `${width}px`;
-        movingBar.style.left = `${left}px`;
-      }
-      setIsBarPendingUpdate(false);
-    }, 300);
-  };
-
   return (
     <nav className={`${styles["navbar"]} ${isMobileMenuOpen ? styles["mobile-menu-open"] : ""}`}>
       <div className={styles["logo"]}>
@@ -102,15 +100,13 @@ export default function NavBar() {
         ref={menuRef}
         className={`${styles["links"]} ${aceSans.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
         onTransitionEnd={handleTransitionEnd}
-        onMouseLeave={handleBarMouseLeave}
       >
         {menuItems.map((item) => (
           <li key={item.id} className={pathname === item.path ? styles["current"] : ""}>
             <Link
               href={item.path}
               aria-current={pathname === item.path ? "page" : undefined}
-              onClick={handleClickMenuItem}
-              onMouseEnter={handleBarMouseEnter}
+              onClick={() => handleClickMenuItem(item.path)}
               role="link"
               tabIndex={0}
               onKeyDown={handleLinkKeyDown}
