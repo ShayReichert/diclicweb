@@ -4,7 +4,7 @@ import { Almarai } from "next/font/google";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 
-const almarai = Almarai({ subsets: ["arabic"], weight: ["400", "700"] });
+const almarai = Almarai({ subsets: ["arabic"], weight: ["300", "400", "700"] });
 
 export const metadata: Metadata = {
   title: "DiclicWeb - Création de sites web engagés",

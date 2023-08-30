@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./styles/home.module.scss";
-import { aceSans } from "./styles/fonts/font-face";
+import { aceSans, livvic } from "./styles/fonts/font-face";
 
 export default function Home() {
   return (
@@ -10,10 +10,10 @@ export default function Home() {
       </div>
 
       <section>
-        <h1 className={aceSans.className}>Home h1</h1>
+        <h1 className={aceSans.className}>DiclicWeb</h1>
       </section>
       <section>
-        <h2 className={aceSans.className}>Titre h2</h2>
+        <h2 className={livvic.className}>Titre h2</h2>
         <div>
           <p>paragraphe 1</p>
           <p>paragraphe 2</p>

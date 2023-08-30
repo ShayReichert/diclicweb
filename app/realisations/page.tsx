@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/realisations.module.scss";
-import { aceSans } from "../styles/fonts/font-face";
+import { aceSans, livvic } from "../styles/fonts/font-face";
 
 export default function Projects() {
   return (
@@ -13,7 +13,7 @@ export default function Projects() {
         <h1 className={aceSans.className}>Réalisations</h1>
       </section>
       <section>
-        <h2 className={aceSans.className}>Titre h2</h2>
+        <h2 className={livvic.className}>Titre h2</h2>
         <div>
           <p>paragraphe 1</p>
           <p>paragraphe 2</p>

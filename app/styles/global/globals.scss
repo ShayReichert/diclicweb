@@ -41,16 +41,20 @@ header {
 
 // ----- SECTIONS ----- //
 
-section {
+section,
+footer {
   h1 {
-    @include fluid-font(60px, $font-size-h1);
+    @include fluid-font(50px, $font-size-h1);
+    text-transform: uppercase;
   }
 
   h2 {
-    @include fluid-font(35px, $font-size-h2);
+    @include fluid-font(30px, $font-size-h2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   p {
-    @include fluid-font(12px, $font-size-body);
+    @include fluid-font(14px, $font-size-body);
   }
 }
