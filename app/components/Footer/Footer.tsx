@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import styles from "./Footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { aceSans } from "../../styles/fonts/font-face";
+import { livvic } from "../../styles/fonts/font-face";
 import { splitButtonText } from "@/app/utils/splitButtonText";
 
 export default function Footer() {
@@ -18,12 +18,14 @@ export default function Footer() {
   useEffect(() => {
     splitButtonText(buttonRef.current);
   }, []);
+
   return (
     <footer className={styles["footer"]}>
       <div className={styles["background-circle"]}></div>
+
       <div className={styles["background-content"]}>
         <div className={styles["content"]}>
-          <h2 className={aceSans.className}>Un projet de site ?</h2>
+          <h2 className={livvic.className}>Un projet de site ?</h2>
           <p>Pour toute demande de renseignements</p>
           <Link ref={buttonRef} className={styles["button"]} href="/contact" role="link">
             Contactez-moi
@@ -57,9 +59,10 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-      </div>
-      <div className={styles["footer-logo"]}>
-        <Image src={`/images/logo_white.png`} alt="Logo Diclicweb" width={594} height={416} priority />
+
+        <div className={styles["logo"]}>
+          <Image src={`/images/logo_white.png`} alt="Logo Diclicweb" width={594} height={416} priority />
+        </div>
       </div>
     </footer>
   );

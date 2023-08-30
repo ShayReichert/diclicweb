@@ -16,18 +16,14 @@
   .background-content {
     background-color: $primary-color;
     margin-top: -2px;
-    padding: 8rem 0 20rem;
+    padding: 8rem 0.5rem 20rem;
     display: flex;
     text-align: center;
     justify-content: center;
 
-    h2 {
-      @include fluid-font(35px, $font-size-h2);
-    }
-
     p {
-      @include fluid-font(12px, $font-size-body);
       margin-top: 1rem;
+      font-weight: 300;
     }
 
     .button {
@@ -37,13 +33,26 @@
   }
 
   .subfooter {
-    @include before(275px, 0px);
+    @include before(320px, 0px);
+    position: relative;
     display: flex;
     background-color: $primary-color;
     justify-content: space-between;
     padding: 1rem 7%;
+    z-index: 1;
+
+    @include devices(large_tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .socials {
+      z-index: 2;
+
+      @include devices(large_tablet) {
+        margin-bottom: 0.7rem;
+      }
+
       ul {
         display: flex;
         align-items: center;
@@ -66,15 +75,27 @@
     }
 
     .legals {
+      z-index: 2;
+
       ul {
         display: flex;
         align-items: center;
         height: 100%;
         text-transform: uppercase;
         font-size: 10px;
+        letter-spacing: 1px;
+
+        @include devices(large_tablet) {
+          flex-direction: column;
+        }
 
         li:not(:last-child) {
           margin-right: 2rem;
+
+          @include devices(large_tablet) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
         }
 
         a {
@@ -87,11 +108,18 @@
         }
       }
     }
-  }
 
-  .footer-logo {
-    position: absolute;
-    bottom: -15rem;
-    left: -25rem;
+    .logo {
+      position: absolute;
+      bottom: -15rem;
+      left: -25rem;
+      z-index: 1;
+
+      @include devices(large_tablet) {
+        transform: scale(0.7);
+        bottom: -11rem;
+        left: -32rem;
+      }
+    }
   }
 }
