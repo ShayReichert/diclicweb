@@ -1,0 +1,67 @@
+@import "../../styles/global/mixins";
+
+.section-title {
+  @include size(100%, calc(100vh - $menu-desktop-height * 1.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include devices(large_tablet) {
+      .image-wrapper {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+
+    h1 {
+      position: relative;
+      text-align: center;
+
+      &.has_decoration {
+        @include underline(55%, 2.9rem) {
+          right: -27px;
+          top: auto;
+          bottom: 4px;
+
+          @include devices(large_tablet) {
+            height: 2.5rem;
+            right: -17px;
+          }
+        }
+      }
+    }
+
+    .baseline {
+      position: relative;
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+
+      @include devices(large_tablet) {
+        font-size: 16px;
+      }
+
+      @include underline(52%, 1.6rem) {
+        right: -12px;
+        top: auto;
+        bottom: -4px;
+
+        @include devices(large_tablet) {
+          height: 1.3rem;
+          right: -16px;
+        }
+      }
+    }
+  }
+}

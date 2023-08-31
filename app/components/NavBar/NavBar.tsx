@@ -16,7 +16,7 @@ export default function NavBar() {
   const [currentPath, setCurrentPath] = useState(pathname);
 
   const menuItems = [
-    { id: "services", label: "Offres et Services", path: "/offres-et-services" },
+    { id: "services", label: "Offres et services", path: "/offres-et-services" },
     { id: "projects", label: "Réalisations", path: "/realisations" },
     { id: "about", label: "À propos", path: "/a-propos" },
     { id: "contact", label: "Contact", path: "/contact" },

@@ -60,7 +60,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className={styles["logo"]}>
+        <div className={styles["logo-wrapper"]}>
           <Image src={`/images/logo_white.png`} alt="Logo Diclicweb" width={594} height={416} priority />
         </div>
       </div>

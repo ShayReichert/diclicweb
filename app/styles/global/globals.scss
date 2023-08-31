@@ -37,6 +37,8 @@ ul {
 header {
   background-color: $primary-color;
   color: $white;
+  position: relative;
+  z-index: $zindex-menu;
 }
 
 // ----- SECTIONS ----- //
@@ -44,7 +46,7 @@ header {
 section,
 footer {
   h1 {
-    @include fluid-font(50px, $font-size-h1);
+    @include fluid-font(45px, $font-size-h1);
     text-transform: uppercase;
   }
 

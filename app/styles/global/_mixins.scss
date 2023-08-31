@@ -141,3 +141,14 @@
     }
   }
 }
+
+@mixin underline($width: 40%, $height: 2.5rem) {
+  @include after($width, $height) {
+    position: absolute;
+    background-color: $accent-color;
+    z-index: -1;
+    border-radius: 1px;
+
+    @content;
+  }
+}
