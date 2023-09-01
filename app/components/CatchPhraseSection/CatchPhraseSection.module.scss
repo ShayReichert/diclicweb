@@ -1,0 +1,42 @@
+@import "../../styles/global/mixins";
+
+.catchphrase-section {
+  position: relative;
+  color: $white;
+  overflow: hidden;
+
+  .background-circle {
+    background-color: $primary-color;
+    width: 100vw;
+    height: 10rem;
+    clip-path: ellipse(60% 100% at 50% 0%);
+    transform: rotate(180deg);
+  }
+
+  .background-content {
+    background-color: $primary-color;
+    margin-top: -2px;
+    padding: 8rem 0.5rem 18rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    @include devices(large_tablet) {
+      padding: 5rem 0.5rem 13rem;
+    }
+
+    .content {
+      width: 70%;
+      margin: auto;
+      max-width: $desktop;
+
+      @include devices(large_tablet) {
+        width: 80%;
+      }
+
+      p {
+        @include fluid-font(20px, 34px);
+      }
+    }
+  }
+}

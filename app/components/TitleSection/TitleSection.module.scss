@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
 
+  @include devices(large_tablet) {
+    @include size(100%, calc(90vh - $menu-desktop-height * 1.5));
+  }
+
   .content {
     display: flex;
     flex-direction: column;
