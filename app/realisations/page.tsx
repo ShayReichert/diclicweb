@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <main>
       <SectionTitle title="Réalisations" />
-      <SectionCatchPhrase text="Je vous présente les derniers projets de sites web sur lesquels j’ai eu le plaisir de travailler 🖥️" />
+      <SectionCatchPhrase text="Je vous présente les derniers projets de sites web sur lesquels j’ai eu le plaisir de travailler 😊" />
     </main>
   );
 }

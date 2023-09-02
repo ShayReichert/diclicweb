@@ -1,0 +1,69 @@
+@import "../../styles/global/mixins";
+
+.section-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: $max-content;
+    padding: 13rem 0;
+
+    h2 {
+      position: relative;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      @include underline(55%, 2.4rem) {
+        right: -27px;
+        top: auto;
+        bottom: 4px;
+
+        @include devices(large_tablet) {
+          height: 1.8rem;
+          right: -17px;
+        }
+      }
+    }
+
+    .services-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @include devices(large_tablet) {
+        flex-wrap: wrap;
+      }
+
+      .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 5%;
+        max-width: 25rem;
+
+        @include devices(tablet) {
+          margin: 3rem 5%;
+        }
+
+        .service-icon {
+          margin-bottom: 3rem;
+        }
+
+        .service-text {
+          @include fluid-font(14px, $font-size-body);
+          text-align: center;
+        }
+      }
+    }
+
+    .services-cta {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -7,16 +7,16 @@ interface SectionCatchPhrasenProps {
   text: string;
 }
 
-const SectionCatchPhrase: React.FC<SectionCatchPhrasenProps> = ({ text }) => (
-  <section className={styles["section-catchphrase"]}>
-    <div className={styles["background-circle"]}></div>
+export default function SectionCatchPhrase({ text }: SectionCatchPhrasenProps) {
+  return (
+    <section className={styles["section-catchphrase"]}>
+      <div className={styles["background-circle"]}></div>
 
-    <div className={styles["background-content"]}>
-      <div className={styles["content"]}>
-        <p className={overpassMono.className}>{text}</p>
+      <div className={styles["background-content"]}>
+        <div className={styles["content"]}>
+          <p className={overpassMono.className}>{text}</p>
+        </div>
       </div>
-    </div>
-  </section>
-);
-
-export default SectionCatchPhrase;
+    </section>
+  );
+}

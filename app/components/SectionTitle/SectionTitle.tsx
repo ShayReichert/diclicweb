@@ -8,16 +8,16 @@ interface SectionTitleProps {
   has_decoration?: boolean;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ title, baseline = "", has_decoration = true }) => (
-  <section className={styles["section-title"]}>
-    <div className={styles["content"]}>
-      <div className={styles["image-wrapper"]}>
-        <Image src="/images/logo_blue.png" alt="Logo de DiclicWeb" width={297} height={208} priority />
+export default function SectionTitle({ title, baseline = "", has_decoration = true }: SectionTitleProps) {
+  return (
+    <section className={styles["section-title"]}>
+      <div className={styles["content"]}>
+        <div className={styles["image-wrapper"]}>
+          <Image src="/images/logo_blue.png" alt="Logo de DiclicWeb" width={297} height={208} priority />
+        </div>
+        {title && <h1 className={`${aceSans.className} ${has_decoration ? styles["has_decoration"] : ""}`}>{title}</h1>}
+        {baseline && <p className={styles["baseline"]}>{baseline}</p>}
       </div>
-      {title && <h1 className={`${aceSans.className} ${has_decoration ? styles["has_decoration"] : ""}`}>{title}</h1>}
-      {baseline && <p className={styles["baseline"]}>{baseline}</p>}
-    </div>
-  </section>
-);
-
-export default SectionTitle;
+    </section>
+  );
+}

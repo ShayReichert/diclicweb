@@ -1,23 +1,15 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import styles from "./Footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { livvic } from "../../styles/fonts/font-face";
-import { splitButtonText } from "@/app/utils/splitButtonText";
+import Button from "../Button/Button";
 
 export default function Footer() {
-  const buttonRef = useRef<HTMLAnchorElement | null>(null);
   const socialItems = [
     { id: "linkedin", label: "LinkedIn", image: "linkedin.png", url: "https://www.linkedin.com/in/diclicweb/" },
     { id: "facebook", label: "Facebook", image: "facebook.png", url: "https://www.facebook.com/diclicweb/" },
     { id: "instagram", label: "Instagram", image: "instagram.png", url: "https://www.instagram.com/diclicweb/" },
   ];
-
-  useEffect(() => {
-    splitButtonText(buttonRef.current);
-  }, []);
 
   return (
     <footer className={styles["footer"]}>
@@ -27,9 +19,7 @@ export default function Footer() {
         <div className={styles["content"]}>
           <h2 className={livvic.className}>Un projet de site ?</h2>
           <p>Pour toute demande de renseignements</p>
-          <Link ref={buttonRef} className={styles["button"]} href="/contact" role="link">
-            Contactez-moi
-          </Link>
+          <Button text="Contactez-moi" href="/contact" />
         </div>
       </div>
       <div className={styles["subfooter"]}>
