@@ -1,14 +1,14 @@
-import styles from "./TitleSection.module.scss";
+import styles from "./SectionTitle.module.scss";
 import Image from "next/image";
 import { aceSans, livvic } from "../../styles/fonts/font-face";
 
-interface TitleSectionProps {
+interface SectionTitleProps {
   title: string;
   baseline?: string;
   has_decoration?: boolean;
 }
 
-const TitleSection: React.FC<TitleSectionProps> = ({ title, baseline = "", has_decoration = true }) => (
+const SectionTitle: React.FC<SectionTitleProps> = ({ title, baseline = "", has_decoration = true }) => (
   <section className={styles["section-title"]}>
     <div className={styles["content"]}>
       <div className={styles["image-wrapper"]}>
@@ -20,4 +20,4 @@ const TitleSection: React.FC<TitleSectionProps> = ({ title, baseline = "", has_d
   </section>
 );
 
-export default TitleSection;
+export default SectionTitle;

@@ -1,13 +1,14 @@
-import styles from "./CatchPhraseSection.module.scss";
+import styles from "./SectionCatchPhrase.module.scss";
 import { Overpass_Mono } from "next/font/google";
 
 const overpassMono = Overpass_Mono({ subsets: ["latin"], weight: ["300"] });
 
-interface TitleSectionProps {
+interface SectionCatchPhrasenProps {
   text: string;
 }
-const CatchPhraseSection: React.FC<TitleSectionProps> = ({ text }) => (
-  <section className={styles["catchphrase-section"]}>
+
+const SectionCatchPhrase: React.FC<SectionCatchPhrasenProps> = ({ text }) => (
+  <section className={styles["section-catchphrase"]}>
     <div className={styles["background-circle"]}></div>
 
     <div className={styles["background-content"]}>
@@ -18,4 +19,4 @@ const CatchPhraseSection: React.FC<TitleSectionProps> = ({ text }) => (
   </section>
 );
 
-export default CatchPhraseSection;
+export default SectionCatchPhrase;
