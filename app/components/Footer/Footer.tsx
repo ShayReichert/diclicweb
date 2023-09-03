@@ -28,7 +28,7 @@ export default function Footer() {
             {socialItems.map((item) => (
               <li key={item.id} className={styles["socials"]}>
                 <a href={item.url} target="_blank" role="link">
-                  <Image src={`/images/socials/${item.image}`} alt={`item.label`} width={20} height={20} priority />
+                  <Image src={`/images/socials/${item.image}`} alt={`item.label`} width={20} height={20} />
                 </a>
               </li>
             ))}
@@ -51,7 +51,14 @@ export default function Footer() {
         </div>
 
         <div className={styles["logo-wrapper"]}>
-          <Image src={`/images/logo_white.png`} alt="Logo Diclicweb" width={594} height={416} priority />
+          <Image
+            src={`/images/logo_white.png`}
+            alt="Logo Diclicweb"
+            width={594}
+            height={416}
+            placeholder="blur"
+            blurDataURL={`/images/logo_white.png`}
+          />
         </div>
       </div>
     </footer>

@@ -92,7 +92,15 @@ export default function NavBar() {
     <nav className={`${styles["navbar"]} ${isMobileMenuOpen ? styles["mobile-menu-open"] : ""}`}>
       <div className={styles["logo"]}>
         <Link href="/">
-          <Image src="/images/logo_baseline_whine_lemon.png" alt="Logo de DiclicWeb" width={131} height={84} priority />
+          <Image
+            src="/images/logo_baseline_whine_lemon.png"
+            alt="Logo de DiclicWeb"
+            width={131}
+            height={84}
+            priority
+            placeholder="blur"
+            blurDataURL="/images/logo_baseline_whine_lemon.png"
+          />
         </Link>
       </div>
 
