@@ -78,7 +78,7 @@ html:has(.mobile-menu-open) {
         }
 
         @include devices(large_tablet) {
-          @include fluid-font(30px, 55px);
+          @include fluid-font(26px, 50px);
         }
       }
     }

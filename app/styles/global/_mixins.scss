@@ -142,7 +142,7 @@
   }
 }
 
-@mixin underline($width: 40%, $height: 2.5rem) {
+@mixin underline($width: 40%, $height: 2.5rem, $has_animation: false) {
   @include after($width, $height) {
     position: absolute;
     background-color: $accent-color;
@@ -150,5 +150,25 @@
     border-radius: 1px;
 
     @content;
+
+    @if $has_animation {
+      @include underline-animation();
+    }
+  }
+}
+
+// ----- ANIMATIONS ----- //
+
+@mixin underline-animation() {
+  animation: underline-enter 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 300ms;
+  transform-origin: left;
+
+  @keyframes underline-enter {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
   }
 }

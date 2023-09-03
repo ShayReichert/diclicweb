@@ -46,12 +46,18 @@ header {
 section,
 footer {
   h1 {
-    @include fluid-font(50px, $font-size-h1);
+    @include fluid-font(45px, $font-size-h1);
     text-transform: uppercase;
   }
 
   h2 {
-    @include fluid-font(35px, $font-size-h2);
+    @include fluid-font(32px, $font-size-h2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    @include fluid-font(24px, $font-size-h2);
     letter-spacing: 1px;
     text-transform: uppercase;
   }
