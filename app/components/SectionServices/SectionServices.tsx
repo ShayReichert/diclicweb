@@ -1,5 +1,5 @@
 import styles from "./SectionServices.module.scss";
-import { lemonMilk } from "../../styles/fonts/font-face";
+import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import ItemService from "../ItemService/ItemService";
 
@@ -25,7 +25,7 @@ export default function SectionServices() {
   return (
     <section className={styles["section-services"]}>
       <div className={styles["section-content"]}>
-        <h2 className={lemonMilk.className}>Mes Services</h2>
+        <h2 className={rocaOne.className}>Mes services</h2>
         <div className={styles["services-wrapper"]}>
           {services.map((service) => (
             <ItemService key={service.text} text={service.text} icon={service.icon} icon_alt={service.icon_alt} />

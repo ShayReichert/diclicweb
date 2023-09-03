@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import styles from "./Button.module.scss";
 import Link from "next/link";
 import { splitButtonText } from "@/app/utils/splitButtonText";
+import { rocaOne } from "../../styles/fonts/font-face";
 
 interface ButtonProps {
   text: string;
@@ -19,7 +20,7 @@ export default function Button({ text, href, isTargetBlank = false }: ButtonProp
   }, []);
 
   return (
-    <Link ref={buttonRef} className={styles["button"]} href={href} role="link">
+    <Link ref={buttonRef} className={`${rocaOne.className} ${styles["button"]}`} href={href} role="link">
       {text}
     </Link>
   );

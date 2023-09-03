@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./NavBar.module.scss";
-import { lemonMilk } from "../../styles/fonts/font-face";
+import { rocaOne } from "../../styles/fonts/font-face";
 import { usePathname } from "next/navigation";
 import MobileMenuIcon from "../MobileMenuIcon/MobileMenuIcon";
 
@@ -93,20 +93,20 @@ export default function NavBar() {
       <div className={`${styles["logo"]}  ${pathname === "/" ? styles["current"] : ""}`}>
         <Link href="/">
           <Image
-            src="/images/logo_baseline_whine_lemon.png"
+            src="/images/logo_baseline_white_panda.png"
             alt="Logo de DiclicWeb"
             width={131}
             height={84}
             priority
             placeholder="blur"
-            blurDataURL="/images/logo_baseline_whine_lemon.png"
+            blurDataURL="/images/logo_baseline_white_panda.png"
           />
         </Link>
       </div>
 
       <ul
         ref={menuRef}
-        className={`${styles["links"]} ${lemonMilk.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
+        className={`${styles["links"]} ${rocaOne.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
         onTransitionEnd={handleTransitionEnd}
       >
         {menuItems.map((item) => (

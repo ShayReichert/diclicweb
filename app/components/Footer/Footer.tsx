@@ -1,7 +1,7 @@
 import styles from "./Footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { lemonMilk } from "../../styles/fonts/font-face";
+import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
 
       <div className={styles["background-content"]}>
         <div className={styles["content"]}>
-          <h2 className={lemonMilk.className}>Un projet de site ?</h2>
+          <h2 className={rocaOne.className}>Un projet de site ?</h2>
           <p>Pour toute demande de renseignements</p>
           <Button text="Contactez-moi" href="/contact" />
         </div>

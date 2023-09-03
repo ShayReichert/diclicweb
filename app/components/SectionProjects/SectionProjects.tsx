@@ -1,13 +1,13 @@
 import styles from "./SectionProjects.module.scss";
 import Image from "next/image";
-import { lemonMilk } from "../../styles/fonts/font-face";
+import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 
 export default function SectionProjects() {
   return (
     <section className={styles["section-projects"]}>
       <div className={styles["section-content"]}>
-        <h2 className={lemonMilk.className}>Mes dernières réalisations</h2>
+        <h2 className={rocaOne.className}>Mes dernières réalisations</h2>
         <div className={styles["projects-wrapper"]}>
           <div className={styles["project"]}>
             <div className={styles["project-image"]}>

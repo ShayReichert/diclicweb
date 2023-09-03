@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/a-propos.module.scss";
-import { lemonMilk } from "../styles/fonts/font-face";
+import { rocaOne } from "../styles/fonts/font-face";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "../components/SectionCatchPhrase/SectionCatchPhrase";
 

@@ -41,8 +41,6 @@ html:has(.mobile-menu-open) {
     position: relative;
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-    // font-weight: 300;
     letter-spacing: 1px;
     transition: opacity 0.2s ease;
 
@@ -74,7 +72,7 @@ html:has(.mobile-menu-open) {
       }
 
       a {
-        @include fluid-font(12px, 15px);
+        @include fluid-font(18px, 19px);
         opacity: 0.7;
         position: relative;
         padding: 1rem 0;
@@ -85,7 +83,7 @@ html:has(.mobile-menu-open) {
         }
 
         @include devices(large_tablet) {
-          @include fluid-font(26px, 50px);
+          @include fluid-font(30px, 50px);
         }
       }
     }
@@ -93,7 +91,7 @@ html:has(.mobile-menu-open) {
     .moving-bar {
       position: absolute;
       left: 0;
-      bottom: -5px;
+      bottom: -4px;
       width: 0;
       height: 1px;
       background-color: $white;
@@ -135,7 +133,7 @@ html:has(.mobile-menu-open) {
       }
 
       li {
-        padding: 1.5rem 0;
+        padding: 1rem 0;
 
         a {
           color: $white;
