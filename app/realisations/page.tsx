@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/realisations.module.scss";
-import { aceSans, livvic } from "../styles/fonts/font-face";
+import { lemonMilk } from "../styles/fonts/font-face";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "../components/SectionCatchPhrase/SectionCatchPhrase";
 

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./NavBar.module.scss";
-import { aceSans } from "../../styles/fonts/font-face";
+import { lemonMilk } from "../../styles/fonts/font-face";
 import { usePathname } from "next/navigation";
 import MobileMenuIcon from "../MobileMenuIcon/MobileMenuIcon";
 
@@ -92,13 +92,13 @@ export default function NavBar() {
     <nav className={`${styles["navbar"]} ${isMobileMenuOpen ? styles["mobile-menu-open"] : ""}`}>
       <div className={styles["logo"]}>
         <Link href="/">
-          <Image src="/images/logo_baseline_white.png" alt="Logo de DiclicWeb" width={131} height={84} priority />
+          <Image src="/images/logo_baseline_whine_lemon.png" alt="Logo de DiclicWeb" width={131} height={84} priority />
         </Link>
       </div>
 
       <ul
         ref={menuRef}
-        className={`${styles["links"]} ${aceSans.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
+        className={`${styles["links"]} ${lemonMilk.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
         onTransitionEnd={handleTransitionEnd}
       >
         {menuItems.map((item) => (

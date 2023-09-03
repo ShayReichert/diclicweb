@@ -1,13 +1,13 @@
 import styles from "./SectionServices.module.scss";
 import Image from "next/image";
-import { livvic } from "../../styles/fonts/font-face";
+import { lemonMilk } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 
 export default function SectionServices() {
   return (
     <section className={styles["section-services"]}>
       <div className={styles["section-content"]}>
-        <h2 className={livvic.className}>Mes Services</h2>
+        <h2 className={lemonMilk.className}>Mes Services</h2>
         <div className={styles["services-wrapper"]}>
           <div className={styles["service"]}>
             <div className={styles["service-icon"]}>
