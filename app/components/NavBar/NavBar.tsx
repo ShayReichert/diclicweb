@@ -90,7 +90,7 @@ export default function NavBar() {
 
   return (
     <nav className={`${styles["navbar"]} ${isMobileMenuOpen ? styles["mobile-menu-open"] : ""}`}>
-      <div className={styles["logo"]}>
+      <div className={`${styles["logo"]}  ${pathname === "/" ? styles["current"] : ""}`}>
         <Link href="/">
           <Image
             src="/images/logo_baseline_whine_lemon.png"

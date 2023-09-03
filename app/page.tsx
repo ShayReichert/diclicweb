@@ -1,6 +1,7 @@
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "./components/SectionCatchPhrase/SectionCatchPhrase";
 import SectionServices from "./components/SectionServices/SectionServices";
+import SectionProjects from "./components/SectionProjects/SectionProjects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
             monde dans lequel je veux de vivre 🌱"
       />
       <SectionServices />
+      <SectionProjects />
     </main>
   );
 }

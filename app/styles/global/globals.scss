@@ -58,7 +58,6 @@ footer {
 
   h3 {
     @include fluid-font(24px, $font-size-h2);
-    letter-spacing: 1px;
     text-transform: uppercase;
   }
 
