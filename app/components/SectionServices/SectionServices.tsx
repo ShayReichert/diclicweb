@@ -1,36 +1,35 @@
 import styles from "./SectionServices.module.scss";
-import Image from "next/image";
 import { lemonMilk } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
+import ItemService from "../ItemService/ItemService";
 
 export default function SectionServices() {
+  const services = [
+    {
+      text: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
+      icon: "/images/home/icon_desktop.png",
+      icon_alt: "Icon d'ordinateur",
+    },
+    {
+      text: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
+      icon: "/images/home/icon_desktop.png",
+      icon_alt: "Icon d'ordinateur",
+    },
+    {
+      text: " Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
+      icon: "/images/home/icon_desktop.png",
+      icon_alt: "Icon d'ordinateur",
+    },
+  ];
+
   return (
     <section className={styles["section-services"]}>
       <div className={styles["section-content"]}>
         <h2 className={lemonMilk.className}>Mes Services</h2>
         <div className={styles["services-wrapper"]}>
-          <div className={styles["service"]}>
-            <div className={styles["service-icon"]}>
-              <Image src="/images/home/icon_desktop.png" alt="Icon d'ordinateur" width={200} height={200} priority />
-            </div>
-            <div className={styles["service-text"]}>
-              Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.
-            </div>
-          </div>
-          <div className={styles["service"]}>
-            <div className={styles["service-icon"]}>
-              <Image src="/images/home/icon_desktop.png" alt="" width={200} height={200} priority />
-            </div>
-            <div className={styles["service-text"]}>Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.</div>
-          </div>
-          <div className={styles["service"]}>
-            <div className={styles["service-icon"]}>
-              <Image src="/images/home/icon_desktop.png" alt="" width={200} height={200} priority />
-            </div>
-            <div className={styles["service-text"]}>
-              Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).
-            </div>
-          </div>
+          {services.map((service) => (
+            <ItemService key={service.text} text={service.text} icon={service.icon} icon_alt={service.icon_alt} />
+          ))}
         </div>
 
         <div className={styles["services-cta"]}>
