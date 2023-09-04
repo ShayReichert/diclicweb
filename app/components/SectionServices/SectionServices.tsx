@@ -7,18 +7,18 @@ export default function SectionServices() {
   const services = [
     {
       text: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
-      icon: "/images/home/icon_desktop.png",
-      icon_alt: "Icon d'ordinateur",
+      icon: "/images/home/icon_site.png",
+      icon_alt: "Icone de site internet",
     },
     {
       text: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
-      icon: "/images/home/icon_desktop.png",
-      icon_alt: "Icon d'ordinateur",
+      icon: "/images/home/icon_maintenance.png",
+      icon_alt: "Icone d'outil",
     },
     {
       text: " Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
-      icon: "/images/home/icon_desktop.png",
-      icon_alt: "Icon d'ordinateur",
+      icon: "/images/home/icon_code.png",
+      icon_alt: "Icone d'ordinateur",
     },
   ];
 
@@ -27,8 +27,8 @@ export default function SectionServices() {
       <div className={styles["section-content"]}>
         <h2 className={rocaOne.className}>Mes services</h2>
         <div className={styles["services-wrapper"]}>
-          {services.map((service) => (
-            <ItemService key={service.text} text={service.text} icon={service.icon} icon_alt={service.icon_alt} />
+          {services.map((service, index) => (
+            <ItemService key={index} text={service.text} icon={service.icon} icon_alt={service.icon_alt} />
           ))}
         </div>
 

@@ -16,7 +16,7 @@
   }
 
   .service-text {
-    @include fluid-font(14px, $font-size-body);
+    @include fluid-font(16px, $font-size-body);
     text-align: center;
   }
 }
