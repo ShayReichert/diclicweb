@@ -93,13 +93,13 @@ export default function NavBar() {
       <div className={`${styles["logo"]}  ${pathname === "/" ? styles["current"] : ""}`}>
         <Link href="/">
           <Image
-            src="/images/logo_baseline_white_panda.png"
+            src="/images/logo_baseline_white.png"
             alt="Logo de DiclicWeb"
             width={131}
             height={84}
             priority
             placeholder="blur"
-            blurDataURL="/images/logo_baseline_white_panda.png"
+            blurDataURL="/images/logo_baseline_white.png"
           />
         </Link>
       </div>
