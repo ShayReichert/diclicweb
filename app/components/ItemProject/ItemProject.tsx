@@ -16,12 +16,12 @@ export default function ItemProject({ title, subtitle, description, technology, 
       <div className={styles["project-image"]}>
         <Image
           src={image}
-          alt="Aperçu du site Jeux et talents"
+          alt={image_alt ? image_alt : ""}
           fill
           sizes="(max-width: 767px) 100vw, 33vw"
           priority
           placeholder="blur"
-          blurDataURL={image_alt}
+          blurDataURL={image}
         />
       </div>
       <div className={styles["project-content"]}>

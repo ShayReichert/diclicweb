@@ -7,7 +7,7 @@
   margin: 5rem 5%;
   max-width: 25rem;
 
-  @include devices(tablet) {
+  @include devices(large_tablet) {
     margin: 3rem 5%;
   }
 

@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 const almarai = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
 export const metadata: Metadata = {
-  title: "DiclicWeb - Création de sites web engagés",
+  title: "Diclicweb - Création de sites web engagés",
   description: "Je crée des sites wordpress éthiques et responsables pour des projets engagés",
 };
 
