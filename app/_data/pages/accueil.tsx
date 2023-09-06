@@ -1,0 +1,89 @@
+import Link from "next/link";
+
+export const sectionTitleData = {
+  title: "Diclicweb",
+  baseline: "Création de sites engagés",
+};
+
+export const sectionCatchphraseData = {
+  text: "Artisanat, écologie, art, éducation, culture, projets associatifs : je mets mes compétences au service de projets qui contribuent à un monde dans lequel je veux de vivre 🌱",
+};
+
+export const sectionServicesData = {
+  services: [
+    {
+      text: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
+      icon: "/images/home/icon_site.png",
+      icon_alt: "Icone de site internet",
+    },
+    {
+      text: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
+      icon: "/images/home/icon_maintenance.png",
+      icon_alt: "Icone d'outil",
+    },
+    {
+      text: " Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
+      icon: "/images/home/icon_code.png",
+      icon_alt: "Icone d'ordinateur",
+    },
+  ],
+};
+
+export const sectionProjectsData = {
+  projects: [
+    {
+      title: "Jeux et talents",
+      subtitle: "Jeux éducatifs à imprimer",
+      description: "Site e-commerce Wordpress",
+      technology: "Divi + thème enfant",
+      image: "/images/home/jeuxettalents.webp",
+      image_alt: "Aperçu du site Jeux et talents",
+    },
+    {
+      title: "Mandapunk",
+      subtitle: "Couture alternative / créations engagées",
+      description: "Site e-commerce Wordpress",
+      technology: "Botiga + thème enfant",
+      image: "/images/home/mandapunk.webp",
+      image_alt: "Aperçu du site Mandapunk",
+    },
+    {
+      title: "La Queer Bogossité",
+      subtitle: "Bougies artisanales déviantes",
+      description: "Site e-commerce Wordpress",
+      technology: "Divi + thème enfant",
+      image: "/images/home/qb.webp",
+      image_alt: "Aperçu du site La Queer Bogossité",
+    },
+  ],
+};
+
+export const sectionAboutData = {
+  title: "Je me présente",
+  text: [
+    <>
+      <p>
+        Je m’appelle Shay et après plusieurs années de travail pour une agence web, j’ai décidé de me lancer en tant que
+        <strong> freelance Wordpress</strong> pour mettre mes compétences au service de projets qui ont du sens pour moi. J’ai décidé de me
+        spécialiser dans la création de <strong>sites internet engagés</strong> (dans les milieux culturels, artistiques, éducatifs, artisanaux,
+        associatifs...).
+      </p>
+      <p>
+        Je travaille régulièrement avec des personnes sensibles tout comme moi aux questions
+        <strong> d’éco-conception, d’inclusivité et d’accessibilité.</strong>
+      </p>
+      <p>
+        Durant mes collaborations, j’aime construire une relation où la communication et la transparence passent en priorité, dans une ambiance
+        <strong> bienveillante et conviviale </strong>! 😊
+      </p>
+      <p>
+        Pour plus d’informations sur mon parcours, mes engagements et mes outils,{" "}
+        <Link href="/a-propos" role="link">
+          rendez-vous ici.
+        </Link>
+      </p>
+    </>,
+  ],
+  image: "/images/home/a-propos.webp",
+  image_alt: "image description",
+};

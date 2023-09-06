@@ -3,15 +3,19 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import Image from "next/image";
 
 interface SectionAboutProps {
-  title: string;
-  text: JSX.Element;
-  image: string;
-  image_alt?: string;
+  data: {
+    title: string;
+    text: JSX.Element[];
+    image: string;
+    image_alt?: string;
+  };
   has_button?: boolean;
   button?: JSX.Element;
 }
 
-export default function SectionAbout({ title, text, image, image_alt, has_button = false, button }: SectionAboutProps) {
+export default function SectionAbout({ data, has_button = false, button }: SectionAboutProps) {
+  const { title, text, image, image_alt } = data;
+
   return (
     <section className={styles["section-about"]}>
       <div className={styles["content-wrapper"]}>

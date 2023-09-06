@@ -4,10 +4,14 @@ import { Overpass_Mono } from "next/font/google";
 const overpassMono = Overpass_Mono({ subsets: ["latin"], weight: ["300"] });
 
 interface SectionCatchPhraseProps {
-  text: string;
+  data: {
+    text: string;
+  };
 }
 
-export default function SectionCatchPhrase({ text }: SectionCatchPhraseProps) {
+export default function SectionCatchPhrase({ data }: SectionCatchPhraseProps) {
+  const { text } = data;
+
   return (
     <section className={styles["section-catchphrase"]}>
       <div className={styles["background-circle"]}></div>

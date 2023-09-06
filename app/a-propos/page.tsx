@@ -1,14 +1,12 @@
-import Image from "next/image";
-import styles from "../styles/a-propos.module.scss";
-import { rocaOne } from "../styles/fonts/font-face";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "../components/SectionCatchPhrase/SectionCatchPhrase";
+import { sectionCatchphraseData, sectionTitleData } from "../_data/pages/a-propos";
 
 export default function About() {
   return (
     <main>
-      <SectionTitle title="À propos" />
-      <SectionCatchPhrase text="Je m’appelle Shay 👋" />
+      <SectionTitle data={sectionTitleData} />
+      <SectionCatchPhrase data={sectionCatchphraseData} />
     </main>
   );
 }

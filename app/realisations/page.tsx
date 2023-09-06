@@ -1,14 +1,12 @@
-import Image from "next/image";
-import styles from "../styles/realisations.module.scss";
-import { rocaOne } from "../styles/fonts/font-face";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "../components/SectionCatchPhrase/SectionCatchPhrase";
+import { sectionCatchphraseData, sectionTitleData } from "../_data/pages/realisations";
 
 export default function Projects() {
   return (
     <main>
-      <SectionTitle title="Réalisations" />
-      <SectionCatchPhrase text="Je vous présente les derniers projets de sites web sur lesquels j’ai eu le plaisir de travailler 😊" />
+      <SectionTitle data={sectionTitleData} />
+      <SectionCatchPhrase data={sectionCatchphraseData} />
     </main>
   );
 }

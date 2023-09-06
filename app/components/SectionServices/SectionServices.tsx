@@ -3,24 +3,20 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import ItemService from "../ItemService/ItemService";
 
-export default function SectionServices() {
-  const services = [
-    {
-      text: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
-      icon: "/images/home/icon_site.png",
-      icon_alt: "Icone de site internet",
-    },
-    {
-      text: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
-      icon: "/images/home/icon_maintenance.png",
-      icon_alt: "Icone d'outil",
-    },
-    {
-      text: " Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
-      icon: "/images/home/icon_code.png",
-      icon_alt: "Icone d'ordinateur",
-    },
-  ];
+interface Service {
+  text: string;
+  icon: string;
+  icon_alt: string;
+}
+
+interface SectionServicesProps {
+  data: {
+    services: Service[];
+  };
+}
+
+export default function SectionServices({ data }: SectionServicesProps) {
+  const { services } = data;
 
   return (
     <section className={styles["section-services"]}>

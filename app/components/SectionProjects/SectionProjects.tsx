@@ -3,33 +3,23 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import ItemProject from "../ItemProject/ItemProject";
 
-export default function SectionProjects() {
-  const projects = [
-    {
-      title: "Jeux et talents",
-      subtitle: "Jeux éducatifs à imprimer",
-      description: "Site e-commerce Wordpress",
-      technology: "Divi + thème enfant",
-      image: "/images/home/jeuxettalents.webp",
-      image_alt: "Aperçu du site Jeux et talents",
-    },
-    {
-      title: "Mandapunk",
-      subtitle: "Couture alternative / créations engagées",
-      description: "Site e-commerce Wordpress",
-      technology: "Botiga + thème enfant",
-      image: "/images/home/mandapunk.webp",
-      image_alt: "Aperçu du site Mandapunk",
-    },
-    {
-      title: "La Queer Bogossité",
-      subtitle: "Bougies artisanales déviantes",
-      description: "Site e-commerce Wordpress",
-      technology: "Divi + thème enfant",
-      image: "/images/home/qb.webp",
-      image_alt: "Aperçu du site La Queer Bogossité",
-    },
-  ];
+interface Project {
+  title: string;
+  subtitle: string;
+  description: string;
+  technology: string;
+  image: string;
+  image_alt: string;
+}
+
+interface SectionProjectsProps {
+  data: {
+    projects: Project[];
+  };
+}
+
+export default function SectionProjects({ data }: SectionProjectsProps) {
+  const { projects } = data;
 
   return (
     <section className={styles["section-projects"]}>
