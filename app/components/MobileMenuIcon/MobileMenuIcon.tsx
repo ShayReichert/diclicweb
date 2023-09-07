@@ -1,10 +1,5 @@
 import styles from "./MobileMenuIcon.module.scss";
 
-interface MobileMenuIconProps {
-  isOpen: boolean;
-  onClick: () => void;
-}
-
 export default function MobileMenuIcon({ isOpen, onClick }: MobileMenuIconProps) {
   return (
     <div

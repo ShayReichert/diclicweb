@@ -2,17 +2,6 @@ import styles from "./SectionAbout.module.scss";
 import { rocaOne } from "../../styles/fonts/font-face";
 import Image from "next/image";
 
-interface SectionAboutProps {
-  data: {
-    title: string;
-    text: JSX.Element[];
-    image: string;
-    image_alt?: string;
-  };
-  has_button?: boolean;
-  button?: JSX.Element;
-}
-
 export default function SectionAbout({ data, has_button = false, button }: SectionAboutProps) {
   const { title, text, image, image_alt } = data;
 

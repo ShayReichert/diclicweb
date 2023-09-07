@@ -6,12 +6,6 @@ import Link from "next/link";
 import { splitButtonText } from "@/app/utils/splitButtonText";
 import { rocaOne } from "../../styles/fonts/font-face";
 
-interface ButtonProps {
-  text: string;
-  href: string;
-  isTargetBlank?: boolean;
-}
-
 export default function Button({ text, href, isTargetBlank = false }: ButtonProps) {
   const buttonRef = useRef<HTMLAnchorElement | null>(null);
 

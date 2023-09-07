@@ -1,12 +1,6 @@
 import styles from "./ItemService.module.scss";
 import Image from "next/image";
 
-interface ItemServiceProps {
-  text: string;
-  icon: string;
-  icon_alt?: string;
-}
-
 export default function ItemService({ text, icon, icon_alt }: ItemServiceProps) {
   return (
     <div className={styles["service"]}>

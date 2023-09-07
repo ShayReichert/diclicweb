@@ -1,15 +1,6 @@
 import styles from "./ItemProject.module.scss";
 import Image from "next/image";
 
-interface ItemProjectProps {
-  title: string;
-  subtitle: string;
-  description: string;
-  technology: string;
-  image: string;
-  image_alt?: string;
-}
-
 export default function ItemProject({ title, subtitle, description, technology, image, image_alt }: ItemProjectProps) {
   return (
     <div className={styles["project"]}>

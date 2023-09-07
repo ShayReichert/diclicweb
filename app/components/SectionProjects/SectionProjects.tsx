@@ -3,21 +3,6 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import ItemProject from "../ItemProject/ItemProject";
 
-interface Project {
-  title: string;
-  subtitle: string;
-  description: string;
-  technology: string;
-  image: string;
-  image_alt: string;
-}
-
-interface SectionProjectsProps {
-  data: {
-    projects: Project[];
-  };
-}
-
 export default function SectionProjects({ data }: SectionProjectsProps) {
   const { projects } = data;
 

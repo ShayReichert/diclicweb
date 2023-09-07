@@ -3,18 +3,6 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import ItemService from "../ItemService/ItemService";
 
-interface Service {
-  text: string;
-  icon: string;
-  icon_alt: string;
-}
-
-interface SectionServicesProps {
-  data: {
-    services: Service[];
-  };
-}
-
 export default function SectionServices({ data }: SectionServicesProps) {
   const { services } = data;
 

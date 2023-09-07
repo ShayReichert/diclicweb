@@ -2,14 +2,6 @@ import styles from "./SectionTitle.module.scss";
 import Image from "next/image";
 import { rocaOne } from "../../styles/fonts/font-face";
 
-interface SectionTitleProps {
-  data: {
-    title: string;
-    baseline?: string;
-  };
-  has_decoration?: boolean;
-}
-
 export default function SectionTitle({ data, has_decoration = true }: SectionTitleProps) {
   const { title, baseline } = data;
 
