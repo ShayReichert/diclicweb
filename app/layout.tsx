@@ -1,7 +1,7 @@
 import "./styles/global/globals.scss";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import NavBar from "./components/NavBar/NavBar";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 const almarai = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
@@ -15,9 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body className={almarai.className}>
-        <header>
-          <NavBar />
-        </header>
+        <Header />
         {children}
         <Footer />
       </body>

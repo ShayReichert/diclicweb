@@ -1,0 +1,174 @@
+@import "../../styles/global/mixins";
+
+html:has(.mobile-menu-open) {
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+
+  &.scroll-menu {
+    .navbar {
+      height: $scroll-menu-desktop-height;
+    }
+
+    .logo {
+      transform: scale(0.7);
+
+      @include devices(large_tablet) {
+        transform: none;
+      }
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: $max-width;
+    height: $menu-desktop-height;
+    transition: height 0.3s ease;
+
+    @include devices(large_tablet) {
+      height: $menu-mobile-height;
+    }
+
+    // Background menu mobile
+    @include before(0, 0) {
+      position: fixed;
+      background-color: $primary-color;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      will-change: width, height;
+      transition: transform 0.65s cubic-bezier(0.04, -0.1, 0.29, 0.98), width 0.65s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+        height 0.65s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+    }
+
+    .logo {
+      opacity: 0.8;
+      z-index: $zindex-menu + 1;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+
+      img {
+        @include devices(large_tablet) {
+          @include size(95px, auto);
+        }
+      }
+
+      &.current,
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .links {
+      position: relative;
+      display: flex;
+      align-items: center;
+      letter-spacing: 1px;
+      transition: opacity 0.2s ease;
+
+      @include devices(large_tablet) {
+        @include size(0);
+        visibility: hidden;
+        opacity: 0;
+        transition: none;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 3rem;
+
+        &.current {
+          a {
+            opacity: 1;
+
+            @include devices(large_tablet) {
+              @include before(100%, 2px) {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                background-color: $white;
+                transition: all 0.35s ease;
+              }
+            }
+          }
+        }
+
+        a {
+          @include fluid-font(18px, 19px);
+          opacity: 0.7;
+          position: relative;
+          padding: 1rem 0;
+          transition: opacity 0.35s ease;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          @include devices(large_tablet) {
+            @include fluid-font(30px, 50px);
+          }
+        }
+      }
+
+      .moving-bar {
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 1px;
+        background-color: $white;
+        border-radius: $border-radius;
+        transition: all 0.3s cubic-bezier(0.68, -0.2, 0.265, 1.2);
+
+        @include devices(large_tablet) {
+          display: none;
+        }
+      }
+    }
+
+    &.mobile-menu-open {
+      // Background menu mobile
+      &:before {
+        width: 100vmax;
+        height: calc(100vh - #{$menu-desktop-height});
+        transform: translate3d(50vh, -50vh, 0) scale(5);
+        transition-duration: 1s;
+        z-index: $zindex-menu;
+      }
+
+      .links {
+        @include size();
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 8.6rem;
+        left: 0;
+        padding: 10% 0;
+        z-index: $zindex-menu + 1;
+
+        @include devices(large_tablet) {
+          @include size();
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0.7s, opacity 0.5s linear 0.2s;
+        }
+
+        li {
+          padding: 1rem 0;
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
