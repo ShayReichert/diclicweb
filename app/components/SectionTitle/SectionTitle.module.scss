@@ -31,34 +31,40 @@
     }
 
     h1 {
+      @include title-fade-in-up();
       position: relative;
       text-align: center;
+      line-height: 1.4;
+      margin-top: -1.4rem;
 
       &.has_decoration {
-        @include underline(65%, 2.9rem, true) {
+        @include underline(65%, 2.9rem, true, 0.5s) {
           right: -27px;
           top: auto;
-          bottom: 4px;
+          bottom: 20px;
 
           @include devices(large_tablet) {
             height: 2.5rem;
             right: -17px;
+            bottom: 10px;
           }
         }
       }
     }
 
     .baseline {
+      @include title-fade-in-up(0.3s);
       position: relative;
       font-size: 22px;
       font-weight: 600;
       text-transform: uppercase;
+      margin-top: -1.4rem;
 
       @include devices(large_tablet) {
         font-size: 16px;
       }
 
-      @include underline(52%, 1.6rem, true) {
+      @include underline(52%, 1.6rem, true, 1s) {
         right: -12px;
         top: auto;
         bottom: -4px;

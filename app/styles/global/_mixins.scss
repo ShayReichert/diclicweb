@@ -142,7 +142,7 @@
   }
 }
 
-@mixin underline($width: 40%, $height: 2.5rem, $has_animation: false) {
+@mixin underline($width: 40%, $height: 2.5rem, $has_animation: false, $delay: 0s) {
   @include after($width, $height) {
     position: absolute;
     background-color: $accent-color;
@@ -152,7 +152,7 @@
     @content;
 
     @if $has_animation {
-      @include underline-animation();
+      @include underline-animation($delay);
     }
   }
 }
@@ -180,8 +180,9 @@
 
 // ----- ANIMATIONS ----- //
 
-@mixin underline-animation() {
-  animation: underline-enter 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 300ms;
+@mixin underline-animation($delay) {
+  animation: underline-enter 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: $delay;
   transform-origin: left;
 
   @keyframes underline-enter {
@@ -190,6 +191,29 @@
     }
     100% {
       transform: scaleX(1);
+    }
+  }
+}
+
+@mixin title-fade-in-up($delay: 0s) {
+  overflow: hidden;
+
+  span {
+    display: inline-block;
+    transform: translateY(100%);
+    animation: title-fade-in 0.6s cubic-bezier(0.63, 0.5, 0.62, 1.2) forwards;
+    animation-delay: $delay;
+  }
+
+  @keyframes title-fade-in {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

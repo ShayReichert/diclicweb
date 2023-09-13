@@ -19,8 +19,16 @@ export default function SectionTitle({ data, has_decoration = true }: SectionTit
             blurDataURL="/images/logo_blue.png"
           />
         </div>
-        {title && <h1 className={`${rocaOne.className} ${has_decoration ? styles["has_decoration"] : ""}`}>{title}</h1>}
-        {baseline && <p className={styles["baseline"]}>{baseline}</p>}
+        {title && (
+          <h1 className={`${rocaOne.className} ${has_decoration ? styles["has_decoration"] : ""}`}>
+            <span>{title}</span>
+          </h1>
+        )}
+        {baseline && (
+          <p className={styles["baseline"]}>
+            <span>{baseline}</span>
+          </p>
+        )}
       </div>
     </section>
   );
