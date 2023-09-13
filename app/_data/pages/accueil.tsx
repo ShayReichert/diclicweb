@@ -9,26 +9,6 @@ export const sectionCatchphraseData = {
   text: "Artisanat, écologie, art, éducation, culture, projets associatifs : je mets mes compétences au service de projets qui contribuent à un monde dans lequel je veux de vivre 🌱",
 };
 
-export const sectionServicesData = {
-  services: [
-    {
-      text: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
-      icon: "/images/home/icon_site.png",
-      icon_alt: "Icone de site internet",
-    },
-    {
-      text: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
-      icon: "/images/home/icon_maintenance.png",
-      icon_alt: "Icone d'outil",
-    },
-    {
-      text: " Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
-      icon: "/images/home/icon_code.png",
-      icon_alt: "Icone d'ordinateur",
-    },
-  ],
-};
-
 export const sectionProjectsData = {
   projects: [
     {

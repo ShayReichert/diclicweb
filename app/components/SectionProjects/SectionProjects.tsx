@@ -12,15 +12,7 @@ export default function SectionProjects({ data }: SectionProjectsProps) {
         <h2 className={rocaOne.className}>Mes dernières réalisations</h2>
         <div className={styles["projects-wrapper"]}>
           {projects.map((project, index) => (
-            <ItemProject
-              key={index}
-              title={project.title}
-              subtitle={project.subtitle}
-              description={project.description}
-              technology={project.technology}
-              image={project.image}
-              image_alt={project.image_alt}
-            />
+            <ItemProject key={index} {...project} />
           ))}
         </div>
 
