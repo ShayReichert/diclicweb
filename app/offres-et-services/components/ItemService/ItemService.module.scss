@@ -3,17 +3,29 @@
 .service {
   display: flex;
   width: calc(100% / 2);
-  max-width: calc(($max-width - 10rem) / 2);
+  max-width: calc($max-content / 2);
   padding: 5rem 4rem;
 
   @include devices(large_tablet) {
-    flex-direction: column;
-    align-items: center;
+    padding: 3rem 2rem;
     width: 100%;
   }
 
+  .service-icon {
+    img {
+      @include devices(large_tablet) {
+        width: 45px;
+        height: auto;
+      }
+    }
+  }
+
   &-content {
-    margin: 2rem 1rem 0;
+    margin: 2rem 1rem 0 1.5rem;
+
+    @include devices(large_tablet) {
+      margin: 1rem 1rem 0;
+    }
 
     h2 {
       @include fluid-font(24px, $font-size-h3);

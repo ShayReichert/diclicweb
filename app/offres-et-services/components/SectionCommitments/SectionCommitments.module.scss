@@ -1,0 +1,34 @@
+@import "../../../styles/global/mixins";
+
+.section-commitments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  color: $white;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: $max-content;
+    padding: 15rem 0;
+
+    h2 {
+      position: relative;
+      text-align: center;
+      margin: 0 2rem 3rem;
+    }
+
+    .commitments-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @include devices(large_tablet) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

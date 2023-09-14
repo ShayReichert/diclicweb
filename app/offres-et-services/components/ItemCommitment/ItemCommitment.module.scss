@@ -1,0 +1,49 @@
+@import "../../../styles/global/mixins";
+
+.commitment {
+  display: flex;
+  margin: 5rem 1rem;
+  width: calc(100% / 3);
+  min-width: 32rem;
+  height: 36rem;
+  border-radius: 20px;
+  background-color: $white;
+  color: $primary-color;
+
+  @include devices(large_tablet) {
+    height: auto;
+    min-width: 35rem;
+    margin: 1rem;
+  }
+
+  .commitment-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3.5rem;
+
+    .top {
+      margin-bottom: 4rem;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    .bottom {
+      position: relative;
+
+      p {
+        @include fluid-font(16px, $font-size-body);
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

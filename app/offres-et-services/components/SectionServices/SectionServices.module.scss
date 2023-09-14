@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: calc($max-width - 10rem);
+    max-width: $max-content;
     padding: 13rem 0;
 
     @include devices(large_tablet) {

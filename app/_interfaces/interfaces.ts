@@ -107,3 +107,17 @@ interface ItemProjectProps {
   image: string;
   image_alt?: string;
 }
+
+// ItemCommitment
+interface ItemCommitmentProps {
+  title: string;
+  text: JSX.Element[];
+  icon: string;
+  icon_alt?: string;
+}
+
+interface SectionCommitmentsProps {
+  data: {
+    commitments: ItemCommitmentProps[];
+  };
+}
