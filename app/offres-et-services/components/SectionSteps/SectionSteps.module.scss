@@ -1,0 +1,68 @@
+@import "../../../styles/partials/mixins";
+
+.section-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $max-content;
+    margin: 15rem 1rem 3rem;
+
+    h2 {
+      position: relative;
+      text-align: center;
+      margin: 0 2rem 3rem;
+
+      @include devices(large_tablet) {
+        margin: 0 2rem 0;
+      }
+
+      @include underline(25%, 2.4rem) {
+        right: -27px;
+        top: auto;
+        bottom: 4px;
+
+        @include devices(large_tablet) {
+          width: 55%;
+          height: 1.8rem;
+          right: 3px;
+          bottom: 2px;
+        }
+      }
+
+      span {
+        @include devices(large_tablet) {
+          display: block;
+        }
+      }
+    }
+
+    .steps-wrapper {
+      $padding-step: 10rem;
+
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      padding: $padding-step 0;
+
+      @include before(5px, calc(100% - $padding-step * 3)) {
+        position: absolute;
+        top: $padding-step;
+        left: 50%;
+        background-color: $primary-color;
+        z-index: -1;
+      }
+
+      @include devices(large_tablet) {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+  }
+}

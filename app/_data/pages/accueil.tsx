@@ -64,6 +64,6 @@ export const sectionAboutData = {
       </p>
     </>,
   ],
-  image: "/images/home/a-propos.webp",
+  image: "/images/home/a_propos.webp",
   image_alt: "image description",
 };

@@ -1,4 +1,4 @@
-@import "../../styles/global/mixins";
+@import "../../styles/partials/mixins";
 
 html:has(.mobile-menu-open) {
   overflow: hidden;

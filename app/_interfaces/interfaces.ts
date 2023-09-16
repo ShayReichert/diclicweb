@@ -121,3 +121,19 @@ interface SectionCommitmentsProps {
     commitments: ItemCommitmentProps[];
   };
 }
+
+// ItemSteps
+interface ItemStepsProps {
+  title: string;
+  text: JSX.Element[];
+  image: string;
+  image_alt?: string;
+  isEven?: boolean;
+  stepNumber?: number;
+}
+
+interface StepsProps {
+  data: {
+    steps: ItemStepsProps[];
+  };
+}

@@ -1,4 +1,4 @@
-@import "../../styles/global/mixins";
+@import "../../styles/partials/mixins";
 
 .section-title {
   @include size(100%, calc(100vh - $menu-desktop-height));

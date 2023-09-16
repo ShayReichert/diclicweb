@@ -178,6 +178,11 @@
   }
 }
 
+@mixin border($width: 5px, $color: $primary-color, $radius: 15px) {
+  border: $width solid $color;
+  border-radius: $radius;
+}
+
 // ----- ANIMATIONS ----- //
 
 @mixin underline-animation($delay) {
