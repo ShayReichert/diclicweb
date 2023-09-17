@@ -51,17 +51,18 @@
       width: 100%;
       padding: $padding-step 0;
 
+      @include devices(large_tablet) {
+        padding: 6rem 0;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
       @include before(5px, calc(100% - $padding-step * 3)) {
         position: absolute;
         top: $padding-step;
         left: 50%;
         background-color: $primary-color;
         z-index: -1;
-      }
-
-      @include devices(large_tablet) {
-        flex-wrap: wrap;
-        align-items: center;
       }
     }
   }

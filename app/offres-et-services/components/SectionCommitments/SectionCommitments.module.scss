@@ -19,6 +19,10 @@
       position: relative;
       text-align: center;
       margin: 0 2rem 3rem;
+
+      @include devices(large_tablet) {
+        margin: 0 2rem 5rem;
+      }
     }
 
     .commitments-wrapper {

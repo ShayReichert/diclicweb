@@ -137,3 +137,19 @@ interface StepsProps {
     steps: ItemStepsProps[];
   };
 }
+
+// ItemReview
+interface ItemReviewProps {
+  id: number;
+  author: string;
+  image: string;
+  image_alt?: string;
+  notation: number;
+  text: JSX.Element[];
+}
+
+interface SectionReviewsProps {
+  data: {
+    reviews: ItemReviewProps[];
+  };
+}

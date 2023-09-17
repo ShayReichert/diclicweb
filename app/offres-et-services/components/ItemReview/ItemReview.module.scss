@@ -1,0 +1,89 @@
+@import "../../../styles/partials/mixins";
+
+.review {
+  display: flex;
+  margin: 5rem 1rem;
+  width: calc(100% / 3);
+  min-width: 32rem;
+  border-radius: 20px;
+  background-color: $white;
+  color: $primary-color;
+
+  @include devices(large_tablet) {
+    height: auto;
+    width: 90%;
+    min-width: 35rem;
+    margin: 1rem;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    .top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4rem;
+
+      @include devices(large_tablet) {
+        flex-direction: column;
+      }
+
+      .image-wrapper {
+        @include size(84px);
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @include devices(large_tablet) {
+          margin: 0 3rem 2rem;
+        }
+
+        img {
+          width: auto !important;
+        }
+      }
+
+      .author-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3.5rem;
+
+        @include devices(large_tablet) {
+          align-items: center;
+          margin-left: 0;
+        }
+
+        .author {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .notation {
+          .star {
+            font-size: 16px;
+
+            &:not(:last-child) {
+              margin-right: 0.2rem;
+            }
+
+            &.invisble {
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      margin: 0 1rem;
+
+      p {
+        @include fluid-font(16px, $font-size-body);
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
