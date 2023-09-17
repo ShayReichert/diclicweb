@@ -6,7 +6,7 @@
   overflow: hidden;
 
   .background-circle {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     width: 100vw;
     height: 10rem;
     clip-path: ellipse(60% 100% at 50% 0%);
@@ -14,7 +14,8 @@
   }
 
   .background-content {
-    background-color: $primary-color;
+    background-color: $secondary-color;
+    // background-color: $primary-color;
     margin-top: -2px;
     padding: 8rem 0.5rem 20rem;
     display: flex;
@@ -25,13 +26,17 @@
       margin-top: 1rem;
       font-weight: 300;
     }
+
+    a {
+      background-color: transparent;
+    }
   }
 
   .subfooter {
     @include before(320px, 0px);
     position: relative;
     display: flex;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     justify-content: space-between;
     padding: 1rem 7%;
     z-index: 1;

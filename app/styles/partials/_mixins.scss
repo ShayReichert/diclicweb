@@ -178,7 +178,7 @@
   }
 }
 
-@mixin border($width: 5px, $color: $primary-color, $radius: 15px) {
+@mixin border($width: 5px, $color: $secondary-color, $radius: 15px) {
   border: $width solid $color;
   border-radius: $radius;
 }

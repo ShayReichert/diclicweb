@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  color: $primary-color;
+  color: $secondary-color;
   background-color: $background-color;
 }
 
@@ -30,15 +30,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-// ----- HEADER ----- //
-
-header {
-  background-color: $primary-color;
-  color: $white;
-  position: relative;
-  z-index: $zindex-menu;
 }
 
 // ----- SECTIONS ----- //

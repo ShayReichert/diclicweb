@@ -8,7 +8,7 @@
   height: 36rem;
   border-radius: 20px;
   background-color: $white;
-  color: $primary-color;
+  color: $secondary-color;
 
   @include devices(large_tablet) {
     height: auto;
