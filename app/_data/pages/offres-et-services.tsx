@@ -121,3 +121,61 @@ export const sectionStepsData = {
     },
   ],
 };
+
+export const sectionFAQData = {
+  faq: [
+    {
+      question: "Pourquoi faire appel à un freelance Wordpress pour faire mon site ?",
+      answer: [
+        <>
+          <p>
+            Vous gagnerez du temps (et donc de l’argent) ! <br />
+            Même si ça peut sembler contre intuitif, créer un site professionnel de qualité demande du temps et des connaissances. Il est souvent
+            préférable de pouvoir se concentrer sur son activité en déléguant la création et la gestion technique de son site web à des
+            développeur·euses et webmasters spécialisé·es dans ce domaine.
+          </p>
+        </>,
+      ],
+    },
+    {
+      question: "Combien me coûtera un site web ? ",
+      answer: [
+        <>
+          <p>
+            C’est une bonne question ! Les prix peuvent varier beaucoup selon le nombre de pages voulues, les fonctionnalités à inclure, si c’est un
+            site vitrine ou e-commerce…
+          </p>
+          <p>Créer un site peut prendre quelques jours, parfois quelques semaines, parfois même jusqu’à plusieurs mois !</p>
+          <p>Pour vous donner une idée, je peux vous donner des fourchettes de prix :</p>
+          <ul>
+            <li>Un site vitrine : entre 1400 et 2800€ (10 pages max)</li>
+            <li>Un site e-commerce : à partir de 3000€ (dépendra de la taille de la boutique)</li>
+            <li>Un site sur-mesure : généralement à partir de 2450€</li>
+          </ul>
+        </>,
+      ],
+    },
+    {
+      question: "Combien coûtent les plans de maintenance ?",
+      answer: [
+        <>
+          <p>
+            Je propose 3 plans de maintenance et support allant de 49€ à 199€/mois. Possibilité également de plans de maintenance sur mesure selon tes
+            besoins
+          </p>
+        </>,
+      ],
+    },
+    {
+      question: "Je n’ai pas encore crée mon entreprise / ma structure, est-ce que je peux tout de même vous contacter pour la création d’un site ?",
+      answer: [
+        <>
+          <p>
+            Bien sûr, le plus tôt sera le mieux ! Je suis là pour vous aider à concrétiser votre projet, que vous soyez déjà établi ou que vous soyez
+            encore en phase de création. Contactez-moi et nous discuterons de vos besoins et des meilleures solutions pour votre site.
+          </p>
+        </>,
+      ],
+    },
+  ],
+};

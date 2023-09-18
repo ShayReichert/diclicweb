@@ -46,6 +46,29 @@ interface SectionAboutProps {
   button?: JSX.Element;
 }
 
+// SectionFAQ
+interface ItemFAQProps {
+  item: {
+    question: string;
+    answer: JSX.Element[];
+  };
+  index: number;
+  handleToggle: (index: number) => void;
+  openIndex: number;
+  answerRefs: React.MutableRefObject<HTMLDivElement | null>[];
+}
+
+interface FAQProps {
+  data: {
+    faq: [
+      {
+        question: string;
+        answer: JSX.Element[];
+      }
+    ];
+  };
+}
+
 //////////////////////
 // ENTITIES
 //////////////////////
