@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 import styles from "./ItemFAQ.module.scss";
 import Image from "next/image";
 

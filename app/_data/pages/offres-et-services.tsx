@@ -128,11 +128,11 @@ export const sectionFAQData = {
       question: "Pourquoi faire appel à un freelance Wordpress pour faire mon site ?",
       answer: [
         <>
+          <p>Vous gagnerez du temps (et donc de l’argent) ! 💰</p>
           <p>
-            Vous gagnerez du temps (et donc de l’argent) ! <br />
-            Même si ça peut sembler contre intuitif, créer un site professionnel de qualité demande du temps et des connaissances. Il est souvent
-            préférable de pouvoir se concentrer sur son activité en déléguant la création et la gestion technique de son site web à des
-            développeur·euses et webmasters spécialisé·es dans ce domaine.
+            Même si ça peut sembler contre intuitif, créer un site professionnel de qualité demande du<strong> temps et des connaissances</strong>. Il
+            est souvent préférable de pouvoir se concentrer sur son activité en déléguant<strong> la création et la gestion technique </strong>de son
+            site web à des développeur·euses et webmasters spécialisé·es dans ce domaine.
           </p>
         </>,
       ],
@@ -142,15 +142,21 @@ export const sectionFAQData = {
       answer: [
         <>
           <p>
-            C’est une bonne question ! Les prix peuvent varier beaucoup selon le nombre de pages voulues, les fonctionnalités à inclure, si c’est un
-            site vitrine ou e-commerce…
+            Les prix peuvent varier beaucoup selon<strong> le nombre de pages voulues</strong>, les<strong> fonctionnalités à inclure</strong>, si
+            c’est <strong>un site vitrine ou e-commerce</strong>… Créer un site peut prendre quelques jours ou quelques semaines, parfois même jusqu’à
+            plusieurs mois !
           </p>
-          <p>Créer un site peut prendre quelques jours, parfois quelques semaines, parfois même jusqu’à plusieurs mois !</p>
-          <p>Pour vous donner une idée, je peux vous donner des fourchettes de prix :</p>
+          <p>Pour vous donner une idée, voici des fourchettes de prix :</p>
           <ul>
-            <li>Un site vitrine : entre 1400 et 2800€ (10 pages max)</li>
-            <li>Un site e-commerce : à partir de 3000€ (dépendra de la taille de la boutique)</li>
-            <li>Un site sur-mesure : généralement à partir de 2450€</li>
+            <li>
+              <strong>Un site vitrine </strong>: entre 1400 et 2800€ (10 pages max)
+            </li>
+            <li>
+              <strong>Un site e-commerce </strong>: à partir de 3000€ (dépend de la taille de la boutique)
+            </li>
+            <li>
+              <strong>Un site sur-mesure </strong>: généralement à partir de 2500€
+            </li>
           </ul>
         </>,
       ],
@@ -160,8 +166,8 @@ export const sectionFAQData = {
       answer: [
         <>
           <p>
-            Je propose 3 plans de maintenance et support allant de 49€ à 199€/mois. Possibilité également de plans de maintenance sur mesure selon tes
-            besoins
+            Je propose 3 plans de maintenance et support allant de<strong> 49€ à 199€/mois </strong>(possibilité également de plans de maintenance sur
+            mesure selon vos besoins).
           </p>
         </>,
       ],
@@ -171,8 +177,11 @@ export const sectionFAQData = {
       answer: [
         <>
           <p>
-            Bien sûr, le plus tôt sera le mieux ! Je suis là pour vous aider à concrétiser votre projet, que vous soyez déjà établi ou que vous soyez
-            encore en phase de création. Contactez-moi et nous discuterons de vos besoins et des meilleures solutions pour votre site.
+            Bien sûr,<strong> le plus tôt sera le mieux </strong>! Je suis là pour vous aider à concrétiser votre projet, que vous soyez déjà établi
+            ou que vous soyez encore en phase de création.
+          </p>
+          <p>
+            <strong>Contactez-moi </strong>et nous discuterons de vos besoins et des meilleures solutions pour votre site 😉
           </p>
         </>,
       ],

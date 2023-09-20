@@ -1,14 +1,35 @@
 @import "../../../styles/partials/mixins";
 
 .faq-item {
+  &:first-child .question {
+    border-radius: 15px 15px 0 0;
+  }
+
+  &:last-child .answer {
+    border-radius: 0 0 15px 15px;
+  }
   .question {
     display: flex;
+    justify-content: space-between;
+    padding: 5rem;
     background-color: $primary-color;
     color: $white;
+    border-bottom: 1px solid $white;
     cursor: pointer;
 
+    @include devices(large_tablet) {
+      padding: 2rem;
+    }
+
     h3 {
+      display: flex;
+      align-items: center;
       font-size: 20px;
+      line-height: 1.1;
+
+      @include devices(large_tablet) {
+        font-size: 16px;
+      }
     }
 
     .arrow-up,
@@ -16,6 +37,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: 2rem;
       transition: transform 0.3s ease-in-out;
     }
 
@@ -25,8 +47,41 @@
   }
 
   .answer {
-    transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     height: 0;
     overflow: hidden;
+    padding: 0 5rem;
+    background-color: $blue-light;
+    transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    @include devices(large_tablet) {
+      padding: 0 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+
+      &:first-child {
+        margin-top: 2.6rem;
+      }
+    }
+
+    p,
+    ul {
+      @include fluid-font(14px, $font-size-body);
+
+      @include devices(large_tablet) {
+        font-size: 16px;
+      }
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 4rem;
+    }
   }
 }

@@ -81,7 +81,7 @@
       margin: 0 1rem;
 
       p {
-        @include fluid-font(16px, $font-size-body);
+        @include fluid-font(14px, $font-size-body);
         margin-bottom: 2rem;
       }
     }
