@@ -1,4 +1,4 @@
-export const sectionReviewsata = {
+export const sectionReviewsData = {
   reviews: [
     {
       id: 1,

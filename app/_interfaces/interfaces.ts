@@ -19,18 +19,18 @@ interface SectionCatchPhraseProps {
 }
 
 // SectionProject
-interface Project {
+interface HomeProject {
   title: string;
   subtitle: string;
-  description: string;
+  short_description: string;
   technology: string;
   image: string;
   image_alt: string;
 }
 
-interface SectionProjectsProps {
+interface SectionHomeProjectsProps {
   data: {
-    projects: Project[];
+    projects: HomeProject[];
   };
 }
 
@@ -58,14 +58,35 @@ interface ItemFAQProps {
   answerRefs: React.MutableRefObject<HTMLDivElement | null>[];
 }
 
+interface FAQ {
+  question: string;
+  answer: JSX.Element[];
+}
+
 interface FAQProps {
   data: {
-    faq: [
-      {
-        question: string;
-        answer: JSX.Element[];
-      }
-    ];
+    faq: FAQ[];
+  };
+}
+
+// SectionProject
+
+interface ItemProjectProps {
+  id: number;
+  title: string;
+  subtitle: string;
+  short_description: string;
+  technology: string;
+  description: JSX.Element[];
+  link: string;
+  image: string;
+  image_alt?: string;
+  mockup: string;
+}
+
+interface SectionProjectsProps {
+  data: {
+    projects: ItemProjectProps[];
   };
 }
 
@@ -122,10 +143,10 @@ interface ItemServiceProps {
 }
 
 // ItemProject
-interface ItemProjectProps {
+interface ItemHomeProjectProps {
   title: string;
   subtitle: string;
-  description: string;
+  short_description: string;
   technology: string;
   image: string;
   image_alt?: string;

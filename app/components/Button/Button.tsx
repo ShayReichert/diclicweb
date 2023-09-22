@@ -14,7 +14,7 @@ export default function Button({ text, href, isTargetBlank = false }: ButtonProp
   }, []);
 
   return (
-    <Link ref={buttonRef} className={`${rocaOne.className} ${styles["button"]}`} href={href} role="link">
+    <Link ref={buttonRef} className={`${rocaOne.className} ${styles["button"]}`} href={href} role="link" target={isTargetBlank ? "_blank" : ""}>
       {text}
     </Link>
   );

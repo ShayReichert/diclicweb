@@ -1,7 +1,7 @@
 import styles from "./ItemProject.module.scss";
 import Image from "next/image";
 
-export default function ItemProject({ title, subtitle, description, technology, image, image_alt }: ItemProjectProps) {
+export default function ItemProject({ title, subtitle, short_description, technology, image, image_alt }: ItemHomeProjectProps) {
   return (
     <div className={styles["project"]}>
       <div className={styles["project-image"]}>
@@ -21,7 +21,7 @@ export default function ItemProject({ title, subtitle, description, technology, 
           <p>{subtitle}</p>
         </div>
         <div className={styles["bottom"]}>
-          <p>{description}</p>
+          <p>{short_description}</p>
           <p>{technology}</p>
         </div>
       </div>

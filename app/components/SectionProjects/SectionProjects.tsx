@@ -3,7 +3,7 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import ItemProject from "../ItemProject/ItemProject";
 
-export default function SectionProjects({ data }: SectionProjectsProps) {
+export default function SectionProjects({ data }: SectionHomeProjectsProps) {
   const { projects } = data;
 
   return (

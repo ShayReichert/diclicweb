@@ -1,0 +1,19 @@
+@import "../../../styles/partials/mixins";
+
+.section-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $max-content;
+    margin: 15rem 1rem;
+
+    @include devices(large_tablet) {
+      margin: 8rem 1rem;
+    }
+  }
+}

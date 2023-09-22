@@ -1,0 +1,103 @@
+@import "../../../styles/partials/mixins";
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+
+    @include devices(large_tablet) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &.even {
+    flex-direction: row-reverse;
+  }
+
+  @include devices(large_tablet) {
+    padding: 5rem 0 1.5rem;
+    max-width: 60rem;
+
+    &,
+    &.even {
+      flex-direction: column;
+    }
+  }
+
+  .image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    @include devices(large_tablet) {
+      width: 100%;
+    }
+
+    .image-wrapper {
+      @include size(100%, 24vw);
+      display: flex;
+      max-height: 36rem;
+      position: relative;
+      overflow: hidden;
+
+      @include devices(large_tablet) {
+        @include size(100%, 55vw);
+        margin: 0 1rem;
+      }
+
+      img {
+        transform: translateX(-50%);
+        left: 50% !important;
+        width: auto !important;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .text-content {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+    @include devices(large_tablet) {
+      width: 100%;
+    }
+
+    .text-wrapper {
+      max-width: 105rem;
+      padding: 3.5rem;
+      background-color: $white;
+
+      @include devices(large_tablet) {
+        @include border(0);
+        width: 100%;
+        padding: 3.5rem 2.5rem;
+        background-color: transparent;
+      }
+
+      h2 {
+        @include fluid-font(24px, $font-size-h3);
+        margin-bottom: 2rem;
+      }
+
+      .short-description,
+      .subtitle {
+        @include fluid-font(16px, $font-size-body);
+        font-weight: 600;
+      }
+
+      .description {
+        margin-top: 2rem;
+      }
+
+      a {
+        @include devices(large_tablet) {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
