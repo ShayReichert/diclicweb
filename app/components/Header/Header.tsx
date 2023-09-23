@@ -26,6 +26,7 @@ export default function Header() {
   ];
 
   useEffect(() => {
+    setCurrentPath(pathname);
     updateMovingBarPosition();
 
     if (pathname === "/") {
@@ -62,7 +63,8 @@ export default function Header() {
   };
 
   const updateMovingBarPosition = () => {
-    const currentMenuItem = menuRef.current?.querySelector(`.${styles["current"]}`) as HTMLElement;
+    const currentMenuItem = menuRef.current?.querySelector(`[href="${currentPath}"]`) as HTMLElement;
+
     if (currentMenuItem) {
       setMovingBarPosition({
         width: currentMenuItem.offsetWidth,
