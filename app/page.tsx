@@ -13,11 +13,7 @@ export default function Home() {
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionServices data={sectionServicesData} />
       <SectionProjects data={sectionProjectsData} />
-      <SectionAbout
-        data={sectionAboutData}
-        // has_button={true}
-        // button={<Button text="En&nbsp;savoir&nbsp;plus" href="/a-propos" />}
-      />
+      <SectionAbout data={sectionAboutData} />
     </main>
   );
 }

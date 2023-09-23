@@ -76,7 +76,7 @@
       }
 
       .text-wrapper {
-        margin: 0 3rem;
+        margin: 0 6rem 0 3rem;
 
         @include devices(large_tablet) {
           max-width: 70rem;
