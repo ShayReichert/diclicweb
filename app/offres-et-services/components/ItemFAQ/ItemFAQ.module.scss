@@ -67,8 +67,6 @@
 
     p,
     ul {
-      @include fluid-font(14px, $font-size-body);
-
       @include devices(large_tablet) {
         font-size: 16px;
       }

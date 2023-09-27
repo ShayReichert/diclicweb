@@ -13,10 +13,10 @@ export default function SectionSteps({ data }: StepsProps) {
         </h2>
 
         <div className={styles["steps-wrapper"]}>
-          {steps.map((step, key) => {
-            const position = key + 1;
+          {steps.map((step, index) => {
+            const position = index + 1;
             const isEven = position % 2 === 0;
-            return <ItemStep key={key} isEven={isEven} stepNumber={position} {...step} />;
+            return <ItemStep key={index} isEven={isEven} stepNumber={position} {...step} />;
           })}
         </div>
       </div>

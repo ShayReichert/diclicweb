@@ -10,8 +10,8 @@ export default function SectionCommitments({ data }: SectionCommitmentsProps) {
       <div className={styles["section-content"]}>
         <h2 className={rocaOne.className}>Mes Engagements</h2>
         <div className={styles["commitments-wrapper"]}>
-          {commitments.map((commitment, key) => (
-            <ItemCommitment key={key} {...commitment} />
+          {commitments.map((commitment, index) => (
+            <ItemCommitment key={index} {...commitment} />
           ))}
         </div>
       </div>

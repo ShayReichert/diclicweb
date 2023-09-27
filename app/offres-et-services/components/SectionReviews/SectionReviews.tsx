@@ -11,8 +11,8 @@ export default function SectionReviews({ data }: SectionReviewsProps) {
       <div className={styles["section-content"]}>
         <h2 className={rocaOne.className}>✨ Vos avis ✨</h2>
         <div className={styles["reviews-wrapper"]}>
-          {reviews.map((review, key) => (
-            <ItemReview key={key} {...review} />
+          {reviews.map((review, index) => (
+            <ItemReview key={index} {...review} />
           ))}
         </div>
 

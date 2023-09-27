@@ -54,7 +54,8 @@ footer {
     line-height: 1;
   }
 
-  p {
+  p,
+  ul {
     @include fluid-font(14px, $font-size-body);
   }
 }

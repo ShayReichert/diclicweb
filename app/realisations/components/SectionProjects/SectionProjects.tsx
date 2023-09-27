@@ -5,7 +5,7 @@ export default function SectionProjects({ data }: SectionProjectsProps) {
   const { projects } = data;
 
   return (
-    <section className={styles["section-project"]}>
+    <section className={styles["section-projects"]}>
       <div className={styles["section-content"]}>
         <div className={styles["projects-wrapper"]}>
           {projects.map((project, index) => (

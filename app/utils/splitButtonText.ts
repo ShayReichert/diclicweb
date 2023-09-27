@@ -2,7 +2,7 @@ export const splitButtonText = (button: HTMLAnchorElement | null) => {
   if (button) {
     const text = button.textContent?.trim();
     const letters = text?.split("");
-    const html = letters?.map((letter) => `<span>${letter}</span>`).join("");
+    const html = letters?.map((letter, index) => `<span key=${index}>${letter}</span>`).join("");
     button.innerHTML = `<div>${html}</div>`;
   }
 };

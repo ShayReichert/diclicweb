@@ -9,11 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: $max-content;
-    margin: 15rem 1rem;
+    width: 100%;
+    margin: 0 1rem;
 
+    .quinconces-wrapper {
+      width: 100%;
+    }
     @include devices(large_tablet) {
-      margin: 4rem 1rem;
+      margin: 0 1rem;
     }
   }
 }

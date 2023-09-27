@@ -90,6 +90,22 @@ interface SectionProjectsProps {
   };
 }
 
+interface ItemQuinconceProps {
+  title: string;
+  text: JSX.Element[];
+  link?: string;
+  text_link?: JSX.Element[];
+  image: string;
+  image_alt?: string;
+  isEven?: boolean;
+}
+
+interface SectionQuinconcesProps {
+  data: {
+    quinconces: ItemQuinconceProps[];
+  };
+}
+
 //////////////////////
 // ENTITIES
 //////////////////////
@@ -122,7 +138,7 @@ interface MobileMenuIconProps {
 
 // Button
 interface ButtonProps {
-  text: string;
+  text: string | JSX.Element[];
   href: string;
   isTargetBlank?: boolean;
 }
