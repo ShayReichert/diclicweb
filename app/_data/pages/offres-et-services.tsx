@@ -128,11 +128,11 @@ export const sectionFAQData = {
       question: "Pourquoi faire appel à un freelance Wordpress pour faire mon site ?",
       answer: [
         <>
-          <p>Vous gagnerez du temps (et donc de l’argent) ! 💰</p>
+          <p>Même si ça peut sembler contre intuitif, vous gagnerez du temps (et donc de l’argent) ! 💰</p>
           <p>
-            Même si ça peut sembler contre intuitif, créer un site professionnel de qualité demande du<strong> temps et des connaissances</strong>. Il
-            est souvent préférable de pouvoir se concentrer sur son activité en déléguant<strong> la création et la gestion technique </strong>de son
-            site web à des développeur·euses et webmasters spécialisé·es dans ce domaine.
+            Créer un site professionnel de qualité demande du<strong> temps et des connaissances</strong>. Il est souvent préférable de pouvoir se
+            concentrer sur son activité en déléguant<strong> la création et la gestion technique </strong>de son site web à des développeur·euses et
+            webmasters spécialisé·es dans ce domaine.
           </p>
         </>,
       ],

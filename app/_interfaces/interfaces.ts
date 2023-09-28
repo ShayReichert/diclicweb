@@ -213,3 +213,43 @@ interface SectionReviewsProps {
     reviews: ItemReviewProps[];
   };
 }
+
+// Snackbar
+type SnackbarType = "success" | "error" | "info";
+
+interface SnackbarProps {
+  message: string;
+  type: SnackbarType;
+  onClose: () => void;
+}
+
+//////////////////////
+// CONTACT FORM
+//////////////////////
+
+interface FormErrors {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  phone?: string;
+  website?: string;
+  message?: string;
+  consent?: string;
+}
+
+interface FormDataInterface {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  website: string;
+  message: string;
+  consent: boolean;
+}
+
+type ShowSnackbar = (message: string, type: SnackbarType) => void;
+
+interface ContactFormProps {
+  showSnackbar: ShowSnackbar;
+  devMode: boolean;
+}

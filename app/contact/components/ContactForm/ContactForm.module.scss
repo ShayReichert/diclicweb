@@ -1,0 +1,73 @@
+@import "../../../styles/partials/mixins";
+
+.contactForm {
+  background-color: #f7f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 85rem;
+  margin: auto;
+
+  .formGroup {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    .formField {
+      position: relative;
+      width: 50%;
+
+      &:first-of-type {
+        padding-right: 5rem;
+      }
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #52708b;
+      margin-bottom: 8px;
+      position: absolute;
+      background-color: #f7f9fa;
+      padding: 0 8px;
+      transform: translateY(-50%);
+      left: 16px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .errorMessage {
+      width: 100%;
+      color: #ff4d4f;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+  }
+
+  .checkbox {
+    label {
+      display: flex;
+
+      input {
+        width: auto;
+        margin-right: 1rem;
+      }
+    }
+
+    .errorMessage {
+      margin-top: 14px;
+    }
+  }
+
+  .button {
+    @include button();
+  }
+}
