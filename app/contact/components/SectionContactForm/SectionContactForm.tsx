@@ -5,9 +5,8 @@ import ContactForm from "../ContactForm/ContactForm";
 import styles from "./SectionContactForm.module.scss";
 import Snackbar from "../Snackbar/Snackbar";
 
-export default function SectionContactForm() {
-  // export default function SectionContactForm({ data }: SectionContactFormProps) {
-  //   const { text } = data;
+export default function SectionContactForm({ data }: SectionContactFormProps) {
+  const { text } = data;
 
   const [devMode, setDevMode] = useState(true);
 
@@ -22,9 +21,9 @@ export default function SectionContactForm() {
   };
 
   return (
-    <section className={styles["section-contact-form"]}>
+    <section id="scroll-submit" className={styles["section-contact-form"]}>
       <div className={styles["content-wrapper"]}>
-        <div className={styles["text-wrapper"]}>"texte ici"</div>
+        <div className={styles["text-wrapper"]}>{text}</div>
         <div className={styles["form-wrapper"]}>
           <ContactForm showSnackbar={showSnackbar} devMode={devMode} />
         </div>

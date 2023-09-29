@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Snackbar.module.scss";
 
 const typeClassMapping = {
@@ -7,12 +8,19 @@ const typeClassMapping = {
 };
 
 export default function Snackbar({ message, type, onClose }: SnackbarProps) {
-  const snackbarClass = `${styles.snackbar} ${typeClassMapping[type]}`;
+  const [exit, setExit] = useState(false);
+  const snackbarClass = `${styles.snackbar} ${typeClassMapping[type]} ${exit ? styles.exit : ""}`;
+
+  const handleAnimationEnd = () => {
+    if (exit) {
+      onClose();
+    }
+  };
 
   return (
-    <div className={snackbarClass}>
+    <div className={snackbarClass} onAnimationEnd={handleAnimationEnd}>
       <span>{message}</span>
-      <button className={styles.button} onClick={onClose}>
+      <button className={styles["button"]} onClick={() => setExit(true)}>
         Fermer
       </button>
     </div>

@@ -1,0 +1,6 @@
+@import "../../../styles/partials/mixins";
+
+.button {
+  @include button();
+  margin-top: 5rem;
+}

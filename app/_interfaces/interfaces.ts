@@ -90,6 +90,7 @@ interface SectionProjectsProps {
   };
 }
 
+// SectionAbout
 interface ItemQuinconceProps {
   title: string;
   text: JSX.Element[];
@@ -103,6 +104,13 @@ interface ItemQuinconceProps {
 interface SectionQuinconcesProps {
   data: {
     quinconces: ItemQuinconceProps[];
+  };
+}
+
+// SectionContact
+interface SectionContactFormProps {
+  data: {
+    text: JSX.Element[];
   };
 }
 
@@ -141,6 +149,11 @@ interface ButtonProps {
   text: string | JSX.Element[];
   href: string;
   isTargetBlank?: boolean;
+}
+
+// ButtonSubmit
+interface ButtonSubmitProps {
+  text: string | JSX.Element[];
 }
 
 // ItemHomeService

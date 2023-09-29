@@ -3,13 +3,13 @@ export const sectionTitleData = {
 };
 
 export const sectionCatchphraseData = {
-  text: "Parlez-moi de votre projet !",
+  text: "Parlez-moi de votre projet ! 🙌",
 };
 
 export const sectionContactFormData = {
   text: [
     <>
-      <div className="strong">
+      <div>
         <p>
           <strong>
             Vous avez un projet de site web ? Vous avez une question par rapport à mes offres ? Ou besoin d’aide pour améliorer un site existant ?

@@ -1,1 +1,20 @@
 @import "../../../styles/partials/mixins";
+
+.section-contact-form {
+  .content-wrapper {
+    padding: 11rem 0;
+    max-width: 75rem;
+    margin: auto;
+
+    .text-wrapper {
+      margin-bottom: 5rem;
+      > div {
+        margin-bottom: 2rem;
+      }
+
+      > p {
+        @include fluid-font(14px, 16px);
+      }
+    }
+  }
+}

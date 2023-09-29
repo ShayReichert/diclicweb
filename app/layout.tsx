@@ -4,7 +4,7 @@ import { Roboto } from "next/font/google";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-const almarai = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
 export const metadata: Metadata = {
   title: "Diclicweb - Création de sites web engagés",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={almarai.className}>
+      <body className={roboto.className}>
         <Header />
         {children}
         <Footer />

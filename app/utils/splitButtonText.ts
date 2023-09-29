@@ -1,4 +1,4 @@
-export const splitButtonText = (button: HTMLAnchorElement | null) => {
+export const splitButtonText = (button: HTMLAnchorElement | HTMLButtonElement | null) => {
   if (button) {
     const text = button.textContent?.trim();
     const letters = text?.split("");
