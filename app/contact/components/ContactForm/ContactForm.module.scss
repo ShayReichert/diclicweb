@@ -5,6 +5,10 @@
   padding: 4rem 5rem;
   border-radius: $border-radius;
 
+  @include devices(large_tablet) {
+    padding: 4rem 1rem;
+  }
+
   .form-group {
     display: flex;
     position: relative;
@@ -18,18 +22,23 @@
 
       &:first-of-type {
         padding-right: 5rem;
+
+        @include devices(large_tablet) {
+          padding-right: 1rem;
+        }
       }
     }
 
-    label {
+    &:not(.checkbox) label {
       display: block;
       color: $gray500;
       margin-bottom: 8px;
       position: absolute;
       background-color: $gray200;
       padding: 0 6px;
-      transform: translateY(-50%);
       left: 8px;
+      font-size: 11px;
+      transform: translateY(-50%);
     }
 
     input,
@@ -72,7 +81,7 @@
     .error-message {
       width: 100%;
       margin-top: 0.6rem;
-      padding-left: 1 rem;
+      padding-left: 1rem;
       color: $danger-color;
       font-size: 12px;
     }
@@ -93,7 +102,7 @@
     }
 
     .error-message {
-      margin-top: 2rem;
+      margin-left: 1rem;
     }
   }
 

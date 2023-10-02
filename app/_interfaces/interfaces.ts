@@ -264,5 +264,5 @@ type ShowSnackbar = (message: string, type: SnackbarType) => void;
 
 interface ContactFormProps {
   showSnackbar: ShowSnackbar;
-  devMode: boolean;
+  isLocal: boolean;
 }

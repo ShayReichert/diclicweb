@@ -4,8 +4,9 @@ import { useState } from "react";
 import styles from "./ContactForm.module.scss";
 import Button from "@/app/components/Button/Button";
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
+import { submitFormToNetlify, validateFormData } from "@/app/utils/form";
 
-export default function ContactForm({ showSnackbar, devMode }: ContactFormProps) {
+export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps) {
   const [formData, setFormData] = useState<FormDataInterface>({
     firstName: "",
     lastName: "",
@@ -36,62 +37,43 @@ export default function ContactForm({ showSnackbar, devMode }: ContactFormProps)
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validate form data
-    const errors: FormErrors = {};
-    if (!formData.firstName) {
-      errors.firstName = "Veuillez renseigner votre prénom";
+    // HoneyPot
+    const honeypot = (e.target as HTMLFormElement).querySelector('[name="bot-field"]') as HTMLInputElement;
+
+    if (honeypot && honeypot.value) {
+      return;
     }
-    if (!formData.lastName) {
-      errors.lastName = "Veuillez renseigner votre nom";
-    }
-    if (!formData.email) {
-      errors.email = "Veuillez renseigner votre email";
-    }
-    if (!formData.message) {
-      errors.message = "Veuillez renseigner une description de projet";
-    }
-    if (!formData.consent) {
-      errors.consent = "Vous devez consentir à la collecte de données";
-    }
+
+    // Errors
+    const errors = validateFormData(formData);
     setFormErrors(errors);
 
-    if (Object.keys(errors).length === 0) {
-      if (devMode) {
-        console.log("Form submitted locally!");
+    if (Object.keys(errors).length !== 0) {
+      return;
+    }
+
+    // Submit
+    if (isLocal) {
+      console.log("Form submitted locally!");
+      setFormSubmitted(true);
+      showSnackbar("Formulaire soumis localement !", "success");
+      // showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+      window.location.href = "#scroll-submit";
+    } else {
+      const submissionSuccess = await submitFormToNetlify(formData);
+
+      if (submissionSuccess) {
+        console.log("Form submitted successfully!");
         setFormSubmitted(true);
-        showSnackbar("Formulaire soumis localement !", "success");
-        // showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+        showSnackbar("Message envoyé !", "success");
         window.location.href = "#scroll-submit";
       } else {
-        // Prepare form data for submission
-        const form = new FormData();
-        form.append("firstName", formData.firstName);
-        form.append("lastName", formData.lastName);
-        form.append("email", formData.email);
-        form.append("phone", formData.phone);
-        form.append("website", formData.website);
-        form.append("message", formData.message);
-
-        // Send form data to Netlify
-        fetch("/", {
-          method: "POST",
-          body: form,
-        })
-          .then(() => {
-            console.log("Form submitted successfully!");
-            setFormSubmitted(true);
-            showSnackbar("Message envoyé !", "success");
-            window.location.href = "#scroll-submit";
-          })
-          .catch((error) => {
-            console.error("Error submitting form:", error);
-            setFormSubmitted(false);
-            showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
-            window.location.href = "#scroll-submit";
-          });
+        setFormSubmitted(false);
+        showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+        window.location.href = "#scroll-submit";
       }
     }
   };
@@ -104,8 +86,21 @@ export default function ContactForm({ showSnackbar, devMode }: ContactFormProps)
           <Button text="Retour&nbsp;à&nbsp;l'accueil" href="/" />
         </div>
       ) : (
-        <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className={styles["contact-form"]}>
+        <form
+          onSubmit={handleSubmit}
+          netlify-honeypot="bot-field"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className={styles["contact-form"]}
+        >
           <input type="hidden" name="form-name" value="contact" />
+
+          <p className={styles["hidden"]}>
+            <label>
+              <input name="bot-field" />
+            </label>
+          </p>
 
           <div className={styles["form-group"]}>
             <div className={styles["form-field"]}>

@@ -6,14 +6,29 @@
     max-width: 75rem;
     margin: auto;
 
+    @include devices(large_tablet) {
+      padding: 6rem 0;
+    }
+
     .text-wrapper {
       margin-bottom: 5rem;
+
+      @include devices(large_tablet) {
+        padding: 0 3.5rem;
+      }
+
       > div {
         margin-bottom: 2rem;
       }
 
       > p {
         @include fluid-font(14px, 16px);
+      }
+    }
+
+    .form-wrapper {
+      @include devices(large_tablet) {
+        margin: 0 1rem;
       }
     }
   }
