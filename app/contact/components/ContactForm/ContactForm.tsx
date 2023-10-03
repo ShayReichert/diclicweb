@@ -98,7 +98,7 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
 
           <p className={styles["hidden"]}>
             <label>
-              <input name="bot-field" />
+              <input name="bot-field" autoComplete="new-password" tabIndex={-1} />
             </label>
           </p>
 

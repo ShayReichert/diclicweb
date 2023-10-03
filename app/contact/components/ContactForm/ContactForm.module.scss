@@ -9,6 +9,10 @@
     padding: 4rem 1rem;
   }
 
+  .hidden {
+    @include hidden();
+  }
+
   .form-group {
     display: flex;
     position: relative;
