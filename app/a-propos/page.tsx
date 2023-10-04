@@ -5,7 +5,7 @@ import SectionQuinonces from "./components/SectionQuinconces/SectionQuinconces";
 
 export default function About() {
   return (
-    <main>
+    <main id="main">
       <SectionTitle data={sectionTitleData} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionQuinonces data={sectionQuinconces} />

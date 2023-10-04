@@ -8,7 +8,7 @@ import Button from "../components/Button/Button";
 
 export default function Projects() {
   return (
-    <main>
+    <main id="main">
       <SectionTitle data={sectionTitleData} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionProjects data={sectionProjectsData} />

@@ -1,0 +1,17 @@
+@import "../../styles/partials/mixins";
+
+.skip-to-content {
+  @include fluid-font(12px, 14px);
+  position: absolute;
+  top: 0;
+  right: 100%;
+  z-index: $zindex-menu + 1;
+
+  &:focus {
+    right: auto;
+    background-color: #000;
+    color: #fff;
+    border: #fff 3px solid;
+    padding: 1rem;
+  }
+}

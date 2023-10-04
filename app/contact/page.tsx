@@ -5,7 +5,7 @@ import SectionContactForm from "./components/SectionContactForm/SectionContactFo
 
 export default function Contact() {
   return (
-    <main>
+    <main id="main">
       <SectionTitle data={sectionTitleData} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionContactForm data={sectionContactFormData} />

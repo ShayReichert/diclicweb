@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import SkipToContent from "./components/SkipToContent/SkipToContent";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body className={roboto.className}>
+        <SkipToContent />
         <Header />
         {children}
         <Footer />

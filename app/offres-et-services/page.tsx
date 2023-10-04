@@ -12,7 +12,7 @@ import SectionFAQ from "./components/SectionFAQ/SectionFAQ";
 
 export default function Services() {
   return (
-    <main>
+    <main id="main">
       <SectionTitle data={sectionTitleData} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionServices data={sectionServicesData} />

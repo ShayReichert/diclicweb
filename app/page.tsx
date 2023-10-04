@@ -8,7 +8,7 @@ import { sectionServicesData } from "./_data/entities/services";
 
 export default function Home() {
   return (
-    <main>
+    <main id="main">
       <SectionTitle data={sectionTitleData} has_decoration={false} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionServices data={sectionServicesData} />
