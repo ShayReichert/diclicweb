@@ -59,13 +59,15 @@ export const sectionStepsData = {
       text: [
         <>
           <p>
-            J’écoute la présentation de votre projet en détail, votre vision, vos objectifs, vos contraintes. Je vous expose également ma manière de
-            travailler et nous voyons si le feeling passe bien ! 🤜🤛
+            J’écoute la<strong> présentation de votre projet </strong>en détail, votre vision, vos objectifs, vos contraintes. Je vous expose
+            également ma manière de travailler et nous voyons si le feeling passe bien ! 🤜🤛
           </p>
-          <p>Je vous fourni ensuite un questionnaire détaillé pour comprendre précisément vos besoins et vos objectifs.</p>
           <p>
-            À partir de ce questionnaire, je pourrais traduire vos besoins en fonctionnalités et vous donner un document récapitulatif (une sorte de
-            devis en plus sympathique) qu’on validera ensemble.
+            Je vous fourni ensuite un<strong> questionnaire détaillé </strong>pour comprendre précisément vos besoins et vos objectifs.
+          </p>
+          <p>
+            À partir de ce questionnaire, je pourrais traduire vos besoins en<strong> fonctionnalités </strong>et vous donner un
+            <strong> devis </strong> qu’on validera ensemble.
           </p>
         </>,
       ],
@@ -77,12 +79,15 @@ export const sectionStepsData = {
       text: [
         <>
           <p>
-            Si vous n’en avez pas, je construis l’identité visuelle de votre site : couleurs, polices d’écriture et logo. Vous pourrez ensuite
-            utiliser cette charte graphique sur tous vos supports de communication.
+            Si vous n’en avez pas, je construis<strong> l’identité visuelle </strong>de votre site : couleurs, polices d’écriture et logo. Vous
+            pourrez ensuite utiliser cette charte graphique sur tous vos supports de communication.
             <br />
-            Puis je crée un wireframe du site, afin de visualiser la structure et les différentes sections du site.
+            Puis je crée un<strong> wireframe </strong>du site, afin de visualiser la structure et les différentes sections du site.
           </p>
-          <p>Je vous accompagne si nécessaire dans l’enregistrement de votre nom de domaine ainsi que le choix et l’achat de l’hébergement.</p>
+          <p>
+            Je vous accompagne si nécessaire dans l’enregistrement de votre<strong> nom de domaine </strong>ainsi que le
+            <strong> choix et l’achat de l’hébergement.</strong>
+          </p>
         </>,
       ],
       image: "/images/services/etape_2.webp",
@@ -93,12 +98,16 @@ export const sectionStepsData = {
       text: [
         <>
           <p>
-            On s’attaque enfin à la réalisation du site ! Je vous solliciterais régulièrement pour que vous validiez les pages et les fonctionnalités
-            que j’intégrerai. Je crée les versions mobile et tablette du site également.
+            On s’attaque enfin à la<strong> réalisation du site </strong>! Je vous solliciterais régulièrement pour que vous
+            <strong> validiez les pages </strong>et les fonctionnalités que j’intégrerai. Je crée les versions mobile et tablette du site également.
           </p>
-          <p>Quand le site est terminé, je met en place des outils pour gérer la maintenance, pour sécuriser le site et optimiser la vitesse.</p>
           <p>
-            Pour finir, je met le site en ligne et je vous forme à Wordpress pour que vous puissiez gérer sereinement votre site et vos contenus. 😌
+            Quand le site est terminé, je met en place des outils pour
+            <strong> gérer la maintenance, pour sécuriser le site et optimiser la vitesse</strong>.
+          </p>
+          <p>
+            Pour finir, je met le site en ligne et<strong> je vous forme à Wordpress </strong>pour que vous puissiez gérer sereinement votre site et
+            vos contenus. 😌
           </p>
         </>,
       ],
@@ -110,8 +119,9 @@ export const sectionStepsData = {
       text: [
         <>
           <p>
-            La maintenance est primordiale sur un site Wordpress : elle permet de garder un site en bonne santé, de le mettre à jour, de le
-            sauvegarder régulièrement ou encore de prévenir les attaques potentielles.
+            La maintenance est primordiale sur un site Wordpress : elle permet de garder<strong> un site en bonne santé</strong>, de
+            <strong> le mettre à jour</strong>, de le<strong>sauvegarder régulièrement </strong>ou encore de
+            <strong> prévenir les attaques potentielles</strong>.
           </p>
           <p>Cette étape ne doit pas être négligée !</p>
         </>,

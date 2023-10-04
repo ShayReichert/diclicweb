@@ -134,8 +134,8 @@ export default function Header() {
           className={`${styles["links"]} ${rocaOne.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
           onTransitionEnd={handleTransitionEnd}
         >
-          {menuItems.map((item) => (
-            <li key={item.id} className={pathname === item.path ? styles["current"] : ""}>
+          {menuItems.map((item, index) => (
+            <li key={index} className={pathname === item.path ? styles["current"] : ""}>
               <Link
                 href={item.path}
                 aria-current={pathname === item.path ? "page" : undefined}

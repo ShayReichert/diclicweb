@@ -25,8 +25,8 @@ export default function Footer() {
       <div className={styles["subfooter"]}>
         <div className={styles["socials"]}>
           <ul>
-            {socialItems.map((item) => (
-              <li key={item.id} className={styles["socials"]}>
+            {socialItems.map((item, index) => (
+              <li key={index} className={styles["socials"]}>
                 <a href={item.url} target="_blank" role="link">
                   <Image src={`/images/socials/${item.image}`} alt={`item.label`} width={20} height={20} />
                 </a>

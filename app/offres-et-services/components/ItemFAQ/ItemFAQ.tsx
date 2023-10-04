@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRefs }: ItemFAQProps) {
   // Open first question on page load
   useEffect(() => {
-    const firstQuestion = document.querySelector(`.${styles["question"]}`);
+    const firstQuestion = document.querySelectorAll(`.${styles["question"]}`)[1];
 
     if (firstQuestion) {
       const clickEvent = new MouseEvent("click", {

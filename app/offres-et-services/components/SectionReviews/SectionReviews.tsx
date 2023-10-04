@@ -9,7 +9,7 @@ export default function SectionReviews({ data }: SectionReviewsProps) {
   return (
     <section className={styles["section-reviews"]}>
       <div className={styles["section-content"]}>
-        <h2 className={rocaOne.className}>✨ Vos avis ✨</h2>
+        <h2 className={rocaOne.className}>✨ Témoignages ✨</h2>
         <div className={styles["reviews-wrapper"]}>
           {reviews.map((review, index) => (
             <ItemReview key={index} {...review} />
