@@ -9,6 +9,7 @@ interface SectionTitleProps {
     baseline?: string;
   };
   has_decoration?: boolean;
+  is_long_title?: boolean;
 }
 
 // SectionCatchPhrase
@@ -109,6 +110,14 @@ interface SectionQuinconcesProps {
 
 // SectionContact
 interface SectionContactFormProps {
+  data: {
+    text: JSX.Element[];
+  };
+}
+
+// SectionText
+
+interface SectionTextProps {
   data: {
     text: JSX.Element[];
   };

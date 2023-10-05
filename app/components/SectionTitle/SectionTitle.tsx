@@ -2,7 +2,7 @@ import styles from "./SectionTitle.module.scss";
 import Image from "next/image";
 import { rocaOne } from "../../styles/fonts/font-face";
 
-export default function SectionTitle({ data, has_decoration = true }: SectionTitleProps) {
+export default function SectionTitle({ data, has_decoration = true, is_long_title = false }: SectionTitleProps) {
   const { title, baseline } = data;
 
   return (
@@ -20,7 +20,7 @@ export default function SectionTitle({ data, has_decoration = true }: SectionTit
           />
         </div>
         {title && (
-          <h1 className={`${rocaOne.className} ${has_decoration ? styles["has_decoration"] : ""}`}>
+          <h1 className={`${rocaOne.className} ${has_decoration ? styles["has-decoration"] : ""} ${is_long_title ? styles["is-long-title"] : ""}`}>
             <span>{title}</span>
           </h1>
         )}

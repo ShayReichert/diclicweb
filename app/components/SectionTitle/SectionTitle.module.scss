@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: $menu-desktop-height;
+    max-width: 100rem;
 
     @include devices(large_tablet) {
       margin-top: $menu-mobile-height;
@@ -34,10 +35,10 @@
       @include title-fade-in-up();
       position: relative;
       text-align: center;
-      line-height: 1.4;
+      line-height: 1.4; // Allows you to see accents on special characters
       margin-top: -1.4rem;
 
-      &.has_decoration {
+      &.has-decoration {
         @include underline(65%, 2.9rem, true, 0.5s) {
           right: -27px;
           top: auto;
@@ -49,6 +50,12 @@
             bottom: 10px;
           }
         }
+      }
+
+      &.is-long-title {
+        @include fluid-font(45px, $font-size-h1);
+        line-height: 1;
+        margin-top: 1rem;
       }
     }
 

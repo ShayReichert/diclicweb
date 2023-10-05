@@ -1,0 +1,39 @@
+@import "../../styles/partials/mixins";
+
+.section-text {
+  .content-wrapper {
+    padding: 3rem;
+    max-width: $max-content;
+    margin: auto;
+
+    .text-wrapper {
+      h2 {
+        @include fluid-font(25px, 45px);
+        margin: 6rem 0 3rem 0;
+      }
+
+      h3 {
+        @include fluid-font(20px, 30px);
+        margin: 3rem 0 1rem 3rem;
+
+        @include devices(large_tablet) {
+          margin: 3rem 0 1rem 0;
+        }
+      }
+
+      p,
+      ul {
+        margin: 0 0 1rem 3rem;
+
+        @include devices(large_tablet) {
+          margin: 1.5rem 0 1rem 0;
+        }
+
+        li {
+          list-style: disc;
+          margin: 2rem 0 2rem 2rem;
+        }
+      }
+    }
+  }
+}
