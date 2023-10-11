@@ -98,6 +98,10 @@
       input {
         width: auto;
         margin-right: 1rem;
+
+        &:focus-visible {
+          outline: 2px solid $accent-color;
+        }
       }
 
       a {
