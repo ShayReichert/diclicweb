@@ -12,7 +12,6 @@ export default function SectionContactForm({ data }: SectionContactFormProps) {
 
   useEffect(() => {
     if (window.location.href.includes("localhost")) {
-      console.log(window.location.href);
       setIsLocal(true);
     }
   }, []);

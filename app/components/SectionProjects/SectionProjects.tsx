@@ -11,7 +11,7 @@ export default function SectionProjects({ data }: SectionHomeProjectsProps) {
       <div className={styles["section-content"]}>
         <h2 className={rocaOne.className}>Mes dernières réalisations</h2>
         <div className={styles["projects-wrapper"]}>
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <ItemProject key={index} {...project} />
           ))}
         </div>

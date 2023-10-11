@@ -3,8 +3,9 @@ import SectionCatchPhrase from "./components/SectionCatchPhrase/SectionCatchPhra
 import SectionServices from "./components/SectionServices/SectionServices";
 import SectionProjects from "./components/SectionProjects/SectionProjects";
 import SectionAbout from "./components/SectionAbout/SectionAbout";
-import { sectionTitleData, sectionCatchphraseData, sectionAboutData, sectionProjectsData } from "./_data/pages/accueil";
+import { sectionTitleData, sectionCatchphraseData, sectionAboutData } from "./_data/pages/accueil";
 import { sectionServicesData } from "./_data/entities/services";
+import { sectionProjectsData } from "./_data/entities/projects";
 
 export default function Home() {
   return (
