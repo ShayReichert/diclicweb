@@ -275,3 +275,54 @@ interface ContactFormProps {
   showSnackbar: ShowSnackbar;
   isLocal: boolean;
 }
+
+//////////////////////
+// BLOG
+//////////////////////
+
+interface Category {
+  id: number;
+  name: string;
+  slug: string;
+}
+
+interface Categories {
+  categories: Category[];
+}
+
+interface SectionCategoriesProps {
+  data: Categories;
+  onCategoryClick: (id: Category["id"] | null) => void;
+}
+
+interface Post {
+  id: number;
+  title: string;
+  slug: string;
+  date: string;
+  category: number[];
+  excerpt: string;
+  thumbnail: string;
+  content: (
+    | {
+        type: string;
+        content: JSX.Element[];
+        path?: undefined;
+      }
+    | {
+        type: string;
+        path: string;
+        content?: undefined;
+      }
+  )[];
+  related_posts: number[];
+}
+
+interface SectionPostsProps {
+  posts: Post[];
+}
+
+interface BlogContainerProps {
+  posts: Post[];
+  blogCategoriesData: Categories;
+}
