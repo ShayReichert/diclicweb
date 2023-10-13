@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import fetchPostById from "@/app/utils/fetchPostById";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
+import SectionCatchPhrase from "@/app/components/SectionCatchPhrase/SectionCatchPhrase";
+import SectionContent from "./components/SectionContent/SectionContent";
 
 // export const metadata: Metadata = {
 //   title: "Blog | Diclicweb",
@@ -22,8 +24,8 @@ export default function Post({ params: { id } }: Props) {
   return (
     <main id="main">
       <SectionTitle title={post.title} />
-      {/* Section catchphrase */}
-      {/* SectionPostContent */}
+      <SectionCatchPhrase data={{ text: post.excerpt }} />
+      <SectionContent data={post} />
       {/* SectionRelatedPosts */}
     </main>
   );

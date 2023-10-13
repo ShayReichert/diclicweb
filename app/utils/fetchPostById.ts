@@ -1,6 +1,6 @@
 import posts from "../_data/blog";
 
-const fetchPostById = (id: number) => {
+const fetchPostById = (id: number): Post => {
   const post = posts.find((post) => post.id === id);
 
   if (!post) {

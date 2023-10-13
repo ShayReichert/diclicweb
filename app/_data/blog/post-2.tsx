@@ -1,34 +1,23 @@
 import Link from "next/link";
+import { rocaOne } from "../../styles/fonts/font-face";
 
 export const post2 = {
   id: 2,
   title: "Comment rédiger le contenu de son site en écriture inclusive ?",
+  author: "Shay",
   slug: "comment-rediger-contenu-site-ecriture-inclusive",
   date: "2023-11-08",
   category: [2],
-  excerpt: "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? ",
+  excerpt:
+    "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? ✏️ Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.",
   thumbnail: "/images/services/icon_site.png",
   content: [
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <p>Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ?</p>
-          <p>Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.</p>
-          <p>
-            Je vous guiderai également sur la manière d'intégrer l'écriture inclusive de manière fluide et efficace dans votre contenu. Vous
-            contribuerez ainsi à rendre le monde plus inclusive et égalitaire ! 🙌 😊
-          </p>
-        </>,
-      ],
-    },
-
-    {
-      type: "paragraph",
-      content: [
-        <>
-          <h2>1. Qu'est-ce que l'écriture inclusive ?</h2>
-          <h3>Définition</h3>
+          <h2 className={rocaOne.className}>1. Qu'est-ce que l'écriture inclusive ?</h2>
+          <h3 className={rocaOne.className}>Définition</h3>
           <p>
             L'écriture inclusive est une approche linguistique visant à inclure tous les genres dans le langage, et à éviter les biais de langage
             envers un genre spécifique. Elle repose sur des règles et des pratiques permettant de rendre visible et de reconnaître toutes les
@@ -57,10 +46,10 @@ export const post2 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>O2. Pourquoi utiliser l'écriture inclusive sur votre site web ?</h2>
-          <h3>Favoriser l'inclusivité</h3>
+          <h2 className={rocaOne.className}>2. Pourquoi utiliser l'écriture inclusive sur votre site web ?</h2>
+          <h3 className={rocaOne.className}>Favoriser l'inclusivité</h3>
           <p>
             L'écriture inclusive montre clairement votre volonté d'accueillir et de représenter toute votre audience, sans distinction de genre. En
             utilisant des formulations neutres, vous évitez de perpétuer des stéréotypes et des préjugés liés au genre. Chacun·e se sent ainsi
@@ -68,7 +57,7 @@ export const post2 = {
             En favorisant l'inclusivité, vous bâtissez une relation de confiance avec votre audience, ce qui peut contribuer à fidéliser vos
             visiteur·ses et à renforcer votre réputation.
           </p>
-          <h3>Promouvoir l'égalité</h3>
+          <h3 className={rocaOne.className}>Promouvoir l'égalité</h3>
           <p>
             L'écriture inclusive s'inscrit dans une démarche d'égalité des genres et de reconnaissance de la diversité des identités. En optant pour
             cette approche, vous montrez que vous vous engagez activement dans la lutte contre les inégalités et que vous valorisez toutes les
@@ -87,14 +76,15 @@ export const post2 = {
     },
     {
       type: "image",
-      path: "/images/services/icon_site.png",
+      path: "/images/services/etape_1.webp",
+      alt: "Image d'illustration de l'article",
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>3. Comment rédiger en écriture inclusive ?</h2>
-          <h3>Utilisation des règles de base</h3>
+          <h2 className={rocaOne.className}>3. Comment rédiger en écriture inclusive ?</h2>
+          <h3 className={rocaOne.className}>Utilisation des règles de base</h3>
           <p>
             Voici quelques règles de base permettant d’utiliser l’écriture inclusive. Ces règles sont combinables et ajustables selon vos propres
             préférences. Certaines sont plus discrètes ou faciles à mettre en place : à vous d'adapter vos pratiques à votre persona et à votre
@@ -150,10 +140,10 @@ export const post2 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>4. Astuces pour intégrer l'écriture inclusive sur votre site web</h2>
-          <h3>Utiliser des outils d'aide à l'écriture</h3>
+          <h2 className={rocaOne.className}>4. Astuces pour intégrer l'écriture inclusive sur votre site web</h2>
+          <h3 className={rocaOne.className}>Utiliser des outils d'aide à l'écriture</h3>
           <p>
             Certains outils sont entrain d'être développés afin de faciliter la rédaction en écriture inclusive. <br />
             On trouve notamment les outils suivants :
@@ -183,7 +173,7 @@ export const post2 = {
               : une extension qui remplace les points normaux en points médians
             </li>
           </ul>
-          <h3>Sensibiliser votre équipe</h3>
+          <h3 className={rocaOne.className}>Sensibiliser votre équipe</h3>
           <p>
             Intégrer l'écriture inclusive dans votre site web est une démarche collective qui peut être facilitée par la sensibilisation de votre
             équipe. Expliquez les enjeux de l'écriture inclusive et les bénéfices qu'elle apporte en termes d'inclusivité et d'égalité des genres.

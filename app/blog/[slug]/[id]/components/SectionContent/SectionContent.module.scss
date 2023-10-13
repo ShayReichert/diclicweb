@@ -1,0 +1,18 @@
+@import "../../../../../styles//partials//mixins";
+
+.image-wrapper {
+  @include size(80rem, 50rem);
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+
+  @include devices(large_tablet) {
+    @include size(30rem, 25rem);
+  }
+
+  img {
+    width: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+}

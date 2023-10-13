@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { rocaOne } from "../../styles/fonts/font-face";
 
 export const post1 = {
   id: 1,
   title: "C’est quoi l’éco-conception d’un site web ? 🌿",
+  author: "Shay",
   slug: "eco-conception-site-web",
   date: "2023-11-07",
   category: [1],
@@ -12,7 +14,7 @@ export const post1 = {
   content: [
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
           <p>
             L'éco-conception de site internet est un enjeu de plus en plus important pour les entreprises et les organisations qui souhaitent
@@ -26,12 +28,13 @@ export const post1 = {
     {
       type: "image",
       path: "/images/services/icon_site.png",
+      alt: "Image d'un ordinateur avec un site web",
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>1. Utiliser les bons outils 🛠️</h2>
+          <h2 className={rocaOne.className}>1. Utiliser les bons outils 🛠️</h2>
           <p>
             Je privilégie l'utilisation de Wordpress avec le thème Divi, qui me permet de créer des sites personnalisés et réactifs sans avoir à
             recourir à des plugins superflus. Cela contribue à alléger la charge du site et à améliorer sa vitesse de chargement.
@@ -41,9 +44,9 @@ export const post1 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>2.Optimiser les images 🩻</h2>
+          <h2 className={rocaOne.className}>2.Optimiser les images 🩻</h2>
           <p>
             Pour optimiser la taille et le poids des images, je m'assure de les compresser sans perdre en qualité, et de ne télécharger que les images
             réellement utiles sur le site. Cela permet de réduire le temps de chargement des pages et d'économiser de la bande passante, tant pour les
@@ -59,9 +62,9 @@ export const post1 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>3. Le choix de l’hébergeur 🏠</h2>
+          <h2 className={rocaOne.className}>3. Le choix de l’hébergeur 🏠</h2>
           <p>
             Je recommande notamment à mes client·es de choisir l’hébergeur O2switch, une entreprise française reconnue pour ses pratiques
             respectueuses de l'environnement et son utilisation de sources d'énergie renouvelables.
@@ -71,7 +74,7 @@ export const post1 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
           <h2>4. Des design sobres et efficaces 🎨</h2>
           <p>
@@ -84,9 +87,9 @@ export const post1 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
-          <h2>5. Mise en cache 🚀</h2>
+          <h2 className={rocaOne.className}>5. Mise en cache 🚀</h2>
           <p>
             La mise en cache d'un site web consiste à enregistrer temporairement une copie des données d'un site sur l'ordinateur de l'utilisateur·ice
             et accélère les temps de chargement. Cela permet de réduire la quantité de données transférées via le réseau, ce qui réduit la
@@ -97,7 +100,7 @@ export const post1 = {
     },
     {
       type: "paragraph",
-      content: [
+      text: [
         <>
           <p>
             En adoptant ces pratiques **éco-responsables**, je suis heureux de contribuer à la création de sites internet durables, qui limitent leur

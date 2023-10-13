@@ -295,26 +295,23 @@ interface SectionCategoriesProps {
   onCategoryClick: (id: Category["id"] | null) => void;
 }
 
+interface Content {
+  type: string;
+  text?: JSX.Element[];
+  path?: string;
+  alt?: string;
+}
+
 interface Post {
   id: number;
   title: string;
+  author: string;
   slug: string;
   date: string;
   category: number[];
   excerpt: string;
   thumbnail: string;
-  content: (
-    | {
-        type: string;
-        content: JSX.Element[];
-        path?: undefined;
-      }
-    | {
-        type: string;
-        path: string;
-        content?: undefined;
-      }
-  )[];
+  content: Content[];
   related_posts: number[];
 }
 
