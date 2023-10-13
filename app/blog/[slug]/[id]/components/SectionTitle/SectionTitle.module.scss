@@ -1,0 +1,50 @@
+@import "../../../../../styles//partials//mixins";
+
+.section-title {
+  @include size(100%, calc(100vh - $menu-desktop-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include devices(large_tablet) {
+    @include size(100%, calc(90vh - $menu-mobile-height));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $menu-desktop-height;
+    width: 100%;
+    max-width: 70rem;
+
+    @include devices(large_tablet) {
+      margin-top: $menu-mobile-height;
+
+      .image-wrapper {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+
+    .title-wrapper {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1.5rem;
+
+      h1 {
+        @include fluid-font(40px, 53px);
+        @include title-fade-in-up();
+        position: relative;
+        text-align: center;
+      }
+    }
+  }
+}

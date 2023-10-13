@@ -3,14 +3,14 @@
 //////////////////////
 
 // SectionTitle
-interface SectionTitleProps {
-  data: {
-    title: string;
-    baseline?: string;
-  };
-  has_decoration?: boolean;
-  is_long_title?: boolean;
-}
+// interface SectionTitleProps {
+//   data: {
+//     title: string;
+//     baseline?: string;
+//   };
+//   has_decoration?: boolean;
+//   is_long_title?: boolean;
+// }
 
 // SectionCatchPhrase
 interface SectionCatchPhraseProps {

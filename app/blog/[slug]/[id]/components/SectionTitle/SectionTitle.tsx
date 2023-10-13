@@ -1,19 +1,12 @@
 import styles from "./SectionTitle.module.scss";
 import Image from "next/image";
-import { rocaOne } from "../../styles/fonts/font-face";
+import { rocaOne } from "../../../../../styles/fonts/font-face";
 
 type Props = {
-  data: {
-    title: string;
-    baseline?: string;
-  };
-  has_decoration?: boolean;
-  is_long_title?: boolean;
+  title: string;
 };
 
-export default function SectionTitle({ data, has_decoration = true, is_long_title = false }: Props) {
-  const { title, baseline } = data;
-
+export default function SectionTitle({ title }: Props) {
   return (
     <section className={styles["section-title"]}>
       <div className={styles["content"]}>
@@ -30,16 +23,9 @@ export default function SectionTitle({ data, has_decoration = true, is_long_titl
         </div>
         {title && (
           <div className={styles["title-wrapper"]}>
-            <h1 className={`${rocaOne.className} ${has_decoration ? styles["has-decoration"] : ""} ${is_long_title ? styles["is-long-title"] : ""}`}>
+            <h1 className={rocaOne.className}>
               <span>{title}</span>
             </h1>
-          </div>
-        )}
-        {baseline && (
-          <div className={styles["baseline-wrapper"]}>
-            <p className={styles["baseline"]}>
-              <span>{baseline}</span>
-            </p>
           </div>
         )}
       </div>
