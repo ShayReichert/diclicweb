@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: $menu-desktop-height;
+    width: 100%;
     max-width: 100rem;
 
     @include devices(large_tablet) {
@@ -31,23 +32,30 @@
       }
     }
 
+    .title-wrapper {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      margin-top: -1.4rem;
+      width: 100%;
+    }
+
     h1 {
       @include title-fade-in-up();
       position: relative;
       text-align: center;
       line-height: 1.4; // Allows you to see accents on special characters
-      margin-top: -1.4rem;
 
       &.has-decoration {
         @include underline(65%, 2.9rem, true, 0.5s) {
           right: -27px;
           top: auto;
-          bottom: 20px;
+          bottom: 27px;
 
           @include devices(large_tablet) {
             height: 2.5rem;
             right: -17px;
-            bottom: 10px;
+            bottom: 13px;
           }
         }
       }
@@ -59,26 +67,35 @@
       }
     }
 
-    .baseline {
-      @include title-fade-in-up(0.3s);
-      position: relative;
-      font-size: 22px;
-      font-weight: 600;
-      text-transform: uppercase;
+    .baseline-wrapper {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
       margin-top: -1.4rem;
+      width: 100%;
+      height: 2.8rem;
 
-      @include devices(large_tablet) {
-        font-size: 16px;
-      }
-
-      @include underline(52%, 1.6rem, true, 1s) {
-        right: -12px;
-        top: auto;
-        bottom: -4px;
+      .baseline {
+        @include title-fade-in-up(0.3s, 150%);
+        position: relative;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
 
         @include devices(large_tablet) {
-          height: 1.3rem;
-          right: -16px;
+          font-size: 16px;
+        }
+
+        @include underline(52%, 1.6rem, true, 1s) {
+          right: -12px;
+          top: auto;
+          bottom: 0;
+
+          @include devices(large_tablet) {
+            height: 1.2rem;
+            right: -12px;
+            bottom: 6px;
+          }
         }
       }
     }

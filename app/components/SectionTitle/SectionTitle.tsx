@@ -20,14 +20,18 @@ export default function SectionTitle({ data, has_decoration = true, is_long_titl
           />
         </div>
         {title && (
-          <h1 className={`${rocaOne.className} ${has_decoration ? styles["has-decoration"] : ""} ${is_long_title ? styles["is-long-title"] : ""}`}>
-            <span>{title}</span>
-          </h1>
+          <div className={styles["title-wrapper"]}>
+            <h1 className={`${rocaOne.className} ${has_decoration ? styles["has-decoration"] : ""} ${is_long_title ? styles["is-long-title"] : ""}`}>
+              <span>{title}</span>
+            </h1>
+          </div>
         )}
         {baseline && (
-          <p className={styles["baseline"]}>
-            <span>{baseline}</span>
-          </p>
+          <div className={styles["baseline-wrapper"]}>
+            <p className={styles["baseline"]}>
+              <span>{baseline}</span>
+            </p>
+          </div>
         )}
       </div>
     </section>
