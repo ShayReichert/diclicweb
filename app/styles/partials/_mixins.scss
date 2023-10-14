@@ -252,3 +252,23 @@
   height: 1px;
   overflow: hidden;
 }
+
+@mixin wrapper-image-fill($width: 100rem, $height: $width, $full_height: false) {
+  @include size($width, $height);
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+
+  @content;
+
+  img {
+    @if $full_height {
+      width: auto !important;
+    } @else {
+      height: auto !important;
+    }
+    left: 50% !important;
+    top: 50% !important;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

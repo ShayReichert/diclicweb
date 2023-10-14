@@ -6,10 +6,13 @@ interface SectionContentProps {
 }
 
 export default function SectionContent({ data }: SectionContentProps) {
-  const { content } = data;
+  const { content, thumbnail } = data;
 
   return (
-    <section>
+    <section className={styles["section-content"]}>
+      <div className={styles["main-image-wrapper"]}>
+        <Image src={thumbnail.path} alt={thumbnail.alt} fill sizes="(max-width: 767px) 100vw, 80vw" placeholder="blur" blurDataURL={thumbnail.path} />
+      </div>
       {content.map((item, index) => {
         switch (item.type) {
           case "paragraph":

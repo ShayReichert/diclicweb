@@ -1,18 +1,21 @@
 @import "../../../../../styles//partials//mixins";
 
-.image-wrapper {
-  @include size(80rem, 50rem);
-  position: relative;
-  overflow: hidden;
-  margin: auto;
-
-  @include devices(large_tablet) {
-    @include size(30rem, 25rem);
+.section-content {
+  .main-image-wrapper {
+    @include wrapper-image-fill(100rem, 50rem) {
+      @include devices(large_tablet) {
+        @include size(100%, 25rem);
+      }
+    }
   }
 
-  img {
-    width: auto !important;
-    left: 50% !important;
-    transform: translateX(-50%);
+  .image-wrapper {
+    @include wrapper-image-fill(80rem, 50rem, true) {
+      @include devices(large_tablet) {
+        @include size(90%, 40vh);
+        max-width: 60rem;
+        max-height: 50rem;
+      }
+    }
   }
 }

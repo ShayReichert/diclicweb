@@ -310,7 +310,7 @@ interface Post {
   date: string;
   category: number[];
   excerpt: string;
-  thumbnail: string;
+  thumbnail: { path: string; alt: string };
   content: Content[];
   related_posts: number[];
 }

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Diclicweb - Création de sites web engagés",
   description: "Je crée des sites wordpress éthiques et responsables pour des projets engagés",
   openGraph: {
-    ...{ images: ["http://localhost:3000/_next/image?url=%2Fimages%2Flogo_blue.png&w=384&q=75"] },
+    ...{ images: ["/images/logo_blue.png"] },
     // ...{ images: ["https://diclicweb.fr/_next/image?url=%2Fimages%2Flogo_blue.png&w=384&q=75"] },
   },
 };
