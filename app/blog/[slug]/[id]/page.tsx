@@ -1,16 +1,19 @@
-import type { Metadata } from "next";
 import fetchPostById from "@/app/utils/fetchPostById";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "@/app/components/SectionCatchPhrase/SectionCatchPhrase";
 import SectionContent from "./components/SectionContent/SectionContent";
 
-// export const metadata: Metadata = {
-//   title: "Blog | Diclicweb",
-//   description:
-//     "Retrouvez ici mes actualités, des conseils et des astuces pour gérer votre site web (éco-conception, optimisation, inclusivité et accessibilité web...).",
-// };
+export function generateMetadata({ params: { id } }: Props) {
+  const post = fetchPostById(parseInt(id));
 
-//
+  return {
+    title: `Blog | ${post.title}`,
+    description: post.excerpt,
+    openGraph: {
+      ...{ images: [`${post.thumbnail}`] },
+    },
+  };
+}
 
 type Props = {
   params: {
