@@ -1,7 +1,8 @@
-import { fetchPostById } from "@/app/utils/blog";
+import { fetchPostById, getRandomRelatedPosts } from "@/app/utils/blog";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "@/app/components/SectionCatchPhrase/SectionCatchPhrase";
 import SectionContent from "./components/SectionContent/SectionContent";
+import SectionRelatedPosts from "./components/SectionRelatedPosts/SectionRelatedPosts";
 
 export function generateMetadata({ params: { id } }: Props) {
   const post = fetchPostById(parseInt(id));
@@ -22,14 +23,17 @@ type Props = {
 };
 
 export default function Post({ params: { id } }: Props) {
-  const post = fetchPostById(parseInt(id));
+  const postId = parseInt(id);
+  const post = fetchPostById(postId);
+  const totalRelatedPosts = 3;
+  const relatedPosts = getRandomRelatedPosts(post.related_posts, totalRelatedPosts, postId);
 
   return (
     <main id="main">
       <SectionTitle title={post.title} />
       <SectionCatchPhrase data={{ text: post.excerpt }} />
       <SectionContent data={post} />
-      {/* SectionRelatedPosts */}
+      <SectionRelatedPosts relatedPosts={relatedPosts} />
     </main>
   );
 }
