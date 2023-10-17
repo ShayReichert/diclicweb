@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { rocaOne } from "../../styles/fonts/font-face";
 
 export const post2 = {
@@ -7,7 +6,7 @@ export const post2 = {
   author: "Shay",
   slug: "comment-rediger-contenu-site-ecriture-inclusive",
   date: "2023-11-08",
-  category: [2],
+  category: [2, 4],
   excerpt:
     "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? ✏️ Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.",
   thumbnail: {
@@ -193,5 +192,5 @@ export const post2 = {
     },
   ],
 
-  related_posts: [1],
+  related_posts: [3, 4],
 };
