@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
-import { blogCategoriesData } from "../_data/entities/blogCaterogies";
+import { categoriesData } from "../_data/entities/categories";
 import posts from "../_data/blog";
 import BlogContainer from "./components/BlogContainer/BlogContainer";
 
@@ -14,7 +14,7 @@ export default function Blog() {
   return (
     <main id="main">
       <SectionTitle data={{ title: "Blog" }} />
-      <BlogContainer posts={posts} blogCategoriesData={blogCategoriesData} />
+      <BlogContainer posts={posts} categoriesData={categoriesData} />
     </main>
   );
 }

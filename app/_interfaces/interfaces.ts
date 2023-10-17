@@ -291,7 +291,7 @@ interface Categories {
 }
 
 interface SectionCategoriesProps {
-  data: Categories;
+  categories: Category[];
   onCategoryClick: (id: Category["id"] | null) => void;
 }
 
@@ -321,5 +321,5 @@ interface SectionPostsProps {
 
 interface BlogContainerProps {
   posts: Post[];
-  blogCategoriesData: Categories;
+  categoriesData: Categories;
 }

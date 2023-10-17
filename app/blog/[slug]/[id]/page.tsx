@@ -1,4 +1,4 @@
-import fetchPostById from "@/app/utils/fetchPostById";
+import { fetchPostById } from "@/app/utils/blog";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "@/app/components/SectionCatchPhrase/SectionCatchPhrase";
 import SectionContent from "./components/SectionContent/SectionContent";

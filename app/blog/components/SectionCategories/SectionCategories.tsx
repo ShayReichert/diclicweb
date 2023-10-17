@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./SectionCategories.module.scss";
 
-export default function SectionCategories({ data, onCategoryClick }: SectionCategoriesProps) {
+export default function SectionCategories({ categories, onCategoryClick }: SectionCategoriesProps) {
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
 
   const handleClick = (category: Category | null) => {
@@ -19,7 +19,7 @@ export default function SectionCategories({ data, onCategoryClick }: SectionCate
         <div className={styles["content"]}>
           <ul>
             <li onClick={() => handleClick(null)}>TOUT</li>
-            {data.categories.map((category) => (
+            {categories.map((category) => (
               <li key={category.id} onClick={() => handleClick(category)}>
                 {category.name}
               </li>

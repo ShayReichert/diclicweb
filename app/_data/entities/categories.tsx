@@ -1,4 +1,4 @@
-export const blogCategoriesData = {
+export const categoriesData = {
   categories: [
     {
       id: 1,
@@ -17,8 +17,8 @@ export const blogCategoriesData = {
     },
     {
       id: 4,
-      name: "DIY",
-      slug: "diy",
+      name: "Tuto",
+      slug: "tuto",
     },
   ],
 };

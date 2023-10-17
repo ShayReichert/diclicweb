@@ -3,9 +3,12 @@
 import { useState } from "react";
 import SectionCategories from "../SectionCategories/SectionCategories";
 import SectionPosts from "../SectionPosts/SectionPosts";
+import { filterCategories } from "@/app/utils/blog";
 
-const BlogContainer = ({ posts, blogCategoriesData }: BlogContainerProps) => {
+const BlogContainer = ({ posts, categoriesData }: BlogContainerProps) => {
   const [filteredPosts, setFilteredPosts] = useState(posts);
+
+  const filteredCategories = filterCategories(categoriesData, posts);
 
   const handleCategoryClick = (id: number | null) => {
     if (id !== null) {
@@ -17,7 +20,7 @@ const BlogContainer = ({ posts, blogCategoriesData }: BlogContainerProps) => {
   };
   return (
     <div>
-      <SectionCategories data={blogCategoriesData} onCategoryClick={handleCategoryClick} />
+      <SectionCategories categories={filteredCategories} onCategoryClick={handleCategoryClick} />
       <SectionPosts posts={filteredPosts} />
     </div>
   );

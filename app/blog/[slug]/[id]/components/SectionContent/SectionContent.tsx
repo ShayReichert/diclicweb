@@ -20,7 +20,7 @@ export default function SectionContent({ data }: SectionContentProps) {
           case "image":
             return (
               item.path && (
-                <div className={styles["image-wrapper"]}>
+                <div key={index} className={styles["image-wrapper"]}>
                   <Image
                     src={item.path}
                     alt={item.alt ? item.alt : ""}
