@@ -1,12 +1,12 @@
-import styles from "./ThumbnailPost.module.scss";
+import styles from "./Thumbnail.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ThumbnailPostProps {
+interface ThumbnailProps {
   post: Post;
 }
 
-export default function ThumbnailPost({ post }: ThumbnailPostProps) {
+export default function Thumbnail({ post }: ThumbnailProps) {
   return (
     <li>
       <Link href={`/blog/${post.slug}/${post.id}`} role="link">

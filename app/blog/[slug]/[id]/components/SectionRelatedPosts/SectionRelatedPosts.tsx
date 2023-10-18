@@ -1,6 +1,6 @@
 import styles from "./SectionRelatedPostsProps.module.scss";
 import { fetchPostById } from "@/app/utils/blog";
-import ThumbnailPost from "@/app/blog/components/ThumbnailPost/ThumbnailPost";
+import Thumbnail from "@/app/blog/components/Thumbnail/Thumbnail";
 
 interface SectionRelatedPostsProps {
   relatedPosts: number[];
@@ -13,7 +13,7 @@ export default function SectionRelatedPosts({ relatedPosts }: SectionRelatedPost
       <ul>
         {relatedPosts.map((postId) => {
           const post = fetchPostById(postId);
-          return <ThumbnailPost key={post.id} post={post} />;
+          return <Thumbnail key={post.id} post={post} />;
         })}
       </ul>
     </section>

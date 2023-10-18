@@ -1,4 +1,4 @@
-import ThumbnailPost from "../ThumbnailPost/ThumbnailPost";
+import Thumbnail from "../Thumbnail/Thumbnail";
 import styles from "./SectionPosts.module.scss";
 
 export default function SectionPosts({ posts }: SectionPostsProps) {
@@ -7,7 +7,7 @@ export default function SectionPosts({ posts }: SectionPostsProps) {
       <h2>Derniers Articles</h2>
       <ul>
         {posts.map((post) => (
-          <ThumbnailPost key={post.id} post={post} />
+          <Thumbnail key={post.id} post={post} />
         ))}
       </ul>
     </section>
