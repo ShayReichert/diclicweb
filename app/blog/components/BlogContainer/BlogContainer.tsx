@@ -3,6 +3,7 @@
 import { useState } from "react";
 import SectionCategories from "../SectionCategories/SectionCategories";
 import SectionPosts from "../SectionPosts/SectionPosts";
+import Pagination from "../Pagination/Pagination";
 import { filterCategories } from "@/app/utils/blog";
 import { usePagination } from "@/app/utils/usePagination";
 
@@ -27,14 +28,7 @@ const BlogContainer = ({ posts, categoriesData }: BlogContainerProps) => {
     <div>
       <SectionCategories categories={filteredCategories} onCategoryClick={handleCategoryClick} />
       <SectionPosts posts={currentPosts} />
-      <div className="pagination">
-        <button onClick={prev} disabled={currentPage === 1}>
-          Précédent
-        </button>
-        <button onClick={next} disabled={currentPage === totalPages}>
-          Suivant
-        </button>
-      </div>
+      <Pagination currentPage={currentPage} totalPages={totalPages} next={next} prev={prev} />
     </div>
   );
 };
