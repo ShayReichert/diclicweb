@@ -16,14 +16,10 @@
   .background-content {
     background-color: $primary-color;
     margin-top: -2px;
-    padding: 8rem 0.5rem 18rem;
+    padding: 5rem 0.5rem 12rem;
     display: flex;
     text-align: center;
     justify-content: center;
-
-    @include devices(large_tablet) {
-      padding: 5rem 0.5rem 13rem;
-    }
 
     .content {
       width: 70%;
@@ -34,8 +30,50 @@
         width: 80%;
       }
 
-      p {
-        @include fluid-font(20px, 25px);
+      ul {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+
+        @include devices(large_tablet) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        li {
+          position: relative;
+          opacity: 0.8;
+          cursor: pointer;
+          transition: opacity 0.35s ease;
+
+          @include after(100%, 1px) {
+            position: absolute;
+            top: auto;
+            bottom: -3px;
+            right: 0;
+            left: 0;
+            background-color: $white;
+            transition: transform 0.3s ease;
+            transform-origin: left;
+            transform: scaleX(0);
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &.active {
+            opacity: 1;
+
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+
+          @include devices(large_tablet) {
+            margin-top: 2rem;
+          }
+        }
       }
     }
   }

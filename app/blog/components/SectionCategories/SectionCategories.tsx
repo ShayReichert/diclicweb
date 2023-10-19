@@ -18,9 +18,15 @@ export default function SectionCategories({ categories, onCategoryClick }: Secti
       <div className={styles["background-content"]}>
         <div className={styles["content"]}>
           <ul>
-            <li onClick={() => handleClick(null)}>TOUT</li>
+            <li onClick={() => handleClick(null)} className={!activeCategory ? styles["active"] : ""}>
+              TOUT
+            </li>
             {categories.map((category) => (
-              <li key={category.id} onClick={() => handleClick(category)}>
+              <li
+                key={category.id}
+                onClick={() => handleClick(category)}
+                className={activeCategory && activeCategory.id === category.id ? styles["active"] : ""}
+              >
                 {category.name}
               </li>
             ))}
