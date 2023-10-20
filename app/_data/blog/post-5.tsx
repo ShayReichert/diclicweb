@@ -10,7 +10,7 @@ export const post5 = {
   category: [2],
   excerpt: "Lorem ipsum queers",
   thumbnail: {
-    path: "/images/services/icon_site.png",
+    path: "/images/services/etape_1.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [

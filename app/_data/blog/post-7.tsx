@@ -10,7 +10,7 @@ export const post7 = {
   category: [4],
   excerpt: "Lorem ipsum besoin",
   thumbnail: {
-    path: "/images/services/icon_site.png",
+    path: "/images/services/etape_3.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [

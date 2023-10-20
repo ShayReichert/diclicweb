@@ -317,6 +317,7 @@ interface Post {
 
 interface SectionPostsProps {
   posts: Post[];
+  currentPage: number;
 }
 
 interface BlogContainerProps {

@@ -8,7 +8,7 @@ export const post2 = {
   date: "2023-11-08",
   category: [2, 4],
   excerpt:
-    "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? ✏️ Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.",
+    "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.",
   thumbnail: {
     path: "/images/services/etape_2.webp",
     alt: "Image d'illustration de l'article",

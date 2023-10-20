@@ -10,7 +10,7 @@ export const post8 = {
   category: [1, 2, 4],
   excerpt: "Lorem ipsum site éthique responsable",
   thumbnail: {
-    path: "/images/services/icon_site.png",
+    path: "/images/services/etape_4.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [

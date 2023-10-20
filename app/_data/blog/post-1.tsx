@@ -11,7 +11,7 @@ export const post1 = {
   excerpt:
     "L'éco-conception de site internet est un enjeu de plus en plus important pour les entreprises et les organisations qui souhaitent minimiser leur impact environnemental.",
   thumbnail: {
-    path: "/images/services/icon_site.png",
+    path: "/images/services/etape_1.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [
