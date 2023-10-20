@@ -10,7 +10,7 @@
   }
 
   @include devices(tablet) {
-    width: 1 00%;
+    width: 100%;
   }
 
   &.fullwidth {
@@ -43,6 +43,10 @@
           }
         }
       }
+    }
+
+    &:focus-visible .thumbnail-content {
+      outline: 4px solid $accent-color;
     }
 
     .thumbnail-content {
