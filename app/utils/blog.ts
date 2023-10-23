@@ -37,3 +37,12 @@ export const getRandomRelatedPosts = (relatedPosts: number[], totalRelatedPosts:
 
   return Array.from(randomPosts);
 };
+
+export const getCategoryName = (categories: Category[], categoryIds: number[]): string => {
+  const categoryNames = categoryIds.map((categoryId) => {
+    const category = categories.find((cat) => cat.id === categoryId);
+    return category ? category.name : "";
+  });
+
+  return categoryNames.join(", ");
+};

@@ -1,5 +1,8 @@
 import styles from "./SectionContent.module.scss";
 import Image from "next/image";
+import { formatDate } from "@/app/utils/formatDate";
+import { getCategoryName } from "@/app/utils/blog";
+import { categoriesData } from "@/app/_data/entities/categories";
 
 interface SectionContentProps {
   data: Post;
@@ -36,6 +39,12 @@ export default function SectionContent({ data }: SectionContentProps) {
             return null;
         }
       })}
+      <div className={styles["infos"]}>
+        <p>
+          {data.author && <span>{data.author}</span>} - {data.date && <span>{formatDate(data.date)}</span>} -{" "}
+          {data.category && <span>{getCategoryName(categoriesData.categories, data.category)}</span>}
+        </p>
+      </div>
     </section>
   );
 }
