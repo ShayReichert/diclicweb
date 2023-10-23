@@ -159,7 +159,7 @@ export const sectionFAQData = {
           <p>Pour vous donner une idée, voici des fourchettes de prix :</p>
           <ul>
             <li>
-              <strong>Un site vitrine </strong>: entre 1400 et 2800€ (10 pages max)
+              <strong>Un site vitrine </strong>: entre 1400 et 2800€ pour un site de 10 pages max.
             </li>
             <li>
               <strong>Un site e-commerce </strong>: à partir de 3000€ (dépend de la taille de la boutique)

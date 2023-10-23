@@ -1,1 +1,55 @@
 @import "../../../../../styles//partials//mixins";
+
+.related-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $blue-light;
+    border-radius: $border-radius;
+    padding: 3rem 1rem;
+
+    h2 {
+      @include fluid-font(30px, 35px);
+      padding: 0 2rem;
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 110rem;
+    }
+
+    .blog-link {
+      @include fluid-font(14px, $font-size-body);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+
+      img {
+        padding: 0.6rem;
+        border-radius: 50px;
+        background-color: $white;
+        transition: transform 0.3s ease;
+      }
+
+      span {
+        margin-left: 0.8rem;
+      }
+
+      &:hover {
+        img {
+          transform: translateX(-0.3rem);
+        }
+      }
+    }
+  }
+}

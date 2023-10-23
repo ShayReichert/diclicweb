@@ -3,7 +3,7 @@ export const sectionTitleData = {
 };
 
 export const sectionCatchphraseData = {
-  text: "Parlez-moi de votre projet ! 🙌",
+  text: "Parlez-moi de votre projet ! ✍️",
 };
 
 export const sectionContactFormData = {
@@ -16,7 +16,7 @@ export const sectionContactFormData = {
           </strong>
         </p>
         <p>
-          <strong>Dites-moi comment je peux vous aider ! Je vous répondrai dans les plus brefs délais. </strong>
+          <strong>Dites-moi comment je peux vous aider ! Je vous répondrai dans les plus brefs délais.</strong>
         </p>
       </div>
 

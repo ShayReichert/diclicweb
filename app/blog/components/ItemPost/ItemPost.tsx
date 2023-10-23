@@ -1,18 +1,18 @@
 import { formatDate } from "@/app/utils/formatDate";
-import styles from "./Thumbnail.module.scss";
+import styles from "./ItemPost.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ThumbnailProps {
+interface ItemPostProps {
   post: Post;
-  isFirst: boolean;
+  isFirst?: boolean;
 }
 
-export default function Thumbnail({ post, isFirst }: ThumbnailProps) {
+export default function ItemPost({ post, isFirst }: ItemPostProps) {
   return (
-    <li className={`${styles["thumbnail"]} ${isFirst ? styles["fullwidth"] : ""}`}>
+    <li className={`${styles["item-post"]} ${isFirst ? styles["fullwidth"] : ""}`}>
       <Link href={`/blog/${post.slug}/${post.id}`} role="link">
-        <div className={styles["thumbnail-content"]}>
+        <div className={styles["item-post-content"]}>
           <div className={styles["image-wrapper"]}>
             <Image
               src={post.thumbnail.path}
@@ -23,7 +23,7 @@ export default function Thumbnail({ post, isFirst }: ThumbnailProps) {
               blurDataURL={post.thumbnail.path}
             />
           </div>
-          <div className={styles["thumbnail-text"]}>
+          <div className={styles["item-post-text"]}>
             <h3>{post.title}</h3>
             <p className={styles["date"]}>{formatDate(post.date)}</p>
             <p className={styles["excert"]}>{post.excerpt}</p>
