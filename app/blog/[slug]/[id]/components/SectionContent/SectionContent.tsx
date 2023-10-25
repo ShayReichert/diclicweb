@@ -19,7 +19,11 @@ export default function SectionContent({ data }: SectionContentProps) {
       {content.map((item, index) => {
         switch (item.type) {
           case "paragraph":
-            return <div key={index}>{item.text}</div>;
+            return (
+              <div key={index} className={styles["text-wrapper"]}>
+                {item.text}
+              </div>
+            );
           case "image":
             return (
               item.path && (
@@ -39,7 +43,7 @@ export default function SectionContent({ data }: SectionContentProps) {
             return null;
         }
       })}
-      <div className={styles["infos"]}>
+      <div className={styles["infos-wrapper"]}>
         <p>
           {data.author && <span>{data.author}</span>} - {data.date && <span>{formatDate(data.date)}</span>} -{" "}
           {data.category && <span>{getCategoryName(categoriesData.categories, data.category)}</span>}

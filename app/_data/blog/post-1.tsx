@@ -23,14 +23,14 @@ export const post1 = {
             L'éco-conception de site internet est un enjeu de plus en plus important pour les entreprises et les organisations qui souhaitent
             minimiser leur impact environnemental. En tant que créateur de site, je m'efforce de mettre en place des pratiques durables sans pour
             autant nuire aux performances du site et à l’expérience utilisateur·ice (au contraire même !). <br />
-            Je vous explique dans cet article mes méthodes et mes outils pour créer des sites web éco-responsables.
           </p>
+          <p>Je vous explique dans cet article mes méthodes et mes outils pour créer des sites web éco-responsables.</p>
         </>,
       ],
     },
     {
       type: "image",
-      path: "/images/services/icon_site.png",
+      path: "/images/about/a_propos_2.webp",
       alt: "Image d'un ordinateur avec un site web",
     },
     {
@@ -49,7 +49,7 @@ export const post1 = {
       type: "paragraph",
       text: [
         <>
-          <h2 className={rocaOne.className}>2.Optimiser les images 🩻</h2>
+          <h2 className={rocaOne.className}>2. Optimiser les images 🩻</h2>
           <p>
             Pour optimiser la taille et le poids des images, je m'assure de les compresser sans perdre en qualité, et de ne télécharger que les images
             réellement utiles sur le site. Cela permet de réduire le temps de chargement des pages et d'économiser de la bande passante, tant pour les
@@ -79,7 +79,7 @@ export const post1 = {
       type: "paragraph",
       text: [
         <>
-          <h2>4. Des design sobres et efficaces 🎨</h2>
+          <h2 className={rocaOne.className}>4. Des design sobres et efficaces 🎨</h2>
           <p>
             Côté design, j'opte pour une esthétique épurée et minimaliste, qui met en valeur le contenu du site tout en proposant une interface claire
             et intuitive. Je n'ajoute que les fonctionnalités utiles et essentielles, afin d'éviter de surcharger le site et de rendre la navigation
@@ -112,6 +112,7 @@ export const post1 = {
           <p>
             Si vous avez besoin de conseils ou d’accompagnements pour votre projet, n’hésitez pas à
             <Link href="/contact" role="link">
+              {" "}
               me contacter
             </Link>
             .

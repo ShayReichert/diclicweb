@@ -5,7 +5,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 10rem;
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem;
+  max-width: $max-content;
 
   .section-content {
     display: flex;
@@ -13,7 +14,12 @@
     align-items: flex-start;
     background-color: $blue-light;
     border-radius: $border-radius;
+    margin: 0 2rem;
     padding: 3rem 1rem;
+
+    @include devices(large_tablet) {
+      padding: 3rem 0;
+    }
 
     h2 {
       @include fluid-font(30px, 35px);
@@ -25,7 +31,6 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      max-width: 110rem;
     }
 
     .blog-link {

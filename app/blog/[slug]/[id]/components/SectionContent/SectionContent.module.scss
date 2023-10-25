@@ -7,6 +7,13 @@
         @include size(100%, 25rem);
       }
     }
+    border-radius: $border-radius;
+    margin: 10rem auto;
+
+    @include devices(large_tablet) {
+      border-radius: 0;
+      margin: 3rem auto 5rem;
+    }
   }
 
   .image-wrapper {
@@ -16,6 +23,30 @@
         max-width: 60rem;
         max-height: 50rem;
       }
+    }
+    border-radius: $border-radius;
+    margin: 5rem auto;
+  }
+
+  .text-wrapper {
+    @include default-content-style();
+    max-width: 86rem;
+    margin: auto;
+
+    @include devices(large_tablet) {
+      padding: 0 3rem;
+    }
+  }
+
+  .infos-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 86rem;
+    margin: 7rem auto 10rem;
+
+    @include devices(large_tablet) {
+      padding: 0 3rem;
+      margin: 7rem auto 0;
     }
   }
 }

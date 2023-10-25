@@ -40,8 +40,12 @@ export const post2 = {
             tou·te·s vos visiteur·se·s. C'est un moyen puissant de promouvoir l'égalité des genres et de contribuer à un monde plus égalitaire et
             accueillant.
             <br />
-            Par ailleurs, je vous recommande de visionner cette excellente vidéo de Scilabus qui démontre toute l’importance de l’écriture inclusive
-            dans nos projections et représentations mentales : https://youtu.be/url1TFdHlSI
+            Par ailleurs, je vous recommande de visionner
+            <a href="https://youtu.be/url1TFdHlSI" target="_blank">
+              {" "}
+              cette excellente vidéo de Scilabus{" "}
+            </a>
+            qui démontre toute l’importance de l’écriture inclusive dans nos projections et représentations mentales.
           </p>
         </>,
       ],

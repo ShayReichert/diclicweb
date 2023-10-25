@@ -1,6 +1,46 @@
 @import "./variables";
 @import "./functions";
 
+// ----- GENERAL ----- //
+
+@mixin default-content-style() {
+  h2 {
+    @include fluid-font(25px, 45px);
+    margin: 8rem 0 3rem 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    @include fluid-font(20px, 30px);
+    margin: 4rem 0 1.5rem 3rem;
+    text-wrap: balance;
+
+    @include devices(large_tablet) {
+      margin: 4rem 0 1.5rem 0;
+    }
+  }
+
+  p,
+  ul {
+    @include fluid-font(16px, $font-size-body);
+    margin: 0 0 3rem 3rem;
+    line-height: 1.3;
+
+    @include devices(large_tablet) {
+      margin: 1.5rem 0 1rem 0;
+    }
+
+    li {
+      list-style: disc;
+      margin: 2rem 0 2rem 2rem;
+    }
+  }
+
+  a {
+    @include hover-underline($offset: -1px);
+  }
+}
+
 // ----- MEDIA QUERIES ----- //
 
 @mixin devices($breakpoint) {

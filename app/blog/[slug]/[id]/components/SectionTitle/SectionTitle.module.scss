@@ -40,10 +40,11 @@
       margin-top: 1.5rem;
 
       h1 {
-        @include fluid-font(40px, 53px);
+        @include fluid-font(32px, 53px);
         @include title-fade-in-up();
         position: relative;
         text-align: center;
+        margin: 1.5rem 1rem 0 1rem;
       }
     }
   }

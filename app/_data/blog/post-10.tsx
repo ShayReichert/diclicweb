@@ -26,7 +26,7 @@ export const post10 = {
     },
     {
       type: "image",
-      path: "/images/services/icon_site.png",
+      path: "/images/about/a_propos_2.webp",
       alt: "Image d'un ordinateur avec un site web",
     },
     {

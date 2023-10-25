@@ -2,6 +2,7 @@ import { formatDate } from "@/app/utils/formatDate";
 import styles from "./ItemPost.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { rocaOne } from "@/app/styles/fonts/font-face";
 
 interface ItemPostProps {
   post: Post;
@@ -24,7 +25,7 @@ export default function ItemPost({ post, isFirst }: ItemPostProps) {
             />
           </div>
           <div className={styles["item-post-text"]}>
-            <h3>{post.title}</h3>
+            <h3 className={rocaOne.className}>{post.title}</h3>
             <p className={styles["date"]}>{formatDate(post.date)}</p>
             <p className={styles["excert"]}>{post.excerpt}</p>
           </div>
