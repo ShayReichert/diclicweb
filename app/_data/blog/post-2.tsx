@@ -21,26 +21,23 @@ export const post2 = {
           <h2 className={rocaOne.className}>1. Qu'est-ce que l'écriture inclusive ?</h2>
           <h3 className={rocaOne.className}>Définition</h3>
           <p>
-            L'écriture inclusive est une approche linguistique visant à inclure tous les genres dans le langage, et à éviter les biais de langage
-            envers un genre spécifique. Elle repose sur des règles et des pratiques permettant de rendre visible et de reconnaître toutes les
-            identités de genre, qu'elles soient féminines, masculines, non-binaires ou autres.
+            L'écriture inclusive est une approche linguistique qui vise à<strong> inclure tous les genres dans le langage</strong>, et à éviter les
+            biais de langage envers un genre spécifique. C'est une manière de respecter et de reconnaître
+            <strong> toutes les identités de genre </strong>féminin, masculin, non-binaire ou autre.
           </p>
           <p>
             Contrairement à l'écriture genrée traditionnelle, qui utilise généralement des formes masculines pour représenter un groupe de personnes
-            de différents genres, l'écriture inclusive propose des alternatives pour inclure toutes les personnes concernées. Parmi les différentes
-            méthodes utilisées, on retrouve notamment le point médian, la féminisation de certains mots ou l’utilisation de formes neutres.
+            de différents genres, l'écriture inclusive propose des alternatives pour<strong> inclure toutes les personnes concernées</strong>. Parmi
+            les différentes méthodes utilisées, on retrouve notamment
+            <strong> le point médian, la féminisation de certains mots ou l’utilisation de formes neutres</strong>.
           </p>
           <p>
-            L'objectif de l'écriture inclusive est de rendre le langage plus égalitaire, en évitant de perpétuer des stéréotypes de genre ou d'exclure
-            certaines identités. Elle offre une manière d'inclure tout le monde de manière respectueuse et non-discriminatoire dans la communication
-            écrite.
+            L'objectif de l'écriture inclusive est de rendre le langage<strong> plus égalitaire</strong>, en évitant de perpétuer des stéréotypes de
+            genre ou d'exclure certaines identités. Elle offre une
+            <strong> manière d'inclure tout le monde de manière respectueuse et non-discriminatoire </strong>dans la communication écrite.
           </p>
           <p>
-            Adopter l'écriture inclusive dans le contenu de votre site web démontre votre volonté de créer un espace inclusif et respectueux pour
-            tou·te·s vos visiteur·se·s. C'est un moyen puissant de promouvoir l'égalité des genres et de contribuer à un monde plus égalitaire et
-            accueillant.
-            <br />
-            Par ailleurs, je vous recommande de visionner
+            Si vous voulez mieux comprendre les<strong> enjeux derrière l'écriture inclusive</strong>, je vous recommande de visionner
             <a href="https://youtu.be/url1TFdHlSI" target="_blank">
               {" "}
               cette excellente vidéo de Scilabus{" "}
@@ -59,23 +56,23 @@ export const post2 = {
           <p>
             L'écriture inclusive montre clairement votre volonté d'accueillir et de représenter toute votre audience, sans distinction de genre. En
             utilisant des formulations neutres, vous évitez de perpétuer des stéréotypes et des préjugés liés au genre. Chacun·e se sent ainsi
-            reconnu·es et inclus·es dans votre organisation. <br />
-            En favorisant l'inclusivité, vous bâtissez une relation de confiance avec votre audience, ce qui peut contribuer à fidéliser vos
-            visiteur·ses et à renforcer votre réputation.
+            reconnu·es et inclus·es dans ce que vous proposez. <br />
+            Vous bâtissez une relation de confiance avec votre audience, ce qui peut contribuer à
+            <strong> fidéliser vos visiteur·ses et à renforcer votre réputation</strong>.
           </p>
           <h3 className={rocaOne.className}>Promouvoir l'égalité</h3>
           <p>
-            L'écriture inclusive s'inscrit dans une démarche d'égalité des genres et de reconnaissance de la diversité des identités. En optant pour
-            cette approche, vous montrez que vous vous engagez activement dans la lutte contre les inégalités et que vous valorisez toutes les
-            contributions, indépendamment du genre.
+            L'écriture inclusive s'inscrit dans une démarche d'égalité des genres et de reconnaissance de la diversité des identités. Vous montrez que
+            vous vous<strong> engagez activement dans la lutte contre les inégalités </strong>et que vous valorisez toutes les contributions,
+            indépendamment du genre.
           </p>
           <p>
-            Promouvoir l'égalité renforce votre responsabilité sociale. Cela peut avoir un impact positif sur la perception de votre organisation et
-            attirer une audience qui partage ces mêmes valeurs.
+            Promouvoir l'égalité renforce votre responsabilité sociale, ce qui peut avoir un impact positif sur la perception de votre organisation et
+            <strong> attirer une audience qui partage ces mêmes valeurs</strong>.
           </p>
           <p>
-            L'écriture inclusive est donc bien plus qu'une simple pratique linguistique : c'est un moyen puissant de montrer votre engagement envers
-            l'égalité et l'inclusivité. Et de contribuer activement à une société plus juste et inclusive !
+            L'écriture inclusive est donc bien plus qu'une simple pratique linguistique : c'est un moyen puissant de
+            <strong> montrer votre engagement</strong> et de contribuer activement à une société plus juste et inclusive !
           </p>
         </>,
       ],
@@ -92,9 +89,9 @@ export const post2 = {
           <h2 className={rocaOne.className}>3. Comment rédiger en écriture inclusive ?</h2>
           <h3 className={rocaOne.className}>Utilisation des règles de base</h3>
           <p>
-            Voici quelques règles de base permettant d’utiliser l’écriture inclusive. Ces règles sont combinables et ajustables selon vos propres
-            préférences. Certaines sont plus discrètes ou faciles à mettre en place : à vous d'adapter vos pratiques à votre persona et à votre
-            secteur d'activité.
+            Alors d'abord, ce n'est pas si compliqué, c'est plus une question d'habitude ! Voici quelques règles de base permettant d’utiliser
+            l’écriture inclusive. Ces règles sont combinables et<strong> ajustables </strong>selon vos propres préférences. Certaines sont plus
+            discrètes ou faciles à mettre en place : à vous d'adapter vos pratiques à votre persona et à votre secteur d'activité !
           </p>
           <ul>
             <li>
@@ -137,9 +134,9 @@ export const post2 = {
             En utilisant ces règles de base, vous pouvez progressivement intégrer l'écriture inclusive dans vos articles, vos pages et vos contenus.{" "}
           </p>
           <p>
-            N'hésitez pas à vous familiariser avec ces différentes méthodes pour trouver celle qui vous convient le mieux et qui correspond à votre
-            ton et à votre style d'écriture. Commencez par des changements simples et progressez à votre rythme ! Avec le temps, l'écriture inclusive
-            deviendra une habitude naturelle dans votre manière de communiquer. 😃
+            N'hésitez pas à vous familiariser avec ces différentes méthodes pour trouver celle qui vous convient le mieux et qui
+            <strong> correspond à votre ton et à votre style d'écriture</strong>. Commencez par des changements simples et progressez à votre rythme !
+            Avec le temps, l'écriture inclusive deviendra une<strong> habitude naturelle </strong>dans votre manière de communiquer. 😃
           </p>
         </>,
       ],
@@ -159,8 +156,9 @@ export const post2 = {
               <a href="https://eninclusif.fr/" role="link" target="_blank">
                 EnInclusif.fr
               </a>{" "}
-              : un convertisseur d'écriture inclusive qui permet de transformer automatiquement un texte en écriture inclusive. <br />
-              Ce site propose également des accompagnements pour la mise en place de l'écriture inclusive dans votre entreprise.
+              : un convertisseur d'écriture inclusive qui permet de<strong> transformer automatiquement un texte en écriture inclusive</strong>.{" "}
+              <br />
+              Ce site propose également des<strong> accompagnements pour la mise en place de l'écriture inclusive </strong>dans votre entreprise.
             </li>
             <li>
               <a href="https://mots.incluzor.fr/" role="link" target="_blank">
@@ -181,15 +179,14 @@ export const post2 = {
           </ul>
           <h3 className={rocaOne.className}>Sensibiliser votre équipe</h3>
           <p>
-            Intégrer l'écriture inclusive dans votre site web est une démarche collective qui peut être facilitée par la sensibilisation de votre
-            équipe. Expliquez les enjeux de l'écriture inclusive et les bénéfices qu'elle apporte en termes d'inclusivité et d'égalité des genres.
-            Assurez-vous que tous les membres de l'équipe comprennent les règles de base et l'importance d'adopter cette approche dans votre
-            communication.
+            Intégrer l'écriture inclusive dans votre site web est une démarche collective qui peut être facilitée par la
+            <strong> sensibilisation de votre équipe</strong>. Vous pouvez également organiser des<strong> formations ou des ateliers </strong>pour
+            sensibiliser votre équipe aux enjeux liés à l'inclusivité.
           </p>
-          <p>Vous pouvez également organiser des formations ou des ateliers pour sensibiliser votre équipe aux enjeux liés à l'inclusivité.</p>
+          <p></p>
           <p>
-            Lorsque toute l'équipe est engagée dans cette démarche, il devient plus facile de créer un site web inclusif et d’étendre cette démarche à
-            l’ensemble de votre communication (réseaux sociaux, newsletter, etc.).
+            Lorsque toute l'équipe est engagée, il devient plus facile d’étendre cette démarche à<strong> l’ensemble de votre communication </strong>
+            (réseaux sociaux, newsletter, etc.).
           </p>
         </>,
       ],
