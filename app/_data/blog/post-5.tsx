@@ -8,7 +8,7 @@ export const post5 = {
   slug: "creation-site-web-queers",
   date: "2023-11-11",
   category: [2],
-  excerpt: "Lorem ipsum queers",
+  excerpt: "Vous êtes une personne queer et vous avez un projet de site web ? Je peux certainement vous aider ! 🙌",
   thumbnail: {
     path: "/images/services/etape_1.webp",
     alt: "Image d'illustration de l'article",
@@ -18,8 +18,15 @@ export const post5 = {
       type: "paragraph",
       text: [
         <>
+          <h2 className={rocaOne.className}>1. Je me présente 😃</h2>
           <p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget
+            Moi c'est Shay, je suis développeur web et je suis une personne<strong> queer et trans</strong>. Étant directement concerné, développer
+            des sites pour la communauté queer et LGBTQIA+ est quelque chose qui
+            <strong> me tient particulièrement à coeur </strong> ! 🏳️‍🌈 <br />
+          </p>
+          <p>
+            Je souhaite également apporter mon aide aux<strong> projets à impacts, inclusifs et qui ont du sens </strong>plus généralement (artisanat,
+            culture, art, écologie, projets associatifs...).
           </p>
         </>,
       ],
@@ -33,9 +40,38 @@ export const post5 = {
       type: "paragraph",
       text: [
         <>
-          <h2 className={rocaOne.className}>1. Titre 1</h2>
+          <h2 className={rocaOne.className}>2. Mes aventures passées</h2>
+          <ul>
+            <li>
+              <strong>
+                <Link href="https://queerbandfrance.com/" role="link" target="_blank">
+                  QueerBandFrance
+                </Link>{" "}
+                :{" "}
+              </strong>
+              Un site référençant les groupes de musique queer en France.
+            </li>
+            <li>
+              <strong>
+                <Link href="https://lesqueeriersducinema.com/" role="link" target="_blank">
+                  Les Queeriers du Cinéma
+                </Link>{" "}
+                :{" "}
+              </strong>
+              Un blog sur les pépites du cinéma queers, LGBTQIA+ et inclusifs.
+            </li>
+            <li>
+              <strong>
+                <Link href="https://moncinemaqueer.netlify.app/" role="link" target="_blank">
+                  Mon Cinéma Queer
+                </Link>{" "}
+                :{" "}
+              </strong>
+              Un site listant les derniers films queer sortis.
+            </li>
+          </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget
+            J'ai également collaboré avec des personnes queers pour<strong> les accompagner dans la création de leur site web </strong>!
           </p>
         </>,
       ],
@@ -44,55 +80,39 @@ export const post5 = {
       type: "paragraph",
       text: [
         <>
-          <h2 className={rocaOne.className}>2.Titre 2</h2>
+          <h2 className={rocaOne.className}>3. Vous êtes queers et vous avez besoin d'un site web ? 🏳️‍⚧️</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget
-          </p>
-        </>,
-      ],
-    },
-    {
-      type: "paragraph",
-      text: [
-        <>
-          <h2 className={rocaOne.className}>3.Titre 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget
-          </p>
-        </>,
-      ],
-    },
-    {
-      type: "paragraph",
-      text: [
-        <>
-          <h2 className={rocaOne.className}>4. Titre 4</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget
-          </p>
-        </>,
-      ],
-    },
-    {
-      type: "paragraph",
-      text: [
-        <>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl ultricies nisl, eget
+            Vous êtes une<strong> association queer ou LGBTQIA+ </strong>et vous avez besoin d'un site web ? Ou vous êtes entrain de
+            <strong> monter votre entreprise </strong>et vous auriez bien besoin d'un site vitrine ? Ou encore vous avez besoin d'un
+            <strong> site e-commerce pour de la vente en ligne </strong>?
           </p>
           <p>
-            Si vous avez besoin de conseils ou d’accompagnements pour votre projet, n’hésitez pas à
+            {" "}
+            N'hésitez pas à{" "}
             <Link href="/contact" role="link">
               me contacter
-            </Link>
-            .
+            </Link>{" "}
+            pour voir si nous pouvons collaborer !
+          </p>
+        </>,
+      ],
+    },
+    {
+      type: "paragraph",
+      text: [
+        <>
+          <h2 className={rocaOne.className}>4. Vous avez un projet de site web queers ?</h2>
+          <p>
+            Si vous avez plutôt un projet de<strong> site web ou d'application web utile à la communauté queer ou LGBTQIA+ </strong>ça marche aussi !{" "}
+            <Link href="/contact" role="link">
+              Contactez-moi
+            </Link>{" "}
+            et nous discuterons ensemble de votre projet 😃
           </p>
         </>,
       ],
     },
   ],
 
-  related_posts: [2, 3],
+  related_posts: [4, 9],
 };
