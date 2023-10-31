@@ -62,7 +62,7 @@ export const post1 = {
             Pour optimiser la taille et le poids des images, je m'assure de les<strong> compresser sans perdre en qualité</strong>, et de n'ajouter
             que les images réellement nécessaires sur le site. Cela réduit le temps de chargement des pages et économise de la bande passante, tant
             pour les utilisateur·ices que pour l'hébergeur du site. <br />
-            L’utilisation du “lazy load” permet également de ne charger les images uniquement que lorsqu'on en a besoin !(au fur et à mesure du
+            L’utilisation du “lazy load” permet également de ne charger les images uniquement que lorsqu'on en a besoin ! (au fur et à mesure du
             scroll). <br />
             <Link href="/a-propos" role="link">
               → Voir l’article “Comment bien optimiser les images sur son site"
