@@ -20,9 +20,8 @@ export const post1 = {
       text: [
         <>
           <p>
-            L'éco-conception de site internet est un enjeu de plus en plus important pour les entreprises et les organisations qui souhaitent
-            <strong> minimiser leur impact environnemental</strong>. En tant que créateur de site, j'essaye de mettre en place des
-            <strong> pratiques durables </strong>sans sacrifier les performances du site ni l’expérience utilisateur·ice (au contraire même !). <br />
+            En tant que créateur de site, j'essaye de mettre en place des <strong> pratiques durables </strong>sans sacrifier les performances du site
+            ni l’expérience utilisateur·ice (au contraire même !). <br />
           </p>
           <p>
             Je vais vous expliquer ici mes<strong> astuces et outils </strong>pour créer les sites web les plus éco-responsables possibles.
