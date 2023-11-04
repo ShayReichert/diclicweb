@@ -7,7 +7,7 @@ export const post10 = {
   author: "Shay",
   slug: "comment-bien-optimiser-images-site-web",
   date: "2023-11-13",
-  category: [4],
+  category: [1, 4],
   excerpt: "Lorem ipsum images",
   thumbnail: {
     path: "/images/services/etape_2.webp",
