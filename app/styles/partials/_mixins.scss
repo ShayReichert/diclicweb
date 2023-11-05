@@ -27,7 +27,8 @@
   }
 
   p,
-  ul {
+  ul,
+  ol {
     @include fluid-font(16px, $font-size-body);
     margin: 0 0 3rem 3rem;
     line-height: 1.3;
@@ -40,6 +41,10 @@
       list-style: disc;
       margin: 2rem 0 2rem 2rem;
     }
+  }
+
+  ol li {
+    list-style: decimal;
   }
 
   a {
