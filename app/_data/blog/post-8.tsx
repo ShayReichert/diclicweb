@@ -10,7 +10,7 @@ export const post8 = {
   category: [1, 4],
   excerpt: "Quels sont les avantages et inconvénients de la JAMStack, cette alternative de plus en plus répandu au développement web classique ?",
   thumbnail: {
-    path: "/images/services/etape_4.webp",
+    path: "/images/blog/8_site_web_statique_jamstack_1.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [
@@ -58,7 +58,7 @@ export const post8 = {
     },
     {
       type: "image",
-      path: "/images/about/a_propos_4.webp",
+      path: "/images/blog/8_site_web_statique_jamstack_2.webp",
       alt: "Image d'un ordinateur avec un site web",
     },
     {

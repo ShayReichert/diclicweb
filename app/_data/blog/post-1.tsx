@@ -11,8 +11,8 @@ export const post1 = {
   excerpt:
     "L'éco-conception de site internet est un enjeu de plus en plus important pour les entreprises et les organisations qui souhaitent minimiser leur impact environnemental.",
   thumbnail: {
-    path: "/images/services/etape_1.webp",
-    alt: "Image d'illustration de l'article",
+    path: "/images/blog/1_eco_conception_site_web_1.webp",
+    alt: "Un ordinateur avec un paysage de nature dans l'écran",
   },
   content: [
     {
@@ -31,8 +31,8 @@ export const post1 = {
     },
     {
       type: "image",
-      path: "/images/about/a_propos_2.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      path: "/images/blog/1_eco_conception_site_web_2.webp",
+      alt: "Une forêt au lever du soleil",
     },
     {
       type: "paragraph",
@@ -62,8 +62,10 @@ export const post1 = {
             que les images réellement nécessaires sur le site. Cela réduit le temps de chargement des pages et économise de la bande passante, tant
             pour les utilisateur·ices que pour l'hébergeur du site. <br />
             L’utilisation du “lazy load” permet également de ne charger les images uniquement que lorsqu'on en a besoin ! (au fur et à mesure du
-            scroll). <br />
-            <Link href="/a-propos" role="link">
+            scroll).
+          </p>
+          <p>
+            <Link href="/blog/comment-bien-optimiser-images-site-web/10" role="link">
               → Voir l’article “Comment bien optimiser les images sur son site"
             </Link>
           </p>
@@ -130,5 +132,5 @@ export const post1 = {
     },
   ],
 
-  related_posts: [2, 3],
+  related_posts: [2, 3, 10],
 };

@@ -10,7 +10,7 @@ export const post5 = {
   category: [2],
   excerpt: "Vous êtes une personne queer et vous avez un projet de site web ? Je peux certainement vous aider ! 🙌",
   thumbnail: {
-    path: "/images/services/etape_1.webp",
+    path: "/images/blog/5_sites_web_queer_1.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [
@@ -33,7 +33,7 @@ export const post5 = {
     },
     {
       type: "image",
-      path: "/images/about/a_propos_5.webp",
+      path: "/images/blog/5_sites_web_queer_2.webp",
       alt: "Image d'un ordinateur avec un site web",
     },
     {

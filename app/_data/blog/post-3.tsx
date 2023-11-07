@@ -10,7 +10,7 @@ export const post3 = {
   category: [2, 4],
   excerpt: "Voici des conseils pour permettre au mieux à tous·tes les internautes d'accéder au contenu de votre site web dans de bonnes conditions.",
   thumbnail: {
-    path: "/images/services/etape_3.webp",
+    path: "/images/blog/3_site_web_accessibilite_1.png",
     alt: "Image d'illustration de l'article",
   },
   content: [
@@ -29,7 +29,7 @@ export const post3 = {
     },
     {
       type: "image",
-      path: "/images/about/a_propos_3.webp",
+      path: "/images/blog/3_site_web_accessibilite_2.png",
       alt: "Image d'un ordinateur avec un site web",
     },
     {

@@ -11,7 +11,7 @@ export const post7 = {
   excerpt:
     "Si un site web semble indispensable pour une entreprise ou un commerce, il l'est tout autant pour une association ou un club. Nous allons voir pourquoi !",
   thumbnail: {
-    path: "/images/services/etape_3.webp",
+    path: "/images/blog/7_besoin_site_web_1.webp",
     alt: "Image d'illustration de l'article",
   },
   content: [
@@ -84,7 +84,7 @@ export const post7 = {
     },
     {
       type: "image",
-      path: "/images/about/a_propos_3.webp",
+      path: "/images/blog/7_besoin_site_web_2.webp",
       alt: "Image d'un ordinateur avec un site web",
     },
     {

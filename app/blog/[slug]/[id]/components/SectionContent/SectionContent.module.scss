@@ -24,8 +24,11 @@
         max-height: 50rem;
       }
     }
-    border-radius: $border-radius;
     margin: 5rem auto;
+
+    img {
+      border-radius: $border-radius;
+    }
   }
 
   .text-wrapper {
