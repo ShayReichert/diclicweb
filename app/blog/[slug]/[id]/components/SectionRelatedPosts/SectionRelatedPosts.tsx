@@ -4,9 +4,6 @@ import ItemPost from "@/app/blog/components/ItemPost/ItemPost";
 import styles from "./SectionRelatedPosts.module.scss";
 import { rocaOne } from "@/app/styles/fonts/font-face";
 import { fetchPostById } from "@/app/utils/blog";
-interface SectionRelatedPostsProps {
-  relatedPosts: number[];
-}
 
 export default function SectionRelatedPosts({ relatedPosts }: SectionRelatedPostsProps) {
   return (

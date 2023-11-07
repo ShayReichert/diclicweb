@@ -1,13 +1,6 @@
 import Image from "next/image";
 import styles from "./Pagination.module.scss";
 
-interface PaginationProps {
-  currentPage: number;
-  totalPages: number;
-  next: () => void;
-  prev: () => void;
-}
-
 const Pagination = ({ currentPage, totalPages, next, prev }: PaginationProps) => {
   return (
     <div className={styles["pagination"]}>

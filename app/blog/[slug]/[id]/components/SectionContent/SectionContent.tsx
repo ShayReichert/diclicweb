@@ -4,10 +4,6 @@ import { formatDate } from "@/app/utils/formatDate";
 import { getCategoryName } from "@/app/utils/blog";
 import { categoriesData } from "@/app/_data/entities/categories";
 
-interface SectionContentProps {
-  data: Post;
-}
-
 export default function SectionContent({ data }: SectionContentProps) {
   const { content, thumbnail } = data;
 

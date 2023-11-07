@@ -1,6 +1,5 @@
 import styles from "./ItemReview.module.scss";
 import Image from "next/image";
-// import { rocaOne } from "../../../styles/fonts/font-face";
 
 export default function ItemReview({ author, image, image_alt, notation, text }: ItemReviewProps) {
   return (

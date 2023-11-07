@@ -4,11 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { rocaOne } from "@/app/styles/fonts/font-face";
 
-interface ItemPostProps {
-  post: Post;
-  isFirst?: boolean;
-}
-
 export default function ItemPost({ post, isFirst }: ItemPostProps) {
   return (
     <li className={`${styles["item-post"]} ${isFirst ? styles["fullwidth"] : ""}`}>
@@ -22,6 +17,7 @@ export default function ItemPost({ post, isFirst }: ItemPostProps) {
               sizes="(max-width: 767px) 100vw, 50vw"
               placeholder="blur"
               blurDataURL={post.thumbnail.path}
+              priority
             />
           </div>
           <div className={styles["item-post-text"]}>

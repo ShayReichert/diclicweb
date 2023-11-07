@@ -4,7 +4,7 @@ import SectionCatchPhrase from "@/app/components/SectionCatchPhrase/SectionCatch
 import SectionContent from "./components/SectionContent/SectionContent";
 import SectionRelatedPosts from "./components/SectionRelatedPosts/SectionRelatedPosts";
 
-export function generateMetadata({ params: { id } }: Props) {
+export function generateMetadata({ params: { id } }: PostProps) {
   const post = fetchPostById(parseInt(id));
 
   return {
@@ -16,13 +16,7 @@ export function generateMetadata({ params: { id } }: Props) {
   };
 }
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
-
-export default function Post({ params: { id } }: Props) {
+export default function Post({ params: { id } }: PostProps) {
   const postId = parseInt(id);
   const post = fetchPostById(postId);
   const totalRelatedPosts = 3;
