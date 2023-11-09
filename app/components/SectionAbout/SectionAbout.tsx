@@ -26,7 +26,12 @@ export default function SectionAbout({ data, has_button = false, button }: Secti
           </div>
           <div className={styles["right-content"]}>
             <div className={styles["text-wrapper"]}>
-              <div className={styles["text"]}>{text}</div>
+              {text.map((paragraph, index) => (
+                <div key={index} className={styles["text"]}>
+                  {paragraph}
+                </div>
+              ))}
+
               {has_button ? <div className={styles["cta"]}>{button}</div> : ""}
             </div>
           </div>
