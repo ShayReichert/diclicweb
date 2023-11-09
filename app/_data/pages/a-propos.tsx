@@ -32,7 +32,7 @@ export const sectionQuinconces = {
       ],
       link: "",
       text_link: [],
-      image: "/images/home/a_propos.webp",
+      image: "/images/about/a_propos_1.webp",
       image_alt: "Shay Reichert, créateur de sites web engagés et développeur front-end",
     },
     {
