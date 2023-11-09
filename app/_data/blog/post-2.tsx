@@ -11,7 +11,7 @@ export const post2 = {
     "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.",
   thumbnail: {
     path: "/images/blog/2_ecriture_inclusive_1.webp",
-    alt: "Image d'illustration de l'article",
+    alt: "Deux enfants, un garçon et une fille, qui ont l'air de travailler comme des adultes",
   },
   content: [
     {
@@ -80,7 +80,7 @@ export const post2 = {
     {
       type: "image",
       path: "/images/blog/2_ecriture_inclusive_2.webp",
-      alt: "Image d'illustration de l'article",
+      alt: "Une femme avec son chat, qui travaille devant un ordinateur",
     },
     {
       type: "paragraph",

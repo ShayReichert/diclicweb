@@ -12,7 +12,7 @@ export const post10 = {
     "L'importance du poids et de la taille des images sur un site est trop souvent négligée. Pourtant optimiser vos images peut vous aider significativement à avoir un site plus performant !",
   thumbnail: {
     path: "/images/blog/10_optimiser_images_site_web_1.webp",
-    alt: "Image d'illustration de l'article",
+    alt: "Quelqu'un qui scrolle sur un smartphone",
   },
   content: [
     {
@@ -35,7 +35,7 @@ export const post10 = {
     {
       type: "image",
       path: "/images/blog/10_optimiser_images_site_web_2.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Une personne devant un ordinaateur portable",
     },
     {
       type: "paragraph",

@@ -11,7 +11,7 @@ export const post5 = {
   excerpt: "Vous êtes une personne queer et vous avez un projet de site web ? Je peux certainement vous aider ! 🙌",
   thumbnail: {
     path: "/images/blog/5_sites_web_queer_1.webp",
-    alt: "Image d'illustration de l'article",
+    alt: "Bras avec un bracelet arc-en-ciel LGBT au poignet",
   },
   content: [
     {
@@ -34,7 +34,7 @@ export const post5 = {
     {
       type: "image",
       path: "/images/blog/5_sites_web_queer_2.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Aperçu du site web Les Queeriers du cinéma",
     },
     {
       type: "paragraph",

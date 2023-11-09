@@ -12,7 +12,7 @@ export const post6 = {
     "Le SEO est un ensemble de techniques qui permettent d’optimiser le référencement naturel d’un site web. Il est important de bien le travailler pour que votre site soit bien référencé sur les moteurs de recherche !",
   thumbnail: {
     path: "/images/blog/6_base_seo_site_repertorie_1.webp",
-    alt: "Image d'illustration de l'article",
+    alt: "Une personne souriante devant un ordinateur",
   },
   content: [
     {
@@ -70,7 +70,7 @@ export const post6 = {
     {
       type: "image",
       path: "/images/blog/6_base_seo_site_repertorie_2.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Cube en bois avec les lettres SEO",
     },
     {
       type: "paragraph",

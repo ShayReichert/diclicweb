@@ -11,7 +11,7 @@ export const post3 = {
   excerpt: "Voici des conseils pour permettre au mieux à tous·tes les internautes d'accéder au contenu de votre site web dans de bonnes conditions.",
   thumbnail: {
     path: "/images/blog/3_site_web_accessibilite_1.png",
-    alt: "Image d'illustration de l'article",
+    alt: "Dessin d'illustration, avec des écrans d'ordinateurs, de tablettes et de téléphones",
   },
   content: [
     {
@@ -30,7 +30,7 @@ export const post3 = {
     {
       type: "image",
       path: "/images/blog/3_site_web_accessibilite_2.png",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Dessin d'illustration avec une personne en fauteuil roulant, devant un ordinateur, une tablette et un téléphone",
     },
     {
       type: "paragraph",

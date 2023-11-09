@@ -10,7 +10,7 @@ export const post4 = {
   excerpt: "Je vous explique ici tous les avantages d'un site web accessible ! 😌",
   thumbnail: {
     path: "/images/blog/4_pourquoi_site_web_accessible.png",
-    alt: "Image d'illustration de l'article",
+    alt: "Dessin d'illustration d'une personne en fauteuil roulant devant un site web accessible",
   },
   content: [
     {
@@ -47,7 +47,7 @@ export const post4 = {
     {
       type: "image",
       path: "/images/blog/4_site_web_accessible_seo.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Ecran d'ordinateur avec un fond d'écran graphique sur lequel on voit marqué SEO",
     },
     {
       type: "paragraph",

@@ -11,7 +11,7 @@ export const post9 = {
   excerpt: "Faire votre site internet vous-même est tout à fait possible. Mais est-ce que c'est une bonne idée ? Et comment s'y prendre ?",
   thumbnail: {
     path: "/images/blog/9_faire_site_soi_meme_1.webp",
-    alt: "Image d'illustration de l'article",
+    alt: "Des papiers avec des notes et un ordinateur",
   },
   content: [
     {
@@ -71,7 +71,7 @@ export const post9 = {
     {
       type: "image",
       path: "/images/blog/9_faire_site_soi_meme_2.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Ddeux personnes de dos, devant un ordinateur",
     },
     {
       type: "paragraph",

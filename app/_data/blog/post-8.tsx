@@ -11,7 +11,7 @@ export const post8 = {
   excerpt: "Quels sont les avantages et inconvénients de la JAMStack, cette alternative de plus en plus répandu au développement web classique ?",
   thumbnail: {
     path: "/images/blog/8_site_web_statique_jamstack_1.webp",
-    alt: "Image d'illustration de l'article",
+    alt: "Ordinateur portable sur un bureau, avec un site web",
   },
   content: [
     {
@@ -59,7 +59,7 @@ export const post8 = {
     {
       type: "image",
       path: "/images/blog/8_site_web_statique_jamstack_2.webp",
-      alt: "Image d'un ordinateur avec un site web",
+      alt: "Un ordinateur portable, une tablette et un smartphone sur un bureau",
     },
     {
       type: "paragraph",
