@@ -1,0 +1,30 @@
+@import "../../styles/partials/mixins";
+
+.social {
+  @include size(5rem);
+  display: grid;
+  place-items: center;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+
+    @include devices(large_tablet) {
+      margin-right: 0;
+    }
+  }
+
+  .button {
+    --tx: 0px;
+    --ty: 0px;
+    --opacity: 0.25;
+
+    @include size(5rem);
+    display: grid;
+    place-items: center;
+    transition: all 0.2s ease-out;
+
+    @media only screen and (min-width: $large_tablet) {
+      transform: translate(var(--tx, 0), var(--ty, 0));
+    }
+  }
+}

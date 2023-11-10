@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
+import SocialButton from "../SocialButton/SocialButton";
 
 export default function Footer() {
   const socialItems = [
@@ -26,11 +27,7 @@ export default function Footer() {
         <div className={styles["socials"]}>
           <ul>
             {socialItems.map((item, index) => (
-              <li key={index} className={styles["socials"]}>
-                <a href={item.url} target="_blank" role="link">
-                  <Image src={`/images/socials/${item.image}`} alt={`item.label`} width={20} height={20} />
-                </a>
-              </li>
+              <SocialButton key={index} {...item} />
             ))}
           </ul>
         </div>

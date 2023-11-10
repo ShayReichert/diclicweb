@@ -95,3 +95,11 @@ interface SnackbarProps {
   type: SnackbarType;
   onClose: () => void;
 }
+
+// SocialButton
+interface SocialButtonProps {
+  id: string;
+  label: string;
+  image: string;
+  url: string;
+}
