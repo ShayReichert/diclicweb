@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./GravityButton.module.scss";
 import Image from "next/image";
 
-const GravityButton = ({ label, image, url }: GravityButtonProps) => {
+const GravityButton = ({ label, image, url, imageWidth, imageHeight }: GravityButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -42,10 +42,20 @@ const GravityButton = ({ label, image, url }: GravityButtonProps) => {
   };
 
   return (
-    <div className={styles["gravity-button"]} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseOver={calculateTransform}>
-      <a href={url} target="_blank" role="link">
-        <Image src={`/images/socials/${image}`} alt={`${label}`} width={20} height={20} />
-      </a>
+    <div
+      className={styles["gravity-button"]}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onMouseMove={calculateTransform}
+      style={{ width: imageWidth * 1.5, height: imageHeight * 1.5 }}
+    >
+      {url ? (
+        <a href={url} target="_blank" role="link">
+          <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} priority />
+        </a>
+      ) : (
+        <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} priority />
+      )}
     </div>
   );
 };

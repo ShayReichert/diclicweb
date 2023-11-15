@@ -18,6 +18,7 @@ interface ButtonSubmitProps {
 
 // ItemHomeService
 interface ItemHomeServiceProps {
+  id: number;
   short_desc: string;
   icon: string;
   icon_alt?: string;
@@ -98,16 +99,18 @@ interface SnackbarProps {
 
 // SocialButton
 interface SocialButtonProps {
-  id: string;
+  id: number;
   label: string;
   image: string;
-  url: string;
+  url?: string;
 }
 
 // GravityButton
 interface GravityButtonProps {
-  id: string;
+  id: number;
   label: string;
   image: string;
-  url: string;
+  url?: string;
+  imageWidth: number;
+  imageHeight: number;
 }

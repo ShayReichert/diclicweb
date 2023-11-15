@@ -5,7 +5,6 @@
   --ty: 0px;
   --opacity: 0.25;
 
-  @include size(5rem);
   display: grid;
   place-items: center;
   transition: all 0.2s ease-out;

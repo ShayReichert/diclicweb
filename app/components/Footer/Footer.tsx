@@ -7,9 +7,9 @@ import SocialButton from "../SocialButton/SocialButton";
 
 export default function Footer() {
   const socialItems = [
-    { id: "linkedin", label: "LinkedIn", image: "linkedin.svg", url: "https://www.linkedin.com/in/diclicweb/" },
-    { id: "facebook", label: "Facebook", image: "facebook.svg", url: "https://www.facebook.com/diclicweb/" },
-    { id: "instagram", label: "Instagram", image: "instagram.svg", url: "https://www.instagram.com/diclicweb/" },
+    { label: "LinkedIn", image: "/images/socials/linkedin.svg", url: "https://www.linkedin.com/in/diclicweb/" },
+    { label: "Facebook", image: "/images/socials/facebook.svg", url: "https://www.facebook.com/diclicweb/" },
+    { label: "Instagram", image: "/images/socials/instagram.svg", url: "https://www.instagram.com/diclicweb/" },
   ];
 
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className={styles["socials"]}>
           <ul>
             {socialItems.map((item, index) => (
-              <SocialButton key={index} {...item} />
+              <SocialButton key={index} id={index} {...item} />
             ))}
           </ul>
         </div>

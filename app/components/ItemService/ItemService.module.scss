@@ -11,10 +11,6 @@
     margin: 3rem 5%;
   }
 
-  .service-icon {
-    margin-bottom: 3rem;
-  }
-
   .service-text {
     @include fluid-font(16px, $font-size-body);
     text-align: center;

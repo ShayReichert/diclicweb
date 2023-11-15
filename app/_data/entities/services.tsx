@@ -20,7 +20,7 @@ export const sectionServicesData = {
           </p>
         </>,
       ],
-      icon: "/images/services/icon_site.png",
+      icon: "/images/services/icon_site.svg",
       icon_alt: "Icone de site internet",
     },
     {
@@ -43,7 +43,7 @@ export const sectionServicesData = {
           </p>
         </>,
       ],
-      icon: "/images/services/icon_commerce.png",
+      icon: "/images/services/icon_commerce.svg",
       icon_alt: "Icone de site internet",
     },
     {
@@ -63,7 +63,7 @@ export const sectionServicesData = {
           </p>
         </>,
       ],
-      icon: "/images/services/icon_maintenance.png",
+      icon: "/images/services/icon_maintenance.svg",
       icon_alt: "Icone d'outil",
     },
     {
@@ -80,7 +80,7 @@ export const sectionServicesData = {
           <p>Je vous invite à me contacter directement pour m’expliquer votre projet 😃</p>
         </>,
       ],
-      icon: "/images/services/icon_code.png",
+      icon: "/images/services/icon_code.svg",
       icon_alt: "Icone d'ordinateur",
     },
   ],
