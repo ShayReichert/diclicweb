@@ -103,3 +103,11 @@ interface SocialButtonProps {
   image: string;
   url: string;
 }
+
+// GravityButton
+interface GravityButtonProps {
+  id: string;
+  label: string;
+  image: string;
+  url: string;
+}

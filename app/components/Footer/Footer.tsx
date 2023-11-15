@@ -7,9 +7,9 @@ import SocialButton from "../SocialButton/SocialButton";
 
 export default function Footer() {
   const socialItems = [
-    { id: "linkedin", label: "LinkedIn", image: "linkedin.png", url: "https://www.linkedin.com/in/diclicweb/" },
-    { id: "facebook", label: "Facebook", image: "facebook.png", url: "https://www.facebook.com/diclicweb/" },
-    { id: "instagram", label: "Instagram", image: "instagram.png", url: "https://www.instagram.com/diclicweb/" },
+    { id: "linkedin", label: "LinkedIn", image: "linkedin.svg", url: "https://www.linkedin.com/in/diclicweb/" },
+    { id: "facebook", label: "Facebook", image: "facebook.svg", url: "https://www.facebook.com/diclicweb/" },
+    { id: "instagram", label: "Instagram", image: "instagram.svg", url: "https://www.instagram.com/diclicweb/" },
   ];
 
   return (
