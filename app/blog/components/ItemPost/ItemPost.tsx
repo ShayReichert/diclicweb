@@ -10,15 +10,7 @@ export default function ItemPost({ post, isFirst }: ItemPostProps) {
       <Link href={`/blog/${post.slug}/${post.id}`} role="link">
         <div className={styles["item-post-content"]}>
           <div className={styles["image-wrapper"]}>
-            <Image
-              src={post.thumbnail.path}
-              alt={post.thumbnail.alt ? post.thumbnail.alt : ""}
-              fill
-              sizes="(max-width: 767px) 100vw, 50vw"
-              placeholder="blur"
-              blurDataURL={post.thumbnail.path}
-              priority
-            />
+            <Image src={post.thumbnail.path} alt={post.thumbnail.alt ? post.thumbnail.alt : ""} fill sizes="(max-width: 767px) 100vw, 50vw" />
           </div>
           <div className={styles["item-post-text"]}>
             <h3 className={rocaOne.className}>{post.title}</h3>

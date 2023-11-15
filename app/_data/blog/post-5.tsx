@@ -31,11 +31,7 @@ export const post5 = {
         </>,
       ],
     },
-    {
-      type: "image",
-      path: "/images/blog/5_sites_web_queer_2.webp",
-      alt: "Aperçu du site web Les Queeriers du cinéma",
-    },
+
     {
       type: "paragraph",
       text: [
@@ -75,6 +71,11 @@ export const post5 = {
           </p>
         </>,
       ],
+    },
+    {
+      type: "image",
+      path: "/images/blog/5_sites_web_queer_2.webp",
+      alt: "Aperçu du site web Les Queeriers du cinéma",
     },
     {
       type: "paragraph",
