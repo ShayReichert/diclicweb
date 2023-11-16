@@ -172,6 +172,17 @@ export const sectionFAQData = {
       ],
     },
     {
+      question: "Combien de temps va mettre la création de mon site ?",
+      answer: [
+        <>
+          <p>
+            En moyenne, la création de votre site prendra entre<strong> 6 et 8 semaines</strong>. Bien sûr, cela dépend de la taille du site, des
+            fonctionnalités à intégrer, du nombre de pages, etc.
+          </p>
+        </>,
+      ],
+    },
+    {
       question: "Combien coûtent les plans de maintenance ?",
       answer: [
         <>
