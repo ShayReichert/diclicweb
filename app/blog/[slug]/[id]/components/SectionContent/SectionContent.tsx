@@ -17,7 +17,13 @@ export default function SectionContent({ data }: SectionContentProps) {
           case "paragraph":
             return (
               <div key={index} className={styles["text-wrapper"]}>
-                {item.text}
+                {item.text
+                  ? item.text.map((paragraph, index) => (
+                      <div key={index} className={styles["text"]}>
+                        {paragraph}
+                      </div>
+                    ))
+                  : ""}
               </div>
             );
           case "image":

@@ -18,7 +18,9 @@ export default function ItemProject({ id, title, short_description, subtitle, de
           <h2 className={rocaOne.className}>{title}</h2>
           <div className={styles["short-description"]}>{short_description}</div>
           <div className={styles["subtitle"]}>{subtitle}</div>
-          <div className={styles["description"]}>{description}</div>
+          {description.map((paragraph, index) => (
+            <div className={styles["description"]}>{paragraph}</div>
+          ))}
           <Button text="Visiter&nbsp;le&nbsp;site" href={link} isTargetBlank={true} />
         </div>
       </div>

@@ -14,7 +14,11 @@ export default function ItemCommitment({ title, text, icon, icon_alt }: ItemComm
         </div>
 
         <div className={styles["bottom"]}>
-          <div className={styles["text"]}>{text}</div>
+          {text.map((paragraph, index) => (
+            <div key={index} className={styles["text"]}>
+              {paragraph}
+            </div>
+          ))}
         </div>
       </div>
     </div>

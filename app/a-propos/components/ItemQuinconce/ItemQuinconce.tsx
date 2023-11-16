@@ -15,7 +15,11 @@ export default function ItemQuinconce({ title, text, image, image_alt, link, tex
         <div className={styles["text-content"]}>
           <div className={styles["text-wrapper"]}>
             <h2 className={rocaOne.className}>{title}</h2>
-            <div className={styles["text"]}>{text}</div>
+            {text.map((paragraph, index) => (
+              <div key={index} className={styles["text"]}>
+                {paragraph}
+              </div>
+            ))}
             {link && text_link ? <Button text={text_link} href={link} isTargetBlank={false} /> : ""}
           </div>
         </div>

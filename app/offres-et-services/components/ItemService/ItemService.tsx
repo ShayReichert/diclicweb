@@ -10,7 +10,11 @@ export default function ItemService({ title, text, icon, icon_alt }: ItemService
       </div>
       <div className={styles["service-content"]}>
         <h2 className={rocaOne.className}>{title}</h2>
-        <div className={styles["service-text"]}>{text}</div>
+        {text.map((paragraph, index) => (
+          <div key={index} className={styles["service-text"]}>
+            {paragraph}
+          </div>
+        ))}
       </div>
     </div>
   );

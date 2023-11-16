@@ -9,7 +9,11 @@ export default function ItemStep({ title, text, image, image_alt, isEven, stepNu
         <h3 className={rocaOne.className}>
           {stepNumber}. {title}
         </h3>
-        {text}
+        {text.map((paragraph, index) => (
+          <div key={index} className={styles["text"]}>
+            {paragraph}
+          </div>
+        ))}
       </div>
       <div className={styles["image-wrapper"]}>
         <Image src={image} alt={image_alt ? image_alt : ""} fill sizes="(max-width: 767px) 100vw, 50vw" placeholder="blur" blurDataURL={image} />
