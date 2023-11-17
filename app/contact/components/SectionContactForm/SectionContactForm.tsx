@@ -29,7 +29,13 @@ export default function SectionContactForm({ data }: SectionContactFormProps) {
   return (
     <section id="scroll-submit" className={styles["section-contact-form"]}>
       <div className={styles["content-wrapper"]}>
-        <div className={styles["text-wrapper"]}>{text}</div>
+        <div className={styles["text-wrapper"]}>
+          {text.map((paragraph, index) => (
+            <div key={index} className={styles["text"]}>
+              {paragraph}
+            </div>
+          ))}
+        </div>
         <div className={styles["form-wrapper"]}>
           <ContactForm showSnackbar={showSnackbar} isLocal={isLocal} />
         </div>

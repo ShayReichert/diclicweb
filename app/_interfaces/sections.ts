@@ -61,10 +61,7 @@ interface SectionAboutProps {
 
 // SectionFAQ
 interface ItemFAQProps {
-  item: {
-    question: string;
-    answer: JSX.Element[];
-  };
+  item: FAQ;
   index: number;
   handleToggle: (index: number) => void;
   openIndex: number;

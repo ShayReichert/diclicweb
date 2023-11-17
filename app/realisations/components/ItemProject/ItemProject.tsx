@@ -19,7 +19,9 @@ export default function ItemProject({ id, title, short_description, subtitle, de
           <div className={styles["short-description"]}>{short_description}</div>
           <div className={styles["subtitle"]}>{subtitle}</div>
           {description.map((paragraph, index) => (
-            <div className={styles["description"]}>{paragraph}</div>
+            <div key={index} className={styles["description"]}>
+              {paragraph}
+            </div>
           ))}
           <Button text="Visiter&nbsp;le&nbsp;site" href={link} isTargetBlank={true} />
         </div>

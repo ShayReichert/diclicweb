@@ -7,7 +7,9 @@ export default function SectionText({ data }: SectionTextProps) {
     <section className={styles["section-text"]}>
       <div className={styles["content-wrapper"]}>
         {text.map((paragraph, index) => (
-          <div className={styles["text-wrapper"]}>{paragraph}</div>
+          <div key={index} className={styles["text-wrapper"]}>
+            {paragraph}
+          </div>
         ))}
       </div>
     </section>

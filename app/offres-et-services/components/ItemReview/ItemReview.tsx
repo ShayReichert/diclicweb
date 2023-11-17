@@ -26,7 +26,11 @@ export default function ItemReview({ author, image, image_alt, notation, text }:
         </div>
 
         <div className={styles["bottom"]}>
-          <div className={styles["text"]}>{text}</div>
+          {text.map((paragraph, index) => (
+            <div key={index} className={styles["text"]}>
+              {paragraph}
+            </div>
+          ))}
         </div>
       </div>
     </div>

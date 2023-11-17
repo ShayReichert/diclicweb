@@ -26,8 +26,13 @@ export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRe
           <Image priority src="/images/services/arrow.svg" width={15} height={26} alt="" />
         </span>
       </div>
+
       <div ref={answerRefs[index]} className={`${styles["answer"]} `}>
-        {item.answer}
+        {item.answer.map((text, index) => (
+          <div key={index} className={styles["text"]}>
+            {text}
+          </div>
+        ))}
       </div>
     </div>
   );
