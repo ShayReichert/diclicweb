@@ -1,15 +1,19 @@
 import styles from "./SectionAbout.module.scss";
 import { rocaOne } from "../../styles/fonts/font-face";
 import Image from "next/image";
+import useScrollFadeIn from "@/app/utils/useScrollFadeIn";
 
 export default function SectionAbout({ data, has_button = false, button }: SectionAboutProps) {
   const { title, text, image, image_alt } = data;
+  const fadeIn = useScrollFadeIn();
 
   return (
     <section className={styles["section-about"]}>
       <div className={styles["content-wrapper"]}>
-        <div className={styles["title"]}>
-          <h2 className={rocaOne.className}>{title}</h2>
+        <div className={styles["title-wrapper"]}>
+          <h2 className={rocaOne.className} ref={fadeIn.ref} style={fadeIn.style}>
+            {title}
+          </h2>
         </div>
         <div className={styles["content"]}>
           <div className={styles["left-content"]}>

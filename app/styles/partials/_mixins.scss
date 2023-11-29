@@ -293,6 +293,13 @@
   }
 }
 
+@mixin title-wrapper() {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 // ----- TOOLS ----- //
 
 @mixin hidden() {

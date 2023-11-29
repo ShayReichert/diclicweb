@@ -1,9 +1,12 @@
+"use client";
+
 import styles from "./Footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";
 import SocialButton from "../SocialButton/SocialButton";
+import useScrollFadeIn from "@/app/utils/useScrollFadeIn";
 
 export default function Footer() {
   const socialItems = [
@@ -11,6 +14,7 @@ export default function Footer() {
     { label: "Facebook", image: "/images/socials/facebook.svg", url: "https://www.facebook.com/diclicweb/" },
     { label: "Instagram", image: "/images/socials/instagram.svg", url: "https://www.instagram.com/diclicweb/" },
   ];
+  const fadeIn = useScrollFadeIn();
 
   return (
     <footer className={styles["footer"]}>
@@ -18,7 +22,11 @@ export default function Footer() {
 
       <div className={styles["background-content"]}>
         <div className={styles["content"]}>
-          <h2 className={rocaOne.className}>Un projet de site ?</h2>
+          <div className={styles["title-wrapper"]}>
+            <h2 className={rocaOne.className} ref={fadeIn.ref} style={fadeIn.style}>
+              Un projet de site ?
+            </h2>
+          </div>
           <p>Pour toute demande de renseignements</p>
           <Button text="Contactez-moi" href="/contact" />
         </div>

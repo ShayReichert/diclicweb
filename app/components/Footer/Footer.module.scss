@@ -21,6 +21,10 @@
     text-align: center;
     justify-content: center;
 
+    .title-wrapper {
+      @include title-wrapper();
+    }
+
     p {
       margin-top: 1rem;
       font-weight: 300;

@@ -33,11 +33,8 @@
     }
 
     .title-wrapper {
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
+      @include title-wrapper();
       margin-top: -1.4rem;
-      width: 100%;
     }
 
     h1 {

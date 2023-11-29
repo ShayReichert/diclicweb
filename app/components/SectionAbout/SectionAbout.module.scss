@@ -17,20 +17,24 @@
       margin: 8rem 1rem;
     }
 
-    h2 {
-      position: relative;
-      text-align: center;
+    .title-wrapper {
+      @include title-wrapper();
       margin: 7rem 2rem 3rem;
 
-      @include underline(55%, 2.4rem) {
-        right: -27px;
-        top: auto;
-        bottom: 4px;
+      h2 {
+        position: relative;
+        text-align: center;
 
-        @include devices(large_tablet) {
-          height: 1.8rem;
-          right: -17px;
-          bottom: 2px;
+        @include underline(55%, 2.4rem) {
+          right: -27px;
+          top: auto;
+          bottom: 4px;
+
+          @include devices(large_tablet) {
+            height: 1.8rem;
+            right: -17px;
+            bottom: 2px;
+          }
         }
       }
     }
