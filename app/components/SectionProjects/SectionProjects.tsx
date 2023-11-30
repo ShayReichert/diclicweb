@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./SectionProjects.module.scss";
 import { rocaOne } from "../../styles/fonts/font-face";
 import Button from "../Button/Button";

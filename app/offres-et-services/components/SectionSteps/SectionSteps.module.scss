@@ -12,31 +12,35 @@
     max-width: $max-content;
     margin: 15rem 1rem 3rem;
 
-    h2 {
-      position: relative;
-      text-align: center;
+    .title-wrapper {
+      @include title-wrapper();
       margin: 0 2rem 3rem;
 
       @include devices(large_tablet) {
         margin: 0 2rem 0;
       }
 
-      @include underline(25%, 2.4rem) {
-        right: -27px;
-        top: auto;
-        bottom: 4px;
+      h2 {
+        position: relative;
+        text-align: center;
 
-        @include devices(large_tablet) {
-          width: 55%;
-          height: 1.8rem;
-          right: 3px;
-          bottom: 2px;
+        @include underline(25%, 2.4rem) {
+          right: -27px;
+          top: auto;
+          bottom: 4px;
+
+          @include devices(large_tablet) {
+            width: 55%;
+            height: 1.8rem;
+            right: 3px;
+            bottom: 2px;
+          }
         }
-      }
 
-      span {
-        @include devices(large_tablet) {
-          display: block;
+        span {
+          @include devices(large_tablet) {
+            display: block;
+          }
         }
       }
     }

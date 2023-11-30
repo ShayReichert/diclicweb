@@ -3,12 +3,14 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./SectionFAQ.module.scss";
 import ItemFAQ from "../ItemFAQ/ItemFAQ";
+import useScrollFadeIn from "@/app/utils/useScrollFadeIn";
 
 export default function SectionFAQ({ data }: FAQProps) {
   const { faq } = data;
   const [openIndex, setOpenIndex] = useState(-1);
   const answerRefs = faq.map(() => useRef<HTMLDivElement | null>(null));
   const [height, setHeight] = useState(0);
+  const fadeIn = useScrollFadeIn();
 
   useEffect(() => {
     if (height !== null) {
@@ -40,7 +42,11 @@ export default function SectionFAQ({ data }: FAQProps) {
   return (
     <section className={styles["section-faq"]}>
       <div className={styles["section-content"]}>
-        <h2>FAQ</h2>
+        <div className={styles["title-wrapper"]}>
+          <h2 ref={fadeIn.ref} style={fadeIn.style}>
+            FAQ
+          </h2>
+        </div>
 
         <div className={styles["faq-wrapper"]}>
           {faq.map((item, index) => (
