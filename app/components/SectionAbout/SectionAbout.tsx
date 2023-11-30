@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./SectionAbout.module.scss";
 import { rocaOne } from "../../styles/fonts/font-face";
 import Image from "next/image";
