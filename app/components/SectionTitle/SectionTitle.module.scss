@@ -10,6 +10,10 @@
     @include size(100%, calc(90vh - $menu-mobile-height));
   }
 
+  @media only screen and (min-width: $large_tablet) {
+    @include jumbo-effect();
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -20,12 +24,18 @@
 
     @include devices(large_tablet) {
       margin-top: $menu-mobile-height;
+    }
 
-      .image-wrapper {
+    .image-wrapper {
+      @include devices(large_tablet) {
         display: flex;
         justify-content: center;
+      }
 
-        img {
+      img {
+        filter: drop-shadow(0 0.3rem#fff);
+
+        @include devices(large_tablet) {
           width: 80%;
           height: auto;
         }
@@ -42,6 +52,7 @@
       position: relative;
       text-align: center;
       line-height: 1.4; // Allows you to see accents on special characters
+      filter: drop-shadow(0.2rem 0.3rem#fff);
 
       &.has-decoration {
         @include underline(65%, 2.9rem, true, 0.5s) {
