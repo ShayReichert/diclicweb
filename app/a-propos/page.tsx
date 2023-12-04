@@ -6,7 +6,7 @@ import SectionQuinonces from "./components/SectionQuinconces/SectionQuinconces";
 
 export const metadata: Metadata = {
   title: "À propos | Diclicweb",
-  description: "Découvrez mon parcours, mes engagements et mes outils. Je suis spécialisée dans la création de sites internet engagés.",
+  description: "Découvrez mon parcours, mes engagements et mes outils. Je suis spécialisé dans la création de sites internet engagés.",
 };
 
 export default function About() {
