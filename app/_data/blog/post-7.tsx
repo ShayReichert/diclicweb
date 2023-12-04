@@ -3,7 +3,7 @@ import { rocaOne } from "../../styles/fonts/font-face";
 
 export const post7 = {
   id: 7,
-  title: "Ai-je besoin d’un site internet ?",
+  title: "Ai-je besoin d’un site internet pour mon association ?",
   author: "Shay",
   slug: "besoin-site-internet",
   date: "2023-11-13",
@@ -21,7 +21,8 @@ export const post7 = {
         <>
           <p>
             De nos jours, la présence en ligne est <strong>cruciale</strong>. Cela vous offre un<strong> espace dédié </strong>pour présenter votre
-            projet, communiquer sur vos actualités et répondre aux questions... Voyons en quelques points ce que peut vous apporter un site internet !
+            projet, communiquer sur vos actualités et répondre aux questions... Voyons en quelques points ce que peut vous apporter un site internet à
+            votre association !
           </p>
         </>,
       ],
