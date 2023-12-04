@@ -18,7 +18,7 @@ export const sectionCommitmentsData = {
           </p>
         </>,
       ],
-      icon: "/images/logo_blue.png",
+      icon: "/images/services/commitments_donnees_perso.webp",
       icon_alt: "",
     },
     {
@@ -32,7 +32,7 @@ export const sectionCommitmentsData = {
           </p>
         </>,
       ],
-      icon: "/images/logo_blue.png",
+      icon: "/images/services/commitments_ecoconception.webp",
       icon_alt: "",
     },
     {
@@ -46,7 +46,7 @@ export const sectionCommitmentsData = {
           </p>
         </>,
       ],
-      icon: "/images/logo_blue.png",
+      icon: "/images/services/commitments_accessibilite.webp",
       icon_alt: "",
     },
   ],
@@ -120,7 +120,7 @@ export const sectionStepsData = {
         <>
           <p>
             La maintenance est primordiale sur un site Wordpress : elle permet de garder<strong> un site en bonne santé</strong>, de
-            <strong> le mettre à jour</strong>, de le<strong>sauvegarder régulièrement </strong>ou encore de
+            <strong> le mettre à jour</strong>, de le<strong> sauvegarder régulièrement </strong>ou encore de
             <strong> prévenir les attaques potentielles</strong>.
           </p>
           <p>Cette étape ne doit pas être négligée !</p>

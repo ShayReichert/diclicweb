@@ -154,11 +154,10 @@
   --font-shadow: var(--font-size);
 
   display: inline-block;
-  padding: 1.3rem 5rem;
+  padding: 1.4rem 5rem;
   border-radius: 50px;
-  border: 1px solid $white;
-  // background-color: $primary-color;
-  background-color: $cta-color;
+  border: none;
+  background: linear-gradient(0.25turn, $cta-color, #60a5fa);
   color: $white;
   text-decoration: none;
   text-align: center;
@@ -170,12 +169,14 @@
     display: flex;
     overflow: hidden;
     text-shadow: 0 var(--font-shadow) 0 $white;
+
     span {
       display: block;
       backface-visibility: hidden;
       font-style: normal;
       transition: transform var(--duration) ease;
       transform: translateY(var(--m)) translateZ(0);
+
       $i: 1;
       @while $i < 12 {
         &:nth-child(#{$i}) {
