@@ -154,16 +154,32 @@
   --font-shadow: var(--font-size);
 
   display: inline-block;
+  position: relative;
+  overflow: hidden;
   padding: 1.4rem 5rem;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(0.25turn, $cta-color, #60a5fa);
+  background: linear-gradient(0.25turn, #bd4fce, #4b87d0);
   color: $white;
   text-decoration: none;
   text-align: center;
   line-height: 1;
   font-size: var(--font-size);
   cursor: pointer;
+
+  // Pseudo-élément pour le deuxième gradient
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0.25turn, #4b87d0, #bd4fce);
+    opacity: 0;
+    transition: opacity var(--duration) ease;
+    z-index: 0;
+  }
 
   div {
     display: flex;
@@ -189,6 +205,11 @@
 
   &:hover {
     --y: var(--move-hover);
+
+    &::before {
+      opacity: 1;
+    }
+
     span {
       --m: calc(var(--font-size) * -1);
     }
