@@ -71,12 +71,12 @@ export const sectionQuinconces = {
               consentement car données anonymisées), Matomo (approuvé par la CNIL)
             </li>
             <li>
-              Tous les ans : aide à une<strong> association </strong>portant un projet engagé (1000€ de réduction offert à un projet engagé)
+              Tous les ans : aide à une<strong> association </strong>portant un projet engagé (1000€ de réduction offert)
             </li>
-            <li>
+            {/* <li>
               Pour chaque projet effectué, je reverse 50€ à l’<strong>association “Grouin-grouin” </strong>qui sauve et accueille des animaux
               d'élevage.
-            </li>
+            </li> */}
           </ul>
         </>,
       ],

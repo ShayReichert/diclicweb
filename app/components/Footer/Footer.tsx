@@ -10,9 +10,9 @@ import useScrollFadeIn from "@/app/utils/useScrollFadeIn";
 
 export default function Footer() {
   const socialItems = [
-    { label: "LinkedIn", image: "/images/socials/linkedin.svg", url: "https://www.linkedin.com/in/diclicweb/" },
-    { label: "Facebook", image: "/images/socials/facebook.svg", url: "https://www.facebook.com/diclicweb/" },
     { label: "Instagram", image: "/images/socials/instagram.svg", url: "https://www.instagram.com/diclicweb/" },
+    { label: "Github", image: "/images/socials/github.svg", url: "https://github.com/ShayReichert" },
+    { label: "LinkedIn", image: "/images/socials/linkedin.svg", url: "https://www.linkedin.com/in/diclicweb/" },
   ];
   const fadeIn = useScrollFadeIn();
 
