@@ -48,6 +48,11 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/cgv" role="link">
+                CGV
+              </Link>
+            </li>
+            <li>
               <Link href="/politique-de-confidentialite" role="link">
                 Politique de confidentialité
               </Link>

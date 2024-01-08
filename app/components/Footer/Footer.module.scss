@@ -36,7 +36,7 @@
   }
 
   .subfooter {
-    @include before(320px, 0px);
+    @include before(350px, 0px);
     position: relative;
     display: flex;
     background-color: $secondary-color;
