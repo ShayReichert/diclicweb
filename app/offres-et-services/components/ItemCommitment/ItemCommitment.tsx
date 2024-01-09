@@ -8,7 +8,7 @@ export default function ItemCommitment({ title, text, icon, icon_alt }: ItemComm
       <div className={styles["commitment-content"]}>
         <div className={styles["top"]}>
           <div className={styles["icon"]}>
-            <Image src={icon} alt={icon_alt ? icon_alt : ""} width={80} height={80} priority placeholder="blur" blurDataURL={icon} />
+            <Image src={icon} alt={icon_alt ? icon_alt : ""} width={70} height={80} priority placeholder="blur" blurDataURL={icon} />
           </div>
           <h3 className={rocaOne.className}>{title}</h3>
         </div>
