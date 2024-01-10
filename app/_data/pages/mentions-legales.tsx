@@ -11,7 +11,7 @@ export const sectionTextData = {
 
       <h3 className={rocaOne.className}>Propriétaire :</h3>
       <p>EI Shay REICHERT / DICLICWEB</p>
-      <p>SIRET : 98298700000014</p>
+      <p>SIRET : 982 987 000 00014</p>
       <p>123 Impasse de Clarat </p>
       <p>24300 LUSSAS-ET-NONTRONNEAU</p>
       <p>FRANCE</p>
