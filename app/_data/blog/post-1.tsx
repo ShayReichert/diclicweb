@@ -9,7 +9,7 @@ export const post1 = {
   date: "2023-11-07",
   category: [1],
   excerpt:
-    "L'éco-conception de site internet est un enjeu de plus en plus important pour les entreprises et les organisations qui souhaitent minimiser leur impact environnemental.",
+    "Éco-concevoir un site, c'est essayer d'anticiper et de réduire l'impact environnemental du site tout au long de sa vie : de sa conception à sa mise en ligne, en passant par son hébergement et sa maintenance.",
   thumbnail: {
     path: "/images/blog/1_eco_conception_site_web_1.webp",
     alt: "Un ordinateur avec un paysage de nature dans l'écran",
