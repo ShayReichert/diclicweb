@@ -10,28 +10,41 @@ export const sectionTextData = {
       </p>
 
       <h3 className={rocaOne.className}>Propriétaire :</h3>
-      <p>EI Shay REICHERT / DICLICWEB</p>
-      <p>SIRET : 982 987 000 00014</p>
-      <p>123 Impasse de Clarat </p>
-      <p>24300 LUSSAS-ET-NONTRONNEAU</p>
-      <p>FRANCE</p>
-      <p>contact@diclicweb.com</p>
-
-      <p>RCS : 982 987 000 R.C.S. Périgueux</p>
+      <p>
+        EI Shay REICHERT / DICLICWEB
+        <br />
+        SIRET : 982 987 000 00014
+        <br />
+        123 Impasse de Clarat
+        <br />
+        24300 LUSSAS-ET-NONTRONNEAU
+        <br />
+        FRANCE
+        <br />
+        contact@diclicweb.com
+        <br />
+        RCS : 982 987 000 R.C.S. Périgueux
+      </p>
 
       <h3 className={rocaOne.className}>Responsable de publication :</h3>
-      <p>Shay Reichert</p>
-      <p>contact@diclicweb.com</p>
+      <p>
+        Shay Reichert <br />
+        contact@diclicweb.com
+      </p>
 
       <h3 className={rocaOne.className}>Créateur du site : </h3>
-      <p>EI Shay REICHERT / DICLICWEB</p>
-      <p>contact@diclicweb.com</p>
+      <p>
+        EI Shay REICHERT / DICLICWEB <br />
+        contact@diclicweb.com
+      </p>
 
       <h3 className={rocaOne.className}>Hébergeur du site :</h3>
-      <p>NETLIFY</p>
-      <p>512 2nd Street</p>
-      <p>Suite 200 San Francisco</p>
-      <p>CA 94107</p>
+      <p>
+        NETLIFY <br />
+        512 2nd Street <br />
+        Suite 200 San Francisco <br />
+        CA 94107
+      </p>
 
       <h3 className={rocaOne.className}>Crédits :</h3>
       <p>

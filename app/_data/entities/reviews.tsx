@@ -3,16 +3,14 @@ export const sectionReviewsData = {
     {
       id: 1,
       author: "Clémentine C.",
-      image: "/images/services/etape_1.webp",
+      image: "/images/home/mandapunk.webp",
       image_alt: "Clémentine C. de Mandapunk",
       notation: 5,
       text: [
         <>
           <p>
-            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ut lacus nec pulvinar. Sed et orci eu sem dignissim mattis at
-            eget sem.
-            <br />
-            Sed consectetur ex urna, at ornare dolor commodo eget. Mauris porta commodo congue. Sed ultricies rhoncus turpis a sagittis. ”
+            " J'ai beaucoup apprécié ton écoute, ta capacité à réaliser un rendu qui correspond tout à fait à mon brief et mes attentes, et ta
+            disponibilité. "
           </p>
         </>,
       ],
@@ -20,14 +18,14 @@ export const sectionReviewsData = {
     {
       id: 2,
       author: "Miriam M.",
-      image: "/images/services/etape_1.webp",
+      image: "/images/services/review_2.webp",
       image_alt: "Miriam M. de la Queer Bogossité",
       notation: 5,
       text: [
         <>
           <p>
-            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ut lacus nec pulvinar. Sed et orci eu sem dignissim mattis at
-            eget sem. Nunc in lacus sit amet sapien consequat pellentesque posuere a erat. “
+            " J’ai apprécié ta réactivité et le fait que tu sois là dès que j'ai une question ou un soucis. Le travail est bien fait, puis il y a eu
+            un petit temps de formation pour me rendre indépendante. "
           </p>
         </>,
       ],
@@ -35,15 +33,14 @@ export const sectionReviewsData = {
     {
       id: 3,
       author: "Corinne B.",
-      image: "/images/services/etape_1.webp",
+      image: "/images/services/review_3.webp",
       image_alt: "Corinne B. de Jeux et Talents",
       notation: 5,
       text: [
         <>
           <p>
-            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ut lacus nec pulvinar. Nunc in lacus sit amet sapien consequat
-            pellentesque posuere a erat. Sed consectetur ex urna, at ornare dolor commodo eget. Mauris porta commodo congue. Sed ultricies rhoncus
-            turpis a sagittis. “
+            “ Je me suis sentie soutenue et en confiance pour oser me lancer dans cette aventure grâce à toi. J’apprécie ton expertise, tes idées, tes
+            solutions, ta réactivité... Merci beaucoup, c'est un vrai plaisir de travailler avec toi ! “
           </p>
         </>,
       ],
