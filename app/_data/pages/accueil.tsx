@@ -6,7 +6,7 @@ export const sectionTitleData = {
 };
 
 export const sectionCatchphraseData = {
-  text: "Artisanat, écologie, art, éducation, culture, projets associatifs : je mets mes compétences au service de projets qui contribuent à un monde dans lequel je veux de vivre 🌱",
+  text: "Artisanat, écologie, art, éducation, culture, projets associatifs : je mets mes compétences au service de projets qui contribuent à un monde dans lequel je veux vivre 🌱",
 };
 
 export const sectionProjectsData = {
@@ -53,13 +53,12 @@ export const sectionAboutData = {
         <strong> d’éco-conception, d’inclusivité et d’accessibilité.</strong>
       </p>
       <p>
-        Durant mes collaborations, j’aime construire une relation où la communication et la transparence passent en priorité, dans une ambiance
-        <strong> bienveillante et conviviale </strong>! 😊
+        Durant mes collaborations, je privilégie<strong> la communication, la transparence, la bienveillance et la convivialité </strong> 😊
       </p>
       <p>
-        Pour plus d’informations sur mon parcours, mes engagements et mes outils,{" "}
+        Pour plus d’informations sur mon parcours, mes engagements et mes outils, rendez-vous sur ma page{" "}
         <Link href="/a-propos" role="link">
-          rendez-vous ici.
+          À propos.
         </Link>
       </p>
     </>,

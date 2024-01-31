@@ -30,12 +30,13 @@ export const sectionServicesData = {
       text: [
         <>
           <p>
-            Un site e-commerce vous permettra de<strong> vendre vos produits depuis votre site</strong>. Comme pour le site vitrine, il peut également
+            Un site e-commerce vous permettra de<strong> vendre vos produits en ligne</strong>. Comme pour le site vitrine, il peut également
             comprendre une partie blog, un formulaire de contact, une FAQ…
           </p>
           <p>
-            Une fois qu’on aura cerné ensemble vos besoins et les<strong> fonctionnalités à inclur</strong>sur votre site e-commerce, je vous donnerai
-            également tous les<strong> conseils </strong>nécessaires pour gérer au mieux votre boutique en ligne. 😉
+            Après avoir défini ensemble vos besoins et sélectionné les<strong> fonctionnalités nécessaires </strong>pour votre site e-commerce, je
+            vous donnerai également tous les
+            <strong> conseils </strong>nécessaires pour gérer au mieux votre boutique en ligne. 😉
           </p>
           <p>
             Je vous<strong> formerai </strong>également à la prise en main de l’administration pour que vous puissiez gérer sereinement la partie
@@ -77,7 +78,7 @@ export const sectionServicesData = {
             différent, avec des
             <strong> animations complexes </strong>ou une mise en page vraiment particulière ? Je peux peut-être vous aidez aussi !
           </p>
-          <p>Je vous invite à me contacter directement pour m’expliquer votre projet 😃</p>
+          <p>N'hésitez pas à me contacter directement pour discuter de votre projet 😃</p>
         </>,
       ],
       icon: "/images/services/icon_code.svg",

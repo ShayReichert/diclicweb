@@ -13,6 +13,9 @@ export const sectionCommitmentsData = {
       text: [
         <>
           <p>
+            Le choix d'outils<strong> éthiques et respectueux de la vie privée </strong>est primordial pour moi.
+          </p>
+          <p>
             J’utilise les outils Matomo et Abla Analytics pour mesurer la fréquentation sur votre site, deux outils
             <strong> respectueux de la vie privée et des données utilisateur·ices.</strong>
           </p>
@@ -30,6 +33,9 @@ export const sectionCommitmentsData = {
             <strong> éviter les fonctionnalités inutiles</strong>, privilégier un<strong> hébergeur vert </strong>, optimiser les
             <strong> images et les vidéos</strong>...
           </p>
+          <p>
+            Je prévilégie les solutions qui permettent de<strong> réduire l’impact environnemental </strong>de votre site.
+          </p>
         </>,
       ],
       icon: "/images/services/commitments_ecoconception.webp",
@@ -39,9 +45,9 @@ export const sectionCommitmentsData = {
       title: "Accessibilité",
       text: [
         <>
-          <p>Couleurs contrastées, site accessible au clavier, sémantique structurelle respectée…</p>
+          <p>Utilisation de couleurs contrastées, navigation possible au clavier, respect de la structure sémantique... </p>
           <p>
-            Des éléments qui permettent d’avoir un site le plus<strong> accessible </strong>possible
+            Des éléments essentiels qui permettent d’avoir un site aussi<strong> accessible </strong> que possible
             <strong> pour les personnes en situation de handicap</strong>.
           </p>
         </>,
@@ -123,7 +129,7 @@ export const sectionStepsData = {
             <strong> le mettre à jour</strong>, de le<strong> sauvegarder régulièrement </strong>ou encore de
             <strong> prévenir les attaques potentielles</strong>.
           </p>
-          <p>Cette étape ne doit pas être négligée !</p>
+          <p>Cette étape de maintenance ne doit pas être négligée !</p>
         </>,
       ],
       image: "/images/services/etape_4.webp",
