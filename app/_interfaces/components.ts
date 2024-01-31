@@ -26,6 +26,7 @@ interface ItemHomeServiceProps {
 
 // ItemService
 interface ItemServiceProps {
+  id: number;
   title: string;
   text: JSX.Element[];
   icon: string;

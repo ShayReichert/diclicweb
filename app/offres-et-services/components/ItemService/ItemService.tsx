@@ -2,9 +2,9 @@ import styles from "./ItemService.module.scss";
 import Image from "next/image";
 import { rocaOne } from "../../../styles/fonts/font-face";
 
-export default function ItemService({ title, text, icon, icon_alt }: ItemServiceProps) {
+export default function ItemService({ id, title, text, icon, icon_alt }: ItemServiceProps) {
   return (
-    <div className={styles["service"]}>
+    <div id={`service-${id}`} className={styles["service"]}>
       <div className={styles["service-icon"]}>
         <Image src={icon} alt={icon_alt ? icon_alt : ""} width={84} height={84} priority placeholder="blur" blurDataURL={icon} />
       </div>

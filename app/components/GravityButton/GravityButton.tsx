@@ -50,7 +50,7 @@ const GravityButton = ({ label, image, url, imageWidth, imageHeight }: GravityBu
       style={{ width: imageWidth * 1.5, height: imageHeight * 1.5 }}
     >
       {url ? (
-        <a href={url} target="_blank" role="link">
+        <a href={url} target="_blank" role="link" rel="noopener noreferrer">
           <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} priority />
         </a>
       ) : (
