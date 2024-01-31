@@ -6,7 +6,7 @@ export const post10 = {
   title: "Comment bien optimiser les images sur son site ?",
   author: "Shay",
   slug: "comment-bien-optimiser-images-site-web",
-  date: "2023-11-13",
+  date: "2024-01-26",
   category: [1, 4],
   excerpt:
     "L'importance du poids et de la taille des images sur un site est trop souvent négligée. Pourtant optimiser vos images peut vous aider significativement à avoir un site plus performant !",
@@ -44,25 +44,30 @@ export const post10 = {
           <h2 className={rocaOne.className}>L'importance de l'optimisation des images</h2>
           <h3 className={rocaOne.className}>Amélioration de l'expérience utilisateur</h3>
           <p>
-            Les images jouent un rôle essentiel dans l'attrait visuel d'un site web. Cependant, si elles prennent trop de temps à charger, elles
-            peuvent rapidement frustrer les visiteurs. En optimisant vos images, vous garantissez<strong> un chargement rapide et fluide</strong>,
-            offrant ainsi une expérience utilisateur plus agréable.
+            Les images sont cruciales pour l'esthétique de votre site, mais des fichiers trop volumineux peuvent considérablement ralentir le temps de
+            chargement. Une compression efficace des images<strong> réduit leur taille sans compromettre la qualité visuelle</strong>, assurant ainsi
+            un affichage<strong> rapide et sans interruption</strong>. Cela contribue à une expérience utilisateur·ice fluide et satisfaisante,
+            réduisant le risque de frustration et d'abandon de la part des visiteur·ices.
           </p>
           <h3 className={rocaOne.className}>Un site plus écologique et moins cher</h3>
           <p>
-            Des images lourdes occupent davantage d'espace sur votre serveur, ce qui peut entraîner des coûts supplémentaires en matière
-            d'hébergement. En optimisant vos images, vous<strong> réduisez la quantité de données à stocker</strong>, ce qui se traduit par des
-            <strong> économies potentielles</strong>.
+            Les images non optimisées<strong> consomment inutilement de l'espace serveur</strong>, entraînant également des coûts d'hébergement plus
+            élevés.
           </p>
           <p>
-            En optimisant vos images, vous rendez également votre site web<strong> plus écologique </strong>car moins de ressources serveur sont
-            nécessaires pour stocker vos images.
+            Un site nécessitant moins de ressources serveur pour le chargement des images est
+            <strong> plus respectueux de l'environnement</strong>, contribuant à réduire l'empreinte carbone de votre activité numérique. De plus en
+            compressant vos images, vous diminuez leur taille de fichier, réduisant l'espace de stockage requis et les coûts associés.
           </p>
+
           <h3 className={rocaOne.className}>Amélioration du référencement</h3>
           <p>
-            Les moteurs de recherche accordent de l'importance à la vitesse de chargement des pages. Des images optimisées permettent à votre site web
-            de<strong> se charger plus rapidement</strong>, ce qui peut avoir un impact positif sur votre classement dans les
-            <strong> résultats de recherche</strong>.
+            La rapidité d'un site est un critère de référencement clé pour<strong> les moteurs de recherche </strong>comme Google. En optimisant vos
+            images pour qu'elles se chargent plus vite, vous<strong> améliorez les performances globales de votre site</strong>.
+          </p>
+          <p>
+            Cette accélération du temps de chargement peut non seulement améliorer votre positionnement dans les résultats de recherche, mais aussi
+            augmenter l'engagement des utilisateur·ices et<strong> réduire le taux de rebond</strong>.
           </p>
         </>,
       ],
@@ -76,27 +81,38 @@ export const post10 = {
           <ol>
             <li>
               <strong>Redimensionner </strong>: Utilisez un outil tel que{" "}
-              <Link href="https://www.resizepixel.com/" role="link" target="_blank">
+              <Link href="https://www.resizepixel.com/" role="link" target="_blank" rel="noopener noreferrer">
                 Resizepixel
               </Link>{" "}
               pour ajuster les dimensions de vos images en fonction de leur utilisation sur le site. Évitez de télécharger des images excessivement
-              grandes qui seront redimen
+              grandes qui seront ensuite redimensionnées par le navigateur.
+              <br />
+              Uploadez simplement votre image, choisissez les dimensions souhaitées et téléchargez l'image redimensionnée. Idéal pour adapter vos
+              images aux différents emplacements sur votre site, comme les vignettes d'article ou les en-têtes de page.
             </li>
             <li>
               <strong>Compresser </strong>: Rendez-vous sur{" "}
-              <Link href="https://compressor.io/" role="link" target="_blank">
+              <Link href="https://compressor.io/" role="link" target="_blank" rel="noopener noreferrer">
                 compressor.io
               </Link>{" "}
               et téléchargez vos images. Cet outil comprime automatiquement les images tout en préservant leur qualité. Les images compressées
-              conservent leur netteté tout en prenant moins de place.
+              conservent leur netteté tout en prenant moins de place. <br />
+              Glissez-déposez simplement vos images sur la plateforme et cliquez sur "Download" pour récupérer vos images compressées. <br />
+              <small>
+                <em>
+                  Si vous cherchez d'autres outils, TinyPNG est excellent pour compresser les fichiers PNG et JPEG. Il est également possible
+                  d'utiliser des plugins WordPress comme Smush ou EWWW Image Optimizer pour automatiser cette étape.
+                </em>
+              </small>
             </li>
             <li>
               <strong>Convertir en WebP </strong>: Utilisez{" "}
-              <Link href="https://convertio.co/fr/" role="link" target="_blank">
+              <Link href="https://convertio.co/fr/" role="link" target="_blank" rel="noopener noreferrer">
                 Convertio.co
               </Link>{" "}
               pour convertir vos images au format WebP. Ce format offre une qualité similaire à JPG et PNG, mais avec une taille de fichier
-              considérablement réduite, garantissant ainsi des temps de chargement plus rapides.
+              considérablement réduite, garantissant ainsi des temps de chargement plus rapides. Sélectionnez simplement votre fichier, choisissez le
+              format WebP et téléchargez votre nouvelle image optimisée pour le web.
             </li>
             <li>
               <strong>Renommer judicieusement </strong>: Profitez de cette étape pour attribuer des noms descriptifs à vos images en fonction de leur
@@ -115,7 +131,15 @@ export const post10 = {
         <>
           <p>-------</p>
           <p>
-            En suivant ces étapes, vous garantissez des images bien optimisées qui amélioreront significativement les performances de votre site web.
+            En somme, l'optimisation des images est bien plus qu'une simple amélioration technique : en prenant le temps de compresser et d'optimiser
+            chaque image, vous investissez dans<strong> la performance et la durabilité </strong>de votre présence en ligne !
+          </p>
+          <p>
+            {" "}
+            Si vous vous intéressez aux démarches d'éco-conception de sites web, cet autre article peut vous intéresser :{" "}
+            <Link href="/blog/eco-conception-site-web/1" role="link">
+              C’est quoi l’éco-conception d’un site web ? 🌿
+            </Link>
           </p>
         </>,
       ],

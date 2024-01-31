@@ -6,7 +6,7 @@ export const post1 = {
   title: "C’est quoi l’éco-conception d’un site web ? 🌿",
   author: "Shay",
   slug: "eco-conception-site-web",
-  date: "2023-11-07",
+  date: "2024-01-07",
   category: [1],
   excerpt:
     "Éco-concevoir un site, c'est essayer d'anticiper et de réduire l'impact environnemental du site tout au long de sa vie : de sa conception à sa mise en ligne, en passant par son hébergement et sa maintenance.",
@@ -43,7 +43,7 @@ export const post1 = {
             Quand le projet est adapté, je préfère coder<strong> des sites web statiques</strong>. Ils sont plus légers et plus rapides que les sites
             dynamiques. Ils ne nécessitent pas de base de données et sont donc moins énergivores !<br />
           </p>
-          <p>Par exemple, le site sur lequel vous lisez cette article est un site statique et à un super éco-index de 85/100 (A) !</p>
+          <p>Par exemple, le site sur lequel vous lisez cet article est un site statique et à un excellent éco-index de 85/100 (A) !</p>
           <p>
             Si des fonctionnalités spécifiques sont nécessaires, j'utilise <strong> Wordpress avec le thème Divi</strong>. Cela me permet de créer des
             sites<strong> personnalisés et réactifs </strong>sans avoir à recourir à des plugins superflus. Cela contribue aussi à alléger la charge

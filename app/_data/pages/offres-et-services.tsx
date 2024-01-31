@@ -152,20 +152,20 @@ export const sectionFAQData = {
       answer: [
         <>
           <p>
-            Les prix peuvent varier beaucoup selon<strong> le nombre de pages voulues</strong>, les<strong> fonctionnalités à inclure</strong>, si
-            c’est <strong>un site vitrine ou e-commerce</strong>… Créer un site peut prendre quelques jours ou quelques semaines, parfois même jusqu’à
-            plusieurs mois !
+            Les prix peuvent varier beaucoup selon<strong> le nombre de pages voulues</strong>, les<strong> fonctionnalités à inclure</strong>, la
+            complexité du design, si c’est <strong>un site vitrine ou e-commerce</strong>… <br /> Créer un site peut prendre quelques jours ou
+            quelques semaines, parfois même jusqu’à plusieurs mois !
           </p>
-          <p>Pour vous donner une idée, voici des fourchettes de prix :</p>
+          <p>Pour vous donner une idée, voici les tarifs de base :</p>
           <ul>
             <li>
-              <strong>Un site vitrine </strong>: entre 1400 et 2800€ pour un site de 10 pages max.
+              <strong>Un site vitrine </strong>: à partir de 900€
             </li>
             <li>
-              <strong>Un site e-commerce </strong>: à partir de 3000€ (dépend de la taille de la boutique)
+              <strong>Un site e-commerce </strong>: à partir de 2500€
             </li>
             <li>
-              <strong>Un site sur-mesure </strong>: généralement à partir de 2500€
+              <strong>Une application web, un site sur-mesure </strong>: généralement à partir de 4000€
             </li>
           </ul>
         </>,

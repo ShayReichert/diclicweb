@@ -5,7 +5,7 @@ export const post2 = {
   title: "Comment rédiger le contenu de son site en écriture inclusive ?",
   author: "Shay",
   slug: "comment-rediger-contenu-site-ecriture-inclusive",
-  date: "2023-11-08",
+  date: "2024-01-10",
   category: [2, 4],
   excerpt:
     "Mais qu'est-ce que l'écriture inclusive exactement ? Pourquoi est-ce si important ? Dans cet article, je vous explique en quoi consiste l'écriture inclusive et pourquoi elle peut être pertinente à adopter.",
@@ -38,7 +38,7 @@ export const post2 = {
           </p>
           <p>
             Si vous voulez mieux comprendre les<strong> enjeux derrière l'écriture inclusive</strong>, je vous recommande de visionner
-            <a href="https://youtu.be/url1TFdHlSI" target="_blank">
+            <a href="https://youtu.be/url1TFdHlSI" target="_blank" rel="noopener noreferrer">
               {" "}
               cette excellente vidéo de Scilabus{" "}
             </a>
@@ -148,12 +148,12 @@ export const post2 = {
           <h2 className={rocaOne.className}>4. Astuces pour intégrer l'écriture inclusive sur votre site web</h2>
           <h3 className={rocaOne.className}>Utiliser des outils d'aide à l'écriture</h3>
           <p>
-            Certains outils sont entrain d'être développés afin de faciliter la rédaction en écriture inclusive. <br />
+            Certains outils sont en cours de développement afin de faciliter la rédaction en écriture inclusive. <br />
             On trouve notamment les outils suivants :
           </p>
           <ul>
             <li>
-              <a href="https://eninclusif.fr/" role="link" target="_blank">
+              <a href="https://eninclusif.fr/" role="link" target="_blank" rel="noopener noreferrer">
                 EnInclusif.fr
               </a>{" "}
               : un convertisseur d'écriture inclusive qui permet de<strong> transformer automatiquement un texte en écriture inclusive</strong>.{" "}
@@ -161,7 +161,7 @@ export const post2 = {
               Ce site propose également des<strong> accompagnements pour la mise en place de l'écriture inclusive </strong>dans votre entreprise.
             </li>
             <li>
-              <a href="https://mots.incluzor.fr/" role="link" target="_blank">
+              <a href="https://mots.incluzor.fr/" role="link" target="_blank" rel="noopener noreferrer">
                 Incluzor
               </a>{" "}
               : un autre convertisseur en écriture inclusive.
@@ -171,6 +171,7 @@ export const post2 = {
                 href="https://chrome.google.com/webstore/detail/ecriture%C2%B7inclusive%C2%B7facile/dfjcdiknbdbnfgecbkcaobgmeekinphg?hl=fr"
                 role="link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Ecriture·Inclusive·Facile
               </a>{" "}

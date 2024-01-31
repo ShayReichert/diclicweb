@@ -6,7 +6,7 @@ export const post3 = {
   title: "Accessibilité web : comment rendre mon site accessible ?",
   author: "Shay",
   slug: "accessibilite-web-comment-rendre-site-accessible",
-  date: "2023-11-09",
+  date: "2024-01-13",
   category: [2, 4],
   excerpt: "Voici des conseils pour permettre au mieux à tous·tes les internautes d'accéder au contenu de votre site web dans de bonnes conditions.",
   thumbnail: {
@@ -38,8 +38,9 @@ export const post3 = {
         <>
           <h2 className={rocaOne.className}>1. Une structure qui a du sens</h2>
           <p>
-            Votre site web est un peu comme une maison : il a besoin d'une<strong> structure clair </strong>pour pouvoir accueillir les visiteur·ices.
-            Les pièces de votre maison doivent être facilement identifiables et accessibles. C'est pourquoi il est important d'utiliser les
+            Votre site web est un peu comme une maison : il a besoin d'une<strong> structure claire </strong>pour pouvoir accueillir les
+            visiteur·ices. Les pièces de votre maison doivent être facilement identifiables et accessibles. C'est pourquoi il est important d'utiliser
+            les
             <strong> bonnes étiquettes HTML </strong>: "header", "nav", "mai"n, "footer".... Comme ça, tout le monde s'y retrouve !
           </p>
         </>,
@@ -53,7 +54,9 @@ export const post3 = {
           <p>
             Pour celleux qui ne voient pas très bien, il est important de donner une<strong> petite description aux images</strong>. C'est comme
             décrire une photo pour quelqu'un qui ne peut pas la voir. Il suffit pour ça de<strong> compléter l'attribut "alt" </strong>dans les
-            balises "img".
+            balises "img". <br />
+            Par exemple, pour une image d'un coucher de soleil, l'attribut alt pourrait être "Coucher de soleil sur la plage, avec des nuances de rose
+            et d'orange dans le ciel".
           </p>
         </>,
       ],
@@ -66,9 +69,9 @@ export const post3 = {
           <p>
             Privilégiez des couleurs avec un<strong> bon contraste </strong>pour que tout le monde puisse lire votre contenu. <br />
             Vous pouvez vérifier le contraste de vos couleurs sur des ({" "}
-            <a href="https://app.contrast-finder.org/?lang=fr" target="_blank">
+            <a href="https://app.contrast-finder.org/?lang=fr" target="_blank" rel="noopener noreferrer">
               {" "}
-              sites spécialisés{" "}
+              sites spécialisés
             </a>
             ). <br />
             Il est important également<strong> d'adapter la taille des polices </strong>pour qu'elles soient aisément lisibles.
@@ -82,7 +85,7 @@ export const post3 = {
         <>
           <h2 className={rocaOne.className}>4. Des titres et des sous-titres</h2>
           <p>
-            Les titres et les sous-titres sont un peu comme les chapitrs et sous-chapitres d'un livre : ils permettent de
+            Les titres et les sous-titres sont un peu comme les chapitres et sous-chapitres d'un livre : ils permettent de
             <strong> mieux s'y retrouver dans l'histoire</strong>. Il est important de<strong> respecter la hiérarchie des balises HTML </strong>:
             "h1", "h2", "h3"... Ça permet de structurer votre contenu et de le rendre plus accessible.
           </p>
@@ -107,8 +110,8 @@ export const post3 = {
         <>
           <h2 className={rocaOne.className}>6. Faites des tests</h2>
           <p>
-            Utiliser des<strong> lecteurs d'écrans et des validateurs d'accessibilité </strong>pour vous assurer que tout fonctionne. Cela vous aidera
-            à repérer les points à améliorer !
+            Utiliser des<strong> lecteurs d'écrans et des validateurs d'accessibilité </strong>pour vous assurer que tout fonctionne (par exemple, le
+            lecteur d'écran NVDA ou le validateur d'accessibilité WAVE). Cela vous aidera à repérer les points à améliorer !
           </p>
         </>,
       ],
