@@ -2,7 +2,7 @@ export const sectionServicesData = {
   services: [
     {
       id: 1,
-      title: "Site vitrine Wordpress",
+      title: "Site vitrine WordPress",
       short_desc: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
       text: [
         <>
@@ -11,7 +11,7 @@ export const sectionServicesData = {
             formulaire de contact… mais il n’inclut pas la possibilité de vendre directement en ligne.
           </p>
           <p>
-            J’utilise Wordpress, un CMS open source qui n’a plus à faire ses preuves ! Cela vous permettra d’être
+            J’utilise WordPress, un CMS open source qui n’a plus à faire ses preuves ! Cela vous permettra d’être
             <strong> autonome dans la gestion du contenu </strong>de votre site.
           </p>
           <p>

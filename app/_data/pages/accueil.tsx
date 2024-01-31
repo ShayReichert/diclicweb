@@ -14,7 +14,7 @@ export const sectionProjectsData = {
     {
       title: "Jeux et talents",
       subtitle: "Jeux éducatifs à imprimer",
-      short_description: "Site e-commerce Wordpress",
+      short_description: "Site e-commerce WordPress",
       technology: "Divi + thème enfant",
       image: "/images/home/jeuxettalents.webp",
       image_alt: "Aperçu du site Jeux et talents",
@@ -22,7 +22,7 @@ export const sectionProjectsData = {
     {
       title: "Mandapunk",
       subtitle: "Couture alternative / créations engagées",
-      short_description: "Site e-commerce Wordpress",
+      short_description: "Site e-commerce WordPress",
       technology: "Botiga + thème enfant",
       image: "/images/home/mandapunk.webp",
       image_alt: "Aperçu du site Mandapunk",
@@ -30,7 +30,7 @@ export const sectionProjectsData = {
     {
       title: "La Queer Bogossité",
       subtitle: "Bougies artisanales déviantes",
-      short_description: "Site e-commerce Wordpress",
+      short_description: "Site e-commerce WordPress",
       technology: "Divi + thème enfant",
       image: "/images/home/qb.webp",
       image_alt: "Aperçu du site La Queer Bogossité",

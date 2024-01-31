@@ -12,10 +12,10 @@ export const sectionAboutData = {
     <>
       <p>
         Je m’appelle Shay et après plusieurs années de travail pour une agence web, j’ai décidé de me lancer en tant que
-        <strong> freelance Wordpress </strong>pour mettre mes compétences au service de projets qui ont du sens pour moi.
+        <strong> freelance WordPress </strong>pour mettre mes compétences au service de projets qui ont du sens pour moi.
       </p>
       <p>
-        J’ai décidé de me spécialiser dans la création de<strong> sites internet engagés </strong> (dans les milieux culturels, artistiques,
+        J’ai choisi de me spécialiser dans la création de<strong> sites internet engagés </strong> (dans les milieux culturels, artistiques,
         éducatifs, artisanaux, associatifs...).
       </p>
       <p>Vous voulez en savoir un peu plus sur mon parcours, mes engagements et mes outils de prédilection ?</p>

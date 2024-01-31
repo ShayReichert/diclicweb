@@ -4,7 +4,7 @@ export const sectionProjectsData = {
       id: 1,
       title: "Jeux et talents",
       subtitle: "Jeux éducatifs à imprimer",
-      short_description: "Site e-commerce Wordpress",
+      short_description: "Site e-commerce WordPress",
       technology: "Divi + thème enfant",
       description: [
         <>
@@ -23,7 +23,7 @@ export const sectionProjectsData = {
       id: 2,
       title: "Mandapunk",
       subtitle: "Couture alternative / créations engagées",
-      short_description: "Site e-commerce Wordpress",
+      short_description: "Site e-commerce WordPress",
       technology: "Botiga + thème enfant",
       description: [
         <>
@@ -46,7 +46,7 @@ export const sectionProjectsData = {
       id: 3,
       title: "La Queer Bogossité",
       subtitle: "Bougies artisanales déviantes",
-      short_description: "Site e-commerce Wordpress",
+      short_description: "Site e-commerce WordPress",
       technology: "Divi + thème enfant",
       description: [
         <>
@@ -70,7 +70,7 @@ export const sectionProjectsData = {
       description: [
         <>
           <p>
-            Créée en partenariat avec l’association “This is a RIOT”, QueerBandFrance a pour but de visibiliser des groupes de musique queers et
+            Créé en partenariat avec l’association “This is a RIOT”, QueerBandFrance a pour but de visibiliser des groupes de musique queers et
             féministes francophone.
           </p>
         </>,

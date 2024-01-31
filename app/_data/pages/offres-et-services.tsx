@@ -112,7 +112,7 @@ export const sectionStepsData = {
             <strong> gérer la maintenance, pour sécuriser le site et optimiser la vitesse</strong>.
           </p>
           <p>
-            Pour finir, je met le site en ligne et<strong> je vous forme à Wordpress </strong>pour que vous puissiez gérer sereinement votre site et
+            Pour finir, je met le site en ligne et<strong> je vous forme à WordPress </strong>pour que vous puissiez gérer sereinement votre site et
             vos contenus. 😌
           </p>
         </>,
@@ -125,7 +125,7 @@ export const sectionStepsData = {
       text: [
         <>
           <p>
-            La maintenance est primordiale sur un site Wordpress : elle permet de garder<strong> un site en bonne santé</strong>, de
+            La maintenance est primordiale sur un site WordPress : elle permet de garder<strong> un site en bonne santé</strong>, de
             <strong> le mettre à jour</strong>, de le<strong> sauvegarder régulièrement </strong>ou encore de
             <strong> prévenir les attaques potentielles</strong>.
           </p>
@@ -141,7 +141,7 @@ export const sectionStepsData = {
 export const sectionFAQData = {
   faq: [
     {
-      question: "Pourquoi faire appel à un freelance Wordpress pour faire mon site ?",
+      question: "Pourquoi faire appel à un freelance WordPress pour faire mon site ?",
       answer: [
         <>
           <p>Même si ça peut sembler contre intuitif, vous gagnerez du temps (et donc de l’argent) ! 💰</p>

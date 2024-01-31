@@ -13,7 +13,7 @@ export const sectionQuinconces = {
       text: [
         <>
           <p>
-            <strong>Je suis Shay, créateur freelance de sites Wordpress et développeur front-end.</strong>
+            <strong>Je suis Shay, créateur freelance de sites WordPress et développeur front-end.</strong>
           </p>
 
           <p>
@@ -40,7 +40,7 @@ export const sectionQuinconces = {
       text: [
         <>
           <p>
-            <strong>J’habite à Nontron (entre Périgueux et Angoulême) et je vais régulièrement sur Bordeaux</strong>, mais la collaboration peut se
+            <strong>J’habite à Nontron (entre Périgueux et Angoulême) et je me rends régulièrement à Bordeaux</strong>, mais la collaboration peut se
             faire à distance depuis n’importe où !
           </p>
 
@@ -67,7 +67,7 @@ export const sectionQuinconces = {
               contrastes…
             </li>
             <li>
-              Mise en place d’ outils<strong> respectueux des RGPD </strong>pour l’analyse d’audience de votre site : Abla Anatytics (exempté de
+              Mise en place d’ outils<strong> respectueux des RGPD </strong>pour l’analyse d’audience de votre site : Abla Analytics (exempté de
               consentement car données anonymisées), Matomo (approuvé par la CNIL)
             </li>
             <li>
@@ -96,7 +96,7 @@ export const sectionQuinconces = {
           <p>Pour créer et coder les sites, j’utilise les outils et technologies suivantes : </p>
 
           <ul>
-            <li>Wordpress</li>
+            <li>WordPress</li>
             <li>Divi (thème premium) </li>
             <li>Figma (pour les maquettes)</li>
             <li>React (pour les applications) </li>

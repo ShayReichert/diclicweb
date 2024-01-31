@@ -45,7 +45,7 @@ export const post1 = {
           </p>
           <p>Par exemple, le site sur lequel vous lisez cet article est un site statique et à un excellent éco-index de 85/100 (A) !</p>
           <p>
-            Si des fonctionnalités spécifiques sont nécessaires, j'utilise <strong> Wordpress avec le thème Divi</strong>. Cela me permet de créer des
+            Si des fonctionnalités spécifiques sont nécessaires, j'utilise <strong> WordPress avec le thème Divi</strong>. Cela me permet de créer des
             sites<strong> personnalisés et réactifs </strong>sans avoir à recourir à des plugins superflus. Cela contribue aussi à alléger la charge
             du site et à améliorer sa vitesse de chargement.
           </p>

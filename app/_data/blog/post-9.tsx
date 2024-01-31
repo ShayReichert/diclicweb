@@ -65,7 +65,7 @@ export const post9 = {
           </ul>
           <p>
             Voici quelques exemples de plateformes intuitives avec lesquelles vous pourrez créer votre<strong> site vitrine </strong>: Odoo, Wix,
-            Wordpress...
+            WordPress...
             <br />
             Si vous envisagez plutôt de mettre en place une<strong> boutique en ligne</strong>, plusieurs plateformes vous simplifient la tâche,
             telles que Shopify, Wix, Squarespace (ou encore Etsy ou Big Cartel pour les artistes et les artisan·es).
