@@ -35,6 +35,7 @@ interface ItemServiceProps {
 
 // ItemProject
 interface ItemHomeProjectProps {
+  id: number;
   title: string;
   subtitle: string;
   short_description: string;

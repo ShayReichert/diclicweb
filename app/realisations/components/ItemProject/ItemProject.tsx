@@ -7,7 +7,7 @@ export default function ItemProject({ id, title, short_description, subtitle, de
   const isEven = id % 2 === 0;
 
   return (
-    <div className={`${styles["project"]} ${isEven ? styles["even"] : ""}`}>
+    <div id={`projet-${id}`} className={`${styles["project"]} ${isEven ? styles["even"] : ""}`}>
       <div className={styles["image-content"]}>
         <div className={styles["image-wrapper"]}>
           <Image src={mockup} alt={image_alt ? image_alt : ""} fill sizes="(max-width: 767px) 100vw, 50vw" placeholder="blur" blurDataURL={mockup} />

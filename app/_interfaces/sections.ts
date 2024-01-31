@@ -33,6 +33,7 @@ interface ServicesProps {
 
 // SectionProject
 interface HomeProject {
+  id: number;
   title: string;
   subtitle: string;
   short_description: string;
