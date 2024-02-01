@@ -63,18 +63,21 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
       // showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
       window.location.href = "#scroll-submit";
     } else {
-      const submissionSuccess = await submitFormToNetlify(formData);
+      const formSubmission = await submitFormToNetlify(formData);
+      console.log(formSubmission);
 
-      if (submissionSuccess) {
-        console.log("Form submitted successfully!");
-        setFormSubmitted(true);
-        showSnackbar("Message envoyé !", "success");
-        window.location.href = "#scroll-submit";
-      } else {
-        setFormSubmitted(false);
-        showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
-        window.location.href = "#scroll-submit";
-      }
+      // const submissionSuccess = await submitFormToNetlify(formData);
+
+      // if (submissionSuccess) {
+      //   console.log("Form submitted successfully!");
+      //   setFormSubmitted(true);
+      //   showSnackbar("Message envoyé !", "success");
+      //   window.location.href = "#scroll-submit";
+      // } else {
+      //   setFormSubmitted(false);
+      //   showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+      //   window.location.href = "#scroll-submit";
+      // }
     }
   };
 
