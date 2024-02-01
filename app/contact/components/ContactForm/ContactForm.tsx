@@ -37,49 +37,46 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    // HoneyPot
-    const honeypot = (e.target as HTMLFormElement).querySelector('[name="bot-field"]') as HTMLInputElement;
+  //   // HoneyPot
+  //   const honeypot = (e.target as HTMLFormElement).querySelector('[name="bot-field"]') as HTMLInputElement;
 
-    if (honeypot && honeypot.value) {
-      return;
-    }
+  //   if (honeypot && honeypot.value) {
+  //     return;
+  //   }
 
-    // Errors
-    const errors = validateFormData(formData);
-    setFormErrors(errors);
+  //   // Errors
+  //   const errors = validateFormData(formData);
+  //   setFormErrors(errors);
 
-    if (Object.keys(errors).length !== 0) {
-      return;
-    }
+  //   if (Object.keys(errors).length !== 0) {
+  //     return;
+  //   }
 
-    // Submit
-    if (isLocal) {
-      console.log("Form submitted locally!");
-      setFormSubmitted(true);
-      showSnackbar("Formulaire soumis localement !", "success");
-      // showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
-      window.location.href = "#scroll-submit";
-    } else {
-      const formSubmission = await submitFormToNetlify(formData);
-      console.log(formSubmission);
+  //   // Submit
+  //   if (isLocal) {
+  //     console.log("Form submitted locally!");
+  //     setFormSubmitted(true);
+  //     showSnackbar("Formulaire soumis localement !", "success");
+  //     // showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+  //     window.location.href = "#scroll-submit";
+  //   } else {
+  //     const submissionSuccess = await submitFormToNetlify(formData);
 
-      // const submissionSuccess = await submitFormToNetlify(formData);
-
-      // if (submissionSuccess) {
-      //   console.log("Form submitted successfully!");
-      //   setFormSubmitted(true);
-      //   showSnackbar("Message envoyé !", "success");
-      //   window.location.href = "#scroll-submit";
-      // } else {
-      //   setFormSubmitted(false);
-      //   showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
-      //   window.location.href = "#scroll-submit";
-      // }
-    }
-  };
+  //     if (submissionSuccess) {
+  //       console.log("Form submitted successfully!");
+  //       setFormSubmitted(true);
+  //       showSnackbar("Message envoyé !", "success");
+  //       window.location.href = "#scroll-submit";
+  //     } else {
+  //       setFormSubmitted(false);
+  //       showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+  //       window.location.href = "#scroll-submit";
+  //     }
+  //   }
+  // };
 
   return (
     <div>
@@ -90,7 +87,7 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
         </div>
       ) : (
         <form
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
           netlify-honeypot="bot-field"
           name="contact"
           method="POST"

@@ -48,8 +48,7 @@ export const validateFormData = (formData: FormDataInterface) => {
   return errors;
 };
 
-export const submitFormToNetlify = async (formData: FormDataInterface): Promise<any> => {
-  // export const submitFormToNetlify = async (formData: FormDataInterface): Promise<boolean> => {
+export const submitFormToNetlify = async (formData: FormDataInterface): Promise<boolean> => {
   const params = new URLSearchParams();
 
   for (const key in formData) {
@@ -69,12 +68,10 @@ export const submitFormToNetlify = async (formData: FormDataInterface): Promise<
     if (response.ok) {
       return true;
     } else {
-      return response;
       return false;
     }
   } catch (error) {
-    // console.error("Error submitting form:", error);
-    return error;
+    console.error("Error submitting form:", error);
     return false;
   }
 };
