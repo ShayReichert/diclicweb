@@ -1,10 +1,9 @@
-import Link from "next/link";
 import styles from "./ItemProject.module.scss";
 import Image from "next/image";
 
-export default function ItemProject({ id, title, subtitle, short_description, technology, image, image_alt }: ItemHomeProjectProps) {
+export default function ItemProject({ title, subtitle, short_description, technology, image, image_alt }: ItemHomeProjectProps) {
   return (
-    <Link className={styles["project"]} href={`/realisations/#projet-${id}`}>
+    <div className={styles["project"]}>
       <div className={styles["project-image"]}>
         <Image
           src={image}
@@ -27,6 +26,6 @@ export default function ItemProject({ id, title, subtitle, short_description, te
           <p>{technology}</p>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
