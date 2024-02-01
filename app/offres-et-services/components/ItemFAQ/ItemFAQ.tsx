@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styles from "./ItemFAQ.module.scss";
 import Image from "next/image";
 
-export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRefs }: ItemFAQProps) {
+export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRef }: ItemFAQProps) {
   // Open first question on page load
   useEffect(() => {
     const firstQuestion = document.querySelectorAll(`.${styles["question"]}`)[1];
@@ -19,7 +19,7 @@ export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRe
   }, []);
 
   return (
-    <div className={styles["faq-item"]} key={index}>
+    <div className={styles["faq-item"]}>
       <div className={styles["question"]} onClick={() => handleToggle(index)}>
         <h3>{item.question}</h3>
         <span className={`${openIndex === index ? styles["arrow-up"] : styles["arrow-down"]}`}>
@@ -27,7 +27,7 @@ export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRe
         </span>
       </div>
 
-      <div ref={answerRefs[index]} className={`${styles["answer"]} `}>
+      <div ref={answerRef} className={`${styles["answer"]} `}>
         {item.answer.map((text, index) => (
           <div key={index} className={styles["text"]}>
             {text}

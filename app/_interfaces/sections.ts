@@ -66,7 +66,7 @@ interface ItemFAQProps {
   index: number;
   handleToggle: (index: number) => void;
   openIndex: number;
-  answerRefs: React.MutableRefObject<HTMLDivElement | null>[];
+  answerRef: (el: HTMLDivElement | null) => void;
 }
 
 interface FAQ {
