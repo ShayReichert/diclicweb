@@ -9,6 +9,7 @@ interface FormErrors {
 }
 
 interface FormDataInterface {
+  [key: string]: any;
   firstName: string;
   lastName: string;
   email: string;
