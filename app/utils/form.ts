@@ -47,31 +47,3 @@ export const validateFormData = (formData: FormDataInterface) => {
 
   return errors;
 };
-
-export const submitFormToNetlify = async (formData: FormDataInterface): Promise<boolean> => {
-  const params = new URLSearchParams();
-
-  for (const key in formData) {
-    const value = formData[key as keyof FormDataInterface];
-    if (value !== undefined) {
-      params.append(key, value.toString());
-    }
-  }
-
-  try {
-    const response = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: params.toString(),
-    });
-
-    if (response.ok) {
-      return true;
-    } else {
-      return false;
-    }
-  } catch (error) {
-    console.error("Error submitting form:", error);
-    return false;
-  }
-};

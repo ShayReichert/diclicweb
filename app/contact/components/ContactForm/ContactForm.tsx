@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import styles from "./ContactForm.module.scss";
 import Button from "@/app/components/Button/Button";
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
-import { submitFormToNetlify, validateFormData } from "@/app/utils/form";
+import { validateFormData } from "@/app/utils/form";
 
 export default function ContactForm({ showSnackbar }: ContactFormProps) {
   const [formData, setFormData] = useState<FormDataInterface>({
