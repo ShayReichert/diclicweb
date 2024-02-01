@@ -69,6 +69,7 @@ export const submitFormToNetlify = async (formData: FormDataInterface): Promise<
     if (response.ok) {
       return true;
     } else {
+      return response;
       return false;
     }
   } catch (error) {
