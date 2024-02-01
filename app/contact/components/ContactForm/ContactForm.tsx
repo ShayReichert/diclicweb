@@ -110,7 +110,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/contact/?form-submitted=true"
+          action="/contact#scroll-submit/?form-submitted=true"
           className={styles["contact-form"]}
         >
           <input type="hidden" name="form-name" value="contact" />
