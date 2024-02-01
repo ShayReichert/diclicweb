@@ -33,6 +33,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
   useEffect(() => {
     if (formSubmitted) {
       window.location.href = "#scroll-submit";
+      showSnackbar("Votre message a bien été envoyé.", "success");
     }
   }, [formSubmitted]);
 
@@ -51,39 +52,6 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
       });
     }
   };
-
-  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-
-  //   // HoneyPot
-  //   const honeypot = (e.target as HTMLFormElement).querySelector('[name="bot-field"]') as HTMLInputElement;
-
-  //   if (honeypot && honeypot.value) {
-  //     return;
-  //   }
-
-  //   // Errors
-  //   const errors = validateFormData(formData);
-  //   setFormErrors(errors);
-
-  //   if (Object.keys(errors).length !== 0) {
-  //     return;
-  //   }
-
-  //   // Submit
-  //   const submissionSuccess = await submitFormToNetlify(formData);
-
-  //   if (submissionSuccess) {
-  //     console.log("Form submitted successfully!");
-  //     setFormSubmitted(true);
-  //     showSnackbar("Message envoyé !", "success");
-  //     window.location.href = "#scroll-submit";
-  //   } else {
-  //     setFormSubmitted(false);
-  //     showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
-  //     window.location.href = "#scroll-submit";
-  //   }
-  // };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
