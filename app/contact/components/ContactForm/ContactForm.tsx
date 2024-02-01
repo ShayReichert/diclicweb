@@ -30,6 +30,12 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
     }
   }, []);
 
+  useEffect(() => {
+    if (formSubmitted) {
+      window.location.href = "#scroll-submit";
+    }
+  }, [formSubmitted]);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
 
@@ -110,7 +116,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/contact#scroll-submit/?form-submitted=true"
+          action="/contact?form-submitted=true"
           className={styles["contact-form"]}
         >
           <input type="hidden" name="form-name" value="contact" />
