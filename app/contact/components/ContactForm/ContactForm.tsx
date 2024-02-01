@@ -94,7 +94,7 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
           data-netlify="true"
           className={styles["contact-form"]}
         >
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
 
           <p className={styles["hidden"]}>
             <label>
