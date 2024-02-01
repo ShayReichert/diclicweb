@@ -8,14 +8,6 @@ import Snackbar from "../Snackbar/Snackbar";
 export default function SectionContactForm({ data }: SectionContactFormProps) {
   const { text } = data;
 
-  const [isLocal, setIsLocal] = useState(false);
-
-  useEffect(() => {
-    if (window.location.href.includes("localhost")) {
-      setIsLocal(true);
-    }
-  }, []);
-
   const [snackbar, setSnackbar] = useState<ReactNode | null>(null);
 
   const showSnackbar = (message: string, type: SnackbarType) => {
@@ -37,7 +29,7 @@ export default function SectionContactForm({ data }: SectionContactFormProps) {
           ))}
         </div>
         <div className={styles["form-wrapper"]}>
-          <ContactForm showSnackbar={showSnackbar} isLocal={isLocal} />
+          <ContactForm showSnackbar={showSnackbar} />
         </div>
       </div>
       {snackbar}

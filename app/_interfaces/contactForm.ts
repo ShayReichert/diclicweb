@@ -23,5 +23,4 @@ type ShowSnackbar = (message: string, type: SnackbarType) => void;
 
 interface ContactFormProps {
   showSnackbar: ShowSnackbar;
-  isLocal: boolean;
 }

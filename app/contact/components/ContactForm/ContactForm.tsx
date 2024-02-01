@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./ContactForm.module.scss";
 import Button from "@/app/components/Button/Button";
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
 import { submitFormToNetlify, validateFormData } from "@/app/utils/form";
 
-export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps) {
+export default function ContactForm({ showSnackbar }: ContactFormProps) {
   const [formData, setFormData] = useState<FormDataInterface>({
     firstName: "",
     lastName: "",
@@ -20,6 +20,15 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
   const [formErrors, setFormErrors] = useState<FormErrors>({});
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const formSubmittedParam = queryParams.get("form-submitted");
+
+    if (formSubmittedParam === "true") {
+      setFormSubmitted(true);
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
@@ -56,27 +65,36 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
   //   }
 
   //   // Submit
-  //   if (isLocal) {
-  //     console.log("Form submitted locally!");
+  //   const submissionSuccess = await submitFormToNetlify(formData);
+
+  //   if (submissionSuccess) {
+  //     console.log("Form submitted successfully!");
   //     setFormSubmitted(true);
-  //     showSnackbar("Formulaire soumis localement !", "success");
-  //     // showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+  //     showSnackbar("Message envoyé !", "success");
   //     window.location.href = "#scroll-submit";
   //   } else {
-  //     const submissionSuccess = await submitFormToNetlify(formData);
-
-  //     if (submissionSuccess) {
-  //       console.log("Form submitted successfully!");
-  //       setFormSubmitted(true);
-  //       showSnackbar("Message envoyé !", "success");
-  //       window.location.href = "#scroll-submit";
-  //     } else {
-  //       setFormSubmitted(false);
-  //       showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
-  //       window.location.href = "#scroll-submit";
-  //     }
+  //     setFormSubmitted(false);
+  //     showSnackbar("Une erreur est survenue. Merci de ré-essayer plus tard.", "error");
+  //     window.location.href = "#scroll-submit";
   //   }
   // };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const honeypot = (e.target as HTMLFormElement).querySelector('[name="bot-field"]') as HTMLInputElement;
+
+    if (honeypot && honeypot.value) {
+      return;
+    }
+
+    const errors = validateFormData(formData);
+    setFormErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
+      e.currentTarget.submit();
+    }
+  };
 
   return (
     <div>
@@ -87,11 +105,12 @@ export default function ContactForm({ showSnackbar, isLocal }: ContactFormProps)
         </div>
       ) : (
         <form
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           netlify-honeypot="bot-field"
           name="contact"
           method="POST"
           data-netlify="true"
+          action="/?form-submitted=true"
           className={styles["contact-form"]}
         >
           <input type="hidden" name="form-name" value="contact" />
