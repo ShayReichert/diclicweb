@@ -9,7 +9,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
 export const metadata: Metadata = {
   title: "Diclicweb - Création de sites web engagés",
-  description: "Je crée des sites WordPress éthiques et responsables pour des projets engagés",
+  description: "Je crée des sites internet éthiques et responsables pour des projets engagés",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
