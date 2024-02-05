@@ -9,7 +9,7 @@ export default function SectionTitle({ title }: SectionBlogTitleProps) {
         <div className={styles["image-wrapper"]}>
           <Image
             src="/images/logo_blue.png"
-            alt="Logo de DiclicWeb"
+            alt="Logo de Diclicweb"
             width={297}
             height={208}
             priority

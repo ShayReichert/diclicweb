@@ -119,7 +119,7 @@ export default function Header() {
           <Link href="/">
             <Image
               src="/images/logo_baseline_white.png"
-              alt="Logo de DiclicWeb"
+              alt="Logo de Diclicweb"
               width={131}
               height={84}
               priority
