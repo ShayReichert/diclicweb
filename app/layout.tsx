@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Je crée des sites internet éthiques et responsables pour des projets engagés (artisanat, écologie, art, éducation, culture, association...)",
   openGraph: {
-    images: "/opengraph-image.jpg",
+    images: "/images/opengraph-image.jpg",
   },
 };
 
