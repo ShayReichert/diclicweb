@@ -45,6 +45,7 @@
     z-index: 1;
 
     @include devices(large_tablet) {
+      padding: 4rem 6%;
       flex-direction: column;
       align-items: center;
     }
@@ -53,7 +54,7 @@
       z-index: 2;
 
       @include devices(large_tablet) {
-        margin-bottom: 0.7rem;
+        margin-bottom: 4rem;
       }
 
       ul {
@@ -83,13 +84,18 @@
 
           @include devices(large_tablet) {
             margin-right: 0;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
           }
         }
 
         a {
           opacity: 0.7;
           transition: opacity 0.2s ease-in-out;
+
+          @include devices(large_tablet) {
+            padding: 2rem 0;
+            font-size: 16px;
+          }
 
           &:hover {
             opacity: 1;
@@ -105,9 +111,13 @@
       z-index: 1;
 
       @include devices(large_tablet) {
-        transform: scale(0.7);
+        transform: scale(0.6);
         bottom: -11rem;
         left: -32rem;
+      }
+
+      @include devices(mobile) {
+        display: none;
       }
     }
   }

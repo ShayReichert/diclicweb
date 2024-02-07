@@ -129,27 +129,29 @@ export default function Header() {
           </Link>
         </div>
 
-        <ul
-          ref={menuRef}
+        <div
+          ref={menuRef as React.RefObject<HTMLDivElement>}
           className={`${styles["links"]} ${rocaOne.className} ${isMobileMenuOpen ? styles["menu-open"] : ""}`}
           onTransitionEnd={handleTransitionEnd}
         >
-          {menuItems.map((item, index) => (
-            <li key={index} className={pathname === item.path ? styles["current"] : ""}>
-              <Link
-                href={item.path}
-                aria-current={pathname === item.path ? "page" : undefined}
-                onClick={() => handleClickMenuItem(item.path)}
-                role="link"
-                tabIndex={0}
-                onKeyDown={handleLinkKeyDown}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          <ul>
+            {menuItems.map((item, index) => (
+              <li key={index} className={pathname === item.path ? styles["current"] : ""}>
+                <Link
+                  href={item.path}
+                  aria-current={pathname === item.path ? "page" : undefined}
+                  onClick={() => handleClickMenuItem(item.path)}
+                  role="link"
+                  tabIndex={0}
+                  onKeyDown={handleLinkKeyDown}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <span className={styles["moving-bar"]} style={{ width: `${movingBarPosition.width}px`, left: `${movingBarPosition.left}px` }}></span>
-        </ul>
+        </div>
 
         <MobileMenuIcon isOpen={isMobileMenuOpen} onClick={toggleMobileMenu} />
       </nav>
