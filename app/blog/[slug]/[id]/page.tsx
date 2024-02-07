@@ -8,13 +8,12 @@ export function generateMetadata({ params: { id } }: PostProps) {
     title: `Blog | ${post.title}`,
     description: post.excerpt,
     openGraph: {
-      ...{ images: [`${post.thumbnail}`] },
+      ...{ images: [`${post.thumbnail.path}`] },
     },
   };
 }
 
 export default function Post({ params: { id } }: PostProps) {
   const postId = parseInt(id);
-
   return <PostContainer postId={postId} />;
 }
