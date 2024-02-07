@@ -1,8 +1,8 @@
-import styles from "./SectionTitle.module.scss";
+import styles from "./SectionBlogTitle.module.scss";
 import Image from "next/image";
 import { rocaOne } from "../../../../../styles/fonts/font-face";
 
-export default function SectionTitle({ title }: SectionBlogTitleProps) {
+export default function SectionBlogTitle({ title }: SectionBlogTitleProps) {
   return (
     <section className={styles["section-title"]}>
       <div className={styles["content"]}>
