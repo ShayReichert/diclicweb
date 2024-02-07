@@ -5,7 +5,7 @@ export function generateMetadata({ params: { id } }: PostProps) {
   const post = fetchPostById(parseInt(id));
 
   return {
-    title: `Blog | ${post.title}`,
+    title: `Blog | Diclicweb | ${post.title}`,
     description: post.excerpt,
     openGraph: {
       ...{ images: [`${post.thumbnail.path}`] },
