@@ -42,7 +42,7 @@ export const post8 = {
               pour les utilisateur·ices, offrant une expérience de navigation véritablement fluide.
               <br />
               Un exemple frappant est le site de{" "}
-              <Link href="https://legacy.reactjs.org/docs/getting-started.html" role="link" rel="noopener noreferrer">
+              <Link href="https://legacy.reactjs.org/docs/getting-started.html" target="_blank" role="link" rel="noopener noreferrer">
                 documentation de React
               </Link>
               , une bibliothèque JavaScript populaire. Grâce à sa nature statique, chaque page se charge presque instantanément, améliorant
@@ -64,7 +64,7 @@ export const post8 = {
               <strong>Coûts de maintenance allégés</strong> : L'absence de base de données ou de gestion de contenu dynamique réduit considérablement
               le travail de maintenance, ce qui se traduit par des<strong> coûts moindres à long terme</strong>. <br />
               Le blog{" "}
-              <Link href="https://www.smashingmagazine.com/" role="link" rel="noopener noreferrer">
+              <Link href="https://www.smashingmagazine.com/" target="_blank" role="link" rel="noopener noreferrer">
                 Smashing Magazine
               </Link>{" "}
               a migré vers une architecture statique, réduisant considérablement ses dépenses opérationnelles tout en améliorant la performance et la
