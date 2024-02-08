@@ -21,7 +21,7 @@ export const sectionCommitmentsData = {
           </p>
         </>,
       ],
-      icon: "/images/services/commitments_donnees_perso.webp",
+      icon: "/images/services/commitments_donnees_perso.svg",
       icon_alt: "",
     },
     {
@@ -38,7 +38,7 @@ export const sectionCommitmentsData = {
           </p>
         </>,
       ],
-      icon: "/images/services/commitments_ecoconception.webp",
+      icon: "/images/services/commitments_ecoconception.svg",
       icon_alt: "",
     },
     {
@@ -52,7 +52,7 @@ export const sectionCommitmentsData = {
           </p>
         </>,
       ],
-      icon: "/images/services/commitments_accessibilite.webp",
+      icon: "/images/services/commitments_accessibilite.svg",
       icon_alt: "",
     },
   ],

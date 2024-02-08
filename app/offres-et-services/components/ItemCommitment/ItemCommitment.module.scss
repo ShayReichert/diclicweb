@@ -5,21 +5,24 @@
   margin: 5rem 1rem;
   width: calc(100% / 3);
   min-width: 32rem;
-  // height: 36rem;
   border-radius: 20px;
   background-color: $white;
   color: $secondary-color;
 
   @include devices(large_tablet) {
     height: auto;
-    min-width: 35rem;
-    margin: 1rem;
+    width: 100%;
+    margin: 1rem 2rem;
   }
 
   .commitment-content {
     display: flex;
     flex-direction: column;
     padding: 3rem 3.5rem;
+
+    @include devices(large_tablet) {
+      padding: 2rem;
+    }
 
     .top {
       margin-bottom: 4rem;

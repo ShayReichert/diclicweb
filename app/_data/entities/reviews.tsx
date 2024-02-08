@@ -9,8 +9,8 @@ export const sectionReviewsData = {
       text: [
         <>
           <p>
-            " J'ai beaucoup apprécié ton écoute, ta capacité à réaliser un rendu qui correspond tout à fait à mon brief et mes attentes, et ta
-            disponibilité. "
+            "J'ai beaucoup apprécié ton écoute, ta capacité à réaliser<strong> un rendu qui correspond tout à fait à mon brief </strong>et mes
+            attentes, et ta disponibilité."
           </p>
         </>,
       ],
@@ -24,8 +24,8 @@ export const sectionReviewsData = {
       text: [
         <>
           <p>
-            " J’ai apprécié ta réactivité et le fait que tu sois là dès que j'ai une question ou un soucis. Le travail est bien fait, puis il y a eu
-            un petit temps de formation pour me rendre indépendante. "
+            "J’ai apprécié<strong> ta réactivité et le fait que tu sois là dès que j'ai une question ou un soucis</strong>. Le travail est bien fait,
+            puis il y a eu un petit temps de formation pour me rendre indépendante."
           </p>
         </>,
       ],
@@ -39,8 +39,9 @@ export const sectionReviewsData = {
       text: [
         <>
           <p>
-            “ Je me suis sentie soutenue et en confiance pour oser me lancer dans cette aventure grâce à toi. J’apprécie ton expertise, tes idées, tes
-            solutions, ta réactivité... Merci beaucoup, c'est un vrai plaisir de travailler avec toi ! “
+            “Je me suis sentie soutenue et en confiance pour oser me lancer dans cette aventure grâce à toi.
+            <strong> J’apprécie ton expertise, tes idées, tes solutions, ta réactivité... </strong>Merci beaucoup, c'est un vrai plaisir de travailler
+            avec toi !“
           </p>
         </>,
       ],

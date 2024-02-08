@@ -7,9 +7,11 @@
 
   &:not(:last-child) {
     margin-right: 2rem;
+  }
 
+  img {
     @include devices(large_tablet) {
-      margin-right: 0;
+      transform: scale(1.5);
     }
   }
 }

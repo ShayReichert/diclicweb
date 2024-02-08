@@ -40,6 +40,7 @@
     }
 
     .content {
+      position: relative;
       display: flex;
       align-items: center;
       margin: 5rem 0 13rem;
@@ -63,12 +64,30 @@
         }
       }
 
+      .left-content {
+        @include before(40rem) {
+          position: absolute;
+          border-radius: 50%;
+          top: 9rem;
+          left: -4rem;
+          background-color: $accent-color;
+          opacity: 0.5;
+          z-index: -1;
+
+          @include devices(large_tablet) {
+            @include size(26rem);
+            top: 0;
+            left: 49%;
+            transform: translate(-50%, 0%);
+          }
+        }
+      }
+
       .image {
         @include size(30rem);
         position: relative;
         border-radius: 50%;
         overflow: hidden;
-        border: 3px solid $secondary-color;
 
         @include devices(large_tablet) {
           @include size(25rem);

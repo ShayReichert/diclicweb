@@ -19,7 +19,8 @@ export const sectionContactFormData = {
           <strong>Dites-moi comment je peux vous aider ! Je vous répondrai dans les plus brefs délais.</strong>
         </p>
       </div>
-
+      <br />
+      <br />
       <p>
         Je limite le nombre de projets que je prends en même temps pour pouvoir garder une qualité de travail optimale : par conséquent n’hésitez pas
         à me contacter le plus tôt possible (plusieurs mois ou semaines avant la date de livraison souhaitée). Merci !
