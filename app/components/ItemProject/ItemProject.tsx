@@ -5,15 +5,7 @@ export default function ItemProject({ title, subtitle, short_description, techno
   return (
     <div className={styles["project"]}>
       <div className={styles["project-image"]}>
-        <Image
-          src={image}
-          alt={image_alt ? image_alt : ""}
-          fill
-          sizes="(max-width: 767px) 100vw, 33vw"
-          priority
-          placeholder="blur"
-          blurDataURL={image}
-        />
+        <Image src={image} alt={image_alt ? image_alt : ""} fill sizes="(max-width: 767px) 100vw, 33vw" placeholder="blur" blurDataURL={image} />
       </div>
 
       <div className={styles["project-content"]}>

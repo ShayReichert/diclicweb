@@ -23,7 +23,7 @@ export default function ItemFAQ({ item, index, handleToggle, openIndex, answerRe
       <div className={styles["question"]} onClick={() => handleToggle(index)}>
         <h3>{item.question}</h3>
         <span className={`${openIndex === index ? styles["arrow-up"] : styles["arrow-down"]}`}>
-          <Image priority src="/images/services/arrow.svg" width={15} height={26} alt="" />
+          <Image src="/images/services/arrow.svg" width={15} height={26} alt="" />
         </span>
       </div>
 

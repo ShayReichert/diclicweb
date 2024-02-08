@@ -10,7 +10,7 @@ export default function SectionTitle({ data, has_decoration = true, is_long_titl
       <div className={styles["jumbo"]}></div>
       <div className={styles["content"]}>
         <div className={styles["image-wrapper"]}>
-          <Image src="/images/logo_blue.png" alt="Logo de Diclicweb" width={297} height={208} priority />
+          <Image src="/images/logo_blue.webp" alt="Logo de Diclicweb" width={297} height={208} priority />
         </div>
         {title && (
           <div className={styles["title-wrapper"]}>

@@ -51,10 +51,10 @@ const GravityButton = ({ label, image, url, imageWidth, imageHeight }: GravityBu
     >
       {url ? (
         <a href={url} target="_blank" role="link" rel="noopener noreferrer">
-          <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} priority />
+          <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} />
         </a>
       ) : (
-        <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} priority />
+        <Image src={image} alt={`${label}`} width={imageWidth} height={imageHeight} />
       )}
     </div>
   );

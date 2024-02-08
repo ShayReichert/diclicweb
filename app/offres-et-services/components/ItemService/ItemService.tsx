@@ -6,7 +6,7 @@ export default function ItemService({ id, title, text, icon, icon_alt }: ItemSer
   return (
     <div id={`service-${id}`} className={styles["service"]}>
       <div className={styles["service-icon"]}>
-        <Image src={icon} alt={icon_alt ? icon_alt : ""} width={84} height={84} priority placeholder="blur" blurDataURL={icon} />
+        <Image src={icon} alt={icon_alt ? icon_alt : ""} width={84} height={84} placeholder="blur" blurDataURL={icon} />
       </div>
       <div className={styles["service-content"]}>
         <h2 className={rocaOne.className}>{title}</h2>

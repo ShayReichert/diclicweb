@@ -62,12 +62,12 @@ export default function Footer() {
 
         <div className={styles["logo-wrapper"]}>
           <Image
-            src={`/images/logo_white.png`}
+            src={`/images/logo_white.webp`}
             alt="Logo Diclicweb"
             width={594}
             height={416}
             placeholder="blur"
-            blurDataURL={`/images/logo_white.png`}
+            blurDataURL={`/images/logo_white.webp`}
           />
         </div>
       </div>
