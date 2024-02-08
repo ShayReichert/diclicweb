@@ -40,6 +40,24 @@
           height: auto;
         }
       }
+
+      .logo-desktop {
+        display: block;
+
+        @include devices(mobile) {
+          display: none;
+        }
+      }
+
+      .logo-mobile {
+        display: none;
+
+        @include devices(mobile) {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
     }
 
     .title-wrapper {

@@ -164,11 +164,16 @@ html:has(.mobile-menu-open) {
           transition: visibility 0.7s, opacity 0.5s linear 0.2s;
         }
 
-        li {
-          padding: 1rem 0;
+        ul {
+          display: flex;
+          flex-direction: column;
 
-          a {
-            color: $white;
+          li {
+            padding: 1rem 0;
+
+            a {
+              color: $white;
+            }
           }
         }
       }

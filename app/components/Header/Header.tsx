@@ -117,7 +117,7 @@ export default function Header() {
       <nav className={`${styles["navbar"]} ${isMobileMenuOpen ? styles["mobile-menu-open"] : ""}`}>
         <div className={`${styles["logo"]}  ${pathname === "/" ? styles["current"] : ""}`}>
           <Link href="/">
-            <Image src="/images/logo_baseline_white.webp" alt="Logo de Diclicweb" width={131} height={84} priority />
+            <Image src="/images/logo_baseline_white.webp" alt="Logo de Diclicweb" width={131} height={82} priority />
           </Link>
         </div>
 
