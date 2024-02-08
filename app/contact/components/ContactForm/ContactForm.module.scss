@@ -1,7 +1,7 @@
 @import "../../../styles/partials/mixins";
 
 .contact-form {
-  background-color: $gray200;
+  background-color: $light-accent500;
   padding: 4rem 5rem;
   border-radius: $border-radius;
 
@@ -38,7 +38,7 @@
       color: $secondary-color;
       margin-bottom: 8px;
       position: absolute;
-      background-color: $gray200;
+      background-color: $light-accent200;
       padding: 0 6px;
       left: 8px;
       font-size: 14px;
@@ -53,7 +53,7 @@
       border-radius: 4px;
       font-family: inherit;
       font-size: 16px;
-      background-color: $gray200;
+      background-color: $light-accent200;
 
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
@@ -62,7 +62,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: $primary-color;
         transition: background-color 5000s ease-in-out 0s;
-        box-shadow: inset 0 0 20px 20px $gray200;
+        box-shadow: inset 0 0 20px 20px $light-accent200;
       }
 
       &:focus-visible {
