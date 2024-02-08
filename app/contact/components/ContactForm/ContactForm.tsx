@@ -1,12 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 import styles from "./ContactForm.module.scss";
 import Button from "@/app/components/Button/Button";
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
 import { validateFormData } from "@/app/utils/form";
 
 export default function ContactForm({ showSnackbar }: ContactFormProps) {
+  const [formErrors, setFormErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
   const [formData, setFormData] = useState<FormDataInterface>({
     firstName: "",
     lastName: "",
@@ -16,26 +21,6 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
     message: "",
     consent: false,
   });
-
-  const [formErrors, setFormErrors] = useState<FormErrors>({});
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const formSubmittedParam = queryParams.get("form-submitted");
-
-    if (formSubmittedParam === "true") {
-      setFormSubmitted(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (formSubmitted) {
-      window.location.href = "#scroll-submit";
-      showSnackbar("Votre message a bien été envoyé.", "success");
-    }
-  }, [formSubmitted]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
@@ -53,12 +38,15 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     const honeypot = (e.target as HTMLFormElement).querySelector('[name="bot-field"]') as HTMLInputElement;
 
     if (honeypot && honeypot.value) {
+      console.warn("Tentative de soumission détectée comme spam.");
+      setIsSubmitting(false);
       return;
     }
 
@@ -66,7 +54,22 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      e.currentTarget.submit();
+      axios
+        .post("https://eopieniaed5xeqb.m.pipedream.net", formData)
+        .then((response) => {
+          setSuccessMessage("Merci pour votre message, je vous recontacterai dans les plus brefs délais !");
+          showSnackbar("Votre message a bien été envoyé.", "success");
+          setFormSubmitted(true);
+        })
+        .catch((error) => {
+          console.error("Erreur lors de l'envoi du formulaire :", error);
+          showSnackbar("Une erreur s'est produite, veuillez réessayer.", "error");
+        })
+        .finally(() => {
+          setIsSubmitting(false);
+        });
+    } else {
+      setIsSubmitting(false);
     }
   };
 
@@ -74,19 +77,11 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
     <div>
       {formSubmitted ? (
         <div className={styles["message-success"]}>
-          <p>Merci pour votre message, je vous recontacterai dans les plus brefs délais.</p>
+          <p>{successMessage}</p>
           <Button text="Retour&nbsp;à&nbsp;l'accueil" href="/" />
         </div>
       ) : (
-        <form
-          onSubmit={handleSubmit}
-          netlify-honeypot="bot-field"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/contact?form-submitted=true"
-          className={styles["contact-form"]}
-        >
+        <form onSubmit={onSubmit} className={styles["contact-form"]}>
           <input type="hidden" name="form-name" value="contact" />
 
           <p className={styles["hidden"]}>
@@ -151,7 +146,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
             <div className={styles["error-message"]}>{formErrors.consent}</div>
           </div>
 
-          <ButtonSubmit text="Envoyer" />
+          <ButtonSubmit text={isSubmitting ? "Envoi en cours..." : "Envoyer"} />
         </form>
       )}
     </div>
