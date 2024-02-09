@@ -40,10 +40,9 @@ export const sectionTextData = {
 
       <h3 className={rocaOne.className}>Hébergeur du site :</h3>
       <p>
-        NETLIFY <br />
-        512 2nd Street <br />
-        Suite 200 San Francisco <br />
-        CA 94107
+        Vercel Inc. <br />
+        440 N Barranca Ave #4133 <br />
+        Covina, CA 91723 <br />
       </p>
 
       <h3 className={rocaOne.className}>Crédits :</h3>

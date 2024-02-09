@@ -57,7 +57,7 @@ export const post8 = {
             </li>
             <li>
               <strong>Déploiement simplifié</strong> : Le déploiement d'un site statique s'opère aisément sur une multitude de plateformes
-              d'hébergement, telles que GitHub Pages, Netlify et AWS S3, facilitant ainsi la mise en ligne. Ces plateformes permettent d'automatiser
+              d'hébergement, telles que GitHub Pages, Netlify et Vercel, facilitant ainsi la mise en ligne. Ces plateformes permettent d'automatiser
               le déploiement en seulement quelques clics !
             </li>
             <li>
