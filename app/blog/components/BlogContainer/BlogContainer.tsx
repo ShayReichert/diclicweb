@@ -28,7 +28,7 @@ const BlogContainer = ({ posts, categoriesData }: BlogContainerProps) => {
     <div>
       <SectionCategories categories={filteredCategories} onCategoryClick={handleCategoryClick} />
       <SectionPosts posts={currentPosts} currentPage={currentPage} />
-      <Pagination currentPage={currentPage} totalPages={totalPages} next={next} prev={prev} />
+      {filteredPosts.length > postsPerPage && <Pagination currentPage={currentPage} totalPages={totalPages} next={next} prev={prev} />}
     </div>
   );
 };
