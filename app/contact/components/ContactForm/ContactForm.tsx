@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import axios from "axios";
 import styles from "./ContactForm.module.scss";
@@ -13,6 +13,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
+  const successRef = useRef(null);
   const [formData, setFormData] = useState<FormDataInterface>({
     firstName: "",
     lastName: "",
@@ -61,6 +62,11 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
           setSuccessMessage("Merci pour votre message, je vous recontacterai dans les plus brefs délais !");
           showSnackbar("Votre message a bien été envoyé.", "success");
           setFormSubmitted(true);
+
+          if (successRef.current) {
+            const successPosition = (successRef.current as HTMLElement).getBoundingClientRect().top + window.scrollY - 500;
+            window.scrollTo({ top: successPosition, behavior: "smooth" });
+          }
         })
         .catch((error) => {
           console.error("Erreur lors de l'envoi du formulaire :", error);
@@ -75,7 +81,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
   };
 
   return (
-    <div>
+    <div ref={successRef}>
       {formSubmitted ? (
         <div className={styles["message-success"]}>
           <p>{successMessage}</p>
