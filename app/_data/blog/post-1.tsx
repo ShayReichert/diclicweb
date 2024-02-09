@@ -29,11 +29,7 @@ export const post1 = {
         </>,
       ],
     },
-    {
-      type: "image",
-      path: "/images/blog/1_eco_conception_site_web_2.webp",
-      alt: "Une forêt au lever du soleil",
-    },
+
     {
       type: "paragraph",
       text: [
@@ -43,7 +39,6 @@ export const post1 = {
             Quand le projet est adapté, je préfère coder<strong> des sites web statiques</strong>. Ils sont plus légers et plus rapides que les sites
             dynamiques. Ils ne nécessitent pas de base de données et sont donc moins énergivores !<br />
           </p>
-          <p>Par exemple, le site sur lequel vous lisez cet article est un site statique et à un excellent éco-index de 85/100 (A) !</p>
           <p>
             Si des fonctionnalités spécifiques sont nécessaires, j'utilise <strong> WordPress avec le thème Divi</strong>. Cela me permet de créer des
             sites<strong> personnalisés et réactifs </strong>sans avoir à recourir à des plugins superflus. Cela contribue aussi à alléger la charge
@@ -71,6 +66,11 @@ export const post1 = {
           </p>
         </>,
       ],
+    },
+    {
+      type: "image",
+      path: "/images/blog/1_eco_conception_site_web_2.webp",
+      alt: "Une forêt au lever du soleil",
     },
     {
       type: "paragraph",
