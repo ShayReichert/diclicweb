@@ -105,8 +105,7 @@ export const post9 = {
             activité.
           </p>
           <p>
-            Au final, l'investissement financier sera sans doute<strong> rapidement rentabilisé </strong>par les avantages et la qualité de votre site
-            !
+            L'investissement financier sera sans doute<strong> rapidement rentabilisé </strong>par les avantages et la qualité de votre site !
           </p>
         </>,
       ],
@@ -117,8 +116,8 @@ export const post9 = {
         <>
           <p>-------</p>
           <p>
-            Au final, que vous choisissiez de créer votre site vous-même ou de faire appel à un·e professionnel·le dépendra de notamment de trois
-            facteurs :<strong> vos besoins, vos compétences et vos ressources</strong>. <br />
+            Que vous choisissiez de créer votre site vous-même ou de faire appel à un·e professionnel·le dépendra de notamment de trois facteurs :
+            <strong> vos besoins, vos compétences et vos ressources</strong>. <br />
           </p>
           <p>
             Prenez le temps de définir clairement votre<strong> audience cible</strong>, en comprenant ses besoins et attentes. Établissez des

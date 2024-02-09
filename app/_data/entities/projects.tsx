@@ -9,8 +9,21 @@ export const sectionProjectsData = {
       description: [
         <>
           <p>
-            Ce site est là pour partager des trouvailles et créations à tous les parents, enseignants et éducateurs qui souhaitent accompagner les
-            enfants dans leurs apprentissages, tout en partageant un moment joyeux et détendu.
+            Corinne, fondatrice de Jeux et Talents , avait besoin d'un<strong> site e-commerce </strong>pour faciliter la vente en ligne de jeux
+            imprimables en PDF. 🧩
+          </p>
+          <br />
+          <p>
+            Elle souhaitait également une<strong> identité graphique </strong>pour son site (couleurs, polices de texte, design...).
+            <br />
+            Autre point important : elle voulait que l'on puisse accéder aux jeux selon<strong> différents critères </strong>: cycles, matières,
+            thématiques.
+          </p>
+          <br />
+          <br />
+          <p>
+            Pour ce projet, j'ai travaillé avec le<strong> thème Divi </strong>et un thème enfant pour pouvoir modifier le thème. La gestion
+            personnalisée des différentes catégories de jeux a été<strong> codée en PHP</strong> 🐘
           </p>
         </>,
       ],
@@ -21,19 +34,21 @@ export const sectionProjectsData = {
     },
     {
       id: 2,
-      title: "Mandapunk",
+      title: "MandApunk",
       subtitle: "Couture alternative / créations engagées",
       short_description: "Site e-commerce WordPress",
       technology: "Botiga + thème enfant",
       description: [
         <>
           <p>
-            D’abord instit pendant 7 années, MandApunK s’est reconvertie dans la couture. Titulaire d’un CAP métiers de la mode, elle est maintenant
-            artisane d’art depuis 5 ans à Bordeaux.
+            Clémentine (aka MandApunk), m’a contactée pour<strong> migrer son site e-commerce Big Cartel vers WordPress</strong>. Elle souhaitait
+            avoir<strong> plus de contrôle sur les paramètres de sa boutique</strong>, tout en gardant un design similaire à son précédent site. 🎨
           </p>
+          <br />
           <p>
-            Au programme : punks-vibes, lol et empowerment au travers de créations uniques et personnalisées : couture, patchs brodés, badges, bijoux
-            en résine pailletée, vêtements upcyclés et plein d’autres fabulances à découvrir sur son site !
+            Pour répondre à ses besoins, j'ai utilisé le thème Botiga, que j'ai personnalisé pour qu'il corresponde à ses attentes. <br /> J'ai
+            également créé un<strong> thème enfant</strong> pour qu'elle puisse modifier son site sans risquer de perdre les modifications lors des
+            mises à jour. 💪
           </p>
         </>,
       ],
@@ -51,8 +66,20 @@ export const sectionProjectsData = {
       description: [
         <>
           <p>
-            Miriam pratique les arts plastiques depuis toute petite, et depuis plus d’un an elle fabrique des bougies artisanales. Cette activité lui
-            permet de créer des œuvres olfactives et visuelles uniques.
+            Miriam pratique les arts plastiques depuis toute petite, et depuis quelques années elle fabrique des<strong> bougies artisanales</strong>.
+            Cette activité lui permet de créer des<strong> œuvres olfactives et visuelles uniques</strong> 🌸
+          </p>
+          <br />
+          <p>
+            Pour faciliter la vente en ligne de ses bougies, Miriam avait besoin<strong> d'un site e-commerce</strong>. Elle souhaitait également
+            <strong> une identité graphique </strong>et pouvoir proposer des livraisons Mondial Relay ou Colissimo 📦
+          </p>
+          <br />
+          <p>
+            J'ai choisis le<strong> thème Divi </strong>pour ce projet, et j'ai crée une<strong> charte graphique </strong>à partir du logo
+            pré-existant.
+            <br />
+            Pour les livraisons, j'ai installé et paramétré les plugins Mondial Relay et Colissimo nécessaires.
           </p>
         </>,
       ],
@@ -70,8 +97,16 @@ export const sectionProjectsData = {
       description: [
         <>
           <p>
-            Créé en partenariat avec l’association “This is a RIOT”, QueerBandFrance a pour but de visibiliser des groupes de musique queers et
-            féministes francophone.
+            Créé en partenariat avec l’association “This is a RIOT”, QueerBandFrance a pour but de
+            <strong> visibiliser des groupes de musique queers et féministes francophone</strong> 🏳️‍🌈
+          </p>
+          <br />
+          <p>
+            J'ai codé un système de<strong> recherche par régions et par styles de musique </strong>pour faciliter la mise en relation entre les
+            groupes et les organisateur·ices d'évènements queer.
+            <br />
+            <br />
+            Pour chaque groupe, on peut également retrouver des liens vers leurs réseaux sociaux et leur musique 🥁
           </p>
         </>,
       ],
