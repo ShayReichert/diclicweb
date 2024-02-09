@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import axios from "axios";
 import styles from "./ContactForm.module.scss";
 import Button from "@/app/components/Button/Button";
@@ -147,6 +148,8 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
           </div>
 
           <ButtonSubmit text={isSubmitting ? "Envoi en cours..." : "Envoyer"} />
+
+          <Image className={styles["form-image"]} src="/images/contact/bird.svg" alt="Illustration de formulaire" width={200} height={200} />
         </form>
       )}
     </div>

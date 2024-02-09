@@ -26,7 +26,7 @@ export default function SectionProjects({ data }: SectionHomeProjectsProps) {
         </div>
 
         <div className={styles["projects-cta"]}>
-          <Button text="Voir&nbsp;tous&nbsp;les&nbsp;projets" href="/realisations" />
+          <Button text="Voir&nbsp;tous&nbsp;les&nbsp;sites" href="/realisations" />
         </div>
       </div>
     </section>

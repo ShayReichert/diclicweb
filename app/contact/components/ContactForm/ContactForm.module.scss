@@ -1,9 +1,11 @@
 @import "../../../styles/partials/mixins";
 
 .contact-form {
-  background-color: $light-accent500;
+  position: relative;
+  background-color: $gray200;
   padding: 4rem 5rem;
   border-radius: $border-radius;
+  overflow: hidden;
 
   @include devices(large_tablet) {
     padding: 4rem 1rem;
@@ -38,7 +40,7 @@
       color: $secondary-color;
       margin-bottom: 8px;
       position: absolute;
-      background-color: $light-accent200;
+      background-color: $gray200;
       padding: 0 6px;
       left: 8px;
       font-size: 14px;
@@ -53,7 +55,7 @@
       border-radius: 4px;
       font-family: inherit;
       font-size: 16px;
-      background-color: $light-accent200;
+      background-color: $gray200;
 
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
@@ -62,7 +64,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: $primary-color;
         transition: background-color 5000s ease-in-out 0s;
-        box-shadow: inset 0 0 20px 20px $light-accent200;
+        box-shadow: inset 0 0 20px 20px $gray200;
       }
 
       &:focus-visible {
@@ -114,8 +116,27 @@
     }
   }
 
-  .button {
-    @include button();
+  button {
+    z-index: 1;
+  }
+
+  .form-image {
+    position: absolute;
+    right: 0rem;
+    bottom: -1.8rem;
+    opacity: 0.7;
+    z-index: 0;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(2) translateX(-3rem) translateY(4rem) rotate(-10deg);
+    }
+
+    @include devices(large_tablet) {
+      transform: scale(0.7);
+      right: -3rem;
+      bottom: -4.2rem;
+    }
   }
 }
 
