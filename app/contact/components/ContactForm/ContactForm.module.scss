@@ -5,6 +5,7 @@
   background-color: $gray200;
   padding: 4rem 5rem;
   border-radius: $border-radius;
+  box-shadow: 0 0 20px #c0d0de;
   overflow: hidden;
 
   @include devices(large_tablet) {
@@ -123,7 +124,7 @@
   .form-image {
     position: absolute;
     right: 0rem;
-    bottom: -1.8rem;
+    bottom: -2rem;
     opacity: 0.7;
     z-index: 0;
     transition: transform 0.3s ease-in-out;
@@ -135,7 +136,7 @@
     @include devices(large_tablet) {
       transform: scale(0.7);
       right: -3rem;
-      bottom: -4.2rem;
+      bottom: -4.5rem;
     }
   }
 }
