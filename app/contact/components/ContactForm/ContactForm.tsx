@@ -38,6 +38,15 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
         [name]: value,
       });
     }
+
+    // Delete error message when user typing a correct value
+    const newErrors: FormErrors = { ...formErrors };
+    const fieldErrors: FormErrors = validateFormData({ ...formData, [name]: value });
+
+    if (!fieldErrors[name as keyof FormErrors]) {
+      delete newErrors[name as keyof FormErrors];
+      setFormErrors(newErrors);
+    }
   };
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
