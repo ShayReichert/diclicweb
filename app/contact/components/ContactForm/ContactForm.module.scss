@@ -5,7 +5,7 @@
   background-color: $gray200;
   padding: 4rem 5rem;
   border-radius: $border-radius;
-  box-shadow: 0 0 20px #c0d0de;
+  box-shadow: 0 0 20px $gray300;
   overflow: hidden;
 
   @include devices(large_tablet) {

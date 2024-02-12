@@ -35,6 +35,7 @@
     &:hover {
       .item-post-content {
         background-color: $blue-light;
+        box-shadow: 0 0 10px $gray300;
 
         .image-wrapper {
           &,
@@ -52,7 +53,7 @@
     .item-post-content {
       height: 100%;
       border-radius: $border-radius;
-      transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
       .image-wrapper {
         @include wrapper-image-fill(100%, 28rem, true);
