@@ -36,7 +36,7 @@
         filter: drop-shadow(0 0.3rem#fff);
 
         @include devices(large_tablet) {
-          width: 80%;
+          width: 60%;
           height: auto;
         }
       }
@@ -44,7 +44,7 @@
 
     .title-wrapper {
       @include title-wrapper();
-      margin-top: -1.4rem;
+      margin-top: -1rem;
     }
 
     h1 {
