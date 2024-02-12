@@ -1,12 +1,22 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "./SectionTitle.module.scss";
 import Image from "next/image";
 import { rocaOne } from "../../styles/fonts/font-face";
 
 export default function SectionTitle({ data, has_decoration = true, is_long_title = false }: SectionTitleProps) {
   const { title, baseline } = data;
+  const [isSafari, setIsSafari] = useState(false);
+
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    const safari = userAgent.indexOf("Safari") !== -1 && userAgent.indexOf("Chrome") === -1;
+    setIsSafari(safari);
+  }, []);
 
   return (
-    <section className={styles["section-title"]}>
+    <section className={`${styles["section-title"]} ${isSafari ? styles["no-jumbo-effect"] : ""}`}>
       <div className={styles["jumbo"]}></div>
       <div className={styles["content"]}>
         <div className={styles["image-wrapper"]}>

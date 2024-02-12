@@ -10,8 +10,11 @@
     @include size(100%, calc(90vh - $menu-mobile-height));
   }
 
-  @media only screen and (min-width: $large_tablet) {
-    @include jumbo-effect();
+  // No jumbo effect on Safari
+  &:not(.no-jumbo-effect) {
+    @media only screen and (min-width: $large_tablet) {
+      @include jumbo-effect();
+    }
   }
 
   .content {
