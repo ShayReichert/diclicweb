@@ -39,8 +39,8 @@ export const sectionServicesData = {
             <strong> conseils </strong>nécessaires pour gérer au mieux votre boutique en ligne. 😉
           </p>
           <p>
-            Je vous<strong> formerai </strong>également à la prise en main de l’administration pour que vous puissiez gérer sereinement la partie
-            boutique.
+            Je vous<strong> formerai </strong>également à la prise en main de l’administration pour que vous puissiez vous occuper sereinement de la
+            partie boutique.
           </p>
         </>,
       ],
@@ -55,7 +55,7 @@ export const sectionServicesData = {
         <>
           <p>
             La maintenance d’un site est<strong> primordiale </strong>! Que ce soit pour surveiller les performances, faire les mises à jour, veiller
-            à la sécurité du site... Faire l’entretien de son site, c’est comme faire l’entretien de sa voiture : c’est une
+            à la sécurité... Faire l’entretien de son site, c’est comme faire l’entretien de sa voiture : c’est une
             <strong> hygiène indispensable </strong>pour éviter les pannes et les accidents.
           </p>
           <p>

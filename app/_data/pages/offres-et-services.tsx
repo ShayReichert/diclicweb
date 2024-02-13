@@ -13,7 +13,7 @@ export const sectionCommitmentsData = {
       text: [
         <>
           <p>
-            Le choix d'outils<strong> éthiques et respectueux de la vie privée </strong>est primordial pour moi.
+            Le choix d'outils<strong> éthiques et respectueux de la vie privée </strong>est très important pour moi.
           </p>
           <p>
             J’utilise les outils Matomo et Abla Analytics pour mesurer la fréquentation sur votre site, deux outils
@@ -34,7 +34,7 @@ export const sectionCommitmentsData = {
             <strong> images et les vidéos</strong>...
           </p>
           <p>
-            Je prévilégie les solutions qui permettent de<strong> réduire l’impact environnemental </strong>de votre site.
+            Je privilégie les solutions qui permettent de<strong> réduire l’impact environnemental </strong>de votre site.
           </p>
         </>,
       ],
@@ -47,8 +47,8 @@ export const sectionCommitmentsData = {
         <>
           <p>Utilisation de couleurs contrastées, navigation possible au clavier, respect de la structure sémantique... </p>
           <p>
-            Des éléments essentiels qui permettent d’avoir un site aussi<strong> accessible </strong> que possible
-            <strong> pour les personnes en situation de handicap</strong>.
+            Des éléments essentiels qui permettent d’avoir<strong> un site plus accessible </strong>
+            (pour notamment les personnes en situation de handicap, les personnes âgées, etc).
           </p>
         </>,
       ],
@@ -109,10 +109,10 @@ export const sectionStepsData = {
           </p>
           <p>
             Quand le site est terminé, je met en place des outils pour
-            <strong> gérer la maintenance, pour sécuriser le site et optimiser la vitesse</strong>.
+            <strong> gérer sa maintenance, pour le sécuriser et optimiser sa vitesse</strong>.
           </p>
           <p>
-            Pour finir, je met le site en ligne et<strong> je vous forme à WordPress </strong>pour que vous puissiez gérer sereinement votre site et
+            Pour finir, je mets le site en ligne et<strong> je vous forme à WordPress </strong>pour que vous puissiez gérer sereinement votre site et
             vos contenus. 😌
           </p>
         </>,
@@ -129,7 +129,9 @@ export const sectionStepsData = {
             <strong> le mettre à jour</strong>, de le<strong> sauvegarder régulièrement </strong>ou encore de
             <strong> prévenir les attaques potentielles</strong>.
           </p>
-          <p>Cette étape de maintenance ne doit pas être négligée !</p>
+          <p>
+            Cette étape de maintenance ne doit pas être négligée et doit se faire idéalement<strong> une fois par mois</strong>.
+          </p>
         </>,
       ],
       image: "/images/services/etape_4.webp",
@@ -193,8 +195,8 @@ export const sectionFAQData = {
       answer: [
         <>
           <p>
-            Je propose 3 plans de maintenance et support allant de<strong> 49€ à 199€/mois </strong>(possibilité également de plans de maintenance sur
-            mesure selon vos besoins).
+            Je propose 3 plans de maintenance, avec et sans support, allant de<strong> 49€ à 199€/mois </strong>(possibilité également de plans de
+            maintenance sur mesure selon vos besoins).
           </p>
         </>,
       ],

@@ -37,7 +37,7 @@ export const post9 = {
           <ul>
             <li>
               <strong>Définissez vos objectifs </strong>: Avant de commencer, il est crucial de définir clairement les objectifs de votre site.
-              <strong>Pourquoi avez-vous besoin de ce site web </strong>? Que souhaitez-vous accomplir ? Quels sont les messages que vous souhaitez
+              <strong> Pourquoi avez-vous besoin de ce site web </strong>? Que souhaitez-vous accomplir ? Quels sont les messages que vous souhaitez
               transmettre à vos visiteur·ices ? <br />
               Par exemple, si votre objectif est de collecter des fonds pour une cause caritative, votre site devrait inclure une page de don claire
               et convaincante, avec des témoignages et des histoires pour donner envie aux visiteur·ices de s'engager.
@@ -48,24 +48,24 @@ export const post9 = {
               <br />
               Prenons l'exemple d'une petite boulangerie artisanale : choisir des couleurs chaleureuses, des polices rustiques et inclure des photos
               alléchantes de vos produits peut créer une ambiance qui reflète l'authenticité de votre artisanat. N'hésitez pas à vous
-              <strong> inspirer de la concurrence</strong>, tout en veillant à<strong> rester authentique </strong>bien sûr. 😉 <br />
+              <strong> inspirer de la concurrence</strong>, tout en veillant à<strong> rester unique et authentique </strong>bien sûr. 😉 <br />
             </li>
             <li>
               <strong>Optimisez les performances </strong>: La vitesse de chargement de votre site est cruciale. Assurez-vous qu'il se charge
-              rapidement pour offrir une expérience utilisateur optimale. Imaginez que vous lancez une campagne promotionnelle et que votre site est
-              soudainement inondé de visiteur·ices. Un hébergement fiable et une optimisation des images garantiront que votre site reste rapide et
-              accessible en toute circonstance.
+              rapidement pour offrir une expérience optimale. <br />
+              Imaginez que vous lancez une campagne promotionnelle et que votre site est soudainement inondé de visiteur·ices. Un hébergement fiable
+              et une optimisation des images garantiront que votre site reste rapide et accessible en toute circonstance.
             </li>
             <li>
               <strong>Soignez votre contenu </strong>: Le contenu de votre site doit être informatif, engageant et bien organisé. Il doit refléter
               votre expertise et<strong> susciter l'intérêt </strong>de vos visiteur·ices. <br />
               Si vous gérez un site de conseils de jardinage par exemple, fournir des articles détaillés, des guides saisonniers et des réponses aux
-              questions fréquentes peut positionner votre site comme<strong> une ressource incontournable </strong>pour les amateurs de jardinage.
+              questions fréquentes peut positionner votre site comme<strong> une ressource incontournable </strong>pour les amateur·ices de jardinage.
             </li>
           </ul>
           <p>
-            Voici quelques exemples de plateformes intuitives avec lesquelles vous pourrez créer votre<strong> site vitrine </strong>: Odoo, Wix,
-            WordPress...
+            Il existe des plateformes intuitives avec lesquelles vous pourrez créer votre<strong> site vitrine </strong> telles que Odoo, Wix ou
+            WordPress.
             <br />
             Si vous envisagez plutôt de mettre en place une<strong> boutique en ligne</strong>, plusieurs plateformes vous simplifient la tâche,
             telles que Shopify, Wix, Squarespace (ou encore Etsy ou Big Cartel pour les artistes et les artisan·es).
@@ -92,9 +92,10 @@ export const post9 = {
           <h2 className={rocaOne.className}>2. Faire appel à un·e professionnel·le</h2>
           <p>
             Si vous disposez du budget nécessaire, faire appel à un·e professionnel·le pour créer votre site est une
-            <strong> option que je recommande vivement</strong>. Cela vous permettra de déléguer la partie technique de votre activité, de
+            <strong> option que je recommande vivement</strong> (et pas seulement parce que c'est mon travail 😄). Cela vous permettra en effet de
+            déléguer la partie technique de votre activité, de
             <strong> vous concentrer pleinement sur votre projet </strong>
-            et d'investir votre temps dans ce que vous faites de mieux.
+            et donc d'investir votre temps dans ce que vous faites de mieux.
           </p>
           <p>
             La conception et la gestion d'un site web peuvent être<strong> énergivores et techniques</strong>. Travailler avec un·e développeur·se ou
@@ -114,17 +115,6 @@ export const post9 = {
       type: "paragraph",
       text: [
         <>
-          <p>-------</p>
-          <p>
-            Que vous choisissiez de créer votre site vous-même ou de faire appel à un·e professionnel·le dépendra de notamment de trois facteurs :
-            <strong> vos besoins, vos compétences et vos ressources</strong>. <br />
-          </p>
-          <p>
-            Prenez le temps de définir clairement votre<strong> audience cible</strong>, en comprenant ses besoins et attentes. Établissez des
-            <strong>objectifs à long terme </strong>pour votre site, en envisageant comment il peut évoluer avec votre activité. Enfin, évaluez
-            honnêtement votre capacité à<strong> gérer et mettre à jour le site au quotidien</strong>, car un site web nécessite une attention
-            constante pour rester pertinent et efficace.
-          </p>
           <p>
             Si vous avez des questions ou si vous souhaitez de l'aide pour votre projet de site web, n'hésitez pas à{" "}
             <Link href="/contact" role="link">

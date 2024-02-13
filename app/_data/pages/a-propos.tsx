@@ -24,10 +24,7 @@ export const sectionQuinconces = {
             Je souhaite aider à développer des projets qui me parlent et qui sont au service du vivant, qui participent à rendre le monde meilleur
             d’une manière ou d’une autre ! 😊
           </p>
-          <p>
-            Mes autres passions sont le cinéma et la musique, je réalise régulièrement des vidéos pédagogiques sur le code et je joue de la guitare et
-            de la basse.
-          </p>
+          <p>Mes autres passions sont le cinéma, la musique et l'escalade !</p>
         </>,
       ],
       link: "",
@@ -67,7 +64,7 @@ export const sectionQuinconces = {
               contrastes…
             </li>
             <li>
-              Mise en place d’ outils<strong> respectueux des RGPD </strong>pour l’analyse d’audience de votre site : Abla Analytics (exempté de
+              Mise en place d’ outils<strong> respectueux des RGPD </strong>pour l’analyse de l'audience de votre site : Abla Analytics (exempté de
               consentement car données anonymisées), Matomo (approuvé par la CNIL)
             </li>
             <li>
@@ -114,8 +111,7 @@ export const sectionQuinconces = {
       text: [
         <>
           <p>
-            N’hésitez pas à<strong> vous présenter et à m’expliquer votre projet </strong>via le formulaire dédié, je vous répondrai dans les plus
-            brefs délais !
+            N’hésitez pas à<strong> vous présenter et à m’expliquer votre projet </strong>via le formulaire dédié !
           </p>
         </>,
       ],

@@ -44,9 +44,8 @@ export const sectionAboutData = {
     <>
       <p>
         Je m’appelle Shay et après plusieurs années de travail pour une agence web, j’ai décidé de me lancer en tant que
-        <strong> développeur freelance </strong>pour mettre mes compétences au service de projets qui ont du sens pour moi. J’ai décidé de me
-        spécialiser dans la création de <strong>sites internet engagés</strong> (dans les milieux culturels, artistiques, éducatifs, artisanaux,
-        associatifs...).
+        <strong> développeur freelance </strong> et de me spécialiser dans la création de <strong>sites internet engagés</strong> (dans les milieux
+        culturels, artistiques, éducatifs, artisanaux, associatifs...).
       </p>
       <p>
         Je travaille régulièrement avec des personnes sensibles tout comme moi aux questions
@@ -56,7 +55,7 @@ export const sectionAboutData = {
         Durant mes collaborations, je privilégie<strong> la communication, la transparence, la bienveillance et la convivialité </strong> 😊
       </p>
       <p>
-        Pour plus d’informations sur mon parcours, mes engagements et mes outils, rendez-vous sur ma page{" "}
+        Pour plus d’informations sur mon parcours, mes engagements et mes outils, rendez-vous sur la page{" "}
         <Link href="/a-propos" role="link">
           À propos.
         </Link>

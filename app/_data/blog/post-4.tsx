@@ -26,26 +26,35 @@ export const post4 = {
           </p>
 
           <p>
+            <strong>- Améliorer l'expérience des personnes plus âgées : </strong>
             Par exemple, pour les<strong> utilisateur·ices plus âgé·es</strong>, une navigation intuitive et des options de personnalisation telles
             que<strong> l'augmentation de la taille </strong>du texte peuvent grandement améliorer l'expérience utilisateur·ice. Les sites accessibles
             prennent souvent en compte la<strong> clarté visuelle</strong>, offrant un<strong> contraste élevé </strong>entre le texte et
             l'arrière-plan pour faciliter la lecture. <br />
-            De plus,<strong> des boutons et des liens suffisamment grands </strong>évitent les difficultés liées à la coordination motrice fine,
-            rendant la navigation plus aisée pour celles et ceux qui peuvent avoir des problèmes d'arthrite ou de dextérité.
           </p>
 
           <p>
-            Autre exemple, pour les visiteur·ices qui ne sont pas familiers avec la langue de votre site, les fonctionnalités d'accessibilité telles
-            que les<strong> traductions automatiques </strong>peuvent être très utiles. L'ajout<strong> d'icônes explicites </strong>à côté des textes
-            importants et l'utilisation de la navigation visuelle aident également les utilisateur·ices à comprendre le contenu et
+            <strong>- Faciliter l'usage pour les personnes avec des limitations motrices : </strong> Des boutons et des liens
+            <strong> suffisamment grands </strong>évitent les difficultés liées à la coordination motrice fine, rendant la navigation plus aisée pour
+            celles et ceux qui peuvent avoir des problèmes d'arthrite ou de dextérité.
+          </p>
+
+          <p>
+            <strong>- Soutenir les utilisateur·ices non-natifs de la langue : </strong>Autre exemple, pour les visiteur·ices qui ne sont pas familiers
+            avec la langue de votre site, les fonctionnalités d'accessibilité telles que les<strong> traductions automatiques </strong>peuvent être
+            très utiles. L'ajout<strong> d'icônes explicites </strong>à côté des textes importants et l'utilisation de la navigation visuelle aident
+            également les utilisateur·ices à comprendre le contenu et
             <strong> la structure du site </strong>sans se reposer entièrement sur le texte. <br />
             Les images et les vidéos avec des<strong> sous-titres ou des légendes </strong>dans plusieurs langues améliorent également l'accessibilité
             pour ce groupe, en offrant des alternatives pour comprendre le contenu sans barrière linguistique.
           </p>
 
           <p>
-            Cela peut également être des personnes qui ne sont pas à l'aise avec la technologie, ou qui n'ont pas accès à une connexion internet de
-            qualité. En bref, rendre votre site plus accessible<strong> peut être bénéfique à tout le monde </strong>!
+            <strong>- Accessibilité pour les non-technophiles et connexions limitées : </strong>Cela peut également être des personnes qui ne sont pas
+            à l'aise avec la technologie, ou qui n'ont pas accès à une connexion internet de qualité.
+          </p>
+          <p>
+            En bref, rendre votre site plus accessible<strong> peut être bénéfique à tout le monde </strong>!
           </p>
         </>,
       ],
@@ -59,16 +68,17 @@ export const post4 = {
             Votre site respectera les bonnes pratiques du web, ce qui permettra aux
             <strong> moteurs de recherche de mieux comprendre votre contenu </strong>et de mieux le référencer.
           </p>
-          <p> Voici quelques exemples concrets de la manière dont l'accessibilité peut améliorer le référencement de votre site :</p>
+          <p> Voici quelques exemples concrets : </p>
           <ol>
             <li>
               {" "}
-              <strong>Utilisation des balises alt pour les images</strong> : Les balises alt fournissent une<strong> description textuelle </strong>
-              des images aux moteurs de recherche et aux technologies d'assistance, comme les lecteurs d'écran. En ajoutant des balises alt
+              <strong>Utilisation des balises "alt" pour les images</strong> : Les balises "alt" fournissent une
+              <strong> description textuelle </strong>
+              des images aux moteurs de recherche et aux technologies d'assistance, comme les lecteurs d'écran. En ajoutant des balises "alt"
               descriptives à vos images, vous améliorez<strong> l'indexation de votre contenu visuel par les moteurs de recherche</strong>.<br />
-              Par exemple, une balise alt "homme lisant un livre dans un parc ensoleillé" est beaucoup plus informative qu'une balise alt générique
-              "image". Cela aide les moteurs de recherche à comprendre le<strong> contexte de vos images</strong>, améliorant ainsi la pertinence de
-              votre site pour des requêtes spécifiques.
+              Par exemple, une balise "homme lisant un livre dans un parc ensoleillé" est beaucoup plus informative qu'une balise générique "image".
+              Cela aide les moteurs de recherche à comprendre le<strong> contexte de vos images</strong>, améliorant ainsi la pertinence de votre site
+              pour des requêtes spécifiques.
             </li>
             <li>
               <strong> Structuration sémantique du contenu </strong> : L'utilisation correcte des balises HTML sémantiques (comme{" "}
@@ -92,7 +102,7 @@ export const post4 = {
       type: "paragraph",
       text: [
         <>
-          <h2 className={rocaOne.className}>3. Etre en règle avec la loi</h2>
+          <h2 className={rocaOne.className}>3. Être en règle avec la loi</h2>
           <p>
             Actuellement, l'Europe impose une accessibilité web stricte via<strong> la directive (UE) 2016/2102</strong>, visant à rendre les sites et
             applications mobiles des entités publiques accessibles à tous·tes, en suivant les<strong> directives WCAG 2.1</strong>.<br />
@@ -125,8 +135,8 @@ export const post4 = {
           </p>
           <p>
             En optimisant l'accessibilité de votre site, vous reconnaissez et valorisez<strong> la diversité de votre audience</strong>, en tenant
-            compte des besoins variés des personnes en situation de handicap, des personnes âgées, et de ceux qui peuvent être temporairement limités
-            dans leur interaction avec le web.
+            compte des besoins variés des personnes en situation de handicap, des personnes âgées, et de celles et ceux qui peuvent être
+            temporairement limité·es dans leur interaction avec le web.
           </p>
           <p>
             Faire de l'accessibilité une priorité améliore non seulement l'expérience utilisateur·ice pour un public plus large, mais
@@ -146,10 +156,7 @@ export const post4 = {
           <p>-------</p>
           <p>
             En conclusion, rendre votre site web accessible n'est pas seulement une question de conformité légale : c'est un
-            <strong> engagement envers l'inclusivité et l'égalité d'accès pour tous·tes</strong>. Cela reflète une
-            <strong> sensibilité aux besoins divers de votre audience et renforce votre réputation </strong>.<br />
-            Notre monde devient de plus en plus numérique et l'accessibilité web s'impose comme une nécessité incontournable, façonnant la manière
-            dont nous concevons l'expérience utilisateur·ice en ligne.
+            <strong>cela reflète une sensibilité aux besoins divers de votre audience et peut renforcer votre réputation</strong>.<br />
             <br />
             Envisager l'accessibilité comme<strong> un voyage continu plutôt qu'une destination finale </strong>peut ouvrir de nouvelles perspectives
             pour l'innovation et l'amélioration continue !

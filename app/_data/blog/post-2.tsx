@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { rocaOne } from "../../styles/fonts/font-face";
 
 export const post2 = {
@@ -38,10 +39,10 @@ export const post2 = {
           </p>
           <p>
             Si vous voulez mieux comprendre les<strong> enjeux derrière l'écriture inclusive</strong>, je vous recommande de visionner
-            <a href="https://youtu.be/url1TFdHlSI" target="_blank" rel="noopener noreferrer">
+            <Link href="https://youtu.be/url1TFdHlSI" role="link" target="_blank" rel="noopener noreferrer">
               {" "}
               cette excellente vidéo de Scilabus{" "}
-            </a>
+            </Link>
             qui démontre toute l’importance de l’écriture inclusive dans nos projections et représentations mentales.
           </p>
         </>,
@@ -89,7 +90,7 @@ export const post2 = {
           <h2 className={rocaOne.className}>3. Comment rédiger en écriture inclusive ?</h2>
           <h3 className={rocaOne.className}>Utilisation des règles de base</h3>
           <p>
-            Alors d'abord, ce n'est pas si compliqué, c'est plus une question d'habitude ! Voici quelques règles de base permettant d’utiliser
+            Alors tout d'abord, ce n'est pas si compliqué, c'est plus une question d'habitude ! Voici quelques règles de base permettant d’utiliser
             l’écriture inclusive. Ces règles sont combinables et<strong> ajustables </strong>selon vos propres préférences. Certaines sont plus
             discrètes ou faciles à mettre en place : à vous d'adapter vos pratiques à votre persona et à votre secteur d'activité !
           </p>
@@ -98,8 +99,8 @@ export const post2 = {
               <strong>Le point médian : </strong>Le point médian est un signe de ponctuation qui permet de faire apparaître les deux formes genrées
               dans un même mot. <br />
               Par exemple, "lecteur·trice" représente à la fois les lecteurs et les lectrices. Il peut être utilisé pour désigner des groupes de
-              personnes sans exclure aucun genre. <br />
-              <em>Astuce : sur un PC, el raccourci pour faire un point émdian est "Alt + 0183" et sur un Mac "Alt + Maj + F".</em>
+              personnes sans exclure personne. <br />
+              <em> ➡️ Astuce : sur un PC, le raccourci pour faire un point médian est "Alt + 0183" et sur un Mac "Alt + Maj + F".</em>
             </li>
             <li>
               <strong>Les parenthèses : </strong>Les parenthèses sont une autre façon de faire apparaître les deux formes genrées à l'intérieur d'un
@@ -114,7 +115,15 @@ export const post2 = {
             <li>
               <strong>Féminisation de mots : </strong>
               <br />
-              Par exemple, "auteur" devient "autrice" ou "auteure" pour désigner une femme.
+              Par exemple, "auteur" devient "autrice" ou "auteure" pour désigner une femme. <br />
+              <em>
+                Pour en savoir plus sur la féminisation des noms de métiers, je vous recommande{" "}
+                <Link href="https://www.youtube.com/watch?v=BmFItoMIRkE&t=698s" role="link" target="_blank" rel="noopener noreferrer">
+                  {" "}
+                  cette vidéo{" "}
+                </Link>
+                d'Athéna Sol sur le sujet.
+              </em>
             </li>
             <li>
               <strong>L'accord de proximité : </strong>Cette règle consiste à accorder un adjectif au genre de la dernière personne mentionnée. Cette
@@ -126,8 +135,7 @@ export const post2 = {
               <strong>Privilégier les formes neutres quand c’est possible : </strong>Plutôt que d'utiliser des termes spécifiques à un genre, optez
               pour des formulations qui incluent toutes les identités.
               <br />
-              Par exemple, préférez "toutes les personnes" plutôt que "tous les hommes" pour englober tous les individus concernés, quel que soit leur
-              genre.
+              Par exemple, préférez "toutes les personnes" plutôt que "tous les hommes" pour englober tous les individus concernés.
             </li>
           </ul>
           <p>
@@ -149,44 +157,45 @@ export const post2 = {
           <h3 className={rocaOne.className}>Utiliser des outils d'aide à l'écriture</h3>
           <p>
             Certains outils sont en cours de développement afin de faciliter la rédaction en écriture inclusive. <br />
-            On trouve notamment les outils suivants :
+            On trouve notamment :
           </p>
           <ul>
             <li>
-              <a href="https://eninclusif.fr/" role="link" target="_blank" rel="noopener noreferrer">
+              <Link href="https://eninclusif.fr/" role="link" target="_blank" rel="noopener noreferrer">
                 EnInclusif.fr
-              </a>{" "}
+              </Link>{" "}
               : un convertisseur d'écriture inclusive qui permet de<strong> transformer automatiquement un texte en écriture inclusive</strong>.{" "}
               <br />
               Ce site propose également des<strong> accompagnements pour la mise en place de l'écriture inclusive </strong>dans votre entreprise.
             </li>
             <li>
-              <a href="https://incluzore.org/" role="link" target="_blank" rel="noopener noreferrer">
+              <Link href="https://incluzore.org/" role="link" target="_blank" rel="noopener noreferrer">
                 Incluzor
-              </a>{" "}
+              </Link>{" "}
               : un autre convertisseur en écriture inclusive.
             </li>
             <li>
-              <a
+              <Link
                 href="https://chrome.google.com/webstore/detail/ecriture%C2%B7inclusive%C2%B7facile/dfjcdiknbdbnfgecbkcaobgmeekinphg?hl=fr"
                 role="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Ecriture·Inclusive·Facile
-              </a>{" "}
-              : une extension qui remplace les points normaux en points médians
+              </Link>{" "}
+              : une extension chrome qui remplace les points normaux en points médians.
             </li>
           </ul>
           <h3 className={rocaOne.className}>Sensibiliser votre équipe</h3>
           <p>
             Intégrer l'écriture inclusive dans votre site web est une démarche collective qui peut être facilitée par la
             <strong> sensibilisation de votre équipe</strong>. Vous pouvez également organiser des<strong> formations ou des ateliers </strong>pour
-            sensibiliser votre équipe aux enjeux liés à l'inclusivité.
+            sensibiliser aux enjeux liés à l'inclusivité.
           </p>
           <p></p>
           <p>
-            Lorsque toute l'équipe est engagée, il devient plus facile d’étendre cette démarche à<strong> l’ensemble de votre communication </strong>
+            Lorsque toute l'équipe est engagée, il devient alors plus facile d’étendre cette démarche à
+            <strong> l’ensemble de votre communication </strong>
             (réseaux sociaux, newsletter, etc.).
           </p>
         </>,

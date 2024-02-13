@@ -16,14 +16,14 @@ export const sectionProjectsData = {
           <p>
             Elle souhaitait également une<strong> identité graphique </strong>pour son site (couleurs, polices de texte, design...).
             <br />
-            Autre point important : elle voulait que l'on puisse accéder aux jeux selon<strong> différents critères </strong>: cycles, matières,
-            thématiques.
+            Autre point important : elle voulait que l'on puisse accéder aux jeux selon<strong> différents critères </strong>: par cycles, par
+            matières ou par thématiques.
           </p>
           <br />
           <br />
           <p>
-            Pour ce projet, j'ai travaillé avec le<strong> thème Divi </strong>et un thème enfant pour pouvoir modifier le thème. La gestion
-            personnalisée des différentes catégories de jeux a été<strong> codée en PHP</strong> 🐘
+            Pour ce projet, j'ai travaillé avec le<strong> thème Divi </strong>et un thème enfant pour pouvoir faire des modifications sur-mesure. La
+            gestion personnalisée des différentes catégories de jeux a été<strong> codée en PHP</strong> 🐘
           </p>
         </>,
       ],
@@ -46,9 +46,8 @@ export const sectionProjectsData = {
           </p>
           <br />
           <p>
-            Pour répondre à ses besoins, j'ai utilisé le thème Botiga, que j'ai personnalisé pour qu'il corresponde à ses attentes. <br /> J'ai
-            également créé un<strong> thème enfant</strong> pour qu'elle puisse modifier son site sans risquer de perdre les modifications lors des
-            mises à jour. 💪
+            Pour ça, j'ai utilisé le thème Botiga, que j'ai personnalisé pour qu'il corresponde à ses attentes. <br /> J'ai également créé un
+            <strong> thème enfant</strong> pour pouvoir modifier son site sans risquer de perdre les modifications lors des mises à jour. 💪
           </p>
         </>,
       ],
@@ -102,7 +101,7 @@ export const sectionProjectsData = {
           </p>
           <br />
           <p>
-            J'ai codé un système de<strong> recherche par régions et par styles de musique </strong>pour faciliter la mise en relation entre les
+            J'ai codé un système de<strong> recherche par régions ou par styles de musique </strong>pour faciliter la mise en relation entre les
             groupes et les organisateur·ices d'évènements queer.
             <br />
             <br />

@@ -63,9 +63,9 @@ export const post6 = {
       type: "paragraph",
       text: [
         <>
-          <h2 className={rocaOne.className}>3. Des balises Meta pertinentes</h2>
+          <h2 className={rocaOne.className}>3. Des balises "meta" pertinentes</h2>
           <p>
-            Les balises de meta-description permettent de<strong> résumé le contenu de vos pages</strong>. Elles sont
+            Les balises de meta-description permettent de<strong> résumer le contenu de vos pages</strong>. Elles sont
             <strong> affichées dans les résultats de recherche </strong>et permettent aux internautes de savoir si votre page correspond à leur
             recherche. La meta-description ne doit pas seulement contenir des mots clés, mais aussi <strong> inciter à l'action </strong>ou
             <strong> éveiller la curiosité</strong>. Il est donc important de soigner ces balises !
@@ -93,7 +93,7 @@ export const post6 = {
           </p>
           <p>
             Les pages de votre site doivent être<strong> consultables en quelques clics</strong> et l'ensemble doit former un
-            <strong> maillage interne cohérent</strong> car<strong> la structure et la navigation </strong>sont pris en compte par les moteurs de
+            <strong> maillage interne cohérent</strong> car<strong> la structure et la navigation </strong>sont prises en compte par les moteurs de
             recherche. Le maillage interne va permettre aux moteurs de recherche de comprendre la structure de votre site et donc d'indexer vos pages
             plus efficacement.
           </p>
@@ -115,7 +115,7 @@ export const post6 = {
         <>
           <h2 className={rocaOne.className}>5. Un temps de chargement optimisé</h2>
           <p>
-            La vitesse de chargement d'un site a un impact non négligeable sur le référencement. <br />
+            La vitesse de chargement d'un site a un impact important sur le référencement. <br />
           </p>
           <p>
             {" "}

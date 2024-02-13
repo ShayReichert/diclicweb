@@ -26,7 +26,7 @@ export const post8 = {
           <p>
             Contrairement aux sites traditionnels qui sont préparés à la demande (un peu comme un repas fait à la minute),
             <strong> les sites JAMStack sont comme des plats préparés à l'avance</strong>, prêts à être servis instantanément à qui en a besoin. Cela
-            les rend particulièrement rapides à charger et difficiles à perturber par des visiteur·ices malveillant·es.
+            les rend particulièrement rapides à charger et difficiles à perturber par des attaques malveillantes.
           </p>
         </>,
       ],
@@ -57,7 +57,7 @@ export const post8 = {
             </li>
             <li>
               <strong>Déploiement simplifié</strong> : Le déploiement d'un site statique s'opère aisément sur une multitude de plateformes
-              d'hébergement, telles que GitHub Pages, Netlify et Vercel, facilitant ainsi la mise en ligne. Ces plateformes permettent d'automatiser
+              d'hébergement, telles que Vercel, GitHub Pages ou Netlify, facilitant ainsi la mise en ligne. Ces plateformes permettent d'automatiser
               le déploiement en seulement quelques clics !
             </li>
             <li>
@@ -101,9 +101,10 @@ export const post8 = {
             </li>
             <li>
               <strong>Gestion du contenu délicate</strong> : Le contenu statique peut poser des défis lorsqu'il s'agit de le mettre à jour,
-              nécessitant parfois de repasser par le processus de génération de pages. Il existe cependant de plus en plus de solutions qui facilitent
-              ce processus, comme<strong> les CMS Headless </strong>(Strapi, Contentful, Prismic, etc.). Ces CMS permettent de gérer le contenu de
-              manière intuitive et offre une solution adaptée aux non-développeur·ses pour publier du contenu aisément.
+              nécessitant parfois de repasser par le processus de génération de pages. <br />
+              Il existe cependant de plus en plus de solutions qui facilitent ce processus, comme<strong> les CMS Headless </strong>(Strapi,
+              Contentful, Prismic, etc.). Ces CMS permettent de gérer le contenu de manière intuitive et offre une solution adaptée aux
+              non-développeur·ses pour publier du contenu aisément.
             </li>
             <li>
               <strong>Gestion des données en temps réel</strong> : Manipuler les données en temps réel peut se révéler complexe avec un site statique,

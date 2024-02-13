@@ -52,7 +52,7 @@ export const post7 = {
           </p>
           <p>
             En mettant régulièrement votre site web à jour, vous montrerez également votre<strong> dynamisme et la pérennité </strong>de votre
-            activité. C'est important pour rassurer vos<strong> futurs membres et trouver des partenaires </strong>!
+            activité. C'est important notamment pour rassurer vos<strong> futurs membres ou trouver des partenaires </strong>!
           </p>
         </>,
       ],
@@ -72,13 +72,9 @@ export const post7 = {
           </p>
           <p>
             Votre site peut également jouer un rôle de<strong> support client </strong>: il vous permet de répondre rapidement et efficacement aux
-            questions fréquentes de vos membres ou donateur·ices grâce à une<strong> section FAQ</strong>. Cette section vous permettra de répondre
-            aux questions fréquentes, comme les modalités d'adhésion, les différentes manières de participer ou de contribuer à vos projets, ou encore
-            sur les évènements organisés par votre association.
-          </p>
-          <p>
-            Ces éléments augmente la satisfaction de vos adhérent·es, contribuant ainsi à potentiellement<strong> fidéliser et élargir </strong>votre
-            communauté !
+            questions fréquentes de vos membres ou donateur·ices grâce à une<strong> section FAQ</strong>. Cette section vous permettra par exemple
+            d'expliquer les modalités d'adhésion, les différentes manières de participer ou de contribuer à vos projets, ou encore de détailler
+            comment s'inscrire aux évènements organisés par votre association.
           </p>
         </>,
       ],
@@ -113,7 +109,7 @@ export const post7 = {
           <h2 className={rocaOne.className}>4. Rassurer vos futurs membres</h2>
           <p>
             Avec un site web, vous pouvez <strong> exposer vos réalisations passées </strong>, expliquer vos <strong> missions actuelles </strong>et
-            vos futurs objectifs. Cela permettra de démontrer votre expertise et la régularité de votre engagement.
+            vos<strong> futurs objectifs</strong>. Cela permettra de démontrer votre expertise et la régularité de votre engagement.
           </p>
           <p>
             Vous pourrez aussi mettre en avant des <strong> témoignages </strong>de personnes ayant collaborées avec vous, rassurant ainsi de nouveaux
@@ -150,7 +146,7 @@ export const post7 = {
           </p>
           <p>
             Que ce soit par la vente de produits, le support aux membres, la collecte de fonds ou simplement par une communication efficace de vos
-            valeurs et missions, un site web bien conçu vous offre les outils nécessaires pour<strong> économiser du temps </strong>et
+            valeurs et de vos missions, un site web bien conçu vous offre les outils nécessaires pour<strong> économiser du temps </strong>et
             <strong> accroître votre impact</strong>.
           </p>
           <p>

@@ -20,8 +20,7 @@ export const post11 = {
       text: [
         <>
           <p>
-            Pourquoi tout le monde parle de<strong> l'importance d'avoir un site web </strong>de nos jours ? Avoir un site professionnel vous
-            apportera bien plus que de la visibilité et pourra vous aider à<strong> atteindre vos objectifs</strong>. <br />
+            Pourquoi tout le monde parle de<strong> l'importance d'avoir un site web </strong>de nos jours ?<br />
           </p>
           <p>
             Dans cet article, nous allons explorer les multiples avantages d'une présence en ligne solide et comment elle peut se révéler être un{" "}
@@ -38,7 +37,8 @@ export const post11 = {
           <h2 className={rocaOne.className}>Visibilité et portée accrues</h2>
           <p>
             L'avantage principal d'un site web professionnel est<strong> l'augmentation de la visibilité</strong>. Avec 81% des consommateur·ices
-            recherchant en ligne avant un achat *, ne pas avoir de site web peut signifier être invisible pour une grande partie du marché.
+            effectuant une recherche en ligne avant un achat *, ne pas avoir de site web peut signifier être invisible pour une grande partie du
+            marché.
           </p>
           <p>
             Un site web bien conçu et optimisé pour le SEO permet de se démarquer et<strong> d'attirer plus de client·es potentiel·les</strong>.
@@ -54,13 +54,14 @@ export const post11 = {
           <p>
             Un site web professionnel renforce la crédibilité. Il offre une plateforme pour présenter vos produits, services et témoignages de
             client·es, augmentant ainsi<strong> la confiance des visiteur·ices</strong>. <br />
+          </p>
+          <p>
             Par exemple, un site web pour une<strong> coopérative agricole</strong>, présentant ses pratiques durables et ses produits biologiques,
             peut considérablement renforcer son image auprès d'un public sensible aux<strong> enjeux environnementaux</strong>.
           </p>
           <p>
-            Prenons l'exemple d'une coopérative agricole qui décide de créer un site web professionnel pour présenter ses produits et ses pratiques
-            durables. En mettant en ligne des<strong> informations détaillées </strong>sur ses méthodes de culture biologique, accompagnées de photos
-            de qualités de ses produits et de<strong> témoignages de client·es satisfait·es</strong>, la coopérative renforce immédiatement sa
+            En mettant en ligne des<strong> informations détaillées </strong>sur ses méthodes de culture biologique, accompagnées de photos de
+            qualités de ses produits et de<strong> témoignages de client·es satisfait·es</strong>, la coopérative renforce immédiatement sa
             crédibilité et son image auprès des visiteur·ices.
           </p>
           <p>
@@ -95,11 +96,14 @@ export const post11 = {
             utilisateur·ice.
           </p>
           <p>
-            Imaginez que vous soyez le / la propriétaire d'une boutique de créations artisanales. Votre site web vous permet de présenter chaque
-            produit avec soin, en utilisant des descriptions détaillées, des photographies de haute qualité et même des histoires captivantes sur leur
-            conception et leur origine. Le design (couleurs, typographies...) de votre boutique profesionnelle sera entièrement à l'image de votre
-            marque, et uniforme avec vos autres supports de communication. Tout cela contribue à renforcer votre professionnalisme et à créer une
-            connexion émotionnelle avec vos visiteur·ices.
+            Imaginez que vous soyez le / la propriétaire d'une boutique de créations artisanales. <br />
+            Votre site web vous permet de présenter chaque produit avec soin, en utilisant des descriptions détaillées, des photographies de haute
+            qualité et même des histoires sur leur conception et leur origine.
+          </p>
+          <p>
+            Le design (couleurs, typographies...) de votre boutique profesionnelle sera entièrement à l'image de votre marque, et uniforme avec vos
+            autres supports de communication. Tout cela contribue à renforcer votre professionnalisme et à créer une connexion émotionnelle avec vos
+            visiteur·ices.
           </p>
         </>,
       ],
@@ -111,16 +115,18 @@ export const post11 = {
         <>
           <h2 className={rocaOne.className}>Potentiel de vente en ligne</h2>
           <p>
-            Autre avantage non négligeable : la création d'un site ouvre également les portes à<strong> la vente en ligne </strong>! <br />
+            Autre avantage non négligeable : la création d'un site ouvre également les portes à<strong> la vente en ligne </strong>!{" "}
+          </p>
+          <p>
             Un site e-commerce permet aux entreprises de vendre leurs produits ou services directement aux consommateur·ices, élargissant leur
             <strong> portée au-delà des limites géographiques </strong>et<strong> augmentant potentiellement leurs revenus</strong>. <br />
             Cela est particulièrement bénéfique pour<strong> les petits commerces ou les artisans </strong>qui peuvent ainsi atteindre un public plus
             large.
           </p>
           <p>
-            Ainsi, un artisan basé dans une petite ville de France peut vendre ses produits à un amateur d'art artisanal à New York ou Tokyo. Cette
-            expansion globale n'est pas seulement synonyme d'une clientèle plus large, mais aussi d'opportunités d'évolutions ou de collaborations
-            pour votre entreprise.
+            Ainsi, une artisane basée dans une petite ville de France peut vendre ses produits à un amateur d'art artisanal à New York ou à Tokyo.
+            Cette expansion globale n'est pas seulement synonyme d'une clientèle plus large, mais aussi d'opportunités d'évolutions ou de
+            collaborations pour votre entreprise.
           </p>
         </>,
       ],
@@ -132,18 +138,22 @@ export const post11 = {
           <p>-------</p>
           <p>
             Dans un monde où la présence numérique est devenue la norme, avoir un site web professionnel n'est pas seulement un avantage, c'est une
-            démarche essentielle pour assurer<strong> la visibilité </strong>d'une entreprise. Un site internet permet d'engager un
+            démarche essentielle pour assurer<strong> la visibilité </strong>d'une entreprise.{" "}
+          </p>
+          <p>
+            Un site internet permet d'engager un
             <strong> dialogue authentique avec la communauté</strong>, de promouvoir des<strong> valeurs </strong>
             et d'offrir des services ou des produits alignés avec<strong> les besoins réels </strong>des personnes.
           </p>
           <p>
-            Comme nous l'avons vu, les avantages vont bien au-delà de la simple visibilité en ligne. Un site web offre également une plateforme pour
-            <strong>renforcer votre crédibilité</strong>, contrôler votre image de marque ou encore étendre votre portée au-delà des limites
-            géographiques.
+            Un site web offre également une plateforme pour<strong> renforcer votre crédibilité</strong>, contrôler votre image de marque ou encore
+            étendre votre portée au-delà des limites géographiques.
           </p>
           <p>
             Considérer la création de votre site web ne devrait pas être une réflexion secondaire, mais une
             <strong> démarche stratégique primordiale </strong>pour assurer la pérennité de votre projet. <br />
+          </p>
+          <p>
             Si vous souhaitez de l'aide ou un devis sur-mesure, n'hésitez pas à{" "}
             <Link href="/contact" role="link">
               me contacter

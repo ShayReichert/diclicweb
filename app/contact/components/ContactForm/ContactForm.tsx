@@ -68,7 +68,7 @@ export default function ContactForm({ showSnackbar }: ContactFormProps) {
       axios
         .post("https://eopieniaed5xeqb.m.pipedream.net", formData)
         .then((response) => {
-          setSuccessMessage("Merci pour votre message, je vous recontacterai dans les plus brefs délais !");
+          setSuccessMessage("Merci pour votre message, je vous recontacte bientôt !");
           showSnackbar("Votre message a bien été envoyé.", "success");
           setFormSubmitted(true);
 

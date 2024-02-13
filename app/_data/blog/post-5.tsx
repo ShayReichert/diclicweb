@@ -25,8 +25,8 @@ export const post5 = {
             <strong> me tient particulièrement à coeur </strong> ! 🏳️‍🌈 <br />
           </p>
           <p>
-            Je souhaite également apporter mon aide aux<strong> projets à impacts, inclusifs et qui ont du sens </strong>plus généralement (artisanat,
-            culture, art, écologie, projets associatifs...).
+            Je souhaite également apporter plus généralement mon aide aux<strong> projets à impacts et inclusifs </strong>(artisanat, culture, art,
+            écologie, projets associatifs...).
           </p>
         </>,
       ],
@@ -37,6 +37,7 @@ export const post5 = {
       text: [
         <>
           <h2 className={rocaOne.className}>2. Mes aventures passées</h2>
+          <p>Je vais vous présenter les quelques "sites queer" que j'ai eu la chance de faire ces dernières années !</p>
           <ul>
             <li>
               <strong>
@@ -48,7 +49,7 @@ export const post5 = {
               Un site référençant les<strong> groupes de musique queer et féministes</strong>en France. <br />
               Ce site a été conçu en collaboration avec l'association "This is a RIOT", pour référencer et promouvoir les groupes de musique queer et
               féministe à travers la France, offrant une plateforme pour augmenter leur visibilité. Ce site permet également aux organisateur·ices de
-              concerts et de festivals queer de trouver plus facilement des groupes à programmer.
+              concerts et de festivals queer de trouver plus facilement des groupes à programmer 🏳️‍⚧️
             </li>
             <li>
               <strong>
@@ -57,8 +58,9 @@ export const post5 = {
                 </Link>{" "}
                 :{" "}
               </strong>
-              Un blog sur les pépites du cinéma queers, LGBTQIA+ et inclusifs. <br />
-              Ce blog a été crée dans le but de partager et promouvoir des films sur d'autres critères que des notes.
+              Un blog sur les pépites du cinéma queers, LGBTQIA+ et inclusifs 🍿
+              <br />
+              Ce blog a été crée dans le but de répertorier des films sur d'autres critères que des notes.
               <br />
               Chaque film a 5 barres de critères : "Représentation et visibilisation", "Personnes Concernées", "Feel Good", "Militant" et
               "Déconstruction". <br />
@@ -72,7 +74,8 @@ export const post5 = {
                 </Link>{" "}
                 :{" "}
               </strong>
-              Un site listant les derniers films queer sortis. <br />
+              Un site listant les derniers films queer sortis. Et c'est tout ! 🎬
+              <br />
               Je souhaitais offrir un moyen simple et rapide de connaitre les<strong> dernières sorties de films queers</strong>. Le site utilise
               l'API de TMDB (The Movie DataBase), une des plus grandes bases de données de films au monde.
             </li>
