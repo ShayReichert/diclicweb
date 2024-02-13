@@ -71,6 +71,7 @@
       &:focus-visible {
         outline: none;
         border: 1px solid $primary-color;
+        box-shadow: 0 0 0 1px $primary-color;
       }
 
       &::placeholder {

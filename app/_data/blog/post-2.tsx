@@ -161,7 +161,7 @@ export const post2 = {
               Ce site propose également des<strong> accompagnements pour la mise en place de l'écriture inclusive </strong>dans votre entreprise.
             </li>
             <li>
-              <a href="https://mots.incluzor.fr/" role="link" target="_blank" rel="noopener noreferrer">
+              <a href="https://incluzore.org/" role="link" target="_blank" rel="noopener noreferrer">
                 Incluzor
               </a>{" "}
               : un autre convertisseur en écriture inclusive.
