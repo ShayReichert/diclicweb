@@ -22,7 +22,7 @@ const useScrollFadeIn = ({ duration = 0.4, delay = 0, translateY = "100%" }: Use
         element.style.transform = "translateY(0px)";
       }
     }
-  }, [element, duration, delay, translateY]);
+  }, [element, duration, delay]);
 
   useEffect(() => {
     if (element) {
