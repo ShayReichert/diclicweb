@@ -27,7 +27,7 @@
         @include underline(25%, 2.4rem) {
           right: -27px;
           top: auto;
-          bottom: 4px;
+          bottom: 15px;
 
           @include devices(large_tablet) {
             width: 55%;

@@ -25,7 +25,7 @@
         @include underline(55%, 2.4rem) {
           right: -27px;
           top: auto;
-          bottom: 4px;
+          bottom: 15px;
 
           @include devices(large_tablet) {
             height: 1.8rem;
