@@ -10,10 +10,15 @@
     @include size(100%, calc(90vh - $menu-mobile-height));
   }
 
-  // No jumbo effect on Safari
-  &:not(.no-jumbo-effect) {
-    @media only screen and (min-width: $large_tablet) {
-      @include jumbo-effect();
+  .video-background {
+    @include size(100%, auto);
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    z-index: -1;
+
+    @include devices(large_tablet) {
+      display: none;
     }
   }
 
