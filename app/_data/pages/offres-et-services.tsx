@@ -173,7 +173,7 @@ export const sectionFAQData = {
               <strong>Un site e-commerce </strong>: à partir de 2500€
             </li>
             <li>
-              <strong>Une application web, un site sur-mesure </strong>: généralement à partir de 4000€
+              <strong>Une application web, un site statique ou complexe </strong>: généralement à partir de 3500€
             </li>
           </ul>
         </>,

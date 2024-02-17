@@ -98,7 +98,7 @@ export const post3 = {
         <>
           <h2 className={rocaOne.className}>5. Alternatives pour les contenus multimédias</h2>
           <p>
-            Pour vos contenus vidéos et sonores, essayer de<strong> proposer des sous-titres et des transcriptions</strong> pour permettre aux
+            Pour vos contenus vidéos et sonores, essayez de<strong> proposer des sous-titres et des transcriptions</strong> pour permettre aux
             personnes malentendantes de pouvoir accéder à votre contenu.
           </p>
         </>,
@@ -110,7 +110,7 @@ export const post3 = {
         <>
           <h2 className={rocaOne.className}>6. Faites des tests</h2>
           <p>
-            Utiliser des<strong> lecteurs d'écrans et des validateurs d'accessibilité </strong>pour vous assurer que tout fonctionne (par exemple, le
+            Utilisez des<strong> lecteurs d'écrans et des validateurs d'accessibilité </strong>pour vous assurer que tout fonctionne (par exemple, le
             lecteur d'écran NVDA ou le validateur d'accessibilité WAVE). Cela vous aidera à repérer les points à améliorer !
           </p>
         </>,

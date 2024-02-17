@@ -41,8 +41,8 @@ export const sectionProjectsData = {
       description: [
         <>
           <p>
-            Clémentine (aka MandApunk), m’a contactée pour<strong> migrer son site e-commerce Big Cartel vers WordPress</strong>. Elle souhaitait
-            avoir<strong> plus de contrôle sur les paramètres de sa boutique</strong>, tout en gardant un design similaire à son précédent site. 🎨
+            Clémentine (aka MandApunk), m’a contacté pour<strong> migrer son site e-commerce Big Cartel vers WordPress</strong>. Elle souhaitait avoir
+            <strong> plus de contrôle sur les paramètres de sa boutique</strong>, tout en gardant un design similaire à son précédent site. 🎨
           </p>
           <br />
           <p>
@@ -75,7 +75,7 @@ export const sectionProjectsData = {
           </p>
           <br />
           <p>
-            J'ai choisis le<strong> thème Divi </strong>pour ce projet, et j'ai crée une<strong> charte graphique </strong>à partir du logo
+            J'ai choisi le<strong> thème Divi </strong>pour ce projet, et j'ai créé une<strong> charte graphique </strong>à partir du logo
             pré-existant.
             <br />
             Pour les livraisons, j'ai installé et paramétré les plugins Mondial Relay et Colissimo nécessaires.
@@ -97,11 +97,11 @@ export const sectionProjectsData = {
         <>
           <p>
             Créé en partenariat avec l’association “This is a RIOT”, QueerBandFrance a pour but de
-            <strong> visibiliser des groupes de musique queers et féministes francophone</strong> 🏳️‍🌈
+            <strong> visibiliser des groupes de musique queers et féministes francophones</strong> 🏳️‍🌈
           </p>
           <br />
           <p>
-            J'ai codé un système de<strong> recherche par régions ou par styles de musique </strong>pour faciliter la mise en relation entre les
+            J'ai codé un système de<strong> recherches par régions ou par styles de musique </strong>pour faciliter la mise en relation entre les
             groupes et les organisateur·ices d'évènements queer.
             <br />
             <br />
