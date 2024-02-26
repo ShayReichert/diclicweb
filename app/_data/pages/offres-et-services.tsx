@@ -195,8 +195,9 @@ export const sectionFAQData = {
       answer: [
         <>
           <p>
-            Je propose 3 plans de maintenance, avec et sans support, allant de<strong> 49€ à 199€/mois </strong>(possibilité également de plans de
-            maintenance sur mesure selon vos besoins).
+            Je propose des plans de maintenance commençant à <strong> 30€/mois sans support </strong> et{" "}
+            <strong> 60€/mois avec 1h de support </strong>
+            (possibilité également de plans de maintenance sur mesure selon vos besoins).
           </p>
         </>,
       ],
