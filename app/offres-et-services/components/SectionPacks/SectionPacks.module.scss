@@ -1,0 +1,43 @@
+@import "../../../styles/partials/mixins";
+
+.section-packs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  color: $white;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: $max-content;
+    padding: 15rem 0;
+
+    .title-wrapper {
+      @include title-wrapper();
+      margin: 0 2rem 3rem;
+
+      @include devices(large_tablet) {
+        margin: 0 2rem 5rem;
+      }
+
+      h2 {
+        position: relative;
+        text-align: center;
+        margin: 0 2rem;
+      }
+    }
+
+    .packs-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @include devices(large_tablet) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

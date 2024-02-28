@@ -1,9 +1,21 @@
+import Button from "@/app/components/Button/Button";
+
 export const sectionTitleData = {
   title: "Mes services",
 };
 
 export const sectionCatchphraseData = {
-  text: "Sites vitrines, sites e-commerce, plans de maintenance, applications web : je vous propose différentes solutions pour répondre à vos besoins spécifiques ! 👌",
+  text: "Site vitrine, site e-commerce, charte graphique, plans de maintenance, support : je vous propose différentes solutions pour répondre à vos besoins spécifiques ! 👌",
+};
+
+export const sectionCTAData = {
+  text: [
+    <>
+      <p>
+        Pour un site, une application web ou un design<strong> totalement sur-mesure</strong>, contactez-moi pour un devis personnalisé !
+      </p>
+    </>,
+  ],
 };
 
 export const sectionCommitmentsData = {
@@ -69,7 +81,7 @@ export const sectionStepsData = {
             également ma manière de travailler et nous voyons si le feeling passe bien ! 🤜🤛
           </p>
           <p>
-            Je vous fourni ensuite un<strong> questionnaire détaillé </strong>pour comprendre précisément vos besoins et vos objectifs.
+            On complète ensuite ensemble un<strong> questionnaire détaillé </strong>pour comprendre précisément vos besoins et vos objectifs.
           </p>
           <p>
             À partir de ce questionnaire, je pourrais traduire vos besoins en<strong> fonctionnalités </strong>et vous donner un
@@ -87,8 +99,14 @@ export const sectionStepsData = {
           <p>
             Si vous n’en avez pas, je construis<strong> l’identité visuelle </strong>de votre site : couleurs, polices d’écriture et logo. Vous
             pourrez ensuite utiliser cette charte graphique sur tous vos supports de communication.
-            <br />
-            Puis je crée un<strong> wireframe </strong>du site, afin de visualiser la structure et les différentes sections du site.
+          </p>
+          <p>
+            - Pour un<strong> pack site vitrine ou e-commerce</strong>, je recherche un<strong> template pertinent</strong>, qui sera ensuite
+            personnalisé avec votre logo, vos couleurs et vos polices d'écriture.
+          </p>
+          <p>
+            - Pour un<strong> site sur-mesure</strong>, je crée des<strong> wireframes </strong> afin de visualiser la structure et les différentes
+            sections du site.
           </p>
           <p>
             Je vous accompagne si nécessaire dans l’enregistrement de votre<strong> nom de domaine </strong>ainsi que le
@@ -156,24 +174,27 @@ export const sectionFAQData = {
       ],
     },
     {
-      question: "Combien me coûtera un site web ? ",
+      question: "Combien me coûtera un site web sur-mesure ? ",
       answer: [
         <>
           <p>
             Les prix peuvent varier beaucoup selon<strong> le nombre de pages voulues</strong>, les<strong> fonctionnalités à inclure</strong>, la
-            complexité du design, si c’est <strong>un site vitrine ou e-commerce</strong>… <br /> Créer un site peut prendre quelques jours ou
-            quelques semaines, parfois même jusqu’à plusieurs mois !
+            complexité du design, si c’est <strong>un site vitrine ou e-commerce</strong>…
           </p>
-          <p>Pour vous donner une idée, voici les tarifs de base :</p>
+          <p> Créer un site sur-mesure peut prendre quelques jours ou quelques semaines, parfois même jusqu’à plusieurs mois !</p>
+          <p>Pour vous donner une idée, voici quelques fourchettes de prix :</p>
           <ul>
             <li>
-              <strong>Un site vitrine </strong>: à partir de 900€
+              <strong>Un site one page (site vitrine d'une page) </strong>: entre 600 et 900€
             </li>
             <li>
-              <strong>Un site e-commerce </strong>: à partir de 2500€
+              <strong>Un site vitrine </strong>: entre 1500 et 3000€
             </li>
             <li>
-              <strong>Une application web, un site statique ou complexe </strong>: généralement à partir de 3500€
+              <strong>Un site e-commerce </strong>: à partir de 2800€
+            </li>
+            <li>
+              <strong>Une application web ou un site statique </strong>: généralement à partir de 3000€
             </li>
           </ul>
         </>,

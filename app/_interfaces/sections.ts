@@ -131,3 +131,10 @@ interface SectionTextProps {
     text: JSX.Element[];
   };
 }
+
+// SectionCTA
+interface SectionCTAProps {
+  data: {
+    text: JSX.Element[];
+  };
+}

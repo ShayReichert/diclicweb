@@ -1,0 +1,88 @@
+@import "../../../styles/partials/mixins";
+
+.pack {
+  margin: 5rem 0;
+  border-radius: $border-radius;
+  background-color: $blue-light;
+  box-shadow: 0 0 20px $gray300;
+
+  &.site-e-commerce {
+    background-color: $green-light;
+  }
+
+  &.charte-graphique {
+    background-color: $pink-light;
+  }
+
+  .pack-content {
+    padding: 3rem 3.5rem;
+
+    @include devices(large_tablet) {
+      padding: 3rem 2rem;
+    }
+
+    .top {
+      margin: 2rem 0 4rem;
+
+      .image-wrapper {
+        @include wrapper-image-fill(100%, 40rem, true) {
+          @include devices(large_tablet) {
+            @include size(100%, 24rem);
+          }
+        }
+
+        img {
+          border-radius: $border-radius;
+        }
+      }
+
+      .titles {
+        margin: 1rem 0 2rem;
+
+        h2 {
+          position: relative;
+          text-transform: uppercase;
+          font-size: 50px;
+          text-align: center;
+          z-index: 1;
+
+          @include devices(large_tablet) {
+            font-size: 35px;
+          }
+
+          @include after(65%, 1.3rem) {
+            left: 50%;
+            bottom: 10px;
+            position: absolute;
+            background-color: $accent-color;
+            z-index: -1;
+            border-radius: 1px;
+            transform: translateX(-50%) rotate(-1deg);
+          }
+        }
+
+        h3 {
+          text-align: center;
+
+          @include devices(large_tablet) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    @include default-content-style();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    a strong {
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+  }
+}

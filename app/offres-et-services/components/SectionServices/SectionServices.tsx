@@ -13,10 +13,6 @@ export default function SectionServices({ data }: ServicesProps) {
             <ItemService key={service.id} {...service} />
           ))}
         </div>
-
-        <div className={styles["services-cta"]}>
-          <Button text="Je&nbsp;demande&nbsp;un&nbsp;devis" href="/contact" />
-        </div>
       </div>
     </section>
   );

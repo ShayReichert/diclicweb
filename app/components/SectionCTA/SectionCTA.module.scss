@@ -1,0 +1,43 @@
+@import "../../styles/partials/mixins";
+
+.section-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  color: $secondary-color;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: $max-content;
+    padding: 15rem 0;
+
+    .title-wrapper {
+      @include title-wrapper();
+      margin: 0 2rem 1rem;
+
+      @include devices(large_tablet) {
+        margin: 0 2rem 3rem;
+      }
+
+      h2 {
+        position: relative;
+        text-align: center;
+        margin: 0 2rem;
+      }
+    }
+
+    .text-wrapper {
+      max-width: 60rem;
+      margin: auto;
+      text-align: center;
+
+      @include devices(large_tablet) {
+        padding: 0 2rem;
+      }
+    }
+  }
+}

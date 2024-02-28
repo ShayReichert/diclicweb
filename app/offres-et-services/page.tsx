@@ -1,19 +1,29 @@
 import type { Metadata } from "next";
+
+import {
+  sectionCommitmentsData,
+  sectionCTAData,
+  sectionCatchphraseData,
+  sectionFAQData,
+  sectionStepsData,
+  sectionTitleData,
+} from "../_data/pages/offres-et-services";
+import { sectionServicesData } from "../_data/entities/services";
+import { sectionReviewsData } from "../_data/entities/reviews";
+import { sectionPacksData } from "../_data/entities/packs";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import SectionCatchPhrase from "../components/SectionCatchPhrase/SectionCatchPhrase";
-import { sectionCatchphraseData, sectionFAQData, sectionStepsData, sectionTitleData } from "../_data/pages/offres-et-services";
 import SectionServices from "./components/SectionServices/SectionServices";
-import { sectionServicesData } from "../_data/entities/services";
+import SectionPacks from "./components/SectionPacks/SectionPacks";
+import SectionCTA from "../components/SectionCTA/SectionCTA";
 import SectionCommitments from "./components/SectionCommitments/SectionCommitments";
-import { sectionCommitmentsData } from "../_data/pages/offres-et-services";
 import SectionSteps from "./components/SectionSteps/SectionSteps";
 import SectionReviews from "./components/SectionReviews/SectionReviews";
-import { sectionReviewsData } from "../_data/entities/reviews";
 import SectionFAQ from "./components/SectionFAQ/SectionFAQ";
 
 export const metadata: Metadata = {
   title: "Offres et services | Diclicweb",
-  description: "Des solutions sur mesure : site vitrine, e-commerce, applications web. Je propose également de la maintenance et du support.",
+  description: "Site vitrine, site e-commerce, charte graphique... Je propose également de la maintenance et du support.",
 };
 
 export default function Services() {
@@ -22,6 +32,8 @@ export default function Services() {
       <SectionTitle data={sectionTitleData} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionServices data={sectionServicesData} />
+      <SectionPacks data={sectionPacksData} />
+      <SectionCTA data={sectionCTAData} />
       <SectionCommitments data={sectionCommitmentsData} />
       <SectionSteps data={sectionStepsData} />
       <SectionReviews data={sectionReviewsData} />

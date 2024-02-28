@@ -43,6 +43,23 @@ interface ItemHomeProjectProps {
   image_alt?: string;
 }
 
+// ItemPack
+interface ItemPackProps {
+  title: string;
+  price: string;
+  text_thumbnails: JSX.Element[];
+  text: JSX.Element[];
+  anchor?: string;
+  image: string;
+  image_alt?: string;
+}
+
+interface SectionPacksProps {
+  data: {
+    packs: ItemPackProps[];
+  };
+}
+
 // ItemCommitment
 interface ItemCommitmentProps {
   title: string;

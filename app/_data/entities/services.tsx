@@ -15,13 +15,13 @@ export const sectionServicesData = {
             <strong> autonome dans la gestion du contenu </strong>de votre site.
           </p>
           <p>
-            Les tarifs varient selon le nombre de pages et les fonctionnalités souhaités.<strong> J’adapte ma proposition </strong>à vos besoins et à
-            vos objectifs.
+            Je propose un<strong> "Pack - Site vitrine" </strong>qui comprend l'essentiel pour un site vitrine professionnel complet. Pour des besoins
+            plus spécifiques, je peux également faire un site vitrine sur-mesure !
           </p>
         </>,
       ],
-      icon: "/images/services/icon_site.svg",
-      icon_alt: "Icone de site internet",
+      icon: "/images/services/icon_code.svg",
+      icon_alt: "Icone d'ordinateur",
     },
     {
       id: 2,
@@ -47,8 +47,33 @@ export const sectionServicesData = {
       icon: "/images/services/icon_commerce.svg",
       icon_alt: "Icone de site internet",
     },
+
     {
       id: 3,
+      title: "Charte Graphique",
+      short_desc: "Vous avez besoin d'une identité visuelle ? Je peux également vous aider à créer votre charte graphique.",
+      text: [
+        <>
+          <p>
+            La présentation, c'est important ! Avoir une identité visuelle<strong> cohérente avec votre activité </strong>et ses valeurs renforcera
+            votre crédibilité. 🎨
+          </p>
+          <p>
+            Je propose un<strong> pack "Charte Graphique" </strong>qui comprend une palette de couleurs, un logo sur-mesure, des polices adaptées et
+            un favicon.
+          </p>
+          <p>
+            Par ailleurs, vous pourrez utiliser cette charte graphique
+            <strong> dans l'ensemble de votre communication </strong>
+            (réseaux sociaux, flyers...).
+          </p>
+        </>,
+      ],
+      icon: "/images/services/icon_site.svg",
+      icon_alt: "Icone de site internet",
+    },
+    {
+      id: 4,
       title: "Maintenance et Support",
       short_desc: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
       text: [
@@ -67,22 +92,22 @@ export const sectionServicesData = {
       icon: "/images/services/icon_maintenance.svg",
       icon_alt: "Icone d'outil",
     },
-    {
-      id: 4,
-      title: "Application Web",
-      short_desc: "Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
-      text: [
-        <>
-          <p>
-            Vous avez un projet très spécifique, comme un projet d’<strong>application web </strong>? Ou bien vous aimeriez un site vraiment
-            différent, avec des
-            <strong> animations complexes </strong>ou une mise en page vraiment particulière ? Je peux peut-être vous aidez aussi !
-          </p>
-          <p>N'hésitez pas à me contacter directement pour discuter de votre projet 😃</p>
-        </>,
-      ],
-      icon: "/images/services/icon_code.svg",
-      icon_alt: "Icone d'ordinateur",
-    },
+    // {
+    //   id: 5,
+    //   title: "Application Web",
+    //   short_desc: "Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
+    //   text: [
+    //     <>
+    //       <p>
+    //         Vous avez un projet très spécifique, comme un projet d’<strong>application web </strong>? Ou bien vous aimeriez un site vraiment
+    //         différent, avec des
+    //         <strong> animations complexes </strong>ou une mise en page vraiment particulière ? Je peux peut-être vous aidez aussi !
+    //       </p>
+    //       <p>N'hésitez pas à me contacter directement pour discuter de votre projet 😃</p>
+    //     </>,
+    //   ],
+    //   icon: "/images/services/icon_code.svg",
+    //   icon_alt: "Icone d'ordinateur",
+    // },
   ],
 };

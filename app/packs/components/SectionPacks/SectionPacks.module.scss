@@ -1,0 +1,13 @@
+@import "../../../styles/partials/mixins";
+
+.section-pack {
+  .content-wrapper {
+    padding: 3rem;
+    max-width: 86rem;
+    margin: auto;
+
+    @include devices(large_tablet) {
+      padding: 1rem;
+    }
+  }
+}

@@ -18,7 +18,7 @@ export const sectionContactFormData = {
         </p>
         <br />
         <br />
-        <p>Installez-vous donc confortablement et expliquez-moi tout ! Je vous répondrai dans les plus brefs délais 😊</p>
+        <p>Expliquez-moi tout ! Je vous répondrai dans les plus brefs délais 😊</p>
       </div>
 
       {/* <p>

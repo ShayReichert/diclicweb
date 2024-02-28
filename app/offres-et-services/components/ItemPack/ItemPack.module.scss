@@ -1,0 +1,89 @@
+@import "../../../styles/partials/mixins";
+
+.pack {
+  display: flex;
+  margin: 5rem 1rem;
+  width: calc(100% / 3);
+  min-width: 32rem;
+  border-radius: 20px;
+  background-color: $blue-light;
+  color: $secondary-color;
+
+  @include devices(large_tablet) {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  &.site-e-commerce {
+    background-color: $green-light;
+  }
+
+  &.charte-graphique {
+    background-color: $pink-light;
+  }
+
+  .pack-content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    padding: 3rem 3.5rem;
+
+    @include devices(large_tablet) {
+      padding: 2rem;
+    }
+
+    .top {
+      margin: 2rem 0 3rem;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 26px;
+        text-align: center;
+        z-index: 1;
+
+        @include after(65%, 1.3rem) {
+          left: 50%;
+          bottom: 0;
+          position: absolute;
+          background-color: $accent-color;
+          z-index: -1;
+          border-radius: 1px;
+          transform: translateX(-50%) rotate(-1deg);
+        }
+      }
+
+      h4 {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    .bottom {
+      position: relative;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          @include fluid-font(16px, $font-size-body);
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+
+        a {
+          margin: 4rem 0 2rem;
+        }
+      }
+    }
+  }
+}
