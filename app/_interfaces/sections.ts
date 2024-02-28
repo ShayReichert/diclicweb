@@ -137,4 +137,5 @@ interface SectionCTAProps {
   data: {
     text: JSX.Element[];
   };
+  id: string;
 }

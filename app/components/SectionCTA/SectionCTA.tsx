@@ -5,12 +5,12 @@ import { rocaOne } from "../../styles/fonts/font-face";
 import useScrollFadeIn from "@/app/utils/useScrollFadeIn";
 import Button from "../Button/Button";
 
-export default function SectionCTA({ data }: SectionCTAProps) {
+export default function SectionCTA({ data, id }: SectionCTAProps) {
   const { text } = data;
   const fadeIn = useScrollFadeIn();
 
   return (
-    <section className={styles["section-cta"]}>
+    <section id={id} className={styles["section-cta"]}>
       <div className={styles["section-content"]}>
         <div className={styles["title-wrapper"]}>
           <h2 className={rocaOne.className} ref={fadeIn.ref} style={fadeIn.style}>

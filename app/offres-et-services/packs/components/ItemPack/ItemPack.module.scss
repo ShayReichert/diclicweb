@@ -1,4 +1,4 @@
-@import "../../../styles/partials/mixins";
+@import "../../../../styles/partials/mixins";
 
 .pack {
   margin: 5rem 0;
@@ -78,6 +78,10 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
+
+    ul li {
+      margin: 1rem 0 1rem 2rem;
+    }
 
     a strong {
       &:hover {

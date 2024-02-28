@@ -9,9 +9,10 @@
   background-color: $blue-light;
   color: $secondary-color;
 
-  @include devices(large_tablet) {
+  @include devices(laptop) {
     height: auto;
     width: 100%;
+    max-width: 55rem;
     margin: 1rem;
   }
 

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const sectionServicesData = {
   services: [
     {
@@ -15,8 +17,12 @@ export const sectionServicesData = {
             <strong> autonome dans la gestion du contenu </strong>de votre site.
           </p>
           <p>
-            Je propose un<strong> "Pack - Site vitrine" </strong>qui comprend l'essentiel pour un site vitrine professionnel complet. Pour des besoins
-            plus spécifiques, je peux également faire un site vitrine sur-mesure !
+            Je propose un
+            <Link href="offres-et-services/packs#site-vitrine" role="link">
+              <strong> "Pack Site vitrine" </strong>
+            </Link>{" "}
+            qui comprend l'essentiel pour un site vitrine professionnel complet. Pour des besoins plus spécifiques, je peux également faire
+            <strong> un site vitrine sur-mesure </strong>!
           </p>
         </>,
       ],

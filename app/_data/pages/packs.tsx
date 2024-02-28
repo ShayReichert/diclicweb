@@ -1,5 +1,5 @@
 export const sectionTitleData = {
-  title: "Packs de création",
+  title: "Les packs",
 };
 
 export const sectionCatchphraseData = {

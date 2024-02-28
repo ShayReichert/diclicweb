@@ -20,7 +20,7 @@ export const sectionPacksData = {
           <p>
             Ce site Wordpress restera<strong> évolutif </strong>par la suite selon vos besoins (ajout de fonctionnalités, de pages, de contenus…)
           </p>
-          <Button href="/packs#site-vitrine" text="En&nbsp;savoir&nbsp;plus" />
+          <Button href="offres-et-services/packs#site-vitrine" text="En&nbsp;savoir&nbsp;plus" />
         </>,
       ],
       text: [
@@ -107,7 +107,7 @@ export const sectionPacksData = {
           <p>
             <em>
               Vous n’avez pas de charte graphique ou de logo ? Je propose{" "}
-              <Link href="/packs#charte-graphique" role="link">
+              <Link href="offres-et-services/packs#charte-graphique" role="link">
                 <strong style={{ textDecoration: "underline" }}>un pack de création de charte graphique</strong>
               </Link>{" "}
               .
@@ -146,7 +146,7 @@ export const sectionPacksData = {
             Ce pack est adapté pour<strong> les commerçants, les créateur·ices, les artisan·es, les petits commerces</strong>…
           </p>
 
-          <Button href="/packs#site-e-commerce" text="En&nbsp;savoir&nbsp;plus" />
+          <Button href="offres-et-services/packs#site-e-commerce" text="En&nbsp;savoir&nbsp;plus" />
         </>,
       ],
       text: [
@@ -258,7 +258,7 @@ export const sectionPacksData = {
           <p>
             <em>
               Vous n’avez pas de charte graphique ou de logo ? Je propose{" "}
-              <Link href="/packs#charte-graphique" role="link">
+              <Link href="offres-et-services/packs#charte-graphique" role="link">
                 <strong style={{ textDecoration: "underline" }}>un pack de création de charte graphique</strong>
               </Link>
               .
@@ -295,7 +295,7 @@ export const sectionPacksData = {
             d'identité visuelle.
           </p>
 
-          <Button href="/packs#charte-graphique" text="En&nbsp;savoir&nbsp;plus" />
+          <Button href="offres-et-services/packs#charte-graphique" text="En&nbsp;savoir&nbsp;plus" />
         </>,
       ],
       text: [
@@ -338,11 +338,11 @@ export const sectionPacksData = {
             <em>
               Astuce : Vous pouvez compléter cette offre avec un
               <strong>
-                <Link href="/packs#site-vitrine" role="link">
+                <Link href="offres-et-services/packs#site-vitrine" role="link">
                   <strong> pack de création de site vitrine </strong>
                 </Link>
                 ou
-                <Link href="/packs#site-e-commerce" role="link">
+                <Link href="offres-et-services/packs#site-e-commerce" role="link">
                   <strong> e-commerce</strong>
                 </Link>
               </strong>{" "}

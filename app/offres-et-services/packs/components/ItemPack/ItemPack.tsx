@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ItemPack.module.scss";
-import { rocaOne } from "../../../styles/fonts/font-face";
+import { rocaOne } from "../../../../styles/fonts/font-face";
 import Button from "@/app/components/Button/Button";
 
 export default function ItemPack({ title, price, text, anchor, image, image_alt }: ItemPackProps) {

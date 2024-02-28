@@ -18,7 +18,17 @@ export default function Header() {
   const [isScrolling, setIsScrolling] = useState(false);
 
   const menuItems = [
-    { id: "services", label: "Offres et services", path: "/offres-et-services" },
+    {
+      id: "services",
+      label: "Offres et services",
+      path: "/offres-et-services",
+      subMenu: [
+        { id: "pack-site-vitrine", label: "Pack Site Vitrine", path: "/offres-et-services/packs#site-vitrine" },
+        { id: "pack-site-e-commerce", label: "Pack Site E-commerce", path: "/offres-et-services/packs#site-e-commerce" },
+        { id: "site-sur-mesure", label: "Site Sur-mesure", path: "/offres-et-services#site-sur-mesure" },
+        { id: "charte-graphique", label: "Charte Graphique", path: "/offres-et-services/packs#charte-graphique" },
+      ],
+    },
     { id: "projects", label: "Réalisations", path: "/realisations" },
     { id: "about", label: "À propos", path: "/a-propos" },
     { id: "contact", label: "Contact", path: "/contact" },
@@ -55,6 +65,20 @@ export default function Header() {
     };
   }, []);
 
+  const isParentOrSubMenuCurrent = (parentPath: string, subMenu: any[] | undefined) => {
+    if (pathname.startsWith(parentPath)) {
+      return true;
+    }
+
+    if (subMenu) {
+      return subMenu.some((subItem) => {
+        return pathname.includes(subItem.path.split("#")[0]) || pathname.includes(subItem.path.split("#")[1]);
+      });
+    }
+
+    return false;
+  };
+
   const removeMovingBar = () => {
     menuRef.current?.querySelectorAll(`.${styles["current"]}`).forEach((item) => {
       item.classList.remove(styles["current"]);
@@ -63,7 +87,22 @@ export default function Header() {
   };
 
   const updateMovingBarPosition = () => {
-    const currentMenuItem = menuRef.current?.querySelector(`[href="${currentPath}"]`) as HTMLElement;
+    let currentMenuItem = menuRef.current?.querySelector(`[href="${currentPath}"]`) as HTMLElement;
+
+    // If no main menu item is found, search in sub-menus
+    if (!currentMenuItem) {
+      menuItems.forEach((item) => {
+        if (pathname.startsWith(item.path)) {
+          currentMenuItem = menuRef.current?.querySelector(`[href="${item.path}"]`) as HTMLElement;
+        }
+
+        item.subMenu?.forEach((subItem) => {
+          if (pathname === subItem.path || pathname.startsWith(subItem.path.split("#")[0])) {
+            currentMenuItem = menuRef.current?.querySelector(`[href="${item.path}"]`) as HTMLElement;
+          }
+        });
+      });
+    }
 
     if (currentMenuItem) {
       setMovingBarPosition({
@@ -128,10 +167,10 @@ export default function Header() {
         >
           <ul>
             {menuItems.map((item, index) => (
-              <li key={index} className={pathname === item.path ? styles["current"] : ""}>
+              <li key={index} className={isParentOrSubMenuCurrent(item.path, item.subMenu) ? styles["current"] : ""}>
                 <Link
                   href={item.path}
-                  aria-current={pathname === item.path ? "page" : undefined}
+                  aria-current={isParentOrSubMenuCurrent(item.path, item.subMenu) ? "page" : undefined}
                   onClick={() => handleClickMenuItem(item.path)}
                   role="link"
                   tabIndex={0}
@@ -139,9 +178,27 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
+                {item.subMenu && (
+                  <ul className={styles["sub-menu"]}>
+                    {item.subMenu.map((subItem, subIndex) => (
+                      <li key={subIndex} className={pathname.includes(subItem.path) ? styles["current"] : ""}>
+                        <Link
+                          href={subItem.path}
+                          onClick={() => handleClickMenuItem(subItem.path)}
+                          role="link"
+                          tabIndex={0}
+                          onKeyDown={handleLinkKeyDown}
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
+
           <span className={styles["moving-bar"]} style={{ width: `${movingBarPosition.width}px`, left: `${movingBarPosition.left}px` }}></span>
         </div>
 

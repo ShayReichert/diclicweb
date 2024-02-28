@@ -118,6 +118,41 @@ html:has(.mobile-menu-open) {
             @include fluid-font(30px, 50px);
           }
         }
+
+        .sub-menu {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          top: 20px;
+          background-color: $primary-color;
+          z-index: 1;
+          padding: 2rem 0;
+          flex-direction: column;
+          transform: translateY(10px);
+          transition: all 0.3s ease-out;
+
+          > li {
+            padding: 0.5rem 0;
+            a {
+              opacity: 0.7;
+
+              &:hover,
+              &:focus,
+              &.current {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        &:hover > .sub-menu,
+        &:focus-within > .sub-menu {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
 
@@ -168,11 +203,38 @@ html:has(.mobile-menu-open) {
           display: flex;
           flex-direction: column;
 
-          li {
+          > li {
             padding: 1rem 0;
 
             a {
               color: $white;
+            }
+
+            .sub-menu {
+              position: static;
+              visibility: visible;
+              opacity: 1;
+              background-color: transparent;
+              padding: 0;
+              transform: none;
+              margin-top: 2rem;
+
+              > li {
+                margin-left: 20px;
+                padding: 0.7rem 0;
+
+                a {
+                  font-size: 16px;
+
+                  &:hover {
+                    opacity: 1;
+                  }
+
+                  &:before {
+                    display: none;
+                  }
+                }
+              }
             }
           }
         }

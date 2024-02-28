@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import SectionTitle from "../components/SectionTitle/SectionTitle";
-import SectionCatchPhrase from "../components/SectionCatchPhrase/SectionCatchPhrase";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import SectionCatchPhrase from "../../components/SectionCatchPhrase/SectionCatchPhrase";
 import SectionPacks from "./components/SectionPacks/SectionPacks";
-import { sectionPacksData } from "../_data/entities/packs";
-import { sectionCatchphraseData, sectionTitleData } from "../_data/pages/packs";
+import { sectionPacksData } from "../../_data/entities/packs";
+import { sectionCatchphraseData, sectionTitleData } from "../../_data/pages/packs";
 
 export const metadata: Metadata = {
   title: "Les packs de création de site internet | Diclicweb",
