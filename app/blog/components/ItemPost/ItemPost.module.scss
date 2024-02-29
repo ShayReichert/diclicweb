@@ -4,6 +4,7 @@
   width: calc(100% / 3);
   padding: 0 2rem;
   margin-bottom: 7rem;
+  transition: transform 0.3s ease-in-out;
 
   @include devices(large_tablet) {
     width: 50%;
@@ -11,6 +12,10 @@
 
   @include devices(tablet) {
     width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 
   &.fullwidth {
