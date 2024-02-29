@@ -123,6 +123,15 @@ export default function Header() {
     }
     setCurrentPath(path);
     setIsMobileMenuOpen(false);
+
+    // Remove focus from all sub-menu items if the path is "/offres-et-services" or included in a sub-menu
+    if (path === "/offres-et-services" || menuItems.some((item) => item.subMenu && item.subMenu.some((subItem) => subItem.path === path))) {
+      const parentMenuItem = menuRef.current?.querySelector(`[href="${path}"]`) as HTMLAnchorElement;
+
+      if (parentMenuItem) {
+        parentMenuItem.blur();
+      }
+    }
   };
 
   const toggleMobileMenu = () => {
