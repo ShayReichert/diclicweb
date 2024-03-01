@@ -17,12 +17,12 @@ export const sectionServicesData = {
             <strong> autonome dans la gestion du contenu </strong>de votre site.
           </p>
           <p>
-            Je propose un
+            Je propose un "
             <Link href="offres-et-services/packs#site-vitrine" role="link">
-              <strong> "Pack Site vitrine" </strong>
-            </Link>{" "}
-            qui comprend l'essentiel pour un site vitrine professionnel complet. Pour des besoins plus spécifiques, je peux également faire
-            <strong> un site vitrine sur-mesure </strong>!
+              <strong>Pack Site vitrine</strong>
+            </Link>
+            " qui comprend l'essentiel pour un site vitrine professionnel complet. Pour des besoins plus spécifiques, je peux également faire
+            <strong> un site vitrine sur-mesure </strong> 📏
           </p>
         </>,
       ],
@@ -62,11 +62,14 @@ export const sectionServicesData = {
         <>
           <p>
             La présentation, c'est important ! Avoir une identité visuelle<strong> cohérente avec votre activité </strong>et ses valeurs renforcera
-            votre crédibilité. 🎨
+            votre crédibilité 🎨
           </p>
           <p>
-            Je propose un<strong> pack "Charte Graphique" </strong>qui comprend une palette de couleurs, un logo sur-mesure, des polices adaptées et
-            un favicon.
+            Je propose un pack "
+            <Link href="offres-et-services/packs#site-vitrine" role="link">
+              <strong>Charte Graphique</strong>
+            </Link>
+            " qui comprend une palette de couleurs, un logo sur-mesure, des polices adaptées et une favicon.
           </p>
           <p>
             Par ailleurs, vous pourrez utiliser cette charte graphique
@@ -80,7 +83,7 @@ export const sectionServicesData = {
     },
     {
       id: 4,
-      title: "Maintenance et Support",
+      title: "Maintenance / Support",
       short_desc: "Je propose de la maintenance mensuelle pour que votre site reste sécurisé et en bonne santé.",
       text: [
         <>

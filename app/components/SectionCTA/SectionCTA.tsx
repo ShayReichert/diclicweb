@@ -14,7 +14,7 @@ export default function SectionCTA({ data, id }: SectionCTAProps) {
       <div className={styles["section-content"]}>
         <div className={styles["title-wrapper"]}>
           <h2 className={rocaOne.className} ref={fadeIn.ref} style={fadeIn.style}>
-            Besoin d'un site sur-mesure ?
+            Besoin d'un site sur-mesure ? 📏
           </h2>
         </div>
         <div className={styles["text-wrapper"]}>

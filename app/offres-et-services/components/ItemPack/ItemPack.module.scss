@@ -7,7 +7,10 @@
   min-width: 32rem;
   border-radius: 20px;
   background-color: $blue-light;
+  cursor: default;
   color: $secondary-color;
+  box-shadow: 0 0 20px $primary-color;
+  transition: transform 0.3s ease-in-out;
 
   @include devices(laptop) {
     height: auto;
@@ -24,11 +27,15 @@
     background-color: $pink-light;
   }
 
+  &:hover {
+    transform: scale(1.05);
+  }
+
   .pack-content {
     display: flex;
     flex-direction: column;
     // justify-content: space-between;
-    padding: 3rem 3.5rem;
+    padding: 0rem 2.5rem 3rem;
 
     @include devices(large_tablet) {
       padding: 2rem;
@@ -37,7 +44,7 @@
     .top {
       margin: 2rem 0 3rem;
 
-      .icon {
+      .image {
         display: flex;
         justify-content: center;
         margin-bottom: 1.5rem;

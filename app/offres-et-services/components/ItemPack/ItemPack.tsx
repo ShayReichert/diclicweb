@@ -7,8 +7,8 @@ export default function ItemPack({ title, price, text_thumbnails, anchor, image,
     <div className={`${styles.pack} ${anchor ? styles[anchor] : ""}`}>
       <div className={styles["pack-content"]}>
         <div className={styles["top"]}>
-          <div className={styles["icon"]}>
-            <Image src={image} alt={image_alt ? image_alt : ""} width={300} height={300} placeholder="blur" blurDataURL={image} />
+          <div className={styles["image"]}>
+            <Image src={image} alt={image_alt ? image_alt : ""} width={250} height={250} placeholder="blur" blurDataURL={image} />
           </div>
           <h3 className={rocaOne.className}>{title}</h3>
           <h4 className={rocaOne.className}>{price}</h4>

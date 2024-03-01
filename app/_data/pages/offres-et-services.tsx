@@ -1,5 +1,3 @@
-import Button from "@/app/components/Button/Button";
-
 export const sectionTitleData = {
   title: "Mes services",
 };
@@ -12,7 +10,7 @@ export const sectionCTAData = {
   text: [
     <>
       <p>
-        Pour un site, une application web ou un design<strong> totalement sur-mesure</strong>, contactez-moi pour un devis personnalisé !
+        Pour un site vitrine ou e-commerce<strong> sur-mesure</strong> (pages, fonctionnalités...), contactez-moi pour un devis personnalisé !
       </p>
     </>,
   ],
@@ -28,7 +26,7 @@ export const sectionCommitmentsData = {
             Le choix d'outils<strong> éthiques et respectueux de la vie privée </strong>est très important pour moi.
           </p>
           <p>
-            J’utilise les outils Matomo et Abla Analytics pour mesurer la fréquentation sur votre site, deux outils
+            J’utilise<strong> Matomo </strong>pour mesurer la fréquentation sur votre site, un outil
             <strong> respectueux de la vie privée et des données utilisateur·ices.</strong>
           </p>
         </>,
@@ -97,20 +95,16 @@ export const sectionStepsData = {
       text: [
         <>
           <p>
-            Si vous n’en avez pas, je construis<strong> l’identité visuelle </strong>de votre site : couleurs, polices d’écriture et logo. Vous
-            pourrez ensuite utiliser cette charte graphique sur tous vos supports de communication.
-          </p>
-          <p>
-            - Pour un<strong> pack site vitrine ou e-commerce</strong>, je recherche un<strong> template pertinent</strong>, qui sera ensuite
-            personnalisé avec votre logo, vos couleurs et vos polices d'écriture.
-          </p>
-          <p>
-            - Pour un<strong> site sur-mesure</strong>, je crée des<strong> wireframes </strong> afin de visualiser la structure et les différentes
-            sections du site.
-          </p>
-          <p>
             Je vous accompagne si nécessaire dans l’enregistrement de votre<strong> nom de domaine </strong>ainsi que le
             <strong> choix et l’achat de l’hébergement.</strong>
+          </p>
+          <p>
+            Si vous n’en avez pas, je peux éventuellement construire<strong> l’identité visuelle </strong>de votre site : couleurs, polices d’écriture
+            et logo.
+          </p>
+          <p>
+            Je prépare ensuite<strong> l'arboresence du site </strong>(le menu) et je crée des<strong> wireframes </strong> afin de visualiser la
+            structure et les différentes sections du site. Dès que vous validez tout ça, je peux passer à la phase de conception !
           </p>
         </>,
       ],
@@ -188,10 +182,10 @@ export const sectionFAQData = {
               <strong>Un site one page (site vitrine d'une page) </strong>: entre 600 et 900€
             </li>
             <li>
-              <strong>Un site vitrine </strong>: entre 1500 et 3000€
+              <strong>Un site vitrine </strong>: entre 1200 et 3000€
             </li>
             <li>
-              <strong>Un site e-commerce </strong>: à partir de 2800€
+              <strong>Un site e-commerce </strong>: à partir de 2500€
             </li>
             <li>
               <strong>Une application web ou un site statique </strong>: généralement à partir de 3000€

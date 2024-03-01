@@ -43,5 +43,9 @@
       @include fluid-font(16px, $font-size-body);
       margin-bottom: 2rem;
     }
+
+    a {
+      @include hover-underline($offset: 0);
+    }
   }
 }
