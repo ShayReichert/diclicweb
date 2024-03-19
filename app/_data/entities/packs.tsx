@@ -19,8 +19,8 @@ export const sectionPacksData = {
           </p>
           <p>
             Ce pack est idéal pour
-            <strong> les associations, les indépendant·es, les artisans, les artistes, les petites entreprises</strong>… qui souhaite un premier site
-            web ou une refonte plus moderne de leur site actuel.
+            <strong> les associations, les indépendant·es, les artisans, les artistes, les petites entreprises</strong>… qui souhaitent un premier
+            site web ou une refonte plus moderne de leur site actuel.
           </p>
           <p>
             Ce site Wordpress restera<strong> évolutif </strong>par la suite selon vos besoins (ajout de fonctionnalités, de pages, de contenus…)

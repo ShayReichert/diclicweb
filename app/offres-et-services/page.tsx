@@ -31,8 +31,8 @@ export default function Services() {
       <SectionTitle data={sectionTitleData} />
       <SectionCatchPhrase data={sectionCatchphraseData} />
       <SectionServices data={sectionServicesData} />
-      {/* <SectionPacks data={sectionPacksData} /> */}
-      {/* <SectionCTA data={sectionCTAData} id="site-sur-mesure" /> */}
+      <SectionPacks data={sectionPacksData} />
+      <SectionCTA data={sectionCTAData} id="site-sur-mesure" />
       <SectionCommitments data={sectionCommitmentsData} />
       <SectionSteps data={sectionStepsData} />
       <SectionReviews data={sectionReviewsData} />

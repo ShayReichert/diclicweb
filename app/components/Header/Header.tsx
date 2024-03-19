@@ -22,13 +22,12 @@ export default function Header() {
       id: "services",
       label: "Offres et services",
       path: "/offres-et-services",
-      subMenu: [{ id: "", label: "", path: "" }],
-      // subMenu: [
-      //   { id: "pack-site-vitrine", label: "Pack Site Vitrine | -50%", path: "/offres-et-services/packs#site-vitrine" },
-      //   { id: "pack-site-e-commerce", label: "Pack Site E-commerce | -50%", path: "/offres-et-services/packs#site-e-commerce" },
-      //   { id: "site-sur-mesure", label: "Site Sur-mesure", path: "/offres-et-services#site-sur-mesure" },
-      //   { id: "charte-graphique", label: "Charte Graphique | -50%", path: "/offres-et-services/packs#charte-graphique" },
-      // ],
+      subMenu: [
+        { id: "pack-site-vitrine", label: "Pack Site Vitrine | -50%", path: "/offres-et-services/packs#site-vitrine" },
+        { id: "pack-site-e-commerce", label: "Pack Site E-commerce | -50%", path: "/offres-et-services/packs#site-e-commerce" },
+        { id: "site-sur-mesure", label: "Site Sur-mesure", path: "/offres-et-services#site-sur-mesure" },
+        { id: "charte-graphique", label: "Charte Graphique | -50%", path: "/offres-et-services/packs#charte-graphique" },
+      ],
     },
     { id: "projects", label: "Réalisations", path: "/realisations" },
     { id: "about", label: "À propos", path: "/a-propos" },
@@ -65,10 +64,6 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const shouldDisplaySubMenu = (subMenu: SubMenuItem[]): boolean => {
-    return subMenu && subMenu.length > 0 && subMenu.every((subItem) => subItem.label.trim() !== "");
-  };
 
   const isParentOrSubMenuCurrent = (parentPath: string, subMenu: any[] | undefined) => {
     if (pathname.startsWith(parentPath)) {
@@ -192,7 +187,7 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
-                {item.subMenu && shouldDisplaySubMenu(item.subMenu) && (
+                {item.subMenu && (
                   <ul className={styles["sub-menu"]}>
                     {item.subMenu.map((subItem, subIndex) => (
                       <li key={subIndex} className={pathname.includes(subItem.path) ? styles["current"] : ""}>
