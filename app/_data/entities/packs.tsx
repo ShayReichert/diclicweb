@@ -238,7 +238,7 @@ export const sectionPacksData = {
               Amélioration de<strong> l’accessibilité </strong>(liens accessibles au clavier, accès direct au contenu)
             </li>
             <li>
-              Mise en place de Matomo (un outils respectueux des RGPD pour l’<strong>analyse de l’audience </strong>de votre site)
+              Mise en place de Matomo (un outil respectueux des RGPD pour l’<strong>analyse de l’audience </strong>de votre site)
             </li>
           </ul>
 
