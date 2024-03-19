@@ -136,3 +136,10 @@ interface GravityButtonProps {
   imageWidth: number;
   imageHeight: number;
 }
+
+//  Header
+interface SubMenuItem {
+  id: string;
+  label: string;
+  path: string;
+}
