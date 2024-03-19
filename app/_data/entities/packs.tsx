@@ -7,6 +7,10 @@ export const sectionPacksData = {
     {
       title: "Pack Site Vitrine",
       price: "1250€",
+      promotion: {
+        new_price: "625€",
+        text: "Offre de lancement : -50% sur le pack Site Vitrine jusqu'au 31 mai 2024",
+      },
       text_thumbnails: [
         <>
           <p>
@@ -28,7 +32,7 @@ export const sectionPacksData = {
         <>
           <p>
             Un site vitrine a pour objectif de<strong> présenter votre activité</strong>, vos services ou vos produits. Je vous propose un pack
-            complet pour un<strong> site vitrine professionnel et performant</strong>.
+            complet pour un<strong> site vitrine professionnel et performant</strong>, pour un site web <strong>évolutif et à votre image </strong>!
           </p>
           <br />
           <br />
@@ -50,9 +54,6 @@ export const sectionPacksData = {
 
           <h3 className={rocaOne.className}>Création du site</h3>
           <ul>
-            <li>
-              Élaboration des <strong> wireframes </strong>(structure du site).
-            </li>
             <li>
               <strong>Création de 4 pages </strong>(par exemple : Accueil, Services, À propos, Contact).
             </li>
@@ -93,7 +94,7 @@ export const sectionPacksData = {
           <h3 className={rocaOne.className}>Formation</h3>
           <ul>
             <li>
-              <strong>Formation (en visio) à Wordpress </strong>pour pouvoir modifier et ajouter du contenu sur votre site en autonomie.
+              <strong>Formation à Wordpress </strong>pour pouvoir modifier et ajouter du contenu sur votre site en autonomie.
             </li>
           </ul>
           <p>-------</p>
@@ -135,6 +136,10 @@ export const sectionPacksData = {
     {
       title: "Pack Site e-Commerce",
       price: "2500€",
+      promotion: {
+        new_price: "1250€",
+        text: "Offre de lancement : -50% sur le pack site e-Commerce jusqu'au 31 mai 2024",
+      },
       text_thumbnails: [
         <>
           <p>
@@ -157,8 +162,8 @@ export const sectionPacksData = {
       text: [
         <>
           <p>
-            Un site e-commerce vous permet de<strong> vendre vos produits en ligne</strong>. Je vous propose un pack complet pour un
-            <strong> site e-commerce professionnel et évolutif</strong>.
+            Je vous propose un pack complet pour un<strong> site e-commerce professionnel et évolutif</strong>, avec toutes les fonctionnalités
+            nécessaires pour commmencer<strong> la vente en ligne</strong> 👌
           </p>
           <br />
           <br />
@@ -180,9 +185,6 @@ export const sectionPacksData = {
 
           <h3 className={rocaOne.className}>Création du site</h3>
           <ul>
-            <li>
-              <strong>Élaboration des wireframes </strong>(structure du site).
-            </li>
             <li>
               <strong>Création de 4 pages </strong>(par exemple : Accueil, Boutique, À propos, Contact).
             </li>
@@ -243,8 +245,7 @@ export const sectionPacksData = {
           <h3 className={rocaOne.className}>Formation</h3>
           <ul>
             <li>
-              <strong>Formation (en visio) à Wordpress et WooCommerce </strong>pour pouvoir modifier et ajouter du contenu sur votre site en
-              autonomie.
+              <strong>Formation à Wordpress et WooCommerce </strong>pour pouvoir modifier et ajouter du contenu sur votre site en autonomie.
             </li>
           </ul>
 
@@ -290,6 +291,10 @@ export const sectionPacksData = {
     {
       title: "Charte Graphique",
       price: "560€",
+      promotion: {
+        new_price: "280€",
+        text: "Offre de lancement : -50% sur le pack Charte Graphique jusqu'au 31 mai 2024",
+      },
       text_thumbnails: [
         <>
           <p>
@@ -311,7 +316,7 @@ export const sectionPacksData = {
         <>
           <p>
             Vous n'avez pas encore de logo, de couleurs, de polices d'écriture qui vous représentent ? Je vous propose un{" "}
-            <strong> pack complet pour une identité visuelle </strong>sur-mesure.
+            <strong> pack complet pour une identité visuelle </strong>sur-mesure 🎨
           </p>
           <br />
           <br />

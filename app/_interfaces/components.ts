@@ -47,6 +47,10 @@ interface ItemHomeProjectProps {
 interface ItemPackProps {
   title: string;
   price: string;
+  promotion?: {
+    new_price: string;
+    text: string;
+  };
   text_thumbnails: JSX.Element[];
   text: JSX.Element[];
   anchor?: string;

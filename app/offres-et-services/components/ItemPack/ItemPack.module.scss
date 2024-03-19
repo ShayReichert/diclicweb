@@ -34,7 +34,7 @@
   .pack-content {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: space-between;
     padding: 0rem 2.5rem 3rem;
 
     @include devices(large_tablet) {
@@ -68,9 +68,43 @@
         }
       }
 
-      h4 {
-        font-size: 24px;
+      h4.normal-price {
+        font-size: 28px;
         text-align: center;
+        margin-top: 0.5rem;
+      }
+
+      .promotion {
+        &-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1rem;
+
+          .old-price {
+            font-size: 22px;
+            text-decoration: line-through;
+          }
+
+          .promotion-percentage {
+            margin-left: 2rem;
+            padding: 0.3rem 0.5rem 0;
+            border-radius: 3px;
+            font-size: 20px;
+            background-color: $promotion-color;
+            color: $white;
+          }
+        }
+
+        .new-price {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1.5rem;
+          color: $promotion-color;
+          font-size: 36px;
+          transform: translateY(-10px);
+        }
       }
     }
 
@@ -92,6 +126,12 @@
           margin: 4rem 0 2rem;
         }
       }
+    }
+
+    .promotion-text {
+      font-size: 11px;
+      color: $promotion-color;
+      margin-top: 2rem;
     }
   }
 }

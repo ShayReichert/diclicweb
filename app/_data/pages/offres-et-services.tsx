@@ -182,7 +182,7 @@ export const sectionFAQData = {
               <strong>Un site one page (site vitrine d'une page) </strong>: entre 600 et 900€
             </li>
             <li>
-              <strong>Un site vitrine </strong>: entre 1200 et 3000€
+              <strong>Un site vitrine </strong>: entre 1000 et 3000€
             </li>
             <li>
               <strong>Un site e-commerce </strong>: à partir de 2500€

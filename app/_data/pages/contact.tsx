@@ -13,8 +13,8 @@ export const sectionContactFormData = {
         <p></p>
         <br />
         <p>
-          Vous avez un <strong> projet de site web </strong>? Vous avez une <strong> question par rapport à mes offres </strong>, ou besoin
-          <strong> d’aide pour améliorer un site existant </strong>?
+          Vous avez un <strong> projet de site web </strong>? Vous avez des <strong> questions</strong>, ou vous êtes intéressé·e par un pack
+          <strong> Site Vitrine</strong>, <strong>Site E-commerce</strong> ou <strong>Charte Graphique </strong>?
         </p>
         <br />
         <br />
