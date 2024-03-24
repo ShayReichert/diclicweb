@@ -135,9 +135,9 @@ export const sectionPacksData = {
     },
     {
       title: "Pack Site e-Commerce",
-      price: "2400€",
+      price: "1980€",
       promotion: {
-        new_price: "1200€",
+        new_price: "990€",
         text: "Offre de lancement : -50% sur le pack site e-Commerce jusqu'au 31 mai 2024",
       },
       text_thumbnails: [
@@ -290,9 +290,9 @@ export const sectionPacksData = {
     },
     {
       title: "Charte Graphique",
-      price: "560€",
+      price: "500€",
       promotion: {
-        new_price: "280€",
+        new_price: "250€",
         text: "Offre de lancement : -50% sur le pack Charte Graphique jusqu'au 31 mai 2024",
       },
       text_thumbnails: [
