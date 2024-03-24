@@ -9,7 +9,7 @@ export const sectionPacksData = {
       price: "1250€",
       promotion: {
         new_price: "625€",
-        text: "Offre de lancement : -50% sur le pack Site Vitrine jusqu'au 31 mai 2024",
+        text: "Offre de lancement : -50% sur le pack Site Vitrine jusqu'au 30 juin 2024",
       },
       text_thumbnails: [
         <>
@@ -138,7 +138,7 @@ export const sectionPacksData = {
       price: "1980€",
       promotion: {
         new_price: "990€",
-        text: "Offre de lancement : -50% sur le pack site e-Commerce jusqu'au 31 mai 2024",
+        text: "Offre de lancement : -50% sur le pack site e-Commerce jusqu'au 30 juin 2024",
       },
       text_thumbnails: [
         <>
@@ -293,7 +293,7 @@ export const sectionPacksData = {
       price: "500€",
       promotion: {
         new_price: "250€",
-        text: "Offre de lancement : -50% sur le pack Charte Graphique jusqu'au 31 mai 2024",
+        text: "Offre de lancement : -50% sur le pack Charte Graphique jusqu'au 30 juin 2024",
       },
       text_thumbnails: [
         <>
