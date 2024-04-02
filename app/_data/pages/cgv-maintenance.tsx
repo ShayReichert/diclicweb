@@ -138,13 +138,17 @@ export const sectionTextData = {
       </p>
 
       <h3 className={rocaOne.className}>2.4 Surveillance des vulnérabilités et parefeu 7j/7 24h/24</h3>
-      <p>• Explications liminaires</p>
+      <p>
+        <strong>• Explications liminaires • </strong>
+      </p>
       <p>
         Afin d’assurer la prestation de surveillance des vulnérabilités et parefeu, le Prestataire est informé et alerté de toutes les tentatives de
         connexion, changements de mot de passe, attaques par force brute, modifications de fichiers et vulnérabilités de sécurité, via les systèmes
         Solid Security et Manage WP.
       </p>
-      <p>• Contenu et limites de la prestation</p>
+      <p>
+        <strong>• Contenu et limites de la prestation • </strong>
+      </p>
       <p>En cas d’alerte, le Prestataire pourra effectuer des vérifications des logiciels malveillants. </p>
       <p>
         Au titre de cette prestation « Surveillance des vulnérabilités et parefeu », si un attaquant malveillant pirate le Site, le Prestataire en
