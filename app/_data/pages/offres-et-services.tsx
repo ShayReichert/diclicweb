@@ -3,7 +3,7 @@ export const sectionTitleData = {
 };
 
 export const sectionCatchphraseData = {
-  text: "Site vitrine, site e-commerce, charte graphique, plans de maintenance, support : je vous propose différentes solutions pour répondre à vos besoins spécifiques ! 👌",
+  text: "Site vitrine, site e-commerce, application web, plans de maintenance, support : je vous propose différentes solutions pour répondre à vos besoins spécifiques ! 👌",
 };
 
 export const sectionCTAData = {
@@ -179,7 +179,7 @@ export const sectionFAQData = {
           <p>Pour vous donner une idée, voici quelques fourchettes de prix :</p>
           <ul>
             <li>
-              <strong>Un site one page (site vitrine d'une page) </strong>: entre 600 et 900€
+              <strong>Un site one-page (site vitrine d'une page) </strong>: entre 600 et 900€
             </li>
             <li>
               <strong>Un site vitrine </strong>: entre 1000 et 3000€ (pour un site de 3 à 10 pages)

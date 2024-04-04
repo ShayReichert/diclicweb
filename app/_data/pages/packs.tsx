@@ -3,5 +3,5 @@ export const sectionTitleData = {
 };
 
 export const sectionCatchphraseData = {
-  text: "Je propose des packs de création complets pour répondre à vos besoins : site vitrine, site e-commerce ou charte graphique 💻 🌍 🎨",
+  text: "Je propose des packs de création complets et professionnels adaptés aux besoins de votre activité (site vitrine ou e-commerce) 💻 🌍 ",
 };

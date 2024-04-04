@@ -26,7 +26,7 @@ export default function Header() {
         { id: "pack-site-vitrine", label: "Pack Site Vitrine | -50%", path: "/offres-et-services/packs#site-vitrine" },
         { id: "pack-site-e-commerce", label: "Pack Site E-commerce | -50%", path: "/offres-et-services/packs#site-e-commerce" },
         { id: "site-sur-mesure", label: "Site Sur-mesure", path: "/offres-et-services#site-sur-mesure" },
-        { id: "charte-graphique", label: "Charte Graphique | -50%", path: "/offres-et-services/packs#charte-graphique" },
+        // { id: "charte-graphique", label: "Charte Graphique | -50%", path: "/offres-et-services/packs#charte-graphique" },
       ],
     },
     { id: "projects", label: "Réalisations", path: "/realisations" },

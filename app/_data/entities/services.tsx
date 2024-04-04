@@ -26,7 +26,7 @@ export const sectionServicesData = {
           </p>
         </>,
       ],
-      icon: "/images/services/icon_code.svg",
+      icon: "/images/services/icon_site.svg",
       icon_alt: "Icone d'ordinateur",
     },
     {
@@ -40,13 +40,16 @@ export const sectionServicesData = {
             comprendre une partie blog, un formulaire de contact, une FAQ…
           </p>
           <p>
-            Après avoir défini ensemble vos besoins et sélectionné les<strong> fonctionnalités nécessaires </strong>pour votre site e-commerce, je
-            vous donnerai également tous les
-            <strong> conseils </strong>nécessaires pour gérer au mieux votre boutique en ligne. 😉
+            Si vous souhaitez une solution clé en main, je propose un "{" "}
+            <Link href="offres-et-services/packs#site-vitrine" role="link">
+              <strong>Pack Site E-commerce</strong>
+            </Link>
+            " qui comprend tout ce dont vous avez besoin pour démarrer votre<strong> boutique en ligne professionnelle </strong>dans les meilleures
+            conditions.
           </p>
           <p>
-            Je vous<strong> formerai </strong>également à la prise en main de l’administration pour que vous puissiez vous occuper sereinement de la
-            partie boutique.
+            Je vous<strong> formerai </strong>dans tous les cas à la prise en main de l’administration pour que vous puissiez vous occuper sereinement
+            de la partie boutique.
           </p>
         </>,
       ],
@@ -56,31 +59,22 @@ export const sectionServicesData = {
 
     {
       id: 3,
-      title: "Charte Graphique",
-      short_desc: "Vous avez besoin d'une identité visuelle ? Je peux également vous aider à créer votre charte graphique.",
+      title: "Application Web",
+      short_desc: "Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
       text: [
         <>
           <p>
-            La présentation, c'est important ! Avoir une identité visuelle<strong> cohérente avec votre activité </strong>et ses valeurs renforcera
-            votre crédibilité 🎨
+            Vous avez un projet très spécifique, comme un projet d’<strong>application web </strong>? Ou bien vous aimeriez un site vraiment
+            différent, avec des
+            <strong> animations complexes </strong>ou une mise en page vraiment particulière ? Je peux peut-être vous aidez aussi !
           </p>
-          <p>
-            Je propose un pack "
-            <Link href="offres-et-services/packs#site-vitrine" role="link">
-              <strong>Charte Graphique</strong>
-            </Link>
-            " qui comprend une palette de couleurs, un logo sur-mesure, des polices adaptées et une favicon.
-          </p>
-          <p>
-            Par ailleurs, vous pourrez utiliser cette charte graphique
-            <strong> dans l'ensemble de votre communication </strong>
-            (réseaux sociaux, flyers...).
-          </p>
+          <p>N'hésitez pas à me contacter directement pour discuter de votre projet 😃</p>
         </>,
       ],
-      icon: "/images/services/icon_site.svg",
-      icon_alt: "Icone de site internet",
+      icon: "/images/services/icon_code.svg",
+      icon_alt: "Icone d'ordinateur",
     },
+
     {
       id: 4,
       title: "Maintenance / Support",
@@ -101,22 +95,59 @@ export const sectionServicesData = {
       icon: "/images/services/icon_maintenance.svg",
       icon_alt: "Icone d'outil",
     },
+
     // {
-    //   id: 5,
-    //   title: "Application Web",
-    //   short_desc: "Pour les projets plus spécifiques, je peux également coder des sites et des applications sur-mesure (React / Next.js).",
+    //   id: 3,
+    //   title: "Site One-Page",
+    //   short_desc: "Vous avez besoin d'une page unique pour présenter votre activité ? Je peux vous créer un site One-Page.",
     //   text: [
     //     <>
     //       <p>
-    //         Vous avez un projet très spécifique, comme un projet d’<strong>application web </strong>? Ou bien vous aimeriez un site vraiment
-    //         différent, avec des
-    //         <strong> animations complexes </strong>ou une mise en page vraiment particulière ? Je peux peut-être vous aidez aussi !
+    //         Un site One-)Page est un site qui tient sur une seule page. Il est souvent utilisé pour<strong> présenter une activité </strong>ou un
+    //         produit de manière simple et efficace.
     //       </p>
-    //       <p>N'hésitez pas à me contacter directement pour discuter de votre projet 😃</p>
+    //       <p>
+    //         Ce type de site est idéal si vous avez peu de contenu à présenter ou si vous souhaitez avoir une
+    //         <strong> présence en ligne rapide </strong>et efficace. 🚀
+    //       </p>
+    //       <p>
+    //         Je propose un "
+    //         <Link href="offres-et-services/packs#site-one-page" role="link">
+    //           <strong>Pack Site One-Page</strong>
+    //         </Link>
+    //         qui présentera votre activité de manière claire et professionnelle. Il pourra par ailleurs facilement évoluer en site vitrine de plusieurs
+    //         pages ou en site e-commerce si vos besoins évoluent.
+    //       </p>
     //     </>,
     //   ],
-    //   icon: "/images/services/icon_code.svg",
-    //   icon_alt: "Icone d'ordinateur",
+    // },
+
+    // {
+    //   id: 3,
+    //   title: "Charte Graphique",
+    //   short_desc: "Vous avez besoin d'une identité visuelle ? Je peux également vous aider à créer votre charte graphique.",
+    //   text: [
+    //     <>
+    //       <p>
+    //         La présentation, c'est important ! Avoir une identité visuelle<strong> cohérente avec votre activité </strong>et ses valeurs renforcera
+    //         votre crédibilité 🎨
+    //       </p>
+    //       <p>
+    //         Je propose un pack "
+    //         <Link href="offres-et-services/packs#site-vitrine" role="link">
+    //           <strong>Charte Graphique</strong>
+    //         </Link>
+    //         " qui comprend une palette de couleurs, un logo sur-mesure, des polices adaptées et une favicon.
+    //       </p>
+    //       <p>
+    //         Par ailleurs, vous pourrez utiliser cette charte graphique
+    //         <strong> dans l'ensemble de votre communication </strong>
+    //         (réseaux sociaux, flyers...).
+    //       </p>
+    //     </>,
+    //   ],
+    //   icon: "/images/services/icon_site.svg",
+    //   icon_alt: "Icone de site internet",
     // },
   ],
 };

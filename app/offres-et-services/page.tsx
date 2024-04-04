@@ -22,7 +22,7 @@ import SectionFAQ from "./components/SectionFAQ/SectionFAQ";
 
 export const metadata: Metadata = {
   title: "Offres et services | Diclicweb",
-  description: "Site vitrine, site e-commerce, charte graphique... Je propose également de la maintenance et du support.",
+  description: "Site vitrine, site e-commerce, application web... Je propose également de la maintenance et du support.",
 };
 
 export default function Services() {
