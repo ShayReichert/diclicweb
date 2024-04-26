@@ -5,7 +5,7 @@ export const sectionServicesData = {
     {
       id: 1,
       title: "Site vitrine WordPress",
-      short_desc: "Je réalise des sites vitrines et e-commerce optimisés, performants et personnalisés grâce à WordPress.",
+      short_desc: "Je réalise des sites vitrines et e-commerce éthiques, performants et personnalisés grâce à WordPress.",
       text: [
         <>
           <p>
