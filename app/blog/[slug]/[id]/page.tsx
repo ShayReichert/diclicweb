@@ -10,7 +10,7 @@ export function generateMetadata({ params: { id } }: PostProps) {
     title: `Blog | Diclicweb | ${post.title}`,
     description: post.excerpt,
     openGraph: {
-      ...{ images: [`${post.thumbnail}`] },
+      images: [`${post.thumbnail}`],
     },
   };
 }
