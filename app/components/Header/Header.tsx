@@ -23,8 +23,8 @@ export default function Header() {
       label: "Offres et services",
       path: "/offres-et-services",
       subMenu: [
-        { id: "pack-site-vitrine", label: "Pack Site Vitrine | -50%", path: "/offres-et-services/packs#site-vitrine" },
-        { id: "pack-site-e-commerce", label: "Pack Site E-commerce | -50%", path: "/offres-et-services/packs#site-e-commerce" },
+        { id: "pack-site-vitrine", label: "Pack Site Vitrine", path: "/offres-et-services/packs#site-vitrine" },
+        { id: "pack-site-e-commerce", label: "Pack Site E-commerce", path: "/offres-et-services/packs#site-e-commerce" },
         { id: "site-sur-mesure", label: "Site Sur-mesure", path: "/offres-et-services#site-sur-mesure" },
         // { id: "charte-graphique", label: "Charte Graphique | -50%", path: "/offres-et-services/packs#charte-graphique" },
       ],
