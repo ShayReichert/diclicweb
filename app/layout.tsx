@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://diclicweb.fr"),
   title: "Diclicweb - Création de sites web engagés",
   description:
-    "Je crée des sites internet éthiques et responsables pour des projets engagés (artisanat, écologie, art, éducation, culture, association...)",
+    "Je suis développeur front-end et j'aide les entreprises et les associations à transformer leurs visions en solutions numériques éthiques et sur mesure (sites web, applications web, SaaS…)",
   openGraph: {
     images: "/images/opengraph-image.jpg",
   },
