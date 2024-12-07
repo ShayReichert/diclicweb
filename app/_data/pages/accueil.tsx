@@ -7,7 +7,7 @@ export const sectionTitleData = {
 
 export const sectionCatchphraseData = {
   // text: "Artisanat, écologie, art, éducation, culture, projets associatifs : je mets mes compétences au service de projets qui contribuent à un monde dans lequel je veux vivre 🌱",
-  text: "Je suis développeur front-end et j'aide les entreprises et les associations à transformer leurs visions en solutions numériques sur mesure et éthiques (sites web, applications web, SaaS…)",
+  text: "Bonjour 👋 Moi c'est Shay, je suis développeur web front-end et je mets mes compétences au service de projets qui contribuent à un monde dans lequel je veux vivre 🌱",
 };
 
 export const sectionProjectsData = {
