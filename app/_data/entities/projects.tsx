@@ -2,6 +2,36 @@ export const sectionProjectsData = {
   projects: [
     {
       id: 1,
+      title: "Wonderwomath",
+      subtitle: "Mathématiques utiles et belles (collège / lycée)",
+      short_description: "Site e-learning WordPress",
+      technology: "Divi + TutorLMS",
+      description: [
+        <>
+          <p>
+            Estelle est une enseignante certifiée en <strong>mathématiques</strong>. Sur les réseaux sociaux, elle rend les maths passionnantes sous
+            le pseudonyme Wonderwomath 🦸‍♀️
+          </p>
+          <br />
+          <p>
+            Elle souhaitait créer un<strong> site e-learning </strong>pour partager des leçons et exercices gratuitement, et rendre les mathématiques
+            accessibles à toutes et tous.
+          </p>
+          <br />
+          <br />
+          <p>
+            Pour ce projet, j'ai travaillé avec le<strong> thème Divi et TutorLMS </strong>pour toute la partie cours. J'ai également crée un thème
+            enfant pour pouvoir ajuster au mieux le site aux besoins d'Estelle.
+          </p>
+        </>,
+      ],
+      link: "https://www.wonderwomath.fr/",
+      image: "/images/home/wonderwomath.webp",
+      image_alt: "Aperçu du site Wonderwomath",
+      mockup: "/images/projects/wonderwomath_mockup.png",
+    },
+    {
+      id: 2,
       title: "Jeux et talents",
       subtitle: "Jeux éducatifs à imprimer",
       short_description: "Site e-commerce WordPress",
@@ -33,7 +63,7 @@ export const sectionProjectsData = {
       mockup: "/images/projects/jeuxettalents_mockup.webp",
     },
     {
-      id: 2,
+      id: 3,
       title: "MandApunk",
       subtitle: "Couture alternative / créations engagées",
       short_description: "Site e-commerce WordPress",
@@ -57,7 +87,7 @@ export const sectionProjectsData = {
       mockup: "/images/projects/mandapunk_mockup.webp",
     },
     {
-      id: 3,
+      id: 4,
       title: "La Queer Bogossité",
       subtitle: "Bougies artisanales déviantes",
       short_description: "Site e-commerce WordPress",
@@ -88,7 +118,7 @@ export const sectionProjectsData = {
       mockup: "/images/projects/qb_mockup.webp",
     },
     {
-      id: 4,
+      id: 5,
       title: "Queerband France",
       subtitle: "Application qui répertorie les groupes queers et féministes de France",
       short_description: "Site statique React/Gatsby + Airtable",

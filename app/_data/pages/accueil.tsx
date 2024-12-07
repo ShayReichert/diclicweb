@@ -13,6 +13,14 @@ export const sectionCatchphraseData = {
 export const sectionProjectsData = {
   projects: [
     {
+      title: "Wonderwomath",
+      subtitle: "Mathématiques utiles et belles",
+      short_description: "Site e-learning WordPress",
+      technology: "Divi + TutorLMS",
+      image: "/images/home/wonderwomath.webp",
+      image_alt: "Aperçu du site Wonderwomath",
+    },
+    {
       title: "Jeux et talents",
       subtitle: "Jeux éducatifs à imprimer",
       short_description: "Site e-commerce WordPress",
@@ -28,14 +36,14 @@ export const sectionProjectsData = {
       image: "/images/home/mandapunk.webp",
       image_alt: "Aperçu du site Mandapunk",
     },
-    {
-      title: "La Queer Bogossité",
-      subtitle: "Bougies artisanales déviantes",
-      short_description: "Site e-commerce WordPress",
-      technology: "Divi + thème enfant",
-      image: "/images/home/qb.webp",
-      image_alt: "Aperçu du site La Queer Bogossité",
-    },
+    // {
+    //   title: "La Queer Bogossité",
+    //   subtitle: "Bougies artisanales déviantes",
+    //   short_description: "Site e-commerce WordPress",
+    //   technology: "Divi + thème enfant",
+    //   image: "/images/home/qb.webp",
+    //   image_alt: "Aperçu du site La Queer Bogossité",
+    // },
   ],
 };
 
