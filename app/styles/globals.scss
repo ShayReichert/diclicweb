@@ -71,3 +71,10 @@ footer {
     @include fluid-font(16px, $font-size-body);
   }
 }
+
+// ----- CHATBOT BOTPRESS ----- //
+body > iframe.bpFab {
+  @include size(6.4rem);
+  bottom: 2rem;
+  right: 2rem;
+}

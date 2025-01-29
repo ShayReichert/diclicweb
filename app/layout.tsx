@@ -1,9 +1,9 @@
-import "./styles/globals.scss";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import SkipToContent from "./components/SkipToContent/SkipToContent";
+import "./styles/globals.scss";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
@@ -25,6 +25,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/01/28/16/20250128162425-KFAEW5D9.js"></script>
       </body>
     </html>
   );
