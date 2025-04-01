@@ -15,9 +15,7 @@ export const sectionTextData = {
         <br />
         SIRET : 982 987 000 00014
         <br />
-        123 Impasse de Clarat
-        <br />
-        24300 LUSSAS-ET-NONTRONNEAU
+        BORDEAUX
         <br />
         FRANCE
         <br />

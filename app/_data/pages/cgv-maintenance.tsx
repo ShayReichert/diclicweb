@@ -8,7 +8,7 @@ export const sectionTextData = {
       <p>
         Le contrat est conclu entre un professionnel personne morale ou physique (ci-après « le Client ») et EI Shay REICHERT / DICLICWEB, (ci-après «
         le Prestataire ») inscrit au Registre du Commerce et des sociétés de Dordogne sous le numéro de SIRET 982 987 000 00014 depuis le 02/01/2024,
-        né le 25/03/1990 à MELUN 77, domicilié 123 Impasse de Clarat, 24300 Lussas-et-Nontronneau, France.
+        né le 25/03/1990 à MELUN 77.
       </p>
       <p> Le contrat comprend :</p>
       <ul>

@@ -36,9 +36,9 @@ export const sectionTextData = {
       <h2 className={rocaOne.className}>3. DÉFINITIONS</h2>
       <p>Les présentes CGV comportent les termes suivants :</p>
       <p>
-        3.1. EI Shay REICHERT / DICLICWEB: désigne le prestataire web, EI Shay REICHERT sous le statut d’auto-entrepreneur, domicilié 123 Impasse de
-        Clarat, 24300 Lussas-et-Nontronneau, France, dont le numéro de SIRET est 982 987 000 00014. EI Shay REICHERT / DICLICWEB est une
-        micro-entreprise (statut micro-entrepreneur) spécialisé dans la création de site web sous le code APE 6201Z Programmation informatique.{" "}
+        3.1. EI Shay REICHERT / DICLICWEB: désigne le prestataire web, EI Shay REICHERT sous le statut d’auto-entrepreneur, domicilié à Bordeaux,
+        France, dont le numéro de SIRET est 982 987 000 00014. EI Shay REICHERT / DICLICWEB est une micro-entreprise (statut micro-entrepreneur)
+        spécialisé dans la création de site web sous le code APE 6201Z Programmation informatique.{" "}
       </p>
       <p>3.2. Client : désigne toute personne physique ou morale signataire d’un bon de commande (devis) sous format papier ou électronique.</p>
       <p>
