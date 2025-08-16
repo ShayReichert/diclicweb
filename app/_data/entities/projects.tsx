@@ -119,6 +119,31 @@ export const sectionProjectsData = {
     },
     {
       id: 5,
+      title: "Super Secret Santa",
+      subtitle: "Application web pour organiser des Pères Noël secrets en ligne",
+      short_description: "Next.js + API backend dédiée",
+      technology: "Next.js",
+      description: [
+        <>
+          <p>
+            Projet personnel conçu pour <strong>organiser facilement plusieurs événements</strong> de Père Noël secret 🎁. L’application permet de
+            créer un compte, d’inviter des participant·es, de gérer des listes de cadeaux et de <strong>lancer un tirage au sort automatique</strong>.
+          </p>
+          <br />
+          <p>
+            Développée en <strong>Next.js</strong> pour le front et intégrée à un backend dédié, elle a rassemblé plus de{" "}
+            <strong>600 utilisateur·ices la première année</strong>. Le projet continue d’évoluer sur notre temps libre, avec de nouvelles
+            fonctionnalités ajoutées régulièrement.
+          </p>
+        </>,
+      ],
+      link: "https://supersecretsanta.fr/",
+      image: "/images/home/supersecretsanta.webp",
+      image_alt: "Aperçu de l'application Super Secret Santa",
+      mockup: "/images/projects/supersecretsanta_mockup.webp",
+    },
+    {
+      id: 6,
       title: "Queerband France",
       subtitle: "Application qui répertorie les groupes queers et féministes de France",
       short_description: "Site statique React/Gatsby + Airtable",
